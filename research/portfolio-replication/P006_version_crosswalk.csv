@@ -1,0 +1,62 @@
+﻿panel_result_id,result_id,experiment_id,package_item,nber_item,nber_pdf_page,nber_printed_page,panel,label,slot,output_file,rfs_accepted_manuscript_mapping,result_status,agent_result_id,agent_experiment_id
+P006-FIG1,P006-R06,P006-E02,Fig 1,Figure 1,5,3,,In-sample vs. Out-of-sample Sharpe Ratios without Shrinkage.,,fig_01_is_vs_oos.jpg,NOT_READ,NOT_RUN,P006-R06,P006-E04
+P006-FIG2,,P006-E02,Fig 2,Figure 2,19,17,,Out-of-sample Return Correlations Across Shrinkage Levels.,,fig_02_cor_z.jpg,NOT_READ,NOT_RUN,P006-R06,P006-E04
+P006-FIG3,P006-R01,P006-E05,Fig 3,Figure 3,20,18,,Annualized Out-of-sample Sharpe Ratios for UPSA and Benchmarks.,,fig_03_sharpe_bar.jpg,NOT_READ,NOT_RUN,P006-R01,P006-E01
+P006-FIG4,P006-R02,P006-E02,Fig 4,Figure 4,20,18,,Cumulative Log Returns for SDFs with Different Shrinkage Methods.,,fig_04_cumulative_returns_log.jpg,NOT_READ,NOT_RUN,P006-R06,P006-E04
+P006-FIG5,P006-R03,P006-E05,Fig 5,Figure 5,21,19,,α of UPSA vs. Benchmarks.,,fig_05_alpha_bar.jpg,NOT_READ,NOT_RUN,P006-R02,P006-E01
+P006-FIG6A,P006-R04,P006-E05,Fig 6a,Figure 6,22,20,a,Out-of-sample Pricing Accuracy of Optimal Portfolios.,UPSA,fig_06a_pricingacc_UPSA.jpg,NOT_READ,NOT_RUN,P006-R03,P006-E01
+P006-FIG6B,P006-R04,P006-E05,Fig 6b,Figure 6,22,20,b,Out-of-sample Pricing Accuracy of Optimal Portfolios.,Ridge,fig_06b_pricingacc_Ridge.jpg,NOT_READ,NOT_RUN,P006-R03,P006-E01
+P006-FIG6C,P006-R04,P006-E05,Fig 6c,Figure 6,22,20,c,Out-of-sample Pricing Accuracy of Optimal Portfolios.,LW,fig_06c_pricingacc_LW.jpg,NOT_READ,NOT_RUN,P006-R03,P006-E01
+P006-FIG6D,P006-R04,P006-E05,Fig 6d,Figure 6,22,20,d,Out-of-sample Pricing Accuracy of Optimal Portfolios.,PCA,fig_06d_pricingacc_PCA.jpg,NOT_READ,NOT_RUN,P006-R03,P006-E01
+P006-FIG6E,P006-R04,P006-E05,Fig 6e,Figure 6,22,20,e,Out-of-sample Pricing Accuracy of Optimal Portfolios.,FF5,fig_06e_pricingacc_FF5.jpg,NOT_READ,NOT_RUN,P006-R03,P006-E01
+P006-FIG6F,P006-R04,P006-E05,Fig 6f,Figure 6,22,20,f,Out-of-sample Pricing Accuracy of Optimal Portfolios.,CAPM,fig_06f_pricingacc_CAPM.jpg,NOT_READ,NOT_RUN,P006-R03,P006-E01
+P006-FIG7,,P006-E02,Fig 7,Figure 7,27,25,,UPSA Ensemble Weights vs. Ridge Penalty Selection.,,fig_07_surface_bestz.jpg,NOT_READ,NOT_RUN,P006-R07,P006-E04
+P006-FIG8,P006-R07,P006-E05,Fig 8,Figure 8,28,26,,12-Month Rolling Average Turnover.,,fig_08_turnover_rolling.jpg,NOT_READ,NOT_RUN,P006-R04,P006-E01
+P006-FIG9,,P006-E02,Fig 9,Figure 9,29,27,,Distribution of Penalty Weights.,,fig_09_cv_prob.jpg,NOT_READ,NOT_RUN,P006-R07,P006-E04
+P006-FIG10A,P006-R08,P006-E02,Fig 10a,Figure 10,30,28,a,Out-of-sample Performance by Number of Principal Components.,Sharpe_by_PC,fig_10a_pc_sharpe_Sharpe_by_PC.jpg,NOT_READ,NOT_RUN,P006-R05,P006-E04
+P006-FIG10B,P006-R08,P006-E02,Fig 10b,Figure 10,30,28,b,Out-of-sample Performance by Number of Principal Components.,corr_oracle,fig_10b_pc_sharpe_corr_oracle.jpg,NOT_READ,NOT_RUN,P006-R05,P006-E04
+P006-FIG11,P006-R09,P006-E02,Fig 11,Figure 11,31,29,,Shrinkage Functions for Ridge and UPSA.,,fig_11_shrinkage_mechanism.jpg,NOT_READ,NOT_RUN,P006-R07,P006-E04
+P006-FIG12,,P006-E02,Fig 12,Figure 12,32,30,,Thematic Portfolio Allocation: UPSA vs. Ridge.,,fig_12_theme_panel.jpg,NOT_READ,NOT_RUN,P006-R08,P006-E04
+P006-FIG13,P006-R10,P006-E02,Fig 13,Figure 13,33,31,,Shapley Decomposition of ∆ Sharpe Ratio by Theme.,,fig_13_theme_shapley.jpg,NOT_READ,NOT_RUN,P006-R08,P006-E04
+P006-FIG14A,P006-R11,P006-E02,Fig 14a,Figure 14,36,34,a,Tuning to Economic vs. Statistical Objectives.,eigs,fig_14a_ridge_vs_lw_eigs.jpg,NOT_READ,NOT_RUN,P006-R09,P006-E04
+P006-FIG14B,P006-R11,P006-E02,Fig 14b,Figure 14,36,34,b,Tuning to Economic vs. Statistical Objectives.,scatter,fig_14b_ridge_vs_lw_scatter.jpg,NOT_READ,NOT_RUN,P006-R09,P006-E04
+P006-FIG15A,P006-R11,P006-E02,Fig 15a,Figure 15,37,35,a,Linear vs. Nonlinear Shrinkage with Economic Objectives.,eigs,fig_15a_sim_upsa_ridge_eigs.jpg,NOT_READ,NOT_RUN,P006-R09,P006-E04
+P006-FIG15B,P006-R11,P006-E02,Fig 15b,Figure 15,37,35,b,Linear vs. Nonlinear Shrinkage with Economic Objectives.,scatter,fig_15b_sim_upsa_ridge_scatter.jpg,NOT_READ,NOT_RUN,P006-R09,P006-E04
+P006-FIG16A,P006-R11,P006-E02,Fig 16a,Figure 16,38,36,a,UPSA vs. Ridge Under Markov-Switching Regimes.,Sharpe,fig_16a_tv_scatter_Sharpe.jpg,NOT_READ,NOT_RUN,P006-R10,P006-E04
+P006-FIG16B,P006-R11,P006-E02,Fig 16b,Figure 16,38,36,b,UPSA vs. Ridge Under Markov-Switching Regimes.,Turnover,fig_16b_tv_scatter_Turnover.jpg,NOT_READ,NOT_RUN,P006-R10,P006-E04
+P006-FIGA1A,,P006-E02,Appendix Fig A1a,Figure 17,55,53,a,Sensitivity of UPSA to the Number and Placement of Ridge Grid,fixed,fig_A01a_grid_size_fixed.jpg,NOT_READ,NOT_RUN,P006-R11,P006-E04
+P006-FIGA1B,,P006-E02,Appendix Fig A1b,Figure 17,55,53,b,Sensitivity of UPSA to the Number and Placement of Ridge Grid,eig,fig_A01b_grid_size_eig.jpg,NOT_READ,NOT_RUN,P006-R11,P006-E04
+P006-FIGA2A,,P006-E02,Appendix Fig A2a,Figure 18,56,54,a,Turnover Sensitivity to the Number and Placement of Ridge Grid,fixed,fig_A02a_grid_turnover_fixed.jpg,NOT_READ,NOT_RUN,P006-R11,P006-E04
+P006-FIGA2B,,P006-E02,Appendix Fig A2b,Figure 18,56,54,b,Turnover Sensitivity to the Number and Placement of Ridge Grid,eig,fig_A02b_grid_turnover_eig.jpg,NOT_READ,NOT_RUN,P006-R11,P006-E04
+P006-FIGA3,,P006-E02,Appendix Fig A3,Figure 19,57,55,,Annualized Sharpe Ratios: Base vs. Lasso-Augmented Portfolios.,,fig_A03_lasso_comparison_bar.jpg,NOT_READ,NOT_RUN,P006-R11,P006-E04
+P006-FIGA4,,P006-E02,Appendix Fig A4,Figure 20,58,56,,Number of Non-Zero PCs Retained by Lasso Over Time.,,fig_A04_non_zero_pcs.jpg,NOT_READ,NOT_RUN,P006-R11,P006-E04
+P006-FIGA5A,,P006-E02,Appendix Fig A5a,Figure 21,59,57,a,12-Month Rolling Average Turnover for Base vs. Lasso-Augmented,vs_UPSA,fig_A05a_lasso_turnover_vs_UPSA.jpg,NOT_READ,NOT_RUN,P006-R11,P006-E04
+P006-FIGA5B,,P006-E02,Appendix Fig A5b,Figure 21,59,57,b,12-Month Rolling Average Turnover for Base vs. Lasso-Augmented,vs_Ridge,fig_A05b_lasso_turnover_vs_Ridge.jpg,NOT_READ,NOT_RUN,P006-R11,P006-E04
+P006-FIGA6A,,P006-E02,Appendix Fig A6a,Figure 22,60,58,a,Out-of-sample Performance by Number of Principal Components,Sharpe_by_PC,fig_A06a_pc_sharpe_sr_Sharpe_by_PC.jpg,NOT_READ,NOT_RUN,P006-R11,P006-E04
+P006-FIGA6B,,P006-E02,Appendix Fig A6b,Figure 22,60,58,b,Out-of-sample Performance by Number of Principal Components,corr_oracle,fig_A06b_pc_sharpe_sr_corr_oracle.jpg,NOT_READ,NOT_RUN,P006-R11,P006-E04
+P006-FIGA7,,P006-E02,Appendix Fig A7,Figure 23,61,59,,Annualized Out-of-sample Sharpe Ratios: UPSA and Additional,,fig_A07_sharpe_other_benchmarks.jpg,NOT_READ,NOT_RUN,P006-R11,P006-E04
+P006-FIGA8A,,P006-E02,Appendix Fig A8a,Figure 24,62,60,a,Annualized Sharpe Ratios Across Size Groups.,mega,fig_A08a_sharpe_size_mega.jpg,NOT_READ,NOT_RUN,P006-R11,P006-E04
+P006-FIGA8B,,P006-E02,Appendix Fig A8b,Figure 24,62,60,b,Annualized Sharpe Ratios Across Size Groups.,large,fig_A08b_sharpe_size_large.jpg,NOT_READ,NOT_RUN,P006-R11,P006-E04
+P006-FIGA8C,,P006-E02,Appendix Fig A8c,Figure 24,62,60,c,Annualized Sharpe Ratios Across Size Groups.,small,fig_A08c_sharpe_size_small.jpg,NOT_READ,NOT_RUN,P006-R11,P006-E04
+P006-FIGA9A,,P006-E02,Appendix Fig A9a,Figure 25,62,60,a,α Across Size Groups.,mega,fig_A09a_alpha_size_mega.jpg,NOT_READ,NOT_RUN,P006-R11,P006-E04
+P006-FIGA9B,,P006-E02,Appendix Fig A9b,Figure 25,62,60,b,α Across Size Groups.,large,fig_A09b_alpha_size_large.jpg,NOT_READ,NOT_RUN,P006-R11,P006-E04
+P006-FIGA9C,,P006-E02,Appendix Fig A9c,Figure 25,62,60,c,α Across Size Groups.,small,fig_A09c_alpha_size_small.jpg,NOT_READ,NOT_RUN,P006-R11,P006-E04
+P006-FIGA10A,,P006-E02,Appendix Fig A10a,Figure 26,63,61,a,Annualized Sharpe Ratios Across Rolling Windows.,rw60,fig_A10a_sharpe_rolling_rw60.jpg,NOT_READ,NOT_RUN,P006-R11,P006-E04
+P006-FIGA10B,,P006-E02,Appendix Fig A10b,Figure 26,63,61,b,Annualized Sharpe Ratios Across Rolling Windows.,rw240,fig_A10b_sharpe_rolling_rw240.jpg,NOT_READ,NOT_RUN,P006-R11,P006-E04
+P006-FIGA10C,,P006-E02,Appendix Fig A10c,Figure 26,63,61,c,Annualized Sharpe Ratios Across Rolling Windows.,rw360,fig_A10c_sharpe_rolling_rw360.jpg,NOT_READ,NOT_RUN,P006-R11,P006-E04
+P006-FIGA11A,,P006-E02,Appendix Fig A11a,Figure 27,63,61,a,α Across Rolling Windows.,rw60,fig_A11a_alpha_rolling_rw60.jpg,NOT_READ,NOT_RUN,P006-R11,P006-E04
+P006-FIGA11B,,P006-E02,Appendix Fig A11b,Figure 27,63,61,b,α Across Rolling Windows.,rw240,fig_A11b_alpha_rolling_rw240.jpg,NOT_READ,NOT_RUN,P006-R11,P006-E04
+P006-FIGA11C,,P006-E02,Appendix Fig A11c,Figure 27,63,61,c,α Across Rolling Windows.,rw360,fig_A11c_alpha_rolling_rw360.jpg,NOT_READ,NOT_RUN,P006-R11,P006-E04
+P006-FIGA12A,,P006-E02,Appendix Fig A12a,Figure 28,65,63,a,Beta-Based Out-of-sample Pricing Accuracy of Optimal Portfolios.,UPSA,fig_A12a_beta_scatter_UPSA.jpg,NOT_READ,NOT_RUN,P006-R11,P006-E04
+P006-FIGA12B,,P006-E02,Appendix Fig A12b,Figure 28,65,63,b,Beta-Based Out-of-sample Pricing Accuracy of Optimal Portfolios.,Ridge,fig_A12b_beta_scatter_Ridge.jpg,NOT_READ,NOT_RUN,P006-R11,P006-E04
+P006-FIGA12C,,P006-E02,Appendix Fig A12c,Figure 28,65,63,c,Beta-Based Out-of-sample Pricing Accuracy of Optimal Portfolios.,LW,fig_A12c_beta_scatter_LW.jpg,NOT_READ,NOT_RUN,P006-R11,P006-E04
+P006-FIGA12D,,P006-E02,Appendix Fig A12d,Figure 28,65,63,d,Beta-Based Out-of-sample Pricing Accuracy of Optimal Portfolios.,PCA,fig_A12d_beta_scatter_PCA.jpg,NOT_READ,NOT_RUN,P006-R11,P006-E04
+P006-FIGA12E,,P006-E02,Appendix Fig A12e,Figure 28,65,63,e,Beta-Based Out-of-sample Pricing Accuracy of Optimal Portfolios.,FF5,fig_A12e_beta_scatter_FF5.jpg,NOT_READ,NOT_RUN,P006-R11,P006-E04
+P006-FIGA12F,,P006-E02,Appendix Fig A12f,Figure 28,65,63,f,Beta-Based Out-of-sample Pricing Accuracy of Optimal Portfolios.,CAPM,fig_A12f_beta_scatter_CAPM.jpg,NOT_READ,NOT_RUN,P006-R11,P006-E04
+P006-FIGA13,,P006-E02,Appendix Fig A13,Figure 29,67,65,,SDF Performance by NBER Regime.,,fig_A13_recession_panels.jpg,NOT_READ,NOT_RUN,P006-R11,P006-E04
+P006-FIGA14,,P006-E02,Appendix Fig A14,Figure 30,68,66,,Grid-Size Robustness of UPSA.,,fig_A14_grid_robustness.jpg,NOT_READ,NOT_RUN,P006-R12,P006-E04
+P006-FIGA15,,P006-E02,Appendix Fig A15,Figure 31,69,67,,UPSA Ensemble Weights and Ridge Penalty Over Time.,,fig_A15_tv_heatmap.jpg,NOT_READ,NOT_RUN,P006-R12,P006-E04
+P006-FIGA16,,P006-E02,Appendix Fig A16,Figure 32,69,67,,Rolling Turnover for UPSA vs. Ridge Under Regime Switching.,,fig_A16_tv_turnover.jpg,NOT_READ,NOT_RUN,P006-R12,P006-E04
+P006-FIGA17,,P006-E02,Appendix Fig A17,Figure 33,70,68,,"Distribution of Penalty Weights, Markov-Switching Simulation.",,fig_A17_tv_dist_by_regime.jpg,NOT_READ,NOT_RUN,P006-R12,P006-E04
+P006-TAB1,P006-R04,P006-E05,Tab 1,Table 1,23,21,,Out-of-sample Pricing Accuracy By Factor Theme,,tab_01_r2_theme.tex,NOT_READ,NOT_RUN,P006-R03,P006-E01
+P006-TABA1,P006-R12,P006-E02,Appendix Tab A1,Table 2,66,64,,Out-of-sample Pricing Accuracy By Factor Theme (In-Sample Second-,,tab_A01_r2_theme_beta_insample_sec.tex,NOT_READ,NOT_RUN,P006-R11,P006-E04

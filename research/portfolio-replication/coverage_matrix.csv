@@ -1,0 +1,29 @@
+﻿institution,journal_group,search_status,hits,notes,evidence
+AQR Capital Management,JF (J1),已检出并核验,P001/P007/P009/P014,Kelly/Pedersen STAFF，Malamud顾问；Gârleanu非AQR,search_history/A_search.md；checks/A.md
+AQR Capital Management,JFE (J1),已检出并核验,P008 ESG-Efficient Frontier；背景类Betting Against Correlation等,ESG属DIRECT但数据专有；BAC主题BACKGROUND排除,A_search.md §a;Q18
+AQR Capital Management,RFS (J1),已检出并核验,P002/P006/P017,两篇均Kelly AQR STAFF；P002正式版有代码版本冲突，P006为先启动首选,search_history/A_search.md；checks/A.md
+AQR Capital Management,Management Science (J1),在已记录范围与渠道内未检出（非绝对不存在）,命中Perold1984/Ang&Papanikolaou/He&Sun等均无AQR署名,检索路径：出版社+AQR研究页+关键词；OpenAlex额度限制已用其他渠道补足,A_search.md §a;Q13
+AQR Capital Management,JFQA (J2),在已记录范围与渠道内未检出（非绝对不存在）,命中多为AQR转载的其他期刊文章，非JFQA本刊,已按机构全名+作者名+主题词检索,A_search.md §a;Q14
+AQR Capital Management,Review of Finance (J2),在已记录范围与渠道内未检出（非绝对不存在）,命中Shrinking the term structure等无AQR,已按机构+作者检索,A_search.md §a;Q15
+Citadel（含历史名/LLC）,JF (J1),已检出并核验,P010 Modeling Corporate Bond Returns(CORE)；B-05/B-06顾问论文排除,Palhares发表期署名Citadel；Linnainmaa/Gerakos为顾问非员工,B_search.md §1;Q15-Q16;Q23-Q24
+Citadel（含历史名/LLC）,JFE (J1),已检出未核验,B-04 Long-term discount rates（附属署名，AMBIGUOUS，排除）,正式版脚注付费墙NOT_READ，仅NBER版核验,B_search.md §1;Q17-Q18
+Citadel（含历史名/LLC）,RFS (J1),已检出并核验,P005 Efficient Trading Strategies(理论，建议排除),Kallal研究NYU/发表署名Citadel Investment Group,B_search.md §1;Q03-Q04
+Citadel（含历史名/LLC）,Management Science (J1),在已记录范围与渠道内未检出（非绝对不存在）,无命中,已机构全名+历史名+作者检索,B_search.md §1
+Citadel Securities（单列）,J1 全部（JF/JFE/RFS/MS）,在已记录范围与渠道内未检出（非绝对不存在）,官网为做市/流动性业务，无组合优化论文,法律主体与Citadel对冲基金分离，不合并,B_search.md §1;Q27;消歧D-02
+Millennium Management,J4 (QF),已检出并核验,P004 Distributionally robust end-to-end(Costa发表署名Millennium),研究期Columbia/现职Citadel EQR，均不替换发表署名,B_search.md §1;Q02;E-S11
+拓展机构（BlackRock/Two Sigma/D.E.Shaw/Man AHL/Winton/Point72/Acadian/Research Affiliates）,J3/J4/W,逐项核实,P011/P019/P020/P021、P018；逐机构见补充矩阵,已有首轮结果由本轮更新,checks/C_coverage.csv；checks/CTRL_supplement.md
+Millennium Management,JF (J1),在已记录范围与渠道内未检出（非绝对不存在）,仅见个人主页/书籍/案例/arXiv(Rothman/Paleologo/Naftali Cohen等),Millennium Prize数学难题为假阳性，已排除,checks/CTRL_search.md CTRL-Q06；checks/B.md
+Millennium Management,JFE (J1),在已记录范围与渠道内未检出（非绝对不存在）,仅见个人主页/书籍/案例/arXiv(Rothman/Paleologo/Naftali Cohen等),Millennium Prize数学难题为假阳性，已排除,checks/CTRL_search.md CTRL-Q05；checks/B.md
+Millennium Management,RFS (J1),在已记录范围与渠道内未检出（非绝对不存在）,仅见个人主页/书籍/案例/arXiv(Rothman/Paleologo/Naftali Cohen等),Millennium Prize数学难题为假阳性，已排除,checks/CTRL_search.md CTRL-Q04；checks/B.md
+Millennium Management,Management Science (J1),在已记录范围与渠道内未检出（非绝对不存在）,仅见个人主页/书籍/案例/arXiv(Rothman/Paleologo/Naftali Cohen等),Millennium Prize数学难题为假阳性，已排除,checks/CTRL_search.md CTRL-Q03；checks/B.md
+AQR Capital Management,J3_PRACTICE,PARTIAL,P012/P013 added; original P003 deduplicated,risk budgeting and life-cycle allocation,checks/C_coverage.csv；C.md and C_queries.csv
+Acadian Asset Management,J3_PRACTICE,PARTIAL,P011 verified; publisher final version acquisition unresolved,low-turnover multi-tilt allocation,checks/C_coverage.csv；C.md and C_queries.csv
+Research Affiliates,J3_PRACTICE,PARTIAL,P019 verified; C-18 is peripheral evidence candidate,equity weighting and min variance,checks/C_coverage.csv；C.md and C_queries.csv
+BlackRock,J3_PRACTICE|J4_METHODS,PARTIAL,original C-04/C-05 reconfirmed; C-20 topic screen,factor loadings/tax-aware optimization,checks/C_coverage.csv；C.md and C_queries.csv
+Point72/Cubist,W_WORKING|J3_PRACTICE,PARTIAL,original FlashFolio working paper consolidated,GPU portfolio solver and risk,checks/C_coverage.csv；C.md and C_queries.csv
+Man AHL,J3_PRACTICE|W_WORKING,PARTIAL,C-19 company paper lead; no new qualified peer-reviewed paper,risk budgets and Sharpe objective,checks/C_coverage.csv；C.md and C_queries.csv
+Winton,J3_PRACTICE|W_WORKING,PARTIAL,regulatory fund disclosure rather than authored qualifying paper,risk budgeting,checks/C_coverage.csv；C.md and C_queries.csv
+Two Sigma,J3_PRACTICE|J4_METHODS|W_WORKING,PARTIAL,review and official fellowship pages; no verified qualifying paper,optimization and trading costs,checks/C_coverage.csv；C.md and C_queries.csv
+D. E. Shaw,J3_PRACTICE|J4_METHODS|W_WORKING,PARTIAL,job listings do not establish authorship,multi-period convex optimization,checks/C_coverage.csv；C.md and C_queries.csv
+Multiple,J3_PRACTICE,PARTIAL,official issue-level census not completed,JPM and JOIM title scans,checks/C_coverage.csv；C.md and C_queries.csv
+Multiple,J4_METHODS,PARTIAL,limited exact-site and topic searches,OR Mathematical Finance Quantitative Finance,checks/C_coverage.csv；C.md and C_queries.csv

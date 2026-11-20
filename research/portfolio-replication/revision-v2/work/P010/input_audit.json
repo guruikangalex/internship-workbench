@@ -1,0 +1,474 @@
+{
+  "official_archive_sha256": "43bf7bcd3869ab3a71e1c5c971d8d54136e4aa736158f2cf20f443080169bb09",
+  "official_archive_bytes": 955004837,
+  "official_member_count_including_root": 64,
+  "official_key_members": [
+    {
+      "name": "readme_public.docx",
+      "bytes": 5494154,
+      "sha256": "1bb71ab6b9fdaa453f52c07a421964459a5cb5a798f08c1e014f87a3caa28308",
+      "member_timestamp": [
+        2022,
+        5,
+        16,
+        17,
+        8,
+        34
+      ]
+    },
+    {
+      "name": "zeroedoutdata.mat",
+      "bytes": 949310374,
+      "sha256": "8bb6c629a3f88d3d780fc33aea4366d40db361bf768ef5c717798b443a63d780",
+      "member_timestamp": [
+        2022,
+        5,
+        16,
+        17,
+        8,
+        34
+      ]
+    },
+    {
+      "name": "Table_3.m",
+      "bytes": 18663,
+      "sha256": "fe3460fe49258567c6165fccf4f4d1da1471b1f27d1972ec2d71eb14336f088b",
+      "member_timestamp": [
+        2022,
+        5,
+        16,
+        17,
+        8,
+        24
+      ]
+    },
+    {
+      "name": "Table_4.m",
+      "bytes": 20068,
+      "sha256": "180c993a028daedf87e39aed2e393b6d31ebfcf6ff95902b87aaaf27ec966465",
+      "member_timestamp": [
+        2022,
+        5,
+        16,
+        17,
+        8,
+        24
+      ]
+    },
+    {
+      "name": "Table_8.m",
+      "bytes": 5016,
+      "sha256": "83961ceadb3ddcdd1527adc73b76b2b745df96fc5a4a7544d36323e082e6502e",
+      "member_timestamp": [
+        2022,
+        5,
+        16,
+        17,
+        8,
+        24
+      ]
+    },
+    {
+      "name": "JF2_pubdata.m",
+      "bytes": 11064,
+      "sha256": "1a574987c7ce98e38d6c76935d73d91b7f36f0831eda96b73a06986482ccbe6b",
+      "member_timestamp": [
+        2022,
+        5,
+        16,
+        17,
+        8,
+        24
+      ]
+    },
+    {
+      "name": "JF2_scaling_choices.m",
+      "bytes": 3640,
+      "sha256": "21a630ec82042aa20f8d4ba05e9af52f7accb6961534cd5a2ffd49730a0203d8",
+      "member_timestamp": [
+        2022,
+        5,
+        16,
+        17,
+        8,
+        24
+      ]
+    },
+    {
+      "name": "num_IPCA_estimate_ALS.m",
+      "bytes": 4159,
+      "sha256": "36ea630656d57cdc6733aa82ed55733c0b7b9ee788003bf3985a36ab4f0edc37",
+      "member_timestamp": [
+        2022,
+        5,
+        16,
+        17,
+        8,
+        34
+      ]
+    },
+    {
+      "name": "tanptfnext.m",
+      "bytes": 505,
+      "sha256": "2ffc167dc06ffbd6225b0aed05bd5be755be97f4a0dc94305035ae30fca65eed",
+      "member_timestamp": [
+        2022,
+        5,
+        16,
+        17,
+        8,
+        34
+      ]
+    },
+    {
+      "name": "JF2_turnover_calcs.m",
+      "bytes": 2168,
+      "sha256": "f7bba4fcbe143bc52b687746e457379c36303c0f8c543aa08ccde4740a485360",
+      "member_timestamp": [
+        2022,
+        5,
+        16,
+        17,
+        8,
+        24
+      ]
+    },
+    {
+      "name": "JF2_zeroedout_aqrdata.m",
+      "bytes": 10820,
+      "sha256": "fbba632b8a9fab3e467ad7596112ba14aec7c5fedba9cb200fd279d749a80c66",
+      "member_timestamp": [
+        2022,
+        5,
+        16,
+        17,
+        8,
+        24
+      ]
+    },
+    {
+      "name": "cssort_sp.m",
+      "bytes": 2540,
+      "sha256": "3013de3827425298fa6fc1193f7a462b2a57d4bb17763b34379924badbeb9828",
+      "member_timestamp": [
+        2022,
+        5,
+        16,
+        17,
+        8,
+        34
+      ]
+    }
+  ],
+  "redacted_mat_header": "MATLAB 7.3 MAT-file, Platform: PCWIN64, Created on: Mon Mar 28 11:57:07 2022 HDF5 schema 1.00 .",
+  "has_original_ice_arrays_by_filename": false,
+  "trace_archive_sha256": "681725ee28b9773f859116fb523b1550d88db9485e0a993d5ba47576cfca5991",
+  "trace_archive_bytes": 491720701,
+  "trace_members": {
+    "JF2_pubdata.mat": {
+      "bytes": 75116003,
+      "sha256": "e4cb674cda3ec61110f1cf0541cbde588e52ea20dd8af9deb1adf94dc621cea4",
+      "arrays": {
+        "CHARS": [
+          206,
+          30,
+          8759
+        ],
+        "DTS": [
+          206,
+          8759
+        ],
+        "EXCESS_RETURN": [
+          206,
+          8759
+        ],
+        "L": [
+          1,
+          1
+        ],
+        "N": [
+          1,
+          1
+        ],
+        "NONMISSING_OBS": [
+          206,
+          8759
+        ],
+        "Nts": [
+          206,
+          1
+        ],
+        "T": [
+          1,
+          1
+        ],
+        "TOTAL_RETURN": [
+          206,
+          8759
+        ],
+        "VOL": [
+          206,
+          8759
+        ],
+        "charcell": [
+          5,
+          30
+        ],
+        "unique_charnames": [
+          30,
+          1
+        ],
+        "unique_dates": [
+          1,
+          206
+        ],
+        "unique_isins": [
+          1,
+          8759
+        ]
+      },
+      "first_last_return_month": [
+        "2003-08-31",
+        "2020-09-30"
+      ],
+      "nonmissing_return_obs": 262649,
+      "unique_bonds_with_any_nonmissing": 6507
+    },
+    "JF2_pubdata_CHARSforsummary.mat": {
+      "bytes": 62349059,
+      "sha256": "454d2a8188e4edf2173d0734bd74fa30b453002c2663cb5b6c5527062ad1d9db",
+      "arrays": {
+        "CHARS": [
+          206,
+          29,
+          8759
+        ],
+        "DTS": [
+          206,
+          8759
+        ],
+        "EXCESS_RETURN": [
+          206,
+          8759
+        ],
+        "NONMISSING_OBS": [
+          206,
+          8759
+        ],
+        "TOTAL_RETURN": [
+          206,
+          8759
+        ],
+        "VOL": [
+          206,
+          8759
+        ],
+        "charcell": [
+          5,
+          29
+        ],
+        "unique_charnames": [
+          29,
+          1
+        ],
+        "unique_dates": [
+          1,
+          206
+        ],
+        "unique_isins": [
+          1,
+          8759
+        ]
+      },
+      "first_last_return_month": [
+        "2003-08-31",
+        "2020-09-30"
+      ],
+      "nonmissing_return_obs": 262649,
+      "unique_bonds_with_any_nonmissing": 6507
+    },
+    "JF2_pubdata_DTSScaled25_IPCA_IS_Estimates_K5.mat": {
+      "bytes": 4912983,
+      "sha256": "109a00ca5207d30d814574bf780130c73829ffe315a4972ab701864fcf62ce68",
+      "arrays": {
+        "Factor": [
+          206,
+          5
+        ],
+        "Gamma": [
+          5,
+          30
+        ],
+        "OBSFACTOR": [
+          1,
+          1
+        ],
+        "RFITS_pred": [
+          206,
+          8759
+        ],
+        "RFITS_refit_R2": [
+          206,
+          1
+        ],
+        "RFITS_total": [
+          206,
+          8759
+        ],
+        "Spread_Portfolio": [
+          1,
+          206
+        ],
+        "Tangency_Portfolio": [
+          1,
+          206
+        ],
+        "XFITS_pred": [
+          206,
+          30
+        ],
+        "XFITS_refit_R2": [
+          206,
+          1
+        ],
+        "XFITS_total": [
+          206,
+          30
+        ],
+        "unique_dates": [
+          1,
+          206
+        ]
+      },
+      "first_last_return_month": [
+        "2003-08-31",
+        "2020-09-30"
+      ]
+    },
+    "corp_jkp_mergedv2.csv": {
+      "bytes": 349327084,
+      "sha256": "4d7b60b21013696d03f061d50cc7ff7cf05fa90c9929e1a637b214a9366db906"
+    },
+    "readme.docx": {
+      "bytes": 14652,
+      "sha256": "cc38dd9f0f83ca9a9981df240a6a060fe68242d14166bc452ff1509a08caab36"
+    }
+  },
+  "trace_csv_rows": 483888,
+  "trace_csv_columns": [
+    "dates",
+    "cusip",
+    "bondsym",
+    "isin",
+    "bondtype",
+    "convertflg",
+    "compsym",
+    "offrdate",
+    "offramt",
+    "maturity",
+    "coupon",
+    "ncoup",
+    "amtout",
+    "nrtg",
+    "rtg",
+    "dolvol",
+    "yield",
+    "reteom",
+    "moddurtn",
+    "permno_CORPTBL",
+    "duration",
+    "spread",
+    "retexc",
+    "reteomwins",
+    "retexcwins",
+    "nextdate",
+    "nextret",
+    "nextretexc",
+    "nextretwins",
+    "nextretexcwins",
+    "age",
+    "mom6",
+    "volatility",
+    "skew",
+    "VaR",
+    "mom6mspread",
+    "mom6xrtg",
+    "F",
+    "E",
+    "D2D",
+    "spr_to_d2d",
+    "vixbeta",
+    "eom",
+    "PERMNO_permno",
+    "PERMCO_permco",
+    "id",
+    "sic",
+    "me",
+    "be_me",
+    "ebitda_debt",
+    "eq_dur",
+    "ret_6_1",
+    "ni_me",
+    "rvol_21d",
+    "at_be",
+    "ret_6_1_ind",
+    "totaldebt",
+    "market_lev",
+    "gp_at",
+    "assets",
+    "sales",
+    "ebitda_sale",
+    "debt_ebitda",
+    "at_me",
+    "oper_lvg",
+    "sales_at",
+    "chg_gp_at",
+    "turn_vol"
+  ],
+  "trace_csv_first_last_predictor_month": [
+    200207,
+    202009
+  ],
+  "trace_csv_nextdate_finite_and_contiguous": {
+    "has_nextdate": 480885,
+    "equals_next_calendar_month": 480885
+  },
+  "trace_csv_feature_missing_counts": {
+    "age": 0,
+    "coupon": 0,
+    "amtout": 196,
+    "be_me": 88424,
+    "debt_ebitda": 77950,
+    "duration": 3782,
+    "ret_6_1": 76348,
+    "ni_me": 75986,
+    "me": 75943,
+    "rvol_21d": 76013,
+    "totaldebt": 75973,
+    "mom6": 61233,
+    "ret_6_1_ind": 76348,
+    "mom6xrtg": 3802,
+    "at_be": 88424,
+    "at_me": 75973,
+    "turn_vol": 78292,
+    "spread": 3782,
+    "oper_lvg": 76392,
+    "gp_at": 76628,
+    "chg_gp_at": 93016,
+    "nrtg": 56,
+    "D2D": 28164,
+    "skew": 105425,
+    "mom6mspread": 58434,
+    "spr_to_d2d": 31743,
+    "volatility": 105425,
+    "vixbeta": 105425,
+    "VaR": 105425
+  },
+  "trace_csv_complete_after_floor_before_min_month_gate": 262674,
+  "trace_csv_complete_after_floor_and_min_month_gate_gt_29": 262674,
+  "trace_csv_months_passed_min_gate": 206,
+  "trace_csv_duplicate_predictor_month_isin_keys": 136,
+  "trace_csv_complete_after_dedup_last_rule": 262649,
+  "trace_native_counts_equal_dedup_screening_every_month": true,
+  "ipca_run": false
+}

@@ -1,0 +1,3432 @@
+[
+  {
+    "schema_version": "1.0",
+    "paper_id": "P001",
+    "candidate_status": "CORE",
+    "responsible_agent": "D1",
+    "as_of": "2026-11-20T16:00:00+08:00",
+    "title": "Dynamic Trading with Predictable Returns and Transaction Costs",
+    "DOI": "10.1111/jofi.12080",
+    "journal_group": "J1_NAMED",
+    "publication_status": "PUBLISHED",
+    "selected_paper_version": "JF2013_A15STAR",
+    "institution_relations": [
+      {
+        "author": "Lasse Heje Pedersen",
+        "institution_entity": "AQR Capital Management",
+        "institution_relation": "STAFF_AT_PUBLICATION",
+        "relation_period": "发表期（2013-12 脚注明确列 AQR）与写作期（NBER 2009 已披露 affiliated with AQR）均成立；AQR 官网列 Principal、19 年",
+        "evidence_ids": [
+          "P001-S01",
+          "P001-S02",
+          "P001-S05",
+          "P001-S09"
+        ]
+      },
+      {
+        "author": "Nicolae Gârleanu",
+        "institution_entity": null,
+        "institution_relation": "UNVERIFIED",
+        "relation_period": null,
+        "evidence_ids": [
+          "P001-S05"
+        ]
+      }
+    ],
+    "topic_class": "DIRECT_OPTIMIZATION",
+    "target_scope": "SELECTED_PILOT",
+    "target_scope_note": "先做理论闭式解与 Figure 1-3、A15*；Table I/II 与 Figure 4/5 列为取得商品期货数据后的条件性目标；未声明覆盖论文全部稳态均衡含义。",
+    "planned_reproduction_types": [
+      "INDEPENDENT_FAITHFUL",
+      "APPROXIMATE_VALIDATION"
+    ],
+    "experiment_layers": [
+      "PAPER_REPLICATION",
+      "IMPLEMENTATION_AUDIT"
+    ],
+    "author_code_available": false,
+    "target_ids": [
+      "P001-R01",
+      "P001-R02",
+      "P001-R03",
+      "P001-R04",
+      "P001-R05",
+      "P001-R06",
+      "P001-R07",
+      "P001-R08",
+      "P001-R09"
+    ],
+    "requested_experiment_ids": [
+      "P001-E01"
+    ],
+    "critical_evidence_ids": [
+      "P001-S05",
+      "P001-S01",
+      "P001-S02",
+      "P001-S06",
+      "P001-S08",
+      "P001-S09"
+    ],
+    "hard_blocker_ids": [
+      "P001-B01",
+      "P001-B02",
+      "P001-B04",
+      "P001-B05"
+    ],
+    "unapproved_change_ids": [
+      "P001-C01",
+      "P001-C02"
+    ],
+    "agent_recommendation": "RECOMMEND_FAITHFUL_REPLICATION",
+    "reviewer_decision": "PENDING",
+    "approval_record_id": "PENDING",
+    "plan_version": "1.0",
+    "review_package_version": "2.0",
+    "execution_stage": "DUE_DILIGENCE",
+    "execution_status": "TARGETS_GENERATED",
+    "attachments": [
+      "work/P001/predeclared_checks.md",
+      "work/P001/protocol.md"
+    ],
+    "planned_artifacts": [
+      "agents/P001_E01/",
+      "agents/P001_E02/",
+      "agents/P001_E03/"
+    ],
+    "open_questions_for_reviewer": [
+      "是否授权采购/使用 15 种商品期货 1996-2009 历史日频数据？",
+      "成交量用于 λ 校准时，采用 Table I 报告值（忠实）还是替代重估（近似）？",
+      "是否授权邮件联系作者索取复现包？",
+      "是否批准理论部分（Figure 1-3、A15*）先行、实证部分待数据？"
+    ],
+    "missing_fields": [
+      {
+        "field": "preflight_status",
+        "reason": "UNKNOWN",
+        "next_action": "参见证据与阻塞记录"
+      },
+      {
+        "field": "affiliation_at_research",
+        "reason": "UNKNOWN",
+        "next_action": "参见证据与阻塞记录"
+      },
+      {
+        "field": "current_affiliation",
+        "reason": "UNKNOWN",
+        "next_action": "参见证据与阻塞记录"
+      }
+    ],
+    "result_status": "LIMITED_FORMULA_RESULTS_ONLY",
+    "authors": "Nicolae Gârleanu; Lasse Heje Pedersen",
+    "publication_year": "2013",
+    "journal": "The Journal of Finance",
+    "affiliated_author": "Lasse Heje Pedersen",
+    "institution": "AQR Capital Management",
+    "institution_relation": "STAFF_AT_PUBLICATION",
+    "relation_period": "写作期(2009 NBER稿)与发表期(2013)均列AQR；Gârleanu署UC Berkeley/WUSTL非AQR",
+    "proposed_reproduction_type": "INDEPENDENT_FAITHFUL",
+    "data_access_summary": "部分可用：15商品期货1996-2009历史价格ENTITLEMENT_UNCONFIRMED；成交量源自Reuters专有DOCUMENTED_ONLY；派生回归参数报告值可用。理论部分无需数据。",
+    "code_source_type": "NOT_FOUND",
+    "key_targets": "有限 E01：R01/R02/R03/R09，公式、数值与理论机制。E02 历史期货未运行",
+    "main_blockers": "精确图形及原始期货实证在现有授权边界外",
+    "priority_reason": "正式版及勘误可锁定，不依赖专有数据，能直接检查信号衰减、成本与交易路径",
+    "evidence_ids": [
+      "P001-S01",
+      "P001-S02",
+      "P001-S03",
+      "P001-S04",
+      "P001-S05",
+      "P001-S06",
+      "P001-S07",
+      "P001-S08",
+      "P001-S09",
+      "P001-S10",
+      "P001-S11",
+      "P001-S12",
+      "P001-S13",
+      "P001-S14",
+      "P001-S15"
+    ],
+    "approved_version_and_scope": "PENDING",
+    "approved_experiment_ids": "PENDING",
+    "approved_result_ids": "PENDING",
+    "reviewed_by": "PENDING",
+    "reviewed_at": "PENDING",
+    "conditions_and_followups": "PENDING",
+    "requested_result_ids": [
+      "P001-R01",
+      "P001-R02",
+      "P001-R03",
+      "P001-R09"
+    ],
+    "replication_value": null,
+    "difference_absolute": null,
+    "difference_relative": null,
+    "preflight_status": null,
+    "affiliation_at_research": null,
+    "affiliation_at_publication": "AQR Capital Management",
+    "current_affiliation": null,
+    "replication_priority": "HIGH",
+    "evidence_maturity": "LIMITED_TARGETS_EXECUTED",
+    "batch_id": "CO-REP-20261120-02-R2",
+    "review_experiments": [
+      {
+        "version_id": "JF2013_A15STAR",
+        "experiment_id": "P001-E01",
+        "execution_status": "TARGETS_GENERATED",
+        "requested_reviewer_decision": "APPROVE_FAITHFUL_REPLICATION"
+      },
+      {
+        "version_id": "JF2013_A15STAR",
+        "experiment_id": "P001-E02",
+        "execution_status": "NOT_RUN",
+        "requested_reviewer_decision": "REQUEST_EVIDENCE"
+      }
+    ]
+  },
+  {
+    "schema_version": "1.0",
+    "paper_id": "P002",
+    "candidate_status": "CORE",
+    "responsible_agent": "D2",
+    "as_of": "2026-11-20T16:00:00+08:00",
+    "title": "Machine Learning and the Implementable Efficient Frontier",
+    "DOI": "10.1093/rfs/hhag022",
+    "journal": "The Review of Financial Studies",
+    "journal_group": "J1_NAMED",
+    "publication_status": "PUBLISHED",
+    "selected_paper_version": "RFS2026_HHAG022",
+    "working_paper_date": "2022-08-18",
+    "first_online_date": "2026-03-15",
+    "institution_relations": [
+      {
+        "author": "Bryan Kelly",
+        "institution_entity": "AQR Capital Management",
+        "institution_relation": "STAFF_AT_PUBLICATION",
+        "relation_period": "正式版（2026）作者栏并列 Yale SOM / AQR / NBER；研究期至少自 2022 工作稿双署名",
+        "evidence_ids": [
+          "P002-S01",
+          "P002-S05",
+          "P002-S06"
+        ]
+      },
+      {
+        "author": "Lasse Heje Pedersen",
+        "institution_entity": "AQR Capital Management",
+        "institution_relation": "STAFF_AT_PUBLICATION",
+        "relation_period": "正式版（2026）作者栏并列 AQR / Copenhagen Business School / CEPR",
+        "evidence_ids": [
+          "P002-S01",
+          "P002-S05"
+        ]
+      },
+      {
+        "author": "Semyon Malamud",
+        "institution_entity": "AQR Capital Management",
+        "institution_relation": "FORMAL_ADVISOR_OR_COLLABORATOR",
+        "relation_period": "正式版致谢声明 Malamud is a consultant for AQR（非员工）；任职 EPFL/SFI/CEPR",
+        "evidence_ids": [
+          "P002-S05"
+        ]
+      },
+      {
+        "author": "Theis Ingerslev Jensen",
+        "institution_entity": null,
+        "institution_relation": "UNVERIFIED",
+        "relation_period": "正式版作者栏列 Yale School of Management，无 AQR 关联证据",
+        "evidence_ids": [
+          "P002-S05"
+        ]
+      }
+    ],
+    "topic_class": "DIRECT_OPTIMIZATION",
+    "target_scope": "SELECTED_PILOT",
+    "target_scope_note": "先锁定正式版 Table 2 + Figure 1（核心净成本结论）；再 Figure 2/3、Table 3；卖空费用、Feature importance、规模分布与附录模拟为条件性扩展。未覆盖论文全部含义。",
+    "planned_reproduction_types": [
+      "AUTHOR_CODE_RERUN",
+      "INDEPENDENT_FAITHFUL",
+      "APPROXIMATE_VALIDATION"
+    ],
+    "experiment_layers": [
+      "PAPER_REPLICATION",
+      "IMPLEMENTATION_AUDIT",
+      "RESEARCH_EXTENSION"
+    ],
+    "author_code_available": true,
+    "author_code_url": "https://github.com/theisij/ml-and-the-implementable-efficient-frontier",
+    "code_source_type": "AUTHOR",
+    "execution_status": "NOT_RUN",
+    "target_ids": [
+      "P002-R01",
+      "P002-R02",
+      "P002-R03",
+      "P002-R04",
+      "P002-R05",
+      "P002-R06",
+      "P002-R07",
+      "P002-R08"
+    ],
+    "requested_experiment_ids": [
+      "P002-E01",
+      "P002-E02",
+      "P002-E03",
+      "P002-E04"
+    ],
+    "critical_evidence_ids": [
+      "P002-S02",
+      "P002-S05",
+      "P002-S01",
+      "P002-S04",
+      "P002-S06"
+    ],
+    "hard_blocker_ids": [
+      "P002-B01",
+      "P002-B02",
+      "P002-B03",
+      "P002-B04",
+      "P002-B05"
+    ],
+    "unapproved_change_ids": [
+      "P002-C01",
+      "P002-C02"
+    ],
+    "agent_recommendation": "REQUEST_EVIDENCE",
+    "reviewer_decision": "PENDING",
+    "approval_record_id": "PENDING",
+    "plan_version": "1.0",
+    "review_package_version": "2.0",
+    "execution_stage": "DUE_DILIGENCE",
+    "result_status": "NOT_RUN",
+    "preliminary_result_values": {
+      "note": "以下为原文数值（非复现值），复现值运行前一律 null；来源 P002-S05（正式版）/P002-S04（工作稿）",
+      "P002-R01": {
+        "paper_value_official": "Portfolio-ML SR_gross=1.38, SR_net=1.33, Utility=0.086, Turnover=0.25, Lev=3.00; Markowitz-ML SR_gross=2.06",
+        "paper_value_working_2022": "Portfolio-ML SR_gross=1.43, SR_net=1.38, Utility=0.095, Turnover=0.32, Lev=3.60; Markowitz-ML SR_gross=2.00",
+        "replicated_value": null
+      }
+    },
+    "attachments": [
+      "work/P002/protocol.md"
+    ],
+    "planned_artifacts": [
+      "agents/P002_E01/",
+      "agents/P002_E02/",
+      "agents/P002_E03/",
+      "agents/P002_E04/"
+    ],
+    "open_questions_for_reviewer": [
+      "拟采用 RFS 2026 正式版还是代码更可能匹配的 2024 工作稿？两版核心数值不同，不可混用。",
+      "是否授权 WRDS 使用，或授权邮件联系作者索取 usa.csv / short_fees？",
+      "是否批准 HPC/云算力预算用于全量 job（单步最高 100GB RAM、最长 2 天 16 小时）？",
+      "使用作者代码是否需要确认许可/联系作者（仓库未见明确 LICENSE）？"
+    ],
+    "missing_fields": [
+      {
+        "field": "affiliation_at_research",
+        "reason": "UNKNOWN",
+        "next_action": "参见证据与阻塞记录"
+      },
+      {
+        "field": "current_affiliation",
+        "reason": "UNKNOWN",
+        "next_action": "参见证据与阻塞记录"
+      }
+    ],
+    "authors": "Theis Ingerslev Jensen; Bryan Kelly; Semyon Malamud; Lasse Heje Pedersen",
+    "publication_year": "2026",
+    "affiliated_author": "Bryan Kelly; Lasse Heje Pedersen（Malamud=AQR顾问FORMAL_ADVISOR，非STAFF）",
+    "institution": "AQR Capital Management",
+    "institution_relation": "STAFF_AT_PUBLICATION",
+    "relation_period": "正式版2026页首Kelly/Pedersen双署AQR；Malamud=consultant；Jensen工作稿CBS→正式版Yale",
+    "proposed_reproduction_type": "AUTHOR_CODE_RERUN",
+    "data_access_summary": "作者代码、French、主题和因素元数据已实取；授权核心证券面板未核全",
+    "key_targets": "R01-R08：Table2 Portfolio-ML净夏普1.33/Markowitz-ML毛2.06、Fig1可实施前沿、Fig2时序、Table3概率矩阵、Fig3/Table4流动性分组、毛/净审计",
+    "main_blockers": "持仓生成需同版市场/特征与费用；净方差及财富口径冲突分列",
+    "priority_reason": "高；RFS §5 直链作者仓库，冻结 GitHub 与期刊 Dataverse 同字节档",
+    "evidence_ids": [
+      "E-S01",
+      "E-S02",
+      "E-S03",
+      "E-S04",
+      "P002-S01",
+      "P002-S02",
+      "P002-S03",
+      "P002-S04",
+      "P002-S05",
+      "P002-S06",
+      "P002-S07",
+      "P002-S60"
+    ],
+    "approved_version_and_scope": "PENDING",
+    "approved_experiment_ids": "PENDING",
+    "approved_result_ids": "PENDING",
+    "reviewed_by": "PENDING",
+    "reviewed_at": "PENDING",
+    "conditions_and_followups": "PENDING",
+    "requested_result_ids": [
+      "P002-R01",
+      "P002-R02",
+      "P002-R03",
+      "P002-R04",
+      "P002-R05",
+      "P002-R06",
+      "P002-R07",
+      "P002-R08"
+    ],
+    "replication_value": null,
+    "difference_absolute": null,
+    "difference_relative": null,
+    "affiliation_at_research": null,
+    "affiliation_at_publication": "AQR Capital Management",
+    "current_affiliation": null,
+    "replication_priority": "HIGH",
+    "evidence_maturity": "EVIDENCE_REVIEW",
+    "batch_id": "CO-REP-20261120-02-R2",
+    "preflight_status": "DATA_CHECK_ONLY",
+    "review_experiments": [
+      {
+        "version_id": "RFS2026_HHAG022",
+        "experiment_id": "P002-E01",
+        "execution_status": "NOT_RUN",
+        "requested_reviewer_decision": "REQUEST_EVIDENCE"
+      },
+      {
+        "version_id": "RFS2026_HHAG022",
+        "experiment_id": "P002-E21",
+        "execution_status": "NOT_RUN",
+        "requested_reviewer_decision": "REQUEST_EVIDENCE"
+      }
+    ]
+  },
+  {
+    "schema_version": "1.0",
+    "paper_id": "P003",
+    "candidate_status": "EXTENDED",
+    "responsible_agent": "D2",
+    "as_of": "2026-11-20T16:00:00+08:00",
+    "title": "Enhanced Portfolio Optimization",
+    "DOI": "10.1080/0015198X.2020.1854543",
+    "journal": "Financial Analysts Journal",
+    "journal_group": "J3_PRACTICE",
+    "publication_status": "PUBLISHED",
+    "selected_paper_version": "FAJ2021_VOR",
+    "working_paper_date": "2020-03-02",
+    "first_online_date": "2021-02-19",
+    "institution_relations": [
+      {
+        "author": "Lasse Heje Pedersen",
+        "institution_entity": "AQR Capital Management",
+        "institution_relation": "STAFF_AT_PUBLICATION",
+        "relation_period": "正式版作者简介：AQR principal + 哥本哈根商学院教授；工作稿期亦双署名",
+        "evidence_ids": [
+          "P003-S01",
+          "P003-S03",
+          "P003-S02"
+        ]
+      },
+      {
+        "author": "Abhilash Babu",
+        "institution_entity": "AQR Capital Management",
+        "institution_relation": "STAFF_AT_PUBLICATION",
+        "relation_period": "正式版作者简介：AQR vice president, CFA",
+        "evidence_ids": [
+          "P003-S01",
+          "P003-S03"
+        ]
+      },
+      {
+        "author": "Ari Levine",
+        "institution_entity": "AQR Capital Management",
+        "institution_relation": "STAFF_AT_PUBLICATION",
+        "relation_period": "正式版作者简介：AQR principal",
+        "evidence_ids": [
+          "P003-S01",
+          "P003-S03"
+        ]
+      }
+    ],
+    "topic_class": "DIRECT_OPTIMIZATION",
+    "target_scope": "SELECTED_PILOT",
+    "target_scope_note": "SELECTED_PILOT=股票行业动量（Equity 1-8，Table 5/6、Figure 1）；全球 TSMOM（Table 2-4、Fig 2-3）为需先取得 Moskowitz 55 期货数据的条件目标，当前未覆盖。",
+    "planned_reproduction_types": [
+      "INDEPENDENT_FAITHFUL",
+      "APPROXIMATE_VALIDATION"
+    ],
+    "experiment_layers": [
+      "PAPER_REPLICATION",
+      "IMPLEMENTATION_AUDIT"
+    ],
+    "author_code_available": false,
+    "code_source_type": "NOT_FOUND",
+    "third_party_code": [
+      "https://github.com/Reckziegel/epo",
+      "https://github.com/ricnov/Enhanced-Portfolio-Optimization"
+    ],
+    "execution_status": "NOT_RUN",
+    "target_ids": [
+      "P003-R01",
+      "P003-R02",
+      "P003-R03",
+      "P003-R04",
+      "P003-R05",
+      "P003-R06",
+      "P003-R07"
+    ],
+    "requested_experiment_ids": [
+      "P003-E01"
+    ],
+    "critical_evidence_ids": [
+      "P003-S01",
+      "P003-S02",
+      "P003-S03",
+      "P003-S04",
+      "P003-S05"
+    ],
+    "hard_blocker_ids": [
+      "P003-B01",
+      "P003-B02",
+      "P003-B03",
+      "P003-B04",
+      "P003-B05"
+    ],
+    "unapproved_change_ids": [
+      "P003-C01"
+    ],
+    "agent_recommendation": "REQUEST_EVIDENCE",
+    "recommendation_note": "限股票行业动量 SELECTED_PILOT；全球 TSMOM 部分为 REQUEST_EVIDENCE（缺 55 期货数据）。",
+    "reviewer_decision": "PENDING",
+    "approval_record_id": "PENDING",
+    "plan_version": "1.0",
+    "review_package_version": "2.0",
+    "execution_stage": "DUE_DILIGENCE",
+    "result_status": "NOT_RUN",
+    "preliminary_result_values": {
+      "note": "以下为原文数值（非复现值），复现值运行前一律 null；来源 P003-S01（gross Sharpe）",
+      "P003-R05": {
+        "paper_value": "Global 1/2/3 OOS EPO gross Sharpe=1.24/1.24/1.23; 1/N=0.44; 1/σ=0.76; risk-weighted TSMOM=1.09",
+        "replicated_value": null
+      }
+    },
+    "attachments": [
+      "work/P003/protocol.md"
+    ],
+    "planned_artifacts": [
+      "agents/P003_E01/",
+      "agents/P003_E02/",
+      "agents/P003_E03/"
+    ],
+    "open_questions_for_reviewer": [
+      "接受 INDEPENDENT_FAITHFUL（无作者代码）作为正式复现路径吗？",
+      "是否投入资源取得 Moskowitz 55 期货数据以覆盖全球 TSMOM？否则该部分仅 REQUEST_EVIDENCE。",
+      "毛收益结果（Table 2/5 gross）能否作为原样复现目标，成本影响单列审计？",
+      "FAJ 为 J3 实务期刊，EXTENDED 定位是否接受？"
+    ],
+    "missing_fields": [
+      {
+        "field": "affiliation_at_research",
+        "reason": "UNKNOWN",
+        "next_action": "参见证据与阻塞记录"
+      },
+      {
+        "field": "current_affiliation",
+        "reason": "UNKNOWN",
+        "next_action": "参见证据与阻塞记录"
+      }
+    ],
+    "authors": "Lasse Heje Pedersen; Abhilash Babu; Ari Levine",
+    "publication_year": "2021",
+    "affiliated_author": "Lasse Heje Pedersen; Abhilash Babu; Ari Levine",
+    "institution": "AQR Capital Management",
+    "institution_relation": "STAFF_AT_PUBLICATION",
+    "relation_period": "2021正式版bio三人均列AQR（在线2021-02-19）；AQR白皮书版不得混用",
+    "proposed_reproduction_type": "INDEPENDENT_FAITHFUL",
+    "data_access_summary": "French 日/月实取；现代 CIZ 与 FIZ 202412 有版本差异",
+    "key_targets": "VoR Tables 5–6 Equity 3 首选；Equity 2 未收缩 MVO 受秩限制，另批；全球期货另批",
+    "main_blockers": "出版期 French vintage、早期日频可用性与未收缩基线秩；权益和期货分开",
+    "priority_reason": "高；J3 实务补充，权重收缩权益子实验",
+    "evidence_ids": [
+      "P003-S01",
+      "P003-S02",
+      "P003-S03",
+      "P003-S04",
+      "P003-S05",
+      "P003-S12",
+      "P003-S13",
+      "P003-S14",
+      "P003-S15"
+    ],
+    "approved_version_and_scope": "PENDING",
+    "approved_experiment_ids": "PENDING",
+    "approved_result_ids": "PENDING",
+    "reviewed_by": "PENDING",
+    "reviewed_at": "PENDING",
+    "conditions_and_followups": "PENDING",
+    "requested_result_ids": [
+      "P003-R03",
+      "P003-R04"
+    ],
+    "replication_value": null,
+    "difference_absolute": null,
+    "difference_relative": null,
+    "affiliation_at_research": null,
+    "affiliation_at_publication": "AQR Capital Management",
+    "current_affiliation": null,
+    "replication_priority": "HIGH",
+    "evidence_maturity": "EVIDENCE_REVIEW",
+    "batch_id": "CO-REP-20261120-02-R2",
+    "preflight_status": "DATA_CHECK_ONLY",
+    "review_experiments": [
+      {
+        "version_id": "FAJ2021_VOR",
+        "experiment_id": "P003-E01",
+        "execution_status": "NOT_RUN",
+        "requested_reviewer_decision": "REQUEST_EVIDENCE"
+      },
+      {
+        "version_id": "FAJ2021_VOR",
+        "experiment_id": "P003-E04",
+        "execution_status": "NOT_RUN",
+        "requested_reviewer_decision": "REQUEST_EVIDENCE"
+      }
+    ]
+  },
+  {
+    "schema_version": "1.0",
+    "paper_id": "P004",
+    "candidate_status": "CORE",
+    "responsible_agent": "D2",
+    "as_of": "2026-11-20T16:00:00+08:00",
+    "title": "Distributionally robust end-to-end portfolio construction",
+    "DOI": "10.1080/14697688.2023.2236148",
+    "journal": "Quantitative Finance",
+    "journal_group": "J4_METHODS",
+    "publication_status": "PUBLISHED",
+    "selected_paper_version": "QF2023_VOR_CANDIDATE",
+    "working_paper_date": "2022-06-10",
+    "first_online_date": "2023-08-08",
+    "institution_relations": [
+      {
+        "author": "Giorgio Costa",
+        "institution_entity": "Millennium Management",
+        "institution_relation": "STAFF_AT_PUBLICATION",
+        "relation_period": "正式版（QF 2023）署名栏：Millennium Management, New York；通信邮箱 gcosta@mie.utoronto.ca（疑似后来学术任职，不得替换正式署名）",
+        "evidence_ids": [
+          "P004-S01"
+        ]
+      },
+      {
+        "author": "Giorgio Costa",
+        "institution_entity": "Columbia University (IEOR, Iyengar Lab)",
+        "institution_relation": "STAFF_AT_RESEARCH",
+        "relation_period": "研究/工作稿期（2021-2022，arXiv 版署名 Columbia，邮箱 gc2958@columbia.edu）；代码归属 Iyengar Lab",
+        "evidence_ids": [
+          "P004-S02",
+          "P004-S03"
+        ]
+      },
+      {
+        "author": "Garud N. Iyengar",
+        "institution_entity": "Columbia University",
+        "institution_relation": "STAFF_AT_PUBLICATION",
+        "relation_period": "正式版署名栏：Department of IEOR, Columbia University",
+        "evidence_ids": [
+          "P004-S01"
+        ]
+      }
+    ],
+    "institution_relation_note": "Costa 署名时段分离：研究期 Columbia（STAFF_AT_RESEARCH），发表期 Millennium（STAFF_AT_PUBLICATION）；不得用后来的 University of Toronto 替换本论文正式署名。",
+    "topic_class": "DIRECT_OPTIMIZATION",
+    "target_scope": "SELECTED_PILOT",
+    "target_scope_note": "先 Exp1（Table 3/Fig 2-3 五系统对照）+ Exp5 合成（Table 11，低成本起步）；Exp2/3/4（Table 5/7/9）随后；成本/口径审计单列。",
+    "planned_reproduction_types": [
+      "AUTHOR_CODE_RERUN",
+      "APPROXIMATE_VALIDATION"
+    ],
+    "experiment_layers": [
+      "PAPER_REPLICATION",
+      "IMPLEMENTATION_AUDIT"
+    ],
+    "author_code_available": true,
+    "author_code_url": "https://github.com/Iyengar-Lab/E2E-DRO",
+    "code_source_type": "AUTHOR",
+    "execution_status": "NOT_RUN",
+    "target_ids": [
+      "P004-R01",
+      "P004-R02",
+      "P004-R03",
+      "P004-R04",
+      "P004-R05",
+      "P004-R06",
+      "P004-R07"
+    ],
+    "requested_experiment_ids": [
+      "P004-E01",
+      "P004-E02",
+      "P004-E03"
+    ],
+    "critical_evidence_ids": [
+      "P004-S01",
+      "P004-S02",
+      "P004-S03"
+    ],
+    "hard_blocker_ids": [
+      "P004-B01",
+      "P004-B02",
+      "P004-B03",
+      "P004-B04",
+      "P004-B05"
+    ],
+    "unapproved_change_ids": [
+      "P004-C01"
+    ],
+    "agent_recommendation": "REQUEST_EVIDENCE",
+    "reviewer_decision": "PENDING",
+    "approval_record_id": "PENDING",
+    "plan_version": "1.0",
+    "review_package_version": "2.0",
+    "execution_stage": "DUE_DILIGENCE",
+    "result_status": "NOT_RUN",
+    "preliminary_result_values": {
+      "note": "以下为原文数值（非复现值），复现值运行前一律 null；来源 P004-S02（arXiv 全文 Section 3）",
+      "P004-R02": {
+        "paper_value": "Exp1 Sharpe: DR=1.30, Nominal=1.24, EW=1.05, PO=0.88, Base=0.64",
+        "replicated_value": null
+      },
+      "P004-R06": {
+        "paper_value": "Exp5 synthetic Sharpe: Linear DR 1.88 vs Nom 1.16; 2-layer 0.73 vs 0.21; 3-layer 2.11 vs 0.08",
+        "replicated_value": null
+      }
+    },
+    "attachments": [
+      "work/P004/protocol.md"
+    ],
+    "planned_artifacts": [
+      "agents/P004_E01/",
+      "agents/P004_E02/",
+      "agents/P004_E03/"
+    ],
+    "open_questions_for_reviewer": [
+      "Costa 正式版署名 Millennium、研究期 Columbia 的时段分离是否按本卡口径记录（不以 U Toronto 替换）？",
+      "是否接受使用第三方 fork/升级依赖以适配现代环境（须记变更）？",
+      "未计成本、Sharpe 用组合收益（非超额收益）的结果能否作为原样复现目标？",
+      "历史数据用仓库缓存还是 AlphaVantage API 重建（条款/可得性）？"
+    ],
+    "missing_fields": [],
+    "authors": "Giorgio Costa; Garud N. Iyengar",
+    "publication_year": "2023",
+    "affiliated_author": "Giorgio Costa",
+    "institution": "Millennium Management",
+    "institution_relation": "STAFF_AT_PUBLICATION",
+    "relation_period": "发表署名Millennium(2023)；研究期Columbia IEOR(arXiv2206.05134)；现职Citadel EQR(2024-10起,E-S11)——不得用现职替换署名；U Toronto为学位机构/旧邮箱",
+    "proposed_reproduction_type": "AUTHOR_CODE_RERUN",
+    "data_access_summary": "作者仓库已取得周频派生缓存和训练缓存；原始 Alpha Vantage 版本与权限未知",
+    "key_targets": "合成 arXiv v1 Exp5 Table 11/Fig 7 条件首批；历史 Exp1 Table 3/Figs 2–3 单列",
+    "main_blockers": "正式版映射、作者窗口 14 vs 论文 13、历史输入和版本",
+    "priority_reason": "合成数据可做冷启动；六架构/层通过一步预检",
+    "evidence_ids": [
+      "E-S11",
+      "P004-S01",
+      "P004-S02",
+      "P004-S03",
+      "P004-S04",
+      "P004-S05",
+      "P004-S06",
+      "P004-S07",
+      "P004-S08",
+      "P004-S09",
+      "P004-S60",
+      "P004-S61"
+    ],
+    "approved_version_and_scope": "PENDING",
+    "approved_experiment_ids": "PENDING",
+    "approved_result_ids": "PENDING",
+    "reviewed_by": "PENDING",
+    "reviewed_at": "PENDING",
+    "conditions_and_followups": "PENDING",
+    "requested_result_ids": [
+      "P004-R01",
+      "P004-R02",
+      "P004-R03",
+      "P004-R04",
+      "P004-R05",
+      "P004-R06",
+      "P004-R07"
+    ],
+    "replication_value": null,
+    "difference_absolute": null,
+    "difference_relative": null,
+    "preflight_status": "PASS",
+    "affiliation_at_research": "Columbia IEOR, arXiv v1",
+    "affiliation_at_publication": "Millennium Management",
+    "current_affiliation": "Citadel EQR (Giorgio Costa, current profile)",
+    "replication_priority": "SECONDARY",
+    "evidence_maturity": "PREFLIGHT_ONLY",
+    "batch_id": "CO-REP-20261120-02-R2",
+    "review_experiments": [
+      {
+        "version_id": "QF2023_VOR_CANDIDATE",
+        "experiment_id": "P004-E02",
+        "execution_status": "NOT_RUN",
+        "requested_reviewer_decision": "REQUEST_EVIDENCE"
+      }
+    ]
+  },
+  {
+    "schema_version": "1.0",
+    "paper_id": "P005",
+    "candidate_status": "EXCLUDED",
+    "candidate_status_note": "尽调建议按主题边界降为 EXCLUDED（纯理论、无实证复现对象）；状态由主审最终确定。",
+    "responsible_agent": "D1",
+    "as_of": "2026-11-20T16:00:00+08:00",
+    "title": "Efficient Trading Strategies in the Presence of Market Frictions",
+    "DOI": "10.1093/rfs/14.2.343",
+    "journal_group": "J1_NAMED",
+    "publication_status": "PUBLISHED",
+    "selected_paper_version": "RFS 2001 发表版（14(2):343-369）作者官网自存档 PDF（含期刊页眉与页码，sha256 6a45d6847b53b9ad2df163d172a1f879cc2ef154e1097e695c1239cd6c9dd7e7）",
+    "institution_relations": [
+      {
+        "author": "Hédi Kallal",
+        "institution_entity": "Citadel Investment Group",
+        "institution_relation": "STAFF_AT_PUBLICATION",
+        "relation_period": "发表版本署名栏列 Citadel；但脚注明确本研究的开展（developed）在 Kallal 隶属 NYU 期间，且 Citadel 声明对本文结论不负责。写作期 NYU / 发表署名 Citadel 分离。",
+        "evidence_ids": [
+          "P005-S01"
+        ]
+      },
+      {
+        "author": "Hédi Kallal",
+        "institution_entity": "New York University",
+        "institution_relation": "STAFF_AT_RESEARCH",
+        "relation_period": "研究开展期在 NYU（原文脚注）",
+        "evidence_ids": [
+          "P005-S01"
+        ]
+      },
+      {
+        "author": "Elyès Jouini",
+        "institution_entity": "Université Paris 9 Dauphine / CREST / CEPR",
+        "institution_relation": "UNVERIFIED",
+        "relation_period": "发表时隶属 Paris Dauphine，本版本写于其访问 NYU Stern 期间（原文脚注）；非本机构范围",
+        "evidence_ids": [
+          "P005-S01",
+          "P005-S03"
+        ]
+      }
+    ],
+    "topic_class": "BACKGROUND_ONLY",
+    "topic_class_note": "建议性归类：理论刻画有效性与绩效度量，不直接产出可实施的权重/配置算法，按附件主题边界属 BACKGROUND_ONLY。",
+    "target_scope": null,
+    "target_scope_note": "全部目标均为理论命题/解析数值例子（定理1-3、Remark 3-5、附录例子）；无实证、无样本、无策略回测目标。",
+    "planned_reproduction_types": [
+      "INDEPENDENT_FAITHFUL"
+    ],
+    "experiment_layers": [
+      "PAPER_REPLICATION"
+    ],
+    "author_code_available": false,
+    "empirical_backtest_available": false,
+    "target_ids": [
+      "P005-R01",
+      "P005-R02",
+      "P005-R03",
+      "P005-R04",
+      "P005-R05",
+      "P005-R06",
+      "P005-R07",
+      "P005-R08"
+    ],
+    "requested_experiment_ids": null,
+    "requested_experiment_ids_note": "仅在主审确认将纯理论命题核对纳入复现项目时适用。",
+    "critical_evidence_ids": [
+      "P005-S01",
+      "P005-S02"
+    ],
+    "hard_blocker_ids": [
+      "P005-B01",
+      "P005-B02"
+    ],
+    "unapproved_change_ids": [],
+    "agent_recommendation": "RECOMMEND_EXCLUDE",
+    "reviewer_decision": "PENDING",
+    "approval_record_id": "PENDING",
+    "plan_version": "1.0",
+    "review_package_version": "2.0",
+    "execution_stage": "DUE_DILIGENCE",
+    "execution_status": "NOT_RUN",
+    "attachments": [
+      "work/P005/background.md"
+    ],
+    "planned_artifacts": [
+      "agents/P005_E01/"
+    ],
+    "open_questions_for_reviewer": [
+      "纯理论命题核对是否纳入本复现项目目标？若否，按主题边界排除。",
+      "Kallal 的 Citadel/NYU 机构关系按 STAFF_AT_PUBLICATION 还是 STAFF_AT_RESEARCH 归类？",
+      "是否接受研究价值偏低、仅保留为理论背景的定位？"
+    ],
+    "missing_fields": [
+      {
+        "field": "proposed_reproduction_type",
+        "reason": "UNKNOWN",
+        "next_action": "参见证据与阻塞记录"
+      },
+      {
+        "field": "preflight_status",
+        "reason": "UNKNOWN",
+        "next_action": "参见证据与阻塞记录"
+      },
+      {
+        "field": "affiliation_at_research",
+        "reason": "UNKNOWN",
+        "next_action": "参见证据与阻塞记录"
+      },
+      {
+        "field": "current_affiliation",
+        "reason": "UNKNOWN",
+        "next_action": "参见证据与阻塞记录"
+      }
+    ],
+    "result_status": "NOT_RUN",
+    "authors": "Elyès Jouini; Hédi Kallal",
+    "publication_year": "2001",
+    "journal": "The Review of Financial Studies",
+    "affiliated_author": "Hédi Kallal",
+    "institution": "Citadel Investment Group",
+    "institution_relation": "STAFF_AT_PUBLICATION",
+    "relation_period": "发表署名Citadel Investment Group(2001)；研究在NYU开展(1999 NYU Stern WP佐证)，论文明确Citadel免责——两段时段分离",
+    "proposed_reproduction_type": null,
+    "data_access_summary": "NOT_APPLICABLE（纯理论，无市场数据需求）",
+    "code_source_type": "NOT_FOUND",
+    "key_targets": "定理1-3、Remark3-5、解析例子(ATM call无效率成本≥83.99%、stop-loss 0.28%→0%、借款0.79%→0%)——无Table/Figure/回测，严禁虚构策略回测",
+    "main_blockers": "B01无实证复现对象(主题边界)；B02机构归类口径(写作NYU/署名Citadel)",
+    "priority_reason": "保留理论命题作为背景",
+    "evidence_ids": [
+      "P005-S01",
+      "P005-S02",
+      "P005-S03",
+      "P005-S60"
+    ],
+    "approved_version_and_scope": "PENDING",
+    "approved_experiment_ids": "PENDING",
+    "approved_result_ids": "PENDING",
+    "reviewed_by": "PENDING",
+    "reviewed_at": "PENDING",
+    "conditions_and_followups": "PENDING",
+    "requested_result_ids": null,
+    "replication_value": null,
+    "difference_absolute": null,
+    "difference_relative": null,
+    "affiliation_at_research": null,
+    "affiliation_at_publication": "Citadel Investment Group",
+    "current_affiliation": null,
+    "replication_priority": "BACKGROUND",
+    "evidence_maturity": "EVIDENCE_REVIEW",
+    "batch_id": "CO-REP-20261120-02-R2",
+    "preflight_status": null,
+    "review_experiments": []
+  },
+  {
+    "schema_version": "1.0",
+    "paper_id": "P006",
+    "candidate_status": "CORE",
+    "responsible_agent": "D3",
+    "as_of": "2026-11-20T16:00:00+08:00",
+    "title": "Universal Portfolio Shrinkage",
+    "DOI": "10.1093/rfs/hhag084",
+    "manuscript_number": "MS 20240297",
+    "journal_group": "J1_NAMED",
+    "publication_status": "PUBLISHED",
+    "publication_status_note": "RFS advance article / in press，卷期页码未定；按已在线发表归 PUBLISHED",
+    "selected_paper_version": "RFS2026_TYPESET_20261119",
+    "institution_relations": [
+      {
+        "author": "Bryan Kelly",
+        "institution": "AQR Capital Management",
+        "institution_relation": "STAFF_AT_PUBLICATION",
+        "relation_period": "OUP author line, 2026-09-24",
+        "evidence_ids": [
+          "P006-S21"
+        ]
+      },
+      {
+        "author": "Bryan Kelly",
+        "institution": "AQR Capital Management",
+        "institution_relation": "STAFF_AT_RESEARCH",
+        "relation_period": "NBER PDF p.1, 2026-05-21",
+        "evidence_ids": [
+          "P006-S25"
+        ]
+      },
+      {
+        "author": "Semyon Malamud",
+        "institution": "AQR Capital Management",
+        "institution_relation": "FORMAL_ADVISOR_OR_COLLABORATOR",
+        "relation_period": "NBER PDF p.1, 2026-05-21, earlier/later duration unknown",
+        "evidence_ids": [
+          "P006-S25"
+        ]
+      }
+    ],
+    "topic_class": "DIRECT_OPTIMIZATION",
+    "target_scope": "SELECTED_PILOT",
+    "target_scope_note": "主文 16 图＋2 表先行，附录 17 图＋表 A.1 为第二阶段；manifest 共 61 行＝59 图面板＋2 表。",
+    "planned_reproduction_types": [
+      "AUTHOR_CODE_RERUN",
+      "INDEPENDENT_FAITHFUL",
+      "APPROXIMATE_VALIDATION",
+      "RESEARCH_EXTENSION"
+    ],
+    "experiment_layers": [
+      "PAPER_REPLICATION",
+      "IMPLEMENTATION_AUDIT"
+    ],
+    "author_code_available": true,
+    "author_code_source": "Harvard Dataverse DOI 10.7910/DVN/OHZFKD, V1, 2026-06-16, upsa_reproduction_RFS_v2.zip (123737306 bytes, MD5 b8cac94b06f22aa8bab676c0c1ec4656)",
+    "author_code_verified_by_download": true,
+    "one_click_reproduction": true,
+    "one_click_reproduction_note": "实读 run_all.py 与 README：默认 python run_all.py --all 从随包 outputs/computed/*.p 缓存精确重绘 59 图＋2 表；python run_all.py --all --compute 从 5 个 CSV 全量重算（12 核约 25–35 分钟）。默认路径非从原始数据重算，须区分。",
+    "known_numerical_drift": "作者 README 披露：--compute 下 Ridge/PCA/FF5/CAPM 与模拟逐位一致；Ledoit–Wolf 单元格 R² 移动≤0.1–0.2；Table 1「All」行 UPSA R² 重算 0.6649(→0.66) vs 原稿 0.6652(→0.67)，属舍入边界，不改符号/排序/结论。",
+    "data_bundled": true,
+    "external_data_required": false,
+    "target_ids": [
+      "P006-R01",
+      "P006-R02",
+      "P006-R03",
+      "P006-R04",
+      "P006-R05",
+      "P006-R06",
+      "P006-R07",
+      "P006-R08",
+      "P006-R09",
+      "P006-R10",
+      "P006-R11",
+      "P006-R12"
+    ],
+    "requested_experiment_ids": [
+      "P006-E05"
+    ],
+    "conditional_experiment_ids": [
+      "P006-E03"
+    ],
+    "critical_evidence_ids": [
+      "P006-S21",
+      "P006-S22",
+      "P006-S23",
+      "P006-S24",
+      "P006-S25",
+      "P006-S26",
+      "P006-S27",
+      "P006-S28"
+    ],
+    "hard_blocker_ids": [],
+    "unapproved_change_ids": [
+      "P006-C01",
+      "P006-C02"
+    ],
+    "agent_recommendation": "REQUEST_EVIDENCE",
+    "reviewer_decision": "PENDING",
+    "approval_record_id": "PENDING",
+    "plan_version": "1.0",
+    "review_package_version": "2.0",
+    "execution_stage": "DUE_DILIGENCE",
+    "execution_status": "NOT_RUN",
+    "result_status": "NOT_RUN",
+    "environment": {
+      "python": "3.9.6",
+      "dependencies_pinned": [
+        "numpy==2.0.2",
+        "pandas==2.3.3",
+        "scipy==1.13.1",
+        "scikit-learn==1.6.1",
+        "statsmodels==0.14.6",
+        "cvxopt==1.3.3",
+        "matplotlib==3.9.4",
+        "seaborn==0.13.2",
+        "tqdm==4.67.3"
+      ],
+      "lockfile": "requirements.txt（精确版本固定；无 conda yml / Dockerfile / hash lock）",
+      "solver": "cvxopt 1.3.3（UPSA 混合权重 QP；容差未记录）",
+      "entry_commands": [
+        "python -m pip install -r requirements.txt",
+        "python run_all.py --all",
+        "python run_all.py --all --compute"
+      ],
+      "compute": "12 核 macOS Apple Silicon 约 25–35 分钟；峰值内存 2–4 GB；无需 HPC",
+      "randomness": "全种子化、确定性、与核数无关（IS/OOS seed=0；模拟 seed=index）"
+    },
+    "attachments": [
+      "work/P006/protocol_v2.md"
+    ],
+    "planned_artifacts": [
+      "agents/P006_E01/",
+      "agents/P006_E02/",
+      "agents/P006_E03/"
+    ],
+    "open_questions_for_reviewer": [
+      "是否以「advance article hhag084＋Dataverse V1」冻结版本双锚？",
+      "验收基准取默认缓存路径（精确）还是 --compute（含舍入漂移），是否批准 P006-C01 容差？",
+      "是否接受「从 processed inputs 起算」为忠实复现边界（原始数据重建另列扩展）？",
+      "是否授权按 pinned 版本建独立 Python 3.9.6 环境并做预运行？"
+    ],
+    "first_intermediate_result_to_match": "默认缓存路径下 fig_03_sharpe_bar.jpg 与 tab_01_r2_theme.tex 与随包交付件逐字节/逐格比对",
+    "comparison_note_vs_P002": "P006 比 P002 更适合先启动：P006 全数据随包、无专有数据、单入口、25–35 分钟/12 核、无 HPC；P002 需 8 个外部数据集（含 WRDS contributed-data 与 WRDS/Markit short_fees）＋SLURM HPC，作业最长 2 天 16 小时/约 70 GB RAM，R 脚本需手工改路径。P002 完整尽调由 D2 负责，最终排序由主审综合。",
+    "missing_fields": [
+      {
+        "field": "affiliation_at_research",
+        "reason": "UNKNOWN",
+        "next_action": "参见证据与阻塞记录"
+      },
+      {
+        "field": "current_affiliation",
+        "reason": "UNKNOWN",
+        "next_action": "参见证据与阻塞记录"
+      }
+    ],
+    "authors": "Bryan Kelly; Semyon Malamud; Mo Pourmohammadi; Fabio Trojani",
+    "publication_year": "2026",
+    "journal": "The Review of Financial Studies（advance article, in press）",
+    "affiliated_author": "Bryan Kelly",
+    "institution": "AQR Capital Management",
+    "institution_relation": "STAFF_AT_PUBLICATION",
+    "relation_period": "advance article作者栏Kelly=Yale SOM+AQR+NBER；Malamud本文版本仅SFI/EPFL/CEPR(非AQR)；Dataverse元数据省略AQR不影响资格(以论文作者栏为准)",
+    "proposed_reproduction_type": "AUTHOR_CODE_RERUN",
+    "data_access_summary": "Dataverse V1 下载并核五个 CSV；派生输入后首窗已跑，上游微观重建不在范围",
+    "code_source_type": "AUTHOR",
+    "key_targets": "E01 RFS 与 E05 NBER 分开；Fig. 3/5/6/8、Table 1 保留",
+    "main_blockers": "正文 LOO T−1 对代码 T 的约定、最小 z 数值稳定性、正式全窗未跑",
+    "priority_reason": "首选；原包真实首窗通过；RFS 排版全文可读",
+    "evidence_ids": [
+      "E-S05",
+      "E-S06",
+      "E-S07",
+      "E-S14",
+      "E-S16",
+      "E-S17",
+      "E-S19",
+      "P006-S01",
+      "P006-S02",
+      "P006-S03",
+      "P006-S04",
+      "P006-S05",
+      "P006-S06",
+      "P006-S07",
+      "P006-S08",
+      "P006-S09",
+      "P006-S10",
+      "P006-S11",
+      "P006-S12",
+      "P006-S13",
+      "P006-S21",
+      "P006-S22",
+      "P006-S23",
+      "P006-S24",
+      "P006-S25",
+      "P006-S26",
+      "P006-S27",
+      "P006-S28",
+      "P006-S29",
+      "P006-S30",
+      "P006-S31",
+      "P006-S32"
+    ],
+    "requested_result_ids": [
+      "P006-R01",
+      "P006-R03",
+      "P006-R04",
+      "P006-R05",
+      "P006-R07"
+    ],
+    "approved_version_and_scope": "PENDING",
+    "approved_experiment_ids": "PENDING",
+    "approved_result_ids": "PENDING",
+    "reviewed_by": "PENDING",
+    "reviewed_at": "PENDING",
+    "conditions_and_followups": "PENDING",
+    "replication_value": null,
+    "difference_absolute": null,
+    "difference_relative": null,
+    "conditional_blocker_ids": [
+      "P006-B01",
+      "P006-B02",
+      "P006-B03",
+      "P006-B04",
+      "P006-B05",
+      "P006-B06"
+    ],
+    "scope_not_requested": "RFS accepted manuscript, full figures and appendix, raw-input data construction, transaction costs",
+    "preflight_status": "PASS",
+    "affiliation_at_research": null,
+    "affiliation_at_publication": "AQR Capital Management",
+    "current_affiliation": null,
+    "replication_priority": "HIGH",
+    "evidence_maturity": "PREFLIGHT_ONLY",
+    "batch_id": "CO-REP-20261120-02-R2",
+    "review_experiments": [
+      {
+        "version_id": "RFS2026_TYPESET_20261119",
+        "experiment_id": "P006-E01",
+        "execution_status": "NOT_RUN",
+        "requested_reviewer_decision": "REQUEST_EVIDENCE"
+      },
+      {
+        "version_id": "NBER20260521",
+        "experiment_id": "P006-E05",
+        "execution_status": "NOT_RUN",
+        "requested_reviewer_decision": "REQUEST_EVIDENCE"
+      }
+    ]
+  },
+  {
+    "schema_version": "1.0",
+    "paper_id": "P007",
+    "candidate_status": "CORE",
+    "responsible_agent": "D3",
+    "as_of": "2026-11-20T16:00:00+08:00",
+    "title": "Principal Portfolios",
+    "DOI": "10.1111/jofi.13199",
+    "journal_group": "J1_NAMED",
+    "publication_status": "PUBLISHED",
+    "selected_paper_version": "JF2023_VOR",
+    "institution_relations": [
+      {
+        "author": "Bryan Kelly",
+        "institution_entity": "AQR Capital Management",
+        "institution_relation": "STAFF_AT_PUBLICATION",
+        "relation_period": "2023 正式版页首脚注（AQR＋Yale SOM＋NBER）",
+        "evidence_ids": [
+          "P007-S01"
+        ]
+      },
+      {
+        "author": "Lasse Heje Pedersen",
+        "institution_entity": "AQR Capital Management",
+        "institution_relation": "STAFF_AT_PUBLICATION",
+        "relation_period": "2023 正式版页首脚注（AQR＋CBS＋CEPR）",
+        "evidence_ids": [
+          "P007-S01"
+        ]
+      },
+      {
+        "author": "Semyon Malamud",
+        "institution_entity": "AQR Capital Management",
+        "institution_relation": "FORMAL_ADVISOR_OR_COLLABORATOR",
+        "relation_period": "2023 正式版脚注「is a consultant to AQR」；NBER w27388(2020) 披露过去三年从 AQR 取得超 $10,000 咨询收入",
+        "evidence_ids": [
+          "P007-S01",
+          "P007-S02"
+        ]
+      }
+    ],
+    "topic_class": "DIRECT_OPTIMIZATION",
+    "topic_class_note": "建议性归类；论文在闭式解中直接给出最优线性权重（偏 DIRECT），但实证以资产定价检验与新 PAP 因子为主，处 DIRECT/INPUT 边界，请主审判定。",
+    "target_scope": "SELECTED_PILOT",
+    "target_scope_note": "先做理论命题＋Figure 1–5；Table 2/3 与 Internet Appendix 图列阶段二（第三方仓库 IA 图未实现）。",
+    "planned_reproduction_types": [
+      "INDEPENDENT_FAITHFUL",
+      "AUTHOR_CODE_RERUN"
+    ],
+    "planned_reproduction_types_note": "官方代码存在但 Wiley 403 未取得，当前基线 INDEPENDENT_FAITHFUL；取得官方包后可转 AUTHOR_CODE_RERUN。",
+    "experiment_layers": [
+      "PAPER_REPLICATION"
+    ],
+    "author_code_available": null,
+    "author_code_note": "更正 A agent 的 NOT_FOUND：作者官方代码包确实存在（Wiley jofi13199-sup-0002-ReplicationCode.zip），实测 HTTP 403 需机构权限；公开 GitHub philipschw/principalportfolios 为第三方衍生仓库。",
+    "target_ids": [
+      "P007-R01",
+      "P007-R02",
+      "P007-R03",
+      "P007-R04",
+      "P007-R05",
+      "P007-R06",
+      "P007-R07"
+    ],
+    "requested_experiment_ids": [
+      "P007-E01"
+    ],
+    "conditional_experiment_ids": [
+      "P007-E02"
+    ],
+    "critical_evidence_ids": [
+      "P007-S01",
+      "P007-S03",
+      "P007-S04",
+      "P007-S02"
+    ],
+    "hard_blocker_ids": [
+      "P007-B01",
+      "P007-B02",
+      "P007-B03"
+    ],
+    "unapproved_change_ids": [
+      "P007-C01"
+    ],
+    "agent_recommendation": "REQUEST_EVIDENCE",
+    "reviewer_decision": "PENDING",
+    "approval_record_id": "PENDING",
+    "plan_version": "1.0",
+    "review_package_version": "2.0",
+    "execution_stage": "DUE_DILIGENCE",
+    "execution_status": "NOT_RUN",
+    "result_status": "NOT_RUN",
+    "code_status": {
+      "official_code_source_type": "AUTHOR",
+      "official_code_url": "https://onlinelibrary.wiley.com/action/downloadSupplement?doi=10.1111%2Fjofi.13199&file=jofi13199-sup-0002-ReplicationCode.zip",
+      "official_code_http_status": 403,
+      "public_repo_source_type": "THIRD_PARTY",
+      "public_repo_url": "https://github.com/philipschw/principalportfolios",
+      "public_repo_last_commit": "37e0516 (2023-08-18)",
+      "public_repo_license": "AFA JoF Code Sharing Policy（仅学术研究，商业需作者许可）",
+      "public_repo_coverage": "Figure 1/2/3、Table 2、Figure 4/5/Table 3；Internet Appendix Fig IA1–IA5 标注 not implemented",
+      "environment_lockfile": null,
+      "solver": null,
+      "execution_status": "NOT_RUN"
+    },
+    "attachments": [
+      "work/P007/protocol.md"
+    ],
+    "planned_artifacts": [
+      "agents/P007_E01/",
+      "agents/P007_E02/"
+    ],
+    "open_questions_for_reviewer": [
+      "是否授权用机构 Wiley 权限下载官方代码包？",
+      "是否授权使用 WRDS/Ken French 数据？",
+      "topic_class 归 DIRECT_OPTIMIZATION 还是 INPUT_WITH_PORTFOLIO_VALIDATION？",
+      "是否批准官方代码未取得前先做独立实现？",
+      "是否同意将 code_source_type 从 A agent 的 NOT_FOUND 更正为 THIRD_PARTY（官方 AUTHOR 代码存在但 403）？"
+    ],
+    "correction_to_agent_A": "A_search.md 记 P007 代码 NOT_FOUND；D3 实测 Wiley 补充包存在（403 门禁）＋公开第三方衍生仓库，须更新状态。",
+    "missing_fields": [
+      {
+        "field": "affiliation_at_research",
+        "reason": "UNKNOWN",
+        "next_action": "参见证据与阻塞记录"
+      },
+      {
+        "field": "current_affiliation",
+        "reason": "UNKNOWN",
+        "next_action": "参见证据与阻塞记录"
+      }
+    ],
+    "authors": "Bryan Kelly; Semyon Malamud; Lasse Heje Pedersen",
+    "publication_year": "2023",
+    "journal": "The Journal of Finance",
+    "affiliated_author": "Bryan Kelly; Lasse Heje Pedersen",
+    "institution": "AQR Capital Management",
+    "institution_relation": "STAFF_AT_PUBLICATION",
+    "relation_period": "2023正式版页首Kelly/Pedersen双署AQR；Malamud=consultant(FORMAL_ADVISOR)；NBER w27388披露咨询收入阶段差异",
+    "proposed_reproduction_type": "INDEPENDENT_FAITHFUL",
+    "data_access_summary": "French 日频 CIZ 与 FIZ 文件实取；期刊年份对应快照待核",
+    "code_source_type": "AUTHOR",
+    "key_targets": "R01-R07：闭式最优线性策略(预测矩阵特征向量)、alpha/beta分解、Fig1-5；Table2/3与IA图列阶段二",
+    "main_blockers": "FF25 原同版面板、区间锚点；E02 预测特征张量",
+    "priority_reason": "高；FF25 日频可准备，138 因子另案",
+    "evidence_ids": [
+      "P007-S01",
+      "P007-S02",
+      "P007-S03",
+      "P007-S04",
+      "P007-S60"
+    ],
+    "approved_version_and_scope": "PENDING",
+    "approved_experiment_ids": "PENDING",
+    "approved_result_ids": "PENDING",
+    "reviewed_by": "PENDING",
+    "reviewed_at": "PENDING",
+    "conditions_and_followups": "PENDING",
+    "requested_result_ids": [
+      "P007-R01",
+      "P007-R02",
+      "P007-R03",
+      "P007-R04",
+      "P007-R05",
+      "P007-R06",
+      "P007-R07"
+    ],
+    "replication_value": null,
+    "difference_absolute": null,
+    "difference_relative": null,
+    "affiliation_at_research": null,
+    "affiliation_at_publication": "AQR Capital Management",
+    "current_affiliation": null,
+    "replication_priority": "HIGH",
+    "evidence_maturity": "EVIDENCE_REVIEW",
+    "batch_id": "CO-REP-20261120-02-R2",
+    "preflight_status": "DATA_CHECK_ONLY",
+    "review_experiments": [
+      {
+        "version_id": "JF2023_VOR",
+        "experiment_id": "P007-E01",
+        "execution_status": "NOT_RUN",
+        "requested_reviewer_decision": "REQUEST_EVIDENCE"
+      },
+      {
+        "version_id": "JF2023_VOR",
+        "experiment_id": "P007-E02",
+        "execution_status": "NOT_RUN",
+        "requested_reviewer_decision": "REQUEST_EVIDENCE"
+      }
+    ]
+  },
+  {
+    "schema_version": "1.0",
+    "paper_id": "P008",
+    "candidate_status": "CORE",
+    "responsible_agent": "D3",
+    "as_of": "2026-11-20T16:00:00+08:00",
+    "title": "Responsible Investing: The ESG-Efficient Frontier",
+    "DOI": "10.1016/j.jfineco.2020.11.001",
+    "journal_group": "J1_NAMED",
+    "publication_status": "PUBLISHED",
+    "selected_paper_version": "JFE2021_VOR",
+    "institution_relations": [
+      {
+        "author": "Lasse Heje Pedersen",
+        "institution_entity": "AQR Capital Management",
+        "institution_relation": "STAFF_AT_PUBLICATION",
+        "relation_period": "2021 正式版作者栏（兼 NYU Stern / CBS）",
+        "evidence_ids": [
+          "P008-S01",
+          "P008-S02"
+        ]
+      },
+      {
+        "author": "Shaun Fitzgibbons",
+        "institution_entity": "AQR Capital Management",
+        "institution_relation": "STAFF_AT_PUBLICATION",
+        "relation_period": "2021 正式版作者栏",
+        "evidence_ids": [
+          "P008-S01",
+          "P008-S02"
+        ]
+      },
+      {
+        "author": "Lukasz Pomorski",
+        "institution_entity": "AQR Capital Management",
+        "institution_relation": "STAFF_AT_PUBLICATION",
+        "relation_period": "2021 正式版作者栏",
+        "evidence_ids": [
+          "P008-S01",
+          "P008-S02"
+        ]
+      }
+    ],
+    "topic_class": "DIRECT_OPTIMIZATION",
+    "target_scope": "SELECTED_PILOT",
+    "target_scope_note": "理论命题与 Figure 1/2 闭式解可忠实复现；实证 Figure 3–6、Table 1–4 为取得 ESG 原始数据后的条件性目标。",
+    "planned_reproduction_types": [
+      "INDEPENDENT_FAITHFUL",
+      "APPROXIMATE_VALIDATION"
+    ],
+    "planned_reproduction_types_note": "理论闭式 INDEPENDENT_FAITHFUL；实证若仅用 AQR PAPER_OUTPUT 数据则 APPROXIMATE_VALIDATION，不得声称原文复现。",
+    "experiment_layers": [
+      "PAPER_REPLICATION"
+    ],
+    "author_code_available": false,
+    "author_code_source": null,
+    "target_ids": [
+      "P008-R01",
+      "P008-R02",
+      "P008-R03",
+      "P008-R04",
+      "P008-R05",
+      "P008-R06",
+      "P008-R07",
+      "P008-R08"
+    ],
+    "requested_experiment_ids": [
+      "P008-E01"
+    ],
+    "conditional_experiment_ids": [
+      "P008-E02"
+    ],
+    "critical_evidence_ids": [
+      "P008-S01",
+      "P008-S02"
+    ],
+    "hard_blocker_ids": [
+      "P008-B01",
+      "P008-B02",
+      "P008-B03"
+    ],
+    "unapproved_change_ids": [
+      "P008-C01"
+    ],
+    "agent_recommendation": "RECOMMEND_FAITHFUL_REPLICATION",
+    "reviewer_decision": "PENDING",
+    "approval_record_id": "PENDING",
+    "plan_version": "1.0",
+    "review_package_version": "2.0",
+    "execution_stage": "DUE_DILIGENCE",
+    "execution_status": "NOT_RUN",
+    "result_status": "NOT_RUN",
+    "data_role_finding": "AQR 数据集 ESG_efficient_frontier_portfolios_vF.xlsx 经页面逐字核验为 PAPER_OUTPUT（论文所用 VW/EW 组合总收益），非可重建 ESG 得分/成分/权重的 RAW_INPUT；无 ESG 得分、无股票特征、无持仓/权重、无数据字典、无专门 license。",
+    "attachments": [
+      "work/P008/protocol.md"
+    ],
+    "planned_artifacts": [
+      "agents/P008_E01/",
+      "agents/P008_E02/"
+    ],
+    "open_questions_for_reviewer": [
+      "是否授权采购/使用 MSCI ESG 评级与 Compustat（accruals）等底层数据？",
+      "是否接受实证部分降级为 APPROXIMATE_VALIDATION？",
+      "是否授权联系作者索取代码？"
+    ],
+    "missing_fields": [
+      {
+        "field": "affiliation_at_research",
+        "reason": "UNKNOWN",
+        "next_action": "参见证据与阻塞记录"
+      },
+      {
+        "field": "current_affiliation",
+        "reason": "UNKNOWN",
+        "next_action": "参见证据与阻塞记录"
+      }
+    ],
+    "authors": "Lasse Heje Pedersen; Shaun Fitzgibbons; Lukasz Pomorski",
+    "publication_year": "2021",
+    "journal": "Journal of Financial Economics",
+    "affiliated_author": "Lasse Heje Pedersen; Shaun Fitzgibbons; Lukasz Pomorski",
+    "institution": "AQR Capital Management",
+    "institution_relation": "STAFF_AT_PUBLICATION",
+    "relation_period": "2021正式版作者栏三人均列AQR(兼NYU Stern/CBS)",
+    "proposed_reproduction_type": "INDEPENDENT_FAITHFUL",
+    "data_access_summary": "已实取 AQR 组合收益 workbook；E03 仅派生统计层",
+    "code_source_type": "NOT_FOUND",
+    "key_targets": "正式版理论前沿、四基金分离与 Figures 1–2；后续 ESG 实证另批",
+    "main_blockers": "底层 Barra 与证券/ESG 源依目标；AQR workbook 同版本和目标行口径待对",
+    "priority_reason": "ESG约束前沿理论闭式可忠实复现、三作者AQR；但实证数据为专有ESG评级，AQR公开数据不足以重建权重，实证只能近似验证。",
+    "evidence_ids": [
+      "P008-S01",
+      "P008-S02",
+      "P008-S03",
+      "P008-S10",
+      "P008-S11"
+    ],
+    "approved_version_and_scope": "PENDING",
+    "approved_experiment_ids": "PENDING",
+    "approved_result_ids": "PENDING",
+    "reviewed_by": "PENDING",
+    "reviewed_at": "PENDING",
+    "conditions_and_followups": "PENDING",
+    "requested_result_ids": [
+      "P008-R01",
+      "P008-R02",
+      "P008-R03",
+      "P008-R04",
+      "P008-R05",
+      "P008-R06",
+      "P008-R07",
+      "P008-R08"
+    ],
+    "replication_value": null,
+    "difference_absolute": null,
+    "difference_relative": null,
+    "affiliation_at_research": null,
+    "affiliation_at_publication": "AQR Capital Management",
+    "current_affiliation": null,
+    "replication_priority": "SECONDARY",
+    "evidence_maturity": "EVIDENCE_REVIEW",
+    "batch_id": "CO-REP-20261120-02-R2",
+    "preflight_status": "DATA_CHECK_ONLY",
+    "review_experiments": [
+      {
+        "version_id": "JFE2021_VOR",
+        "experiment_id": "P008-E01",
+        "execution_status": "NOT_RUN",
+        "requested_reviewer_decision": "APPROVE_FAITHFUL_REPLICATION"
+      },
+      {
+        "version_id": "JFE2021_VOR",
+        "experiment_id": "P008-E02",
+        "execution_status": "NOT_RUN",
+        "requested_reviewer_decision": "REQUEST_EVIDENCE"
+      },
+      {
+        "version_id": "JFE2021_VOR",
+        "experiment_id": "P008-E03",
+        "execution_status": "NOT_RUN",
+        "requested_reviewer_decision": "APPROVE_FAITHFUL_REPLICATION"
+      },
+      {
+        "version_id": "JFE2021_VOR",
+        "experiment_id": "P008-E04",
+        "execution_status": "NOT_RUN",
+        "requested_reviewer_decision": "REQUEST_EVIDENCE"
+      }
+    ]
+  },
+  {
+    "schema_version": "1.0",
+    "paper_id": "P009",
+    "candidate_status": "EXCLUDED",
+    "responsible_agent": "D5",
+    "as_of": "2026-11-20T16:00:00+08:00",
+    "title": "Is There a Replication Crisis in Finance?",
+    "DOI": "10.1111/jofi.13249",
+    "journal_group": "J1_NAMED",
+    "publication_status": "PUBLISHED",
+    "selected_paper_version": "JF 78(5):2465–2518，2023-05-26 online，DOI 10.1111/jofi.13249",
+    "institution_relations": [
+      {
+        "author": "Bryan Kelly",
+        "institution": "AQR Capital Management",
+        "relation": "STAFF_AT_PUBLICATION",
+        "period": "2023 concurrent affiliation",
+        "evidence_id": "P009-S11"
+      },
+      {
+        "author": "Lasse Heje Pedersen",
+        "institution": "AQR Capital Management",
+        "relation": "STAFF_AT_PUBLICATION",
+        "period": "2023 concurrent affiliation",
+        "evidence_id": "P009-S11"
+      }
+    ],
+    "topic_class": "BACKGROUND_ONLY",
+    "topic_class_note": "偏 BACKGROUND_ONLY；因子复制与切点组合验证，非新权重/交易决策方法，资格待主审判定。",
+    "target_scope": "SELECTED_PILOT",
+    "planned_reproduction_types": [
+      "AUTHOR_CODE_RERUN",
+      "INDEPENDENT_FAITHFUL",
+      "APPROXIMATE_VALIDATION",
+      "RESEARCH_EXTENSION"
+    ],
+    "experiment_layers": [],
+    "author_code_available": true,
+    "author_code_source": "THIRD_PARTY_CODE: github.com/bkelly-lab/ReplicationCrisis（公开）；数据 jkpfactors.com",
+    "target_ids": [
+      "P009-F13",
+      "P009-F14"
+    ],
+    "critical_evidence_ids": [
+      "P009-S11",
+      "P009-S12",
+      "P009-S13",
+      "P009-S14",
+      "P009-S15",
+      "P009-S16",
+      "P009-S17"
+    ],
+    "hard_blocker_ids": [
+      "P009-B11",
+      "P009-B12",
+      "P009-B13"
+    ],
+    "unapproved_change_ids": [
+      "P009-C11",
+      "P009-C12"
+    ],
+    "agent_recommendation": "RECOMMEND_EXCLUDE",
+    "reviewer_decision": "PENDING",
+    "approval_record_id": "PENDING",
+    "plan_version": "1.0",
+    "review_package_version": "2.0",
+    "execution_stage": "DUE_DILIGENCE",
+    "execution_status": "NOT_RUN",
+    "result_status": "NOT_RUN",
+    "attachments": [
+      "work/P009/background.md"
+    ],
+    "planned_artifacts": [
+      "results/P009/E11",
+      "results/P009/E12",
+      "results/P009/E13",
+      "results/P009/E14",
+      "results/P009/E15"
+    ],
+    "open_questions_for_reviewer": [
+      "主题资格：INPUT_WITH_PORTFOLIO_VALIDATION 还是 BACKGROUND_ONLY？是否纳入复现范围？"
+    ],
+    "missing_fields": [
+      {
+        "field": "proposed_reproduction_type",
+        "reason": "UNKNOWN",
+        "next_action": "参见证据与阻塞记录"
+      },
+      {
+        "field": "preflight_status",
+        "reason": "UNKNOWN",
+        "next_action": "参见证据与阻塞记录"
+      },
+      {
+        "field": "affiliation_at_research",
+        "reason": "UNKNOWN",
+        "next_action": "参见证据与阻塞记录"
+      },
+      {
+        "field": "current_affiliation",
+        "reason": "UNKNOWN",
+        "next_action": "参见证据与阻塞记录"
+      }
+    ],
+    "authors": "Theis Ingerslev Jensen; Bryan Kelly; Lasse Heje Pedersen",
+    "publication_year": "2023",
+    "journal": "The Journal of Finance",
+    "affiliated_author": "Bryan Kelly; Lasse Heje Pedersen",
+    "institution": "AQR Capital Management",
+    "institution_relation": "STAFF_AT_PUBLICATION",
+    "relation_period": "2023正式版脚注Kelly=Yale/AQR/NBER、Pedersen=AQR/CBS/CEPR；Jensen=CBS；NBER w28432披露Kelly咨询收入阶段差异",
+    "proposed_reproduction_type": null,
+    "data_access_summary": "三个作者历史 CSV 已定位，未取得；CRSP/Compustat 原始权限未知",
+    "code_source_type": "AUTHOR",
+    "key_targets": "正式 JF Fig 13 美国主题切点权重及 Fig 14 美国切点月夏普；工作稿 Fig 12 为全球",
+    "main_blockers": "主题是否入池；期刊附件403；历史 CSV 未取得，当前脚本默认终点与原发表期不同",
+    "priority_reason": "因子工程和方法背景",
+    "evidence_ids": [
+      "P009-S11",
+      "P009-S12",
+      "P009-S13",
+      "P009-S14",
+      "P009-S15",
+      "P009-S16",
+      "P009-S17",
+      "P009-S21",
+      "P009-S22",
+      "P009-S23",
+      "P009-S24",
+      "P009-S25",
+      "P009-S26"
+    ],
+    "as_of_precision": "DATE",
+    "topic_class_status": "REVIEWER_SCOPE_PENDING",
+    "approved_version_and_scope": "PENDING",
+    "approved_experiment_ids": "PENDING",
+    "approved_result_ids": "PENDING",
+    "reviewed_by": "PENDING",
+    "reviewed_at": "PENDING",
+    "conditions_and_followups": "PENDING",
+    "results": [
+      {
+        "result_id": "P009-F13",
+        "experiment_id": "P009-E11",
+        "result_status": "NOT_RUN",
+        "reproduced_value": null
+      },
+      {
+        "result_id": "P009-F14",
+        "experiment_id": "P009-E12",
+        "result_status": "NOT_RUN",
+        "reproduced_value": null
+      }
+    ],
+    "requested_result_ids": [
+      "P009-F13",
+      "P009-F14"
+    ],
+    "requested_experiment_ids": [
+      "P009-E11",
+      "P009-E12"
+    ],
+    "replication_value": null,
+    "difference_absolute": null,
+    "difference_relative": null,
+    "affiliation_at_research": null,
+    "affiliation_at_publication": "AQR Capital Management",
+    "current_affiliation": null,
+    "replication_priority": "BACKGROUND",
+    "evidence_maturity": "EVIDENCE_REVIEW",
+    "batch_id": "CO-REP-20261120-02-R2",
+    "preflight_status": null,
+    "review_experiments": []
+  },
+  {
+    "schema_version": "1.0",
+    "paper_id": "P010",
+    "candidate_status": "CORE",
+    "candidate_status_note": "沿用 agent B 建议；为 Citadel 关联唯一 J1 CORE 命中，机构覆盖完整性有意义，但立项以方法/数据可行性为准。",
+    "responsible_agent": "D4",
+    "as_of": "2026-11-20T16:00:00+08:00",
+    "title": "Modeling Corporate Bond Returns",
+    "DOI": "10.1111/jofi.13233",
+    "journal": "The Journal of Finance",
+    "journal_group": "J1_NAMED",
+    "publication_status": "PUBLISHED",
+    "publication_year": "2023",
+    "issue_year_volume_pages": "2023, 78(4):1967-2008",
+    "working_paper_date": "SSRN 3720789, 2020-12-14 发布 / 2021-08-27 最后修订",
+    "selected_paper_version": "JF2023_VOR",
+    "publisher_url": "https://onlinelibrary.wiley.com/doi/10.1111/jofi.13233",
+    "institution_relations": [
+      {
+        "author": "Diogo Palhares",
+        "institution_entity": "Citadel",
+        "institution_relation": "STAFF_AT_PUBLICATION",
+        "relation_period": "发表期（JF 2023-08 脚注 'Diogo Palhares is at Citadel.'）；法律实体粒度 AMBIGUOUS（仅写 Citadel，未区分 Citadel LLC 与 Citadel Securities）",
+        "entity_granularity": "AMBIGUOUS",
+        "evidence_ids": [
+          "P010-S01",
+          "P010-S02",
+          "P010-S05",
+          "P010-S10"
+        ]
+      },
+      {
+        "author": "Diogo Palhares",
+        "institution_entity": null,
+        "institution_relation": "STAFF_AT_RESEARCH",
+        "relation_period": "研究/工作稿期 SSRN 3720789 署名 Independent（非目标机构）",
+        "evidence_ids": [
+          "P010-S05"
+        ]
+      },
+      {
+        "author": "Bryan Kelly",
+        "institution_entity": "AQR Capital Management",
+        "institution_relation": "STAFF_AT_PUBLICATION",
+        "relation_period": "Yale/AQR/NBER（发表版脚注）；AQR 关系属 A 组范围，且 ICE 数据披露属 Kelly，不得转记为 Citadel 关系",
+        "evidence_ids": [
+          "P010-S01"
+        ]
+      },
+      {
+        "author": "Seth Pruitt",
+        "institution_entity": "Arizona State University",
+        "institution_relation": "UNVERIFIED",
+        "relation_period": "非目标机构",
+        "evidence_ids": [
+          "P010-S01"
+        ]
+      }
+    ],
+    "topic_class": "INPUT_WITH_PORTFOLIO_VALIDATION",
+    "target_scope": "ALL_MAIN_EMPIRICAL_RESULTS",
+    "target_scope_note": "核心为因子模型解释力（Table III/IV/V）与组合实验（Table VII/VIII）；Table XI/XII+Figure 3 债股联动列为可选扩展。ICE 不可得时全部忠实数值目标 BLOCKED，转近似验证（公开 WRDS/TRACE 派生数据验证 Table VII/VIII 方法与结论方向，不宣称原文 ICE 数值）。",
+    "planned_reproduction_types": [
+      "APPROXIMATE_VALIDATION",
+      "INDEPENDENT_FAITHFUL"
+    ],
+    "reproduction_type_note": "APPROXIMATE_VALIDATION 当前可行（首选）；INDEPENDENT_FAITHFUL 条件性（取得 ICE 后）；AUTHOR_CODE_RERUN 当前不可行（官方代码未取得）。",
+    "experiment_layers": [
+      "PAPER_REPLICATION",
+      "APPROXIMATE_VALIDATION",
+      "IMPLEMENTATION_AUDIT"
+    ],
+    "author_code_available": false,
+    "target_ids": [
+      "P010-R01",
+      "P010-R02",
+      "P010-R03",
+      "P010-R04",
+      "P010-R05",
+      "P010-R06",
+      "P010-R07",
+      "P010-R08",
+      "P010-R09",
+      "P010-R10",
+      "P010-R11"
+    ],
+    "primary_target_ids": [
+      "P010-R03",
+      "P010-R04",
+      "P010-R06",
+      "P010-R07"
+    ],
+    "requested_experiment_ids": [
+      "P010-E01",
+      "P010-E02",
+      "P010-E03"
+    ],
+    "optional_experiment_ids": [
+      "P010-E04"
+    ],
+    "critical_evidence_ids": [
+      "P010-S01",
+      "P010-S04",
+      "P010-S06",
+      "P010-S07",
+      "P010-S09",
+      "P010-S11",
+      "P010-S12",
+      "P010-S13"
+    ],
+    "hard_blocker_ids": [
+      "P010-B01",
+      "P010-B02",
+      "P010-B03",
+      "P010-B04"
+    ],
+    "unapproved_change_ids": [
+      "P010-C01",
+      "P010-C02",
+      "P010-C03"
+    ],
+    "agent_recommendation": "RECOMMEND_APPROXIMATE_VALIDATION_ONLY",
+    "agent_recommendation_note": "ICE 为忠实复现硬阻塞且官方代码未取得；但公开 WRDS/TRACE 派生数据（P010-S07，已实取 349MB/483,888 行）+ 作者配套论文自证结论稳健（P010-S06）+ 方法披露完整，使近似验证有清楚研究价值。若 ICE 采购落实可升级为 INDEPENDENT_FAITHFUL/AUTHOR_CODE_RERUN。",
+    "reviewer_decision": "PENDING",
+    "approval_record_id": "PENDING",
+    "plan_version": "1.0",
+    "review_package_version": "2.0",
+    "execution_stage": "DUE_DILIGENCE",
+    "execution_status": "NOT_RUN",
+    "result_status": "NOT_RUN",
+    "attachments": [],
+    "planned_artifacts": [
+      "agents/P010_E01/",
+      "agents/P010_E02/",
+      "agents/P010_E03/",
+      "agents/P010_E04/"
+    ],
+    "data_summary": {
+      "P010-D01": {
+        "source": "ICE (BofA H0A0/C0A0 成分)",
+        "data_role": "RAW_INPUT",
+        "access_status": "ENTITLEMENT_UNCONFIRMED",
+        "note": "原文称任何人可购买、经作者与 AQR 关系取得；团队无权限记录，无公开下载；忠实数值对齐硬阻塞。"
+      },
+      "P010-D02": {
+        "source": "WRDS/TRACE 派生数据 corp_jkp_mergedv2.csv（Kelly & Pruitt 2022 配套，公开 Dropbox）",
+        "data_role": "DERIVED_INPUT",
+        "access_status": "FULL_REQUIRED_DATA_ACCESSED",
+        "note": "实际下载 349,327,084 bytes，483,888 行×68 列，2002-07 至 2020-09（219 月），含 retexc/duration/spread 及 29 特征字段；支撑近似验证。"
+      },
+      "P010-D03": {
+        "source": "Kenneth French FF5 因子",
+        "data_role": "BENCHMARK",
+        "access_status": "LINK_FOUND"
+      },
+      "P010-D04": {
+        "source": "Jennie Bai / BBW 四因子",
+        "data_role": "BENCHMARK",
+        "access_status": "LINK_FOUND"
+      }
+    },
+    "code_summary": {
+      "code_source_type": "NOT_FOUND",
+      "official_code_listed_in_SI": true,
+      "official_code_obtained": false,
+      "official_code_runnable": false,
+      "official_targets_generated": false,
+      "wiley_si_http_status": 403,
+      "github_official_repo_found": false,
+      "third_party_reference": "https://github.com/jonasknappitsch/IPCA-asset-pricing (GPL-3.0, 非官方, 使用 P010-D02 数据, executed=NOT_RUN)",
+      "execution_status": "NOT_RUN"
+    },
+    "open_questions_for_reviewer": [
+      "是否接受以公开 WRDS/TRACE 派生数据做近似验证并立项（明确不宣称 ICE 原文数值）？",
+      "是否授权采购 ICE 数据以升级为忠实复现？",
+      "是否授权邮件联系作者索取官方 Replication Code？",
+      "是否批准第三方 GPL-3.0 实现仅作参考/审计（不冒充官方代码）？",
+      "Citadel 实体粒度仅 'Citadel'，是否需补证法律实体后再计入机构覆盖？",
+      "是否将 Table XI/XII+Figure 3 债股联动纳入目标，还是仅作 INPUT 背景？"
+    ],
+    "missing_fields": [
+      {
+        "field": "current_affiliation",
+        "reason": "UNKNOWN",
+        "next_action": "参见证据与阻塞记录"
+      }
+    ],
+    "authors": "Bryan Kelly; Diogo Palhares; Seth Pruitt",
+    "affiliated_author": "Diogo Palhares",
+    "institution": "Citadel",
+    "institution_relation": "STAFF_AT_PUBLICATION",
+    "relation_period": "发表署名Citadel(2023)；研究期SSRN3720789署名Independent；AQR/ICE披露属Kelly非Citadel",
+    "proposed_reproduction_type": "APPROXIMATE_VALIDATION",
+    "data_access_summary": "实际获取官方 MATLAB 代码包和作者 TRACE 派生档；无实际 ICE 原值",
+    "code_source_type": "AUTHOR",
+    "key_targets": "Table IV/V 样本外 R²，Table VII 切点，Table VIII 净夏普；当前仅拟单列 TRACE 近似",
+    "main_blockers": "ICE 面板未获，不使用清零矩阵；TRACE 需目标、流动性与样本差异审批",
+    "priority_reason": "ICE HOLD；作者真实 TRACE 派生输入另案",
+    "evidence_ids": [
+      "P010-S01",
+      "P010-S02",
+      "P010-S03",
+      "P010-S04",
+      "P010-S05",
+      "P010-S06",
+      "P010-S07",
+      "P010-S08",
+      "P010-S09",
+      "P010-S10",
+      "P010-S11",
+      "P010-S12",
+      "P010-S13",
+      "P010-S14",
+      "P010-S15",
+      "P010-S16",
+      "P010-S17",
+      "P010-S18",
+      "P010-S19",
+      "P010-S20",
+      "P010-S21",
+      "P010-S60",
+      "P010-S61"
+    ],
+    "approved_version_and_scope": "PENDING",
+    "approved_experiment_ids": "PENDING",
+    "approved_result_ids": "PENDING",
+    "reviewed_by": "PENDING",
+    "reviewed_at": "PENDING",
+    "conditions_and_followups": "PENDING",
+    "requested_result_ids": [
+      "P010-R01",
+      "P010-R02",
+      "P010-R03",
+      "P010-R04",
+      "P010-R05",
+      "P010-R06",
+      "P010-R07",
+      "P010-R08",
+      "P010-R09",
+      "P010-R10",
+      "P010-R11"
+    ],
+    "replication_value": null,
+    "difference_absolute": null,
+    "difference_relative": null,
+    "affiliation_at_research": "AQR（有工作稿署名线索，详前批核证）",
+    "affiliation_at_publication": "Citadel",
+    "current_affiliation": null,
+    "replication_priority": "SECONDARY",
+    "evidence_maturity": "EVIDENCE_REVIEW",
+    "batch_id": "CO-REP-20261120-02-R2",
+    "preflight_status": "DATA_CHECK_ONLY",
+    "review_experiments": [
+      {
+        "version_id": "JF2023_VOR",
+        "experiment_id": "P010-E01",
+        "execution_status": "NOT_RUN",
+        "requested_reviewer_decision": "HOLD"
+      },
+      {
+        "version_id": "JF2023_TRACE_SUBSTITUTE",
+        "experiment_id": "P010-E03",
+        "execution_status": "NOT_RUN",
+        "requested_reviewer_decision": "REQUEST_EVIDENCE"
+      }
+    ]
+  },
+  {
+    "paper_id": "P011",
+    "candidate_status": "EXTENDED",
+    "title": "Optimal Tilts: Combining Persistent Characteristic Portfolios",
+    "authors": "Malcolm Baker; Ryan Taliaferro; Terence Burnham",
+    "publication_year": 2017,
+    "journal": "Financial Analysts Journal",
+    "DOI": "10.2469/faj.v73.n4.1",
+    "affiliated_author": "Ryan Taliaferro; Malcolm Baker",
+    "institution": "Acadian Asset Management",
+    "institution_relation": "STAFF_AT_PUBLICATION",
+    "relation_period": "2016–2017 manuscript and publication evidence",
+    "data_access_summary": "CRSP/Compustat entitlement unconfirmed; French factors documented; exact six series missing",
+    "key_targets": "HBS March 2017 Table VI six tilts / Figure 1 baseline",
+    "main_blockers": "Final typeset comparison; all six dated returns; optimization constraints",
+    "priority_reason": "Acadian stock and bond tilts, bounded deterministic target",
+    "evidence_ids": [
+      "P011-S01",
+      "P011-S02",
+      "P011-S03",
+      "P011-S04"
+    ],
+    "journal_group": "J3_PRACTICE",
+    "publication_status": "PUBLISHED",
+    "topic_class": "DIRECT_OPTIMIZATION",
+    "proposed_reproduction_type": "INDEPENDENT_FAITHFUL",
+    "code_source_type": "NOT_FOUND",
+    "execution_status": "NOT_RUN",
+    "agent_recommendation": "REQUEST_EVIDENCE",
+    "reviewer_decision": "PENDING",
+    "schema_version": "1.0",
+    "responsible_agent": "search_c",
+    "as_of": "2026-11-20T16:00:00+08:00",
+    "as_of_precision": "DATE",
+    "selected_paper_version": "HBS March 2017 accepted-stage manuscript; final FAJ 73(4):75–89 requires crosswalk",
+    "selected_pdf_checksum_if_obtained": "2fbb5036dcac22b17faa8d4292c521f77b8d98baecb0d3ebd0a13e6039caf781",
+    "institution_relations": [
+      {
+        "author": "Ryan Taliaferro",
+        "institution": "Acadian Asset Management",
+        "institution_relation": "STAFF_AT_PUBLICATION",
+        "relation_period": "2016–2017 manuscript and publication evidence",
+        "evidence_ids": [
+          "P011-S01"
+        ]
+      },
+      {
+        "author": "Malcolm Baker",
+        "institution": "Acadian Asset Management",
+        "institution_relation": "FORMAL_ADVISOR_OR_COLLABORATOR",
+        "relation_period": "2016–2017 manuscript and publication evidence",
+        "evidence_ids": [
+          "P011-S01"
+        ]
+      }
+    ],
+    "target_scope": "SELECTED_PILOT",
+    "planned_reproduction_types": [
+      "INDEPENDENT_FAITHFUL",
+      "APPROXIMATE_VALIDATION",
+      "RESEARCH_EXTENSION"
+    ],
+    "target_ids": [
+      "P011-T06-SIX",
+      "P011-F01-BASE"
+    ],
+    "critical_evidence_ids": [
+      "P011-S01",
+      "P011-S03"
+    ],
+    "hard_blocker_ids": [
+      "P011-B01",
+      "P011-B02",
+      "P011-B03"
+    ],
+    "unapproved_change_ids": [],
+    "approval_record_id": "PENDING",
+    "approved_version_and_scope": "PENDING",
+    "approved_experiment_ids": "PENDING",
+    "approved_result_ids": "PENDING",
+    "reviewed_at": "PENDING",
+    "reviewed_by": "PENDING",
+    "conditions_and_followups": "PENDING",
+    "plan_version": "1.0",
+    "review_package_version": "2.0",
+    "execution_stage": "DUE_DILIGENCE",
+    "result_status": "NOT_RUN",
+    "results": [
+      {
+        "result_id": "P011-T06-SIX",
+        "experiment_id": "P011-E01",
+        "result_status": "NOT_RUN",
+        "reproduced_value": null
+      },
+      {
+        "result_id": "P011-F01-BASE",
+        "experiment_id": "P011-E01",
+        "result_status": "NOT_RUN",
+        "reproduced_value": null
+      }
+    ],
+    "attachments": [],
+    "planned_artifacts": [
+      "results/P011/E01"
+    ],
+    "missing_fields": [
+      {
+        "field": "preflight_status",
+        "reason": "UNKNOWN",
+        "next_action": "参见证据与阻塞记录"
+      },
+      {
+        "field": "affiliation_at_research",
+        "reason": "UNKNOWN",
+        "next_action": "参见证据与阻塞记录"
+      },
+      {
+        "field": "current_affiliation",
+        "reason": "UNKNOWN",
+        "next_action": "参见证据与阻塞记录"
+      }
+    ],
+    "requested_result_ids": [
+      "P011-T06-SIX",
+      "P011-F01-BASE"
+    ],
+    "requested_experiment_ids": [
+      "P011-E01"
+    ],
+    "replication_value": null,
+    "difference_absolute": null,
+    "difference_relative": null,
+    "affiliation_at_research": null,
+    "affiliation_at_publication": "Acadian Asset Management",
+    "current_affiliation": null,
+    "replication_priority": "SECONDARY",
+    "evidence_maturity": "EVIDENCE_REVIEW",
+    "batch_id": "CO-REP-20261120-02-R2",
+    "preflight_status": null,
+    "review_experiments": []
+  },
+  {
+    "paper_id": "P012",
+    "candidate_status": "CORE",
+    "title": "Leverage Aversion and Risk Parity",
+    "authors": "Clifford S. Asness; Andrea Frazzini; Lasse H. Pedersen",
+    "publication_year": 2012,
+    "journal": "Financial Analysts Journal",
+    "DOI": "10.2469/faj.v68.n1.1",
+    "affiliated_author": "Asness; Frazzini; Pedersen",
+    "institution": "AQR Capital Management",
+    "institution_relation": "STAFF_AT_PUBLICATION",
+    "relation_period": "2012 issue",
+    "data_access_summary": "CRSP stocks/Treasury/T-bill entitlement unconfirmed",
+    "key_targets": "Table 2 Panel A long U.S. sample",
+    "main_blockers": "CRSP U.S. Treasury vintage, issuance weight and initial 36 months",
+    "priority_reason": "Narrow but useful cross-asset baseline once data available",
+    "evidence_ids": [
+      "P012-S01",
+      "P012-S02",
+      "P012-S03",
+      "P012-S04"
+    ],
+    "journal_group": "J3_PRACTICE",
+    "publication_status": "PUBLISHED",
+    "topic_class": "DIRECT_OPTIMIZATION",
+    "proposed_reproduction_type": "INDEPENDENT_FAITHFUL",
+    "code_source_type": "NOT_FOUND",
+    "execution_status": "NOT_RUN",
+    "agent_recommendation": "REQUEST_EVIDENCE",
+    "reviewer_decision": "PENDING",
+    "schema_version": "1.0",
+    "responsible_agent": "search_c",
+    "as_of": "2026-11-20T16:00:00+08:00",
+    "as_of_precision": "DATE",
+    "selected_paper_version": "FAJ 68(1):47–59, January/February 2012, AQR-hosted publisher PDF",
+    "selected_pdf_checksum_if_obtained": "25c02674654555c22ee1a02a693c84e83a2f0e544b51ce27b6875079e9f78406",
+    "institution_relations": [
+      {
+        "author": "Clifford S. Asness",
+        "institution": "AQR Capital Management",
+        "institution_relation": "STAFF_AT_PUBLICATION",
+        "relation_period": "2012 issue",
+        "evidence_ids": [
+          "P012-S02"
+        ]
+      },
+      {
+        "author": "Andrea Frazzini",
+        "institution": "AQR Capital Management",
+        "institution_relation": "STAFF_AT_PUBLICATION",
+        "relation_period": "2012 issue",
+        "evidence_ids": [
+          "P012-S02"
+        ]
+      },
+      {
+        "author": "Lasse H. Pedersen",
+        "institution": "AQR Capital Management",
+        "institution_relation": "STAFF_AT_PUBLICATION",
+        "relation_period": "2012 issue",
+        "evidence_ids": [
+          "P012-S02"
+        ]
+      }
+    ],
+    "target_scope": "SELECTED_PILOT",
+    "planned_reproduction_types": [
+      "INDEPENDENT_FAITHFUL",
+      "APPROXIMATE_VALIDATION",
+      "RESEARCH_EXTENSION"
+    ],
+    "target_ids": [
+      "P012-T02-A"
+    ],
+    "critical_evidence_ids": [
+      "P012-S01",
+      "P012-S02"
+    ],
+    "hard_blocker_ids": [
+      "P012-B01",
+      "P012-B02",
+      "P012-B03"
+    ],
+    "unapproved_change_ids": [],
+    "approval_record_id": "PENDING",
+    "approved_version_and_scope": "PENDING",
+    "approved_experiment_ids": "PENDING",
+    "approved_result_ids": "PENDING",
+    "reviewed_at": "PENDING",
+    "reviewed_by": "PENDING",
+    "conditions_and_followups": "PENDING",
+    "plan_version": "1.0",
+    "review_package_version": "2.0",
+    "execution_stage": "DUE_DILIGENCE",
+    "result_status": "NOT_RUN",
+    "results": [
+      {
+        "result_id": "P012-T02-A",
+        "experiment_id": "P012-E01",
+        "result_status": "NOT_RUN",
+        "reproduced_value": null
+      }
+    ],
+    "attachments": [],
+    "planned_artifacts": [
+      "results/P012/E01"
+    ],
+    "missing_fields": [
+      {
+        "field": "preflight_status",
+        "reason": "UNKNOWN",
+        "next_action": "参见证据与阻塞记录"
+      },
+      {
+        "field": "affiliation_at_research",
+        "reason": "UNKNOWN",
+        "next_action": "参见证据与阻塞记录"
+      },
+      {
+        "field": "current_affiliation",
+        "reason": "UNKNOWN",
+        "next_action": "参见证据与阻塞记录"
+      }
+    ],
+    "requested_result_ids": [
+      "P012-T02-A"
+    ],
+    "requested_experiment_ids": [
+      "P012-E01"
+    ],
+    "replication_value": null,
+    "difference_absolute": null,
+    "difference_relative": null,
+    "affiliation_at_research": null,
+    "affiliation_at_publication": "AQR Capital Management",
+    "current_affiliation": null,
+    "replication_priority": "SECONDARY",
+    "evidence_maturity": "EVIDENCE_REVIEW",
+    "batch_id": "CO-REP-20261120-02-R2",
+    "preflight_status": null,
+    "review_experiments": []
+  },
+  {
+    "paper_id": "P013",
+    "candidate_status": "CORE",
+    "title": "Balancing on the Life Cycle: Target-Date Funds Need Better Diversification",
+    "authors": "Jusvin Dhillon; Antti Ilmanen; John Liew",
+    "publication_year": 2016,
+    "journal": "The Journal of Portfolio Management",
+    "DOI": "10.3905/jpm.2016.42.4.012",
+    "affiliated_author": "Dhillon; Ilmanen; Liew",
+    "institution": "AQR Capital Management",
+    "institution_relation": "STAFF_AT_PUBLICATION",
+    "relation_period": "Summer 2016 issue",
+    "data_access_summary": "Historical underlying series documented only",
+    "key_targets": "Exhibit 9 steps 1–5",
+    "main_blockers": "Exact historical investment series, fit windows and transaction cost schedule",
+    "priority_reason": "Distinct drawdown and cohort effects but major historical data hurdle",
+    "evidence_ids": [
+      "P013-S01",
+      "P013-S02",
+      "P013-S03",
+      "P013-S04",
+      "P013-S05",
+      "P013-S06"
+    ],
+    "journal_group": "J3_PRACTICE",
+    "publication_status": "PUBLISHED",
+    "topic_class": "DIRECT_OPTIMIZATION",
+    "proposed_reproduction_type": "INDEPENDENT_FAITHFUL",
+    "code_source_type": "NOT_FOUND",
+    "execution_status": "NOT_RUN",
+    "agent_recommendation": "REQUEST_EVIDENCE",
+    "reviewer_decision": "PENDING",
+    "schema_version": "1.0",
+    "responsible_agent": "search_c",
+    "as_of": "2026-11-20T16:00:00+08:00",
+    "as_of_precision": "DATE",
+    "selected_paper_version": "JPM 42(4):12–27, Summer 2016, AQR-hosted publisher PDF",
+    "selected_pdf_checksum_if_obtained": "1e4f47a3fcb288bd97cf6653e7024ab112a64f0c4f1303f65bd9a050c3aee3f2",
+    "institution_relations": [
+      {
+        "author": "Jusvin Dhillon",
+        "institution": "AQR Capital Management",
+        "institution_relation": "STAFF_AT_PUBLICATION",
+        "relation_period": "Summer 2016 issue",
+        "evidence_ids": [
+          "P013-S01"
+        ]
+      },
+      {
+        "author": "Antti Ilmanen",
+        "institution": "AQR Capital Management",
+        "institution_relation": "STAFF_AT_PUBLICATION",
+        "relation_period": "Summer 2016 issue",
+        "evidence_ids": [
+          "P013-S01"
+        ]
+      },
+      {
+        "author": "John Liew",
+        "institution": "AQR Capital Management",
+        "institution_relation": "STAFF_AT_PUBLICATION",
+        "relation_period": "Summer 2016 issue",
+        "evidence_ids": [
+          "P013-S01"
+        ]
+      }
+    ],
+    "target_scope": "SELECTED_PILOT",
+    "planned_reproduction_types": [
+      "INDEPENDENT_FAITHFUL",
+      "APPROXIMATE_VALIDATION",
+      "RESEARCH_EXTENSION"
+    ],
+    "target_ids": [
+      "P013-X09-STEPS1TO5"
+    ],
+    "critical_evidence_ids": [
+      "P013-S01",
+      "P013-S06"
+    ],
+    "hard_blocker_ids": [
+      "P013-B01",
+      "P013-B02",
+      "P013-B03",
+      "P013-B04"
+    ],
+    "unapproved_change_ids": [],
+    "approval_record_id": "PENDING",
+    "approved_version_and_scope": "PENDING",
+    "approved_experiment_ids": "PENDING",
+    "approved_result_ids": "PENDING",
+    "reviewed_at": "PENDING",
+    "reviewed_by": "PENDING",
+    "conditions_and_followups": "PENDING",
+    "plan_version": "1.0",
+    "review_package_version": "2.0",
+    "execution_stage": "DUE_DILIGENCE",
+    "result_status": "NOT_RUN",
+    "results": [
+      {
+        "result_id": "P013-X09-STEPS1TO5",
+        "experiment_id": "P013-E01",
+        "result_status": "NOT_RUN",
+        "reproduced_value": null
+      }
+    ],
+    "attachments": [],
+    "planned_artifacts": [
+      "results/P013/E01"
+    ],
+    "missing_fields": [
+      {
+        "field": "preflight_status",
+        "reason": "UNKNOWN",
+        "next_action": "参见证据与阻塞记录"
+      },
+      {
+        "field": "affiliation_at_research",
+        "reason": "UNKNOWN",
+        "next_action": "参见证据与阻塞记录"
+      },
+      {
+        "field": "current_affiliation",
+        "reason": "UNKNOWN",
+        "next_action": "参见证据与阻塞记录"
+      }
+    ],
+    "requested_result_ids": [
+      "P013-X09-STEPS1TO5"
+    ],
+    "requested_experiment_ids": [
+      "P013-E01"
+    ],
+    "replication_value": null,
+    "difference_absolute": null,
+    "difference_relative": null,
+    "affiliation_at_research": null,
+    "affiliation_at_publication": "AQR Capital Management",
+    "current_affiliation": null,
+    "replication_priority": "SECONDARY",
+    "evidence_maturity": "EVIDENCE_REVIEW",
+    "batch_id": "CO-REP-20261120-02-R2",
+    "preflight_status": null,
+    "review_experiments": []
+  },
+  {
+    "schema_version": "1.0",
+    "paper_id": "P014",
+    "candidate_status": "EXTENDED",
+    "responsible_agent": "search_a",
+    "as_of": "2026-11-20T16:00:00+08:00",
+    "title": "The Virtue of Complexity in Return Prediction",
+    "authors": "Bryan Kelly; Semyon Malamud; Kangying Zhou",
+    "publication_year": 2024,
+    "journal": "The Journal of Finance",
+    "journal_group": "J1_NAMED",
+    "DOI": "10.1111/jofi.13298",
+    "publication_status": "PUBLISHED",
+    "selected_paper_version": "JF 79(1):459–503; 2024-02; first online 2023-12-08",
+    "affiliated_author": "Bryan Kelly",
+    "institution": "AQR Capital Management",
+    "institution_relation": "STAFF_AT_PUBLICATION",
+    "relation_period": "2024 issue; 2023 first online",
+    "institution_relations": [
+      {
+        "author": "Bryan Kelly",
+        "institution": "AQR Capital Management",
+        "institution_relation": "STAFF_AT_PUBLICATION",
+        "evidence_ids": [
+          "P014-S01",
+          "P014-S02"
+        ]
+      }
+    ],
+    "topic_class": "INPUT_WITH_PORTFOLIO_VALIDATION",
+    "proposed_reproduction_type": "AUTHOR_CODE_RERUN",
+    "planned_reproduction_types": [
+      "AUTHOR_CODE_RERUN",
+      "INDEPENDENT_FAITHFUL",
+      "APPROXIMATE_VALIDATION",
+      "RESEARCH_EXTENSION"
+    ],
+    "target_scope": "SELECTED_PILOT",
+    "target_ids": [
+      "P014-T01-PANELA",
+      "P014-F08-A"
+    ],
+    "key_targets": "Table I Panel A; Figure 8 Panel A",
+    "data_access_summary": "2020 Goyal data link found; exact input bytes and historical-vintage match pending",
+    "code_source_type": "AUTHOR",
+    "execution_status": "NOT_RUN",
+    "result_status": "NOT_RUN",
+    "main_blockers": "Author archive and appendix inaccessible; exact data vintage and aggregation unverified",
+    "hard_blocker_ids": [
+      "P014-B01",
+      "P014-B02",
+      "P014-B03"
+    ],
+    "unapproved_change_ids": [
+      "P014-C01"
+    ],
+    "agent_recommendation": "REQUEST_EVIDENCE",
+    "priority_reason": "Published single-market timing pilot has precise benchmark and downloadable official code listing",
+    "critical_evidence_ids": [
+      "P014-S01",
+      "P014-S02",
+      "P014-S03",
+      "P014-S04",
+      "P014-S05",
+      "P014-S06"
+    ],
+    "evidence_ids": [
+      "P014-S01",
+      "P014-S02",
+      "P014-S03",
+      "P014-S04",
+      "P014-S05",
+      "P014-S06",
+      "P014-S07",
+      "P014-S08"
+    ],
+    "reviewer_decision": "PENDING",
+    "approval_record_id": "PENDING",
+    "plan_version": "1.0",
+    "review_package_version": "2.0",
+    "execution_stage": "DUE_DILIGENCE",
+    "attachments": [],
+    "missing_fields": [
+      {
+        "field": "preflight_status",
+        "reason": "UNKNOWN",
+        "next_action": "参见证据与阻塞记录"
+      },
+      {
+        "field": "affiliation_at_research",
+        "reason": "UNKNOWN",
+        "next_action": "参见证据与阻塞记录"
+      },
+      {
+        "field": "current_affiliation",
+        "reason": "UNKNOWN",
+        "next_action": "参见证据与阻塞记录"
+      }
+    ],
+    "approved_version_and_scope": "PENDING",
+    "approved_experiment_ids": "PENDING",
+    "approved_result_ids": "PENDING",
+    "reviewed_by": "PENDING",
+    "reviewed_at": "PENDING",
+    "conditions_and_followups": "PENDING",
+    "requested_result_ids": [
+      "P014-T01-PANELA",
+      "P014-F08-A"
+    ],
+    "requested_experiment_ids": [
+      "P014-E01",
+      "P014-E02",
+      "P014-E03",
+      "P014-E04",
+      "P014-E05",
+      "P014-E06"
+    ],
+    "replication_value": null,
+    "difference_absolute": null,
+    "difference_relative": null,
+    "affiliation_at_research": null,
+    "affiliation_at_publication": "AQR Capital Management",
+    "current_affiliation": null,
+    "replication_priority": "SECONDARY",
+    "evidence_maturity": "EVIDENCE_REVIEW",
+    "batch_id": "CO-REP-20261120-02-R2",
+    "preflight_status": null,
+    "review_experiments": []
+  },
+  {
+    "schema_version": "1.0",
+    "paper_id": "P015",
+    "candidate_status": "PENDING_EVIDENCE",
+    "responsible_agent": "search_a",
+    "as_of": "2026-11-20T16:00:00+08:00",
+    "title": "Complex Modern Portfolio Theory",
+    "authors": "Oliver Hellum; Theis I. Jensen; Bryan T. Kelly; Semyon Malamud",
+    "publication_year": 2026,
+    "journal": "NBER Working Papers",
+    "journal_group": "W_WORKING",
+    "DOI": "10.3386/w35246",
+    "publication_status": "WORKING_PAPER",
+    "selected_paper_version": "NBER w35246, May 2026, revised June 2026; full PDF not inspected",
+    "affiliated_author": "Bryan T. Kelly",
+    "institution": "AQR Capital Management",
+    "institution_relation": "STAFF_AT_RESEARCH",
+    "relation_period": "2026 work stage, SSRN indexed byline; final selected PDF pending",
+    "institution_relations": [
+      {
+        "author": "Bryan T. Kelly",
+        "institution": "AQR Capital Management",
+        "institution_relation": "STAFF_AT_RESEARCH",
+        "evidence_ids": [
+          "P015-S01",
+          "P015-S02",
+          "P015-S03"
+        ]
+      }
+    ],
+    "topic_class": "DIRECT_OPTIMIZATION",
+    "proposed_reproduction_type": null,
+    "planned_reproduction_types": null,
+    "target_scope": null,
+    "target_ids": null,
+    "key_targets": null,
+    "data_access_summary": "Required specifications UNKNOWN; abstract-level only",
+    "code_source_type": "NOT_FOUND",
+    "execution_status": "NOT_RUN",
+    "result_status": "NOT_RUN",
+    "main_blockers": "Full PDF and appendix access; selected version lock; exact targets and data UNKNOWN",
+    "hard_blocker_ids": [
+      "P015-B01",
+      "P015-B02"
+    ],
+    "unapproved_change_ids": [],
+    "agent_recommendation": "REQUEST_EVIDENCE",
+    "priority_reason": "Direct modern portfolio optimization in high-dimensional N>T regime, working paper watchlist",
+    "critical_evidence_ids": [
+      "P015-S01",
+      "P015-S02",
+      "P015-S03"
+    ],
+    "evidence_ids": [
+      "P015-S01",
+      "P015-S02",
+      "P015-S03",
+      "P015-S04"
+    ],
+    "reviewer_decision": "PENDING",
+    "approval_record_id": "PENDING",
+    "plan_version": "1.0",
+    "review_package_version": "2.0",
+    "execution_stage": "DUE_DILIGENCE",
+    "attachments": [],
+    "missing_fields": [
+      {
+        "field": "proposed_reproduction_type",
+        "reason": "UNKNOWN",
+        "next_action": "参见证据与阻塞记录"
+      },
+      {
+        "field": "key_targets",
+        "reason": "UNKNOWN",
+        "next_action": "参见证据与阻塞记录"
+      },
+      {
+        "field": "preflight_status",
+        "reason": "UNKNOWN",
+        "next_action": "参见证据与阻塞记录"
+      },
+      {
+        "field": "affiliation_at_publication",
+        "reason": "UNKNOWN",
+        "next_action": "参见证据与阻塞记录"
+      },
+      {
+        "field": "current_affiliation",
+        "reason": "UNKNOWN",
+        "next_action": "参见证据与阻塞记录"
+      }
+    ],
+    "approved_version_and_scope": "PENDING",
+    "approved_experiment_ids": "PENDING",
+    "approved_result_ids": "PENDING",
+    "reviewed_by": "PENDING",
+    "reviewed_at": "PENDING",
+    "conditions_and_followups": "PENDING",
+    "requested_experiment_ids": null,
+    "replication_value": null,
+    "difference_absolute": null,
+    "difference_relative": null,
+    "affiliation_at_research": "AQR Capital Management",
+    "affiliation_at_publication": null,
+    "current_affiliation": null,
+    "replication_priority": "SECONDARY",
+    "evidence_maturity": "EVIDENCE_REVIEW",
+    "batch_id": "CO-REP-20261120-02-R2",
+    "preflight_status": null,
+    "review_experiments": []
+  },
+  {
+    "schema_version": "1.0",
+    "paper_id": "P016",
+    "candidate_status": "EXTENDED",
+    "responsible_agent": "search_b",
+    "as_of": "2026-11-20T16:00:00+08:00",
+    "title": "Common Factors in Corporate Bond Returns",
+    "authors": "Ronen Israel; Diogo Palhares; Scott Richardson",
+    "journal": "Journal of Investment Management",
+    "publication_year": 2018,
+    "DOI": null,
+    "journal_group": "J3_PRACTICE",
+    "publication_status": "PUBLISHED",
+    "first_online_date": null,
+    "selected_paper_version": "JOIM 2018 Q2 16(2):17–46，正式排版 PDF 与内置附录 Table A.1",
+    "selected_pdf_checksum": "cdd097f425467823e8cb72fb1cf7dad51bc35771914da34548821deacb7340f5",
+    "institution_relations": [
+      {
+        "author": "Ronen Israel",
+        "institution_entity": "AQR Capital Management",
+        "institution_relation": "STAFF_AT_PUBLICATION",
+        "relation_period": "2018 第二季度正式版署名；精确起止未知",
+        "evidence_ids": [
+          "P016-S01",
+          "P016-S02"
+        ]
+      },
+      {
+        "author": "Diogo Palhares",
+        "institution_entity": "AQR Capital Management",
+        "institution_relation": "STAFF_AT_PUBLICATION",
+        "relation_period": "2018 第二季度正式版署名；精确起止未知",
+        "evidence_ids": [
+          "P016-S01",
+          "P016-S02"
+        ]
+      },
+      {
+        "author": "Scott Richardson",
+        "institution_entity": "AQR Capital Management",
+        "institution_relation": "STAFF_AT_PUBLICATION",
+        "relation_period": "2018 第二季度正式版署名；精确起止未知",
+        "evidence_ids": [
+          "P016-S01",
+          "P016-S02"
+        ]
+      }
+    ],
+    "topic_class": "INPUT_WITH_PORTFOLIO_VALIDATION",
+    "target_scope": "SELECTED_PILOT",
+    "target_scope_note": "Table 7 / Figure 3；Table 1 样本控制。排除论文长短仓、风险和行为归因主张。",
+    "planned_reproduction_types": [
+      "INDEPENDENT_FAITHFUL",
+      "APPROXIMATE_VALIDATION",
+      "RESEARCH_EXTENSION"
+    ],
+    "experiment_layers": [
+      "PAPER_REPLICATION",
+      "APPROXIMATE_VALIDATION",
+      "RESEARCH_EXTENSION"
+    ],
+    "execution_stage": "DUE_DILIGENCE",
+    "execution_status": "NOT_RUN",
+    "result_status": "NOT_RUN",
+    "author_code_available": false,
+    "code_source_type": "NOT_FOUND",
+    "author_code_url": null,
+    "data_access_summary": "BAML IG/HY 1997–2015、Compustat、股票和交易成本档位，原版数据权限与快照未证实",
+    "target_ids": [
+      "P016-R01",
+      "P016-R02",
+      "P016-R03"
+    ],
+    "requested_experiment_ids": [
+      "P016-E01",
+      "P016-E02"
+    ],
+    "key_targets": "Table 1 数据控制、Table 7 月频组合成本结果、Figure 3 路径",
+    "critical_evidence_ids": [
+      "P016-S01",
+      "P016-S02",
+      "P016-S04",
+      "P016-S08"
+    ],
+    "hard_blocker_ids": [
+      "P016-B01",
+      "P016-B02",
+      "P016-B03"
+    ],
+    "unapproved_change_ids": [
+      "P016-C01",
+      "P016-C02",
+      "P016-C03"
+    ],
+    "agent_recommendation": "REQUEST_EVIDENCE",
+    "priority_reason": "有独立长仓优化和扣成本目标，BAML 历史和最小成交额/OAS 约束细节阻断忠实复现",
+    "reviewer_decision": "PENDING",
+    "approval_record_id": "PENDING",
+    "approved_version_and_scope": "PENDING",
+    "approved_experiment_ids": "PENDING",
+    "approved_result_ids": "PENDING",
+    "reviewed_by": "PENDING",
+    "reviewed_at": "PENDING",
+    "conditions_and_followups": "PENDING",
+    "plan_version": "1.0",
+    "review_package_version": "2.0",
+    "attachments": [],
+    "planned_artifacts": [
+      "planned/P016/E01",
+      "planned/P016/E02",
+      "planned/P016/E03"
+    ],
+    "missing_fields": [
+      {
+        "field": "DOI",
+        "reason": "UNKNOWN",
+        "next_action": "参见证据与阻塞记录"
+      },
+      {
+        "field": "relation_period",
+        "reason": "UNKNOWN",
+        "next_action": "参见证据与阻塞记录"
+      },
+      {
+        "field": "proposed_reproduction_type",
+        "reason": "UNKNOWN",
+        "next_action": "参见证据与阻塞记录"
+      },
+      {
+        "field": "main_blockers",
+        "reason": "UNKNOWN",
+        "next_action": "参见证据与阻塞记录"
+      },
+      {
+        "field": "preflight_status",
+        "reason": "UNKNOWN",
+        "next_action": "参见证据与阻塞记录"
+      },
+      {
+        "field": "affiliation_at_research",
+        "reason": "UNKNOWN",
+        "next_action": "参见证据与阻塞记录"
+      },
+      {
+        "field": "current_affiliation",
+        "reason": "UNKNOWN",
+        "next_action": "参见证据与阻塞记录"
+      }
+    ],
+    "evidence_ids": [
+      "P016-S01",
+      "P016-S02",
+      "P016-S03",
+      "P016-S04",
+      "P016-S05",
+      "P016-S06",
+      "P016-S07",
+      "P016-S08"
+    ],
+    "requested_result_ids": [
+      "P016-R01",
+      "P016-R02",
+      "P016-R03"
+    ],
+    "replication_value": null,
+    "difference_absolute": null,
+    "difference_relative": null,
+    "institution": "AQR Capital Management",
+    "institution_relation": "STAFF_AT_PUBLICATION",
+    "affiliated_author": "Ronen Israel; Diogo Palhares; Scott Richardson",
+    "affiliation_at_research": null,
+    "affiliation_at_publication": "AQR Capital Management",
+    "current_affiliation": null,
+    "replication_priority": "SECONDARY",
+    "evidence_maturity": "EVIDENCE_REVIEW",
+    "batch_id": "CO-REP-20261120-02-R2",
+    "preflight_status": null,
+    "relation_period": null,
+    "proposed_reproduction_type": null,
+    "main_blockers": null,
+    "review_experiments": []
+  },
+  {
+    "schema_version": "1.0",
+    "paper_id": "P017",
+    "candidate_status": "CORE",
+    "responsible_agent": "search_a",
+    "as_of": "2026-11-20T16:00:00+08:00",
+    "title": "Hedging Climate Change News",
+    "authors": "Robert F. Engle; Stefano Giglio; Bryan Kelly; Heebum Lee; Johannes Stroebel",
+    "publication_year": 2020,
+    "journal": "The Review of Financial Studies",
+    "journal_group": "J1_NAMED",
+    "DOI": "10.1093/rfs/hhz072",
+    "publication_status": "PUBLISHED",
+    "selected_paper_version": "RFS 33(3):1184–1216, March 2020",
+    "affiliated_author": "Bryan Kelly",
+    "institution": "AQR Capital Management",
+    "institution_relation": "STAFF_AT_PUBLICATION",
+    "relation_period": "2020 issue byline; 2019 working-paper byline",
+    "institution_relations": [
+      {
+        "author": "Bryan Kelly",
+        "institution": "AQR Capital Management",
+        "institution_relation": "STAFF_AT_PUBLICATION",
+        "evidence_ids": [
+          "P017-S01",
+          "P017-S02"
+        ]
+      }
+    ],
+    "topic_class": "DIRECT_OPTIMIZATION",
+    "proposed_reproduction_type": "INDEPENDENT_FAITHFUL",
+    "planned_reproduction_types": [
+      "INDEPENDENT_FAITHFUL",
+      "APPROXIMATE_VALIDATION",
+      "RESEARCH_EXTENSION"
+    ],
+    "target_scope": "SELECTED_PILOT",
+    "target_ids": [
+      "P017-T04-PANELA",
+      "P017-F07"
+    ],
+    "key_targets": "Table 4 Panel A; Figure 7. WSJ shocks with US equity hedge portfolios 2012-03 to 2016-12",
+    "data_access_summary": "Author climate index workbook LINK_FOUND; historical CRSP/ESG input entitlement unconfirmed",
+    "code_source_type": "INDEPENDENT_PLANNED",
+    "execution_status": "NOT_RUN",
+    "result_status": "NOT_RUN",
+    "main_blockers": "CRSP and ESG snapshots; archived appendix; publication-vintage climate data inventory",
+    "hard_blocker_ids": [
+      "P017-B01",
+      "P017-B02",
+      "P017-B03"
+    ],
+    "unapproved_change_ids": [
+      "P017-C01"
+    ],
+    "agent_recommendation": "REQUEST_EVIDENCE",
+    "priority_reason": "Direct climate-news hedge portfolio weights and visible OOS targets; commercial historical input access pending",
+    "critical_evidence_ids": [
+      "P017-S01",
+      "P017-S02",
+      "P017-S03",
+      "P017-S04"
+    ],
+    "evidence_ids": [
+      "P017-S01",
+      "P017-S02",
+      "P017-S03",
+      "P017-S04",
+      "P017-S05"
+    ],
+    "reviewer_decision": "PENDING",
+    "approval_record_id": "PENDING",
+    "plan_version": "1.0",
+    "review_package_version": "2.0",
+    "execution_stage": "DUE_DILIGENCE",
+    "attachments": [],
+    "missing_fields": [
+      {
+        "field": "preflight_status",
+        "reason": "UNKNOWN",
+        "next_action": "参见证据与阻塞记录"
+      },
+      {
+        "field": "affiliation_at_research",
+        "reason": "UNKNOWN",
+        "next_action": "参见证据与阻塞记录"
+      },
+      {
+        "field": "current_affiliation",
+        "reason": "UNKNOWN",
+        "next_action": "参见证据与阻塞记录"
+      }
+    ],
+    "approved_version_and_scope": "PENDING",
+    "approved_experiment_ids": "PENDING",
+    "approved_result_ids": "PENDING",
+    "reviewed_by": "PENDING",
+    "reviewed_at": "PENDING",
+    "conditions_and_followups": "PENDING",
+    "requested_result_ids": [
+      "P017-T04-PANELA",
+      "P017-F07"
+    ],
+    "requested_experiment_ids": [
+      "P017-E01"
+    ],
+    "replication_value": null,
+    "difference_absolute": null,
+    "difference_relative": null,
+    "affiliation_at_research": null,
+    "affiliation_at_publication": "AQR Capital Management",
+    "current_affiliation": null,
+    "replication_priority": "SECONDARY",
+    "evidence_maturity": "EVIDENCE_REVIEW",
+    "batch_id": "CO-REP-20261120-02-R2",
+    "preflight_status": null,
+    "review_experiments": []
+  },
+  {
+    "paper_id": "P018",
+    "candidate_status": "EXTENDED",
+    "title": "FlashFolio: A GPU-Accelerated Solver for Portfolio Optimization",
+    "authors": "Yilun Jiang; Haihao Lu; Zedong Peng; Jinwen Yang",
+    "publication_year": 2026,
+    "journal": "arXiv",
+    "journal_group": "W_WORKING",
+    "DOI": "10.48550/arXiv.2604.22625",
+    "publication_status": "WORKING_PAPER",
+    "affiliated_author": "Yilun Jiang",
+    "institution": "Point72 Asset Management",
+    "institution_relation": "STAFF_AT_RESEARCH",
+    "relation_period": "2026-04-24 v1 首页",
+    "topic_class": "DIRECT_OPTIMIZATION",
+    "proposed_reproduction_type": "INDEPENDENT_FAITHFUL",
+    "data_access_summary": "CRSP、OptionMetrics 等权限待确认",
+    "code_source_type": "NOT_FOUND",
+    "execution_status": "NOT_RUN",
+    "key_targets": "Table 1 计数、SGM1、倍率",
+    "main_blockers": "具体实例、作者完整实现与 GPU/CPU 版本",
+    "agent_recommendation": "REQUEST_EVIDENCE",
+    "priority_reason": "J4/W 方法研究备选，历史原实例与环境待核",
+    "evidence_ids": [
+      "P018-S01",
+      "P018-S02"
+    ],
+    "selected_paper_version": "arXiv v1，2026-04-24",
+    "attachments": [],
+    "schema_version": "1.0",
+    "responsible_agent": "CTRL",
+    "as_of": "2026-11-20T16:00:00+08:00",
+    "plan_version": "1.0",
+    "review_package_version": "2.0",
+    "execution_stage": "DUE_DILIGENCE",
+    "result_status": "NOT_RUN",
+    "reviewer_decision": "PENDING",
+    "approval_record_id": "PENDING",
+    "approved_version_and_scope": "PENDING",
+    "approved_experiment_ids": "PENDING",
+    "approved_result_ids": "PENDING",
+    "reviewed_by": "PENDING",
+    "reviewed_at": "PENDING",
+    "conditions_and_followups": "PENDING",
+    "critical_evidence_ids": [
+      "P018-S01",
+      "P018-S02"
+    ],
+    "target_ids": [
+      "P018-T01"
+    ],
+    "requested_result_ids": [
+      "P018-T01"
+    ],
+    "requested_experiment_ids": [
+      "P018-E01"
+    ],
+    "hard_blocker_ids": [
+      "P018-B01",
+      "P018-B02",
+      "P018-B03"
+    ],
+    "target_scope": "SELECTED_PILOT",
+    "planned_reproduction_types": [
+      "INDEPENDENT_FAITHFUL"
+    ],
+    "institution_relations": [
+      {
+        "author": "Yilun Jiang",
+        "institution": "Point72 Asset Management",
+        "institution_relation": "STAFF_AT_RESEARCH",
+        "relation_period": "2026-04-24 v1 首页"
+      }
+    ],
+    "unapproved_change_ids": [],
+    "missing_fields": [
+      {
+        "field": "preflight_status",
+        "reason": "UNKNOWN",
+        "next_action": "参见证据与阻塞记录"
+      },
+      {
+        "field": "affiliation_at_publication",
+        "reason": "UNKNOWN",
+        "next_action": "参见证据与阻塞记录"
+      },
+      {
+        "field": "current_affiliation",
+        "reason": "UNKNOWN",
+        "next_action": "参见证据与阻塞记录"
+      }
+    ],
+    "replication_value": null,
+    "difference_absolute": null,
+    "difference_relative": null,
+    "affiliation_at_research": "Point72 Asset Management",
+    "affiliation_at_publication": null,
+    "current_affiliation": null,
+    "replication_priority": "SECONDARY",
+    "evidence_maturity": "EVIDENCE_REVIEW",
+    "batch_id": "CO-REP-20261120-02-R2",
+    "preflight_status": null,
+    "review_experiments": []
+  },
+  {
+    "paper_id": "P019",
+    "candidate_status": "EXTENDED",
+    "title": "A Survey of Alternative Equity Index Strategies",
+    "authors": "Tzee-man Chow; Jason Hsu; Vitali Kalesnik; Bryce Little",
+    "publication_year": 2011,
+    "journal": "Financial Analysts Journal",
+    "DOI": "10.2469/faj.v67.n5.5",
+    "affiliated_author": "Chow; Hsu; Kalesnik",
+    "institution": "Research Affiliates, LLC",
+    "institution_relation": "STAFF_AT_PUBLICATION",
+    "relation_period": "September 2011 issue",
+    "data_access_summary": "CRSP/Compustat U.S., Worldscope/Datastream international entitlement unconfirmed",
+    "key_targets": "Table 2 U.S. min-variance, equal weight, benchmark rows",
+    "main_blockers": "Data vintage, historical investable universe and optimizer configuration",
+    "priority_reason": "Controlled comparison of optimized vs naïve weights with turnover",
+    "evidence_ids": [
+      "P019-S01",
+      "P019-S02"
+    ],
+    "journal_group": "J3_PRACTICE",
+    "publication_status": "PUBLISHED",
+    "topic_class": "DIRECT_OPTIMIZATION",
+    "proposed_reproduction_type": "INDEPENDENT_FAITHFUL",
+    "code_source_type": "NOT_FOUND",
+    "execution_status": "NOT_RUN",
+    "agent_recommendation": "REQUEST_EVIDENCE",
+    "reviewer_decision": "PENDING",
+    "schema_version": "1.0",
+    "responsible_agent": "search_c",
+    "as_of": "2026-11-20T16:00:00+08:00",
+    "as_of_precision": "DATE",
+    "selected_paper_version": "FAJ 67(5):37–57, September/October 2011, Research Affiliates-hosted publisher PDF",
+    "selected_pdf_checksum_if_obtained": null,
+    "institution_relations": [
+      {
+        "author": "Tzee-man Chow",
+        "institution": "Research Affiliates, LLC",
+        "institution_relation": "STAFF_AT_PUBLICATION",
+        "relation_period": "September 2011 issue",
+        "evidence_ids": [
+          "P019-S02"
+        ]
+      },
+      {
+        "author": "Jason Hsu",
+        "institution": "Research Affiliates, LLC",
+        "institution_relation": "STAFF_AT_PUBLICATION",
+        "relation_period": "September 2011 issue",
+        "evidence_ids": [
+          "P019-S02"
+        ]
+      },
+      {
+        "author": "Vitali Kalesnik",
+        "institution": "Research Affiliates, LLC",
+        "institution_relation": "STAFF_AT_PUBLICATION",
+        "relation_period": "September 2011 issue",
+        "evidence_ids": [
+          "P019-S02"
+        ]
+      }
+    ],
+    "target_scope": "SELECTED_PILOT",
+    "planned_reproduction_types": [
+      "INDEPENDENT_FAITHFUL",
+      "APPROXIMATE_VALIDATION",
+      "RESEARCH_EXTENSION"
+    ],
+    "target_ids": [
+      "P019-T02-US"
+    ],
+    "critical_evidence_ids": [
+      "P019-S01",
+      "P019-S02"
+    ],
+    "hard_blocker_ids": [
+      "P019-B01",
+      "P019-B02",
+      "P019-B03"
+    ],
+    "unapproved_change_ids": [],
+    "approval_record_id": "PENDING",
+    "approved_version_and_scope": "PENDING",
+    "approved_experiment_ids": "PENDING",
+    "approved_result_ids": "PENDING",
+    "reviewed_at": "PENDING",
+    "reviewed_by": "PENDING",
+    "conditions_and_followups": "PENDING",
+    "plan_version": "1.0",
+    "review_package_version": "2.0",
+    "execution_stage": "DUE_DILIGENCE",
+    "result_status": "NOT_RUN",
+    "results": [
+      {
+        "result_id": "P019-T02-US",
+        "experiment_id": "P019-E01",
+        "result_status": "NOT_RUN",
+        "reproduced_value": null
+      }
+    ],
+    "attachments": [],
+    "planned_artifacts": [
+      "results/P019/E01"
+    ],
+    "missing_fields": [
+      {
+        "field": "preflight_status",
+        "reason": "UNKNOWN",
+        "next_action": "参见证据与阻塞记录"
+      },
+      {
+        "field": "affiliation_at_research",
+        "reason": "UNKNOWN",
+        "next_action": "参见证据与阻塞记录"
+      },
+      {
+        "field": "current_affiliation",
+        "reason": "UNKNOWN",
+        "next_action": "参见证据与阻塞记录"
+      }
+    ],
+    "requested_result_ids": [
+      "P019-T02-US"
+    ],
+    "requested_experiment_ids": [
+      "P019-E01"
+    ],
+    "replication_value": null,
+    "difference_absolute": null,
+    "difference_relative": null,
+    "affiliation_at_research": null,
+    "affiliation_at_publication": "Research Affiliates, LLC",
+    "current_affiliation": null,
+    "replication_priority": "SECONDARY",
+    "evidence_maturity": "EVIDENCE_REVIEW",
+    "batch_id": "CO-REP-20261120-02-R2",
+    "preflight_status": null,
+    "review_experiments": []
+  },
+  {
+    "paper_id": "P020",
+    "candidate_status": "EXTENDED",
+    "title": "Tax-Aware Portfolio Construction via Convex Optimization",
+    "authors": "Nicholas Moehle; Mykel J. Kochenderfer; Stephen Boyd; Andrew Ang",
+    "publication_year": 2021,
+    "journal": "Journal of Optimization Theory and Applications",
+    "journal_group": "J4_METHODS",
+    "DOI": "10.1007/s10957-021-01823-0",
+    "publication_status": "PUBLISHED",
+    "affiliated_author": "Nicholas Moehle; Andrew Ang",
+    "institution": "BlackRock AI Labs; BlackRock Factor-Based Strategies Group",
+    "institution_relation": "STAFF_AT_PUBLICATION",
+    "relation_period": "2021-02-25 线上正式署名",
+    "topic_class": "DIRECT_OPTIMIZATION",
+    "proposed_reproduction_type": "INDEPENDENT_FAITHFUL",
+    "data_access_summary": "历史标的、税lot、临时估计档未取得",
+    "code_source_type": "NOT_FOUND",
+    "execution_status": "NOT_RUN",
+    "key_targets": "Table 1 744例求解比较；Fig 4 实现税负/风险",
+    "main_blockers": "原始实例、CPLEX 12.9 与随机取整配置",
+    "agent_recommendation": "REQUEST_EVIDENCE",
+    "priority_reason": "J4/W 方法研究备选，历史原实例与环境待核",
+    "evidence_ids": [
+      "P020-S01",
+      "P020-S02",
+      "P020-S03"
+    ],
+    "selected_paper_version": "JOTA 189(2) 364–383，online 2021-02-25",
+    "attachments": [],
+    "schema_version": "1.0",
+    "responsible_agent": "CTRL",
+    "as_of": "2026-11-20T16:00:00+08:00",
+    "plan_version": "1.0",
+    "review_package_version": "2.0",
+    "execution_stage": "DUE_DILIGENCE",
+    "result_status": "NOT_RUN",
+    "reviewer_decision": "PENDING",
+    "approval_record_id": "PENDING",
+    "approved_version_and_scope": "PENDING",
+    "approved_experiment_ids": "PENDING",
+    "approved_result_ids": "PENDING",
+    "reviewed_by": "PENDING",
+    "reviewed_at": "PENDING",
+    "conditions_and_followups": "PENDING",
+    "critical_evidence_ids": [
+      "P020-S01",
+      "P020-S02",
+      "P020-S03"
+    ],
+    "target_ids": [
+      "P020-F04",
+      "P020-T01"
+    ],
+    "requested_result_ids": [
+      "P020-F04",
+      "P020-T01"
+    ],
+    "requested_experiment_ids": [
+      "P020-E01"
+    ],
+    "hard_blocker_ids": [
+      "P020-B01",
+      "P020-B02",
+      "P020-B03"
+    ],
+    "target_scope": "SELECTED_PILOT",
+    "planned_reproduction_types": [
+      "INDEPENDENT_FAITHFUL"
+    ],
+    "institution_relations": [
+      {
+        "author": "Nicholas Moehle; Andrew Ang",
+        "institution": "BlackRock AI Labs; BlackRock Factor-Based Strategies Group",
+        "institution_relation": "STAFF_AT_PUBLICATION",
+        "relation_period": "2021-02-25 线上正式署名"
+      }
+    ],
+    "unapproved_change_ids": [],
+    "missing_fields": [
+      {
+        "field": "preflight_status",
+        "reason": "UNKNOWN",
+        "next_action": "参见证据与阻塞记录"
+      },
+      {
+        "field": "affiliation_at_research",
+        "reason": "UNKNOWN",
+        "next_action": "参见证据与阻塞记录"
+      },
+      {
+        "field": "current_affiliation",
+        "reason": "UNKNOWN",
+        "next_action": "参见证据与阻塞记录"
+      }
+    ],
+    "replication_value": null,
+    "difference_absolute": null,
+    "difference_relative": null,
+    "affiliation_at_research": null,
+    "affiliation_at_publication": "BlackRock AI Labs; BlackRock Factor-Based Strategies Group",
+    "current_affiliation": null,
+    "replication_priority": "SECONDARY",
+    "evidence_maturity": "EVIDENCE_REVIEW",
+    "batch_id": "CO-REP-20261120-02-R2",
+    "preflight_status": null,
+    "review_experiments": []
+  },
+  {
+    "paper_id": "P021",
+    "candidate_status": "EXTENDED",
+    "title": "Portfolio Construction as Linearly Constrained Separable Optimization",
+    "authors": "Nicholas Moehle; Jack Gindi; Stephen Boyd; Mykel J. Kochenderfer",
+    "publication_year": 2023,
+    "journal": "Optimization and Engineering",
+    "journal_group": "J4_METHODS",
+    "DOI": "10.1007/s11081-022-09748-x",
+    "publication_status": "PUBLISHED",
+    "affiliated_author": "Nicholas Moehle; Jack Gindi",
+    "institution": "BlackRock AI Labs",
+    "institution_relation": "STAFF_AT_PUBLICATION",
+    "relation_period": "2022-11-11 线上正式署名",
+    "topic_class": "DIRECT_OPTIMIZATION",
+    "proposed_reproduction_type": "AUTHOR_CODE_RERUN",
+    "data_access_summary": "历史税损算例起点未取得",
+    "code_source_type": "AUTHOR",
+    "execution_status": "NOT_RUN",
+    "key_targets": "Fig 4–5 692例目标差与分布",
+    "main_blockers": "实例归档、Julia 求解器版本和数值配置",
+    "agent_recommendation": "REQUEST_EVIDENCE",
+    "priority_reason": "J4/W 方法研究备选，历史原实例与环境待核",
+    "evidence_ids": [
+      "P021-S01",
+      "P021-S02",
+      "P021-S03",
+      "P021-S04"
+    ],
+    "selected_paper_version": "O&E 24 1667–1687，online 2022-11-11",
+    "attachments": [],
+    "schema_version": "1.0",
+    "responsible_agent": "CTRL",
+    "as_of": "2026-11-20T16:00:00+08:00",
+    "plan_version": "1.0",
+    "review_package_version": "2.0",
+    "execution_stage": "DUE_DILIGENCE",
+    "result_status": "NOT_RUN",
+    "reviewer_decision": "PENDING",
+    "approval_record_id": "PENDING",
+    "approved_version_and_scope": "PENDING",
+    "approved_experiment_ids": "PENDING",
+    "approved_result_ids": "PENDING",
+    "reviewed_by": "PENDING",
+    "reviewed_at": "PENDING",
+    "conditions_and_followups": "PENDING",
+    "critical_evidence_ids": [
+      "P021-S01",
+      "P021-S02",
+      "P021-S03",
+      "P021-S04"
+    ],
+    "target_ids": [
+      "P021-F04",
+      "P021-F05"
+    ],
+    "requested_result_ids": [
+      "P021-F04",
+      "P021-F05"
+    ],
+    "requested_experiment_ids": [
+      "P021-E01"
+    ],
+    "hard_blocker_ids": [
+      "P021-B01",
+      "P021-B02",
+      "P021-B03"
+    ],
+    "target_scope": "SELECTED_PILOT",
+    "planned_reproduction_types": [
+      "AUTHOR_CODE_RERUN"
+    ],
+    "institution_relations": [
+      {
+        "author": "Nicholas Moehle; Jack Gindi",
+        "institution": "BlackRock AI Labs",
+        "institution_relation": "STAFF_AT_PUBLICATION",
+        "relation_period": "2022-11-11 线上正式署名"
+      }
+    ],
+    "unapproved_change_ids": [],
+    "missing_fields": [
+      {
+        "field": "preflight_status",
+        "reason": "UNKNOWN",
+        "next_action": "参见证据与阻塞记录"
+      },
+      {
+        "field": "affiliation_at_research",
+        "reason": "UNKNOWN",
+        "next_action": "参见证据与阻塞记录"
+      },
+      {
+        "field": "current_affiliation",
+        "reason": "UNKNOWN",
+        "next_action": "参见证据与阻塞记录"
+      }
+    ],
+    "replication_value": null,
+    "difference_absolute": null,
+    "difference_relative": null,
+    "affiliation_at_research": null,
+    "affiliation_at_publication": "BlackRock AI Labs",
+    "current_affiliation": null,
+    "replication_priority": "SECONDARY",
+    "evidence_maturity": "EVIDENCE_REVIEW",
+    "batch_id": "CO-REP-20261120-02-R2",
+    "preflight_status": null,
+    "review_experiments": []
+  }
+]

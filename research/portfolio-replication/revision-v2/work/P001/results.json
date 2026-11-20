@@ -1,0 +1,249 @@
+{
+  "execution_status": "TARGETS_GENERATED",
+  "numerical_verdict": "PASS",
+  "economic_verdict": "PASS",
+  "outside_scope": [
+    "Original figure coordinates",
+    "Market-data backtest and trading performance"
+  ],
+  "checks": {
+    "A7_A10_A14_A15_star_consistent": true,
+    "commuting_formulas_agree": true,
+    "noncommuting_legacy_failure_detected": true,
+    "scalar_matrix_consistent": true,
+    "closed_form_matches_independent_objective": true,
+    "persistent_policies_match_open_loop": true,
+    "partial_adjustment": true,
+    "slower_factor_smaller_discount": true,
+    "persistent_only_larger_initial_trade": true
+  },
+  "scalar_a": 0.7421582911108061,
+  "scalar_matrix_max_error": 1.1102230246251565e-16,
+  "transitory_rebalance_fraction": 0.37107914555540306,
+  "markowitz0_contracts": [
+    1.9999999999999996,
+    1.9999999999999996
+  ],
+  "aim0_contracts": [
+    1.7415054571868176,
+    1.2549203600714012
+  ],
+  "aim_to_markowitz_ratios": [
+    0.870752728593409,
+    0.6274601800357007
+  ],
+  "full_temp_policy_vs_first_closed_form_max_error": 1.6653345369377348e-16,
+  "geometric_sum_vs_first_aim_max_error": 1.3322676295501878e-15,
+  "proportional_case": {
+    "commutator_fro": 0.0,
+    "A14_vs_A15star_relative_fro": 1.4959383165597458e-16,
+    "A10_relative_residual": 1.574671912168153e-16,
+    "A7_corrected_relative_residual": 0.0,
+    "A7_legacy_relative_residual": 0.0,
+    "legacy_vs_corrected_relative_fro": 0.0,
+    "minimum_eigenvalue_A15star": 0.742158291110806,
+    "corrected_Axx": [
+      [
+        0.742158291110806,
+        0.0
+      ],
+      [
+        0.0,
+        0.742158291110806
+      ]
+    ],
+    "legacy_Axx": [
+      [
+        0.742158291110806,
+        0.0
+      ],
+      [
+        0.0,
+        0.742158291110806
+      ]
+    ]
+  },
+  "commuting_nonproportional_case": {
+    "commutator_fro": 0.0,
+    "A14_vs_A15star_relative_fro": 2.1217590209970713e-16,
+    "A10_relative_residual": 1.771378949257757e-16,
+    "A7_corrected_relative_residual": 2.3721987014114276e-16,
+    "A7_legacy_relative_residual": 1.0608795104985355e-16,
+    "legacy_vs_corrected_relative_fro": 3.000620383581519e-16,
+    "minimum_eigenvalue_A15star": 0.6860319006800505,
+    "corrected_Axx": [
+      [
+        0.6860319006800505,
+        0.0
+      ],
+      [
+        0.0,
+        0.7902830968334749
+      ]
+    ],
+    "legacy_Axx": [
+      [
+        0.6860319006800507,
+        0.0
+      ],
+      [
+        0.0,
+        0.7902830968334751
+      ]
+    ]
+  },
+  "researcher_noncommuting_case": {
+    "commutator_fro": 1.6122034611053286,
+    "A14_vs_A15star_relative_fro": 3.728890830606504e-16,
+    "A10_relative_residual": 2.645934518285151e-16,
+    "A7_corrected_relative_residual": 4.876364120608935e-16,
+    "A7_legacy_relative_residual": 0.028945606071370273,
+    "legacy_vs_corrected_relative_fro": 0.04352155778919615,
+    "minimum_eigenvalue_A15star": 0.6529730977326869,
+    "corrected_Axx": [
+      [
+        0.7597111500567683,
+        0.1760651142641747
+      ],
+      [
+        0.1760651142641747,
+        0.9433936533442601
+      ]
+    ],
+    "legacy_Axx": [
+      [
+        0.736833969198195,
+        0.19937997683263753
+      ],
+      [
+        0.19937997683263758,
+        0.9792527192271886
+      ]
+    ]
+  },
+  "footnote9_policies": {
+    "1.0": {
+      "iterations": 127,
+      "bellman_fro_residual": 6.692835648552569e-15,
+      "minimum_negative_action_curvature": 3.180050376555266,
+      "closed_loop_spectral_radius": 0.9,
+      "direct_160_step_first_action_max_error": 1.1102230246251565e-16,
+      "bellman_vs_open_loop_first_30_max_error": 4.440892098500626e-16,
+      "first_trade_contracts": [
+        0.6462363570329558,
+        0.4656747749553741
+      ],
+      "first_trade_l2_contracts": 0.7965390292891894,
+      "policy_gain": [
+        [
+          0.6289208544445968,
+          0.0,
+          0.6462363570329558,
+          0.0,
+          -0.09863607554713526,
+          0.0
+        ],
+        [
+          0.0,
+          0.6289208544445968,
+          0.0,
+          0.4656747749553741,
+          0.0,
+          -0.09863607554713526
+        ]
+      ],
+      "adjustment": [
+        [
+          0.3710791455554032,
+          0.0
+        ],
+        [
+          0.0,
+          0.3710791455554032
+        ]
+      ]
+    },
+    "0.5": {
+      "iterations": 160,
+      "bellman_fro_residual": 7.48196833296808e-15,
+      "minimum_negative_action_curvature": 2.212642671324298,
+      "closed_loop_spectral_radius": 0.9224993093555293,
+      "direct_160_step_first_action_max_error": 1.1102230246251565e-16,
+      "bellman_vs_open_loop_first_30_max_error": 4.8933079810353775e-14,
+      "first_trade_contracts": [
+        0.7519093562703654,
+        0.5889933552646913
+      ],
+      "first_trade_l2_contracts": 0.9551339448437973,
+      "policy_gain": [
+        [
+          0.5667133698744606,
+          0.0,
+          0.7519093562703654,
+          0.0,
+          -0.11476511227284517,
+          0.0
+        ],
+        [
+          0.0,
+          0.5667133698744606,
+          0.0,
+          0.5889933552646913,
+          0.0,
+          -0.11476511227284517
+        ]
+      ],
+      "adjustment": [
+        [
+          0.43328663012553936,
+          0.0
+        ],
+        [
+          0.0,
+          0.43328663012553936
+        ]
+      ]
+    },
+    "0.0": {
+      "iterations": 181,
+      "bellman_fro_residual": 7.7305132948827e-15,
+      "minimum_negative_action_curvature": 0.9501788088601819,
+      "closed_loop_spectral_radius": 0.9350871559278711,
+      "direct_160_step_first_action_max_error": 6.616929226765933e-14,
+      "bellman_vs_open_loop_first_30_max_error": 2.471384208391214e-12,
+      "first_trade_contracts": [
+        1.1494068321199118,
+        1.0426295918005613
+      ],
+      "first_trade_l2_contracts": 1.5518416579735628,
+      "policy_gain": [
+        [
+          0.3508715592787099,
+          0.0,
+          1.1494068321199118,
+          0.0,
+          -0.17543577963935494,
+          0.0
+        ],
+        [
+          0.0,
+          0.3508715592787099,
+          0.0,
+          1.0426295918005613,
+          0.0,
+          -0.17543577963935494
+        ]
+      ],
+      "adjustment": [
+        [
+          0.6491284407212901,
+          0.0
+        ],
+        [
+          0.0,
+          0.6491284407212901
+        ]
+      ]
+    }
+  }
+}

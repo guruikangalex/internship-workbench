@@ -1,0 +1,162 @@
+{
+  "schema_version": "2.0",
+  "batch_id": "CO-REP-20261120-02-R2",
+  "paper_id": "P006",
+  "canonical_version_id": "P006-RFS-20261119",
+  "experiment_id": "P006-E01",
+  "reproduction_type": "AUTHOR_CODE_RERUN",
+  "experiment_purpose": "PAPER_REPLICATION",
+  "reviewed_source_commit": "104aecfcad4c308e1044a3d15483fe2320619597",
+  "execution_commit": null,
+  "approval_record_id": "REVIEW-104AECF-20261121",
+  "approval_decision": "APPROVE_FAITHFUL_REPLICATION",
+  "execution_authorized": true,
+  "performed_by": "agent-P006-author",
+  "run_id": "RUN-P006-E01-AUTHOR-20261121-01",
+  "execution_status": "COMPLETED",
+  "scope": {
+    "protocol": "revision-v2/work/P006/protocol_v2.md",
+    "target_table": "revision-v2/work/P006/target_alignment.csv",
+    "target_table_sha256": "151a53c44488b76b742a1be84adca529542e5e135fa761c38b68c9eef68d9d1c",
+    "proposed_E01_targets": 115,
+    "included": "Fig.3 full sample 6 + before/after 2000 12 + Fig.5 Ridge alpha/t + Fig.6 six scatter panels + Table 1 84 cells + Fig.8 turnover + panel-level rows",
+    "accepted_conflict": "作者源码 LOO 用 T 分母秩一删除；论文 Eq.(9)-(10) 用 T-1 直接重拟合。按 P006-B07 与 protocol_v2 §2.1 在批准范围内保留作者实现，不修正追数。",
+    "excluded": "附录图/仿真图（--main 分支外）；正式 PDF SHA256 未取得；最终数值验收交主审"
+  },
+  "input_verification": {
+    "archive_path": "/Users/guruikang/WorkBuddy/2026-11-20-15-03-43/CO-REP-20261120-02/evidence/P006_upsa_reproduction_RFS_v2.zip",
+    "archive_bytes": 123737306,
+    "sha256_expected": "a20c2fbf0de51e9ad54baa6d2dadd7e2b8b374b7cea6a05efd3e918bc12f699b",
+    "sha256_observed": "a20c2fbf0de51e9ad54baa6d2dadd7e2b8b374b7cea6a05efd3e918bc12f699b",
+    "md5_expected": "b8cac94b06f22aa8bab676c0c1ec4656",
+    "md5_observed": "b8cac94b06f22aa8bab676c0c1ec4656",
+    "hash_match": true,
+    "hash_tool": "shasum -a 256 / md5 -q",
+    "extracted_package": "/Users/guruikang/WorkBuddy/2026-11-20-15-03-43/CO-REP-20261120-02/evidence/P006_package",
+    "cold_run_copy": "cold_run/",
+    "source_files_identical_to_evidence_package": true,
+    "input_csvs_identical_to_evidence_package": true,
+    "algorithm_source_modified": false
+  },
+  "environment": {
+    "python_path": "/Users/guruikang/WorkBuddy/2026-11-20-15-03-43/CO-REP-20261120-02/execution/env_py396/bin/python",
+    "python_version": "3.9.6",
+    "packages": {
+      "numpy": "2.0.2", "scipy": "1.13.1", "pandas": "2.3.3", "sklearn": "1.6.1",
+      "statsmodels": "0.14.6", "cvxopt": "1.3.3", "matplotlib": "3.9.4",
+      "seaborn": "0.13.2", "tqdm": "4.67.3"
+    },
+    "env_vars": {
+      "OMP_NUM_THREADS": "1", "OPENBLAS_NUM_THREADS": "1",
+      "MKL_NUM_THREADS": "1", "MPLBACKEND": "Agg"
+    }
+  },
+  "execution": {
+    "working_directory": "/Users/guruikang/WorkBuddy/2026-11-20-15-03-43/internship-workbench/research/portfolio-replication/revision-v3/executions/P006_E01_author/cold_run",
+    "actual_command": "OMP_NUM_THREADS=1 OPENBLAS_NUM_THREADS=1 MKL_NUM_THREADS=1 MPLBACKEND=Agg /Users/guruikang/WorkBuddy/2026-11-20-15-03-43/CO-REP-20261120-02/execution/env_py396/bin/python -u run_all.py --main --compute",
+    "start_time": "2026-11-21T15:26:37+0800",
+    "end_time": "2026-11-21T15:28:05+0800",
+    "duration_seconds": 88,
+    "exit_code": 0,
+    "stdout_log": "run_stdout.log",
+    "stderr_log": "run_stderr.log",
+    "stdout_lines": 49,
+    "stderr_lines": 1862,
+    "cold_recompute_evidence": [
+      "[main] computing rolling-window engine (bryan_monthly_vw_cap, rw=120)...",
+      "[main] cached -> .../outputs/computed/main_bundle.p (new file written, wb)",
+      "[main] computing in/OOS complexity sweep...",
+      "fresh main_bundle.p sha256 3ebba382... differs from manuscript e767297e... and author-regen a1d6a3c4..."
+    ]
+  },
+  "cache_isolation": {
+    "source_of_cold_copy": "evidence/P006_package（解压后 outputs/ 不存在，无缓存）",
+    "steps": [
+      "cp -R evidence/P006_package -> cold_run/",
+      "rm -rf cold_run/outputs；mkdir -p cold_run/outputs/{computed,figures}",
+      "确认运行前 cold_run/outputs 下文件数 = 0",
+      "未复制 _stage_P006/.../outputs/computed/*.p 或旧 figures 到冷目录",
+      "逐文件 SHA256 确认 src/scripts/run_all.py 与 data 五个 CSV 未改动"
+    ],
+    "author_cache_used_only_for_reference_diagnostics": {
+      "manuscript_main_bundle": "/Users/guruikang/WorkBuddy/2026-11-20-15-03-43/CO-REP-20261120-02/evidence/_stage_P006/upsa_reproduction/outputs/computed/main_bundle.p",
+      "manuscript_sha256": "e767297e697e9b5abd76b2df3ae67e94efa0beec5576fe06ad2dd7d400eec713",
+      "author_regen_main_bundle": "/Users/guruikang/WorkBuddy/2026-11-20-15-03-43/CO-REP-20261120-02/evidence/_stage_P006/upsa_reproduction/outputs/computed/main_bundle_regen.p",
+      "author_regen_sha256": "a1d6a3c404b24f69f2ecd099b6e23923529559e501371c9e10342f243538c441",
+      "note": "按 protocol_v2 §3 第65行，缓存数值不作 rerun_value；仅作 reference_value 与缓存图一致性诊断。"
+    }
+  },
+  "outputs": {
+    "directory": "outputs/",
+    "sha256sums_file": "outputs/sha256sums.txt",
+    "artifact_count": 22,
+    "artifacts": [
+      {"path": "outputs/computed/is_vs_oos.p", "sha256": "f7194225a81112feecf67e86965bc222efee1629e579c5f46a7e2fe8462a9c9c"},
+      {"path": "outputs/computed/main_bundle.p", "sha256": "3ebba3824caace88485a0ea7d557f591c0303f930f05a727ad92e73a9e503a91"},
+      {"path": "outputs/figures/fig_01_is_vs_oos.jpg", "sha256": "0ac68ddf22647c60cc8a2ddc6a6f4051a8d1ce91e021e84f6d0b6e17c4965f4e"},
+      {"path": "outputs/figures/fig_02_cor_z.jpg", "sha256": "cfe7dde0a2ec23782c0470e559ee787e72a4771176f069584fdb9e85479c9d59"},
+      {"path": "outputs/figures/fig_03_sharpe_bar.jpg", "sha256": "66a37a9a6742fbe3b308b66c77bb4a31f1331bfd7e94ad4ced408b63e0541242"},
+      {"path": "outputs/figures/fig_04_cumulative_returns_log.jpg", "sha256": "5d069d57eae1a121f7cdf74dfc6f70d51853496f45255d5fe308bddc267785ba"},
+      {"path": "outputs/figures/fig_05_alpha_bar.jpg", "sha256": "2e4c9a96ea6c8997a1755b3b73dd8b658bcdb01c122d3aef3ad5cdfde2c55a94"},
+      {"path": "outputs/figures/fig_06a_pricingacc_UPSA.jpg", "sha256": "6824dfa93dd885b2f8757d01cdab4190ac79157869adbe69cfc7af1e0cd64c1b"},
+      {"path": "outputs/figures/fig_06b_pricingacc_Ridge.jpg", "sha256": "319d239c07bb8b980933b11e159ba6082b9b681fadf4a054694cd6bc9b67ce75"},
+      {"path": "outputs/figures/fig_06c_pricingacc_LW.jpg", "sha256": "69b71d75cc99e0df628891c216eb196401891490c5bcf28601516ab5f9b35566"},
+      {"path": "outputs/figures/fig_06d_pricingacc_PCA.jpg", "sha256": "01c5601a002fdd44576730ede905ab74aacebb0d328257643d8b8d6d4c01726b"},
+      {"path": "outputs/figures/fig_06e_pricingacc_FF5.jpg", "sha256": "fd3db310c7c0a3cf3d6b879b87aa1fe0c9458472f3c24f11d8fca40e1caeac05"},
+      {"path": "outputs/figures/fig_06f_pricingacc_CAPM.jpg", "sha256": "ad3447ad7a1273b908fd949d04e0c4fc41b48dcdae5ebe93df6cb2da6566fead"},
+      {"path": "outputs/figures/fig_07_surface_bestz.jpg", "sha256": "70fde5bd6e8efa290f117212c26e80af0439f05dbe22eb14c26541cf0b4d32c6"},
+      {"path": "outputs/figures/fig_08_turnover_rolling.jpg", "sha256": "130af5067371c13654db6ad8390e6d2889443a08f94fe8218537356e573fd255"},
+      {"path": "outputs/figures/fig_09_cv_prob.jpg", "sha256": "76e8f1b99961942108eafe7471d0bc6ee436403bc3b8569bf50cb37b7122b05a"},
+      {"path": "outputs/figures/fig_10a_pc_sharpe_Sharpe_by_PC.jpg", "sha256": "7f6bda2a9bdc0fed976c230377717271926bb31ffb900e3d420b801d3564a912"},
+      {"path": "outputs/figures/fig_10b_pc_sharpe_corr_oracle.jpg", "sha256": "1f8d3c3622b698353e361d5b465ae8dea0cbfb0b27b52f4e3b80ad28ea2a298b"},
+      {"path": "outputs/figures/fig_11_shrinkage_mechanism.jpg", "sha256": "5035ffe2858508906b2887caba6416b2f32343f020d62c84a4ec0fc3597bff1c"},
+      {"path": "outputs/figures/fig_12_theme_panel.jpg", "sha256": "ae2fc1f669b841a1fe639bd744e4637c3c6a01ad70d40f697f90a6b62d6ba93a"},
+      {"path": "outputs/figures/fig_13_theme_shapley.jpg", "sha256": "71203ecb51cc919bcc5c26e3daf7c3d8cdd8cb42e31be9bd6e4c69bb197ad086"},
+      {"path": "outputs/figures/tab_01_r2_theme.tex", "sha256": "0bcb5e2850a607ba28278337721a71d135efcbba7d9517302120f5523f75fcc1"}
+    ],
+    "figure_byte_identity_vs_manuscript_cache": {
+      "identical": ["fig_06d_pricingacc_PCA.jpg", "fig_06e_pricingacc_FF5.jpg", "fig_06f_pricingacc_CAPM.jpg"],
+      "different": ["fig_01", "fig_02", "fig_03", "fig_04", "fig_05", "fig_06a", "fig_06b", "fig_06c", "fig_07", "fig_08", "fig_09", "fig_10a", "fig_10b", "fig_11", "fig_12", "fig_13", "tab_01_r2_theme.tex"],
+      "interpretation": "JPG 逐字节相等不作为判据（protocol_v2 §4）；差异来自 --compute 数值漂移，正式比较以 extracted_values.json 的重新计算结果为准。"
+    }
+  },
+  "diagnostics": {
+    "runtime_warnings": {"count": 912, "types": {"divide by zero in matmul": 304, "overflow in matmul": 304, "invalid value in matmul": 304}, "source": "小 z 近奇异特征分解", "opt_port_nan": 0, "opt_port_inf": 0},
+    "finalize_missing_outputs": 41,
+    "finalize_missing_interpretation": "均为附录图/仿真图/附录表，属 --main 分支范围外，非失败",
+    "oos_months": 494,
+    "oos_start": "1981-11-30",
+    "oos_end": "2022-12-31",
+    "extraction_script": "extract_values.py（只读调用作者函数：pricing/metrics/plotting/constants，不改算法）",
+    "extracted_values": "extracted_values.json（fresh / manuscript / regen 三套）",
+    "comparison_script": "build_comparison.py",
+    "target_comparison": "target_comparison.csv（115 行 × 40 列）"
+  },
+  "verdict_summary": {
+    "numerical_verdict": {"PASS": 90, "FAIL": 17, "PARTIAL": 8, "NOT_ASSESSED": 0},
+    "theoretical_mechanism_verdict": "NOT_ASSESSED (all 115)",
+    "market_economic_verdict": "NOT_ASSESSED (all 115)",
+    "original_run_acceptance": "PENDING_FINAL_ACCEPTANCE",
+    "note": "数值 verdict 仅为计算层结论；最终验收交主审。未放宽容差追近发表值。"
+  },
+  "key_numerical_findings": {
+    "fig3_full_UPSA": {"paper": 1.92, "fresh": 1.9228, "manuscript": 1.9235, "verdict": "PASS"},
+    "fig3_full_LW": {"paper": 1.31, "fresh": 1.2741, "manuscript": 1.3083, "verdict": "FAIL"},
+    "fig5_ridge_alpha": {"paper": 4.46, "fresh": 4.4512, "manuscript": 4.4613, "verdict": "FAIL"},
+    "fig5_ridge_tstat": {"paper": 3.72, "fresh": 3.7191, "manuscript": 3.7180, "verdict": "PASS"},
+    "fig8_upsa_mean": {"paper": 12.4, "fresh": 12.3879, "verdict": "PASS"},
+    "fig8_ridge_mean": {"paper": 16.3, "fresh": 16.2856, "verdict": "PASS"},
+    "table1_all_UPSA": {"paper": 0.67, "fresh": 0.6645123437, "manuscript": 0.6652235374, "author_regen": 0.6649162636, "verdict": "PARTIAL", "note": "跨 0.665 舍入边界"},
+    "fig6_per_point_vs_manuscript_max_abs_diff": {"UPSA": 0.0009575661, "Ridge": 1.0508e-05, "LW": 0.0321583576, "PCA": 6.15e-13, "FF5": 2.22e-16, "CAPM": 0.0},
+    "fig8_rolling_vs_manuscript_max_abs_diff_pp": {"UPSA": 0.6402, "Ridge": 0.002487},
+    "thresholds_recorded": {"fig6_sharpe_per_point": 5e-06, "fig8_turnover_pp_per_point": 1e-05}
+  },
+  "blockers": [
+    "RFS 排版版 PDF SHA256 为 null（出版社 HTML 全文与附录已读，PDF 字节未取得）；不影响本次以作者包与已发表数字锚点做的计算层比较。",
+    "最终发表数值验收由主审执行；本执行仅提供计算层 PASS/FAIL/PARTIAL 与证据。"
+  ],
+  "written_paths": [
+    "execution_manifest.json", "static_check.md", "run_stdout.log", "run_stderr.log",
+    "outputs/", "extracted_values.json", "extract_stderr.log", "target_comparison.csv", "summary.md"
+  ]
+}

@@ -1,0 +1,33 @@
+\begin{table}[!t]\begin{center}
+\caption{\textbf{Out-of-sample Pricing Accuracy By Factor Theme}}\label{tab:r_2_theme}
+\setlength{\tabcolsep}{16pt}
+\renewcommand{\arraystretch}{0.9}
+\vspace{-.4in}
+\noindent\begin{minipage}[c]{1\textwidth}%
+\singlespacing
+\footnotesize
+This table calculates the $R^{2}$ of SDF-based out-of-sample Sharpe ratio predictions versus realized out-of-sample Sharpe ratios within each of the 13 JKP factor themes.  $R^{2}$ represents fit versus the 45-degree line, as described in the analysis of Figure \ref{fig:pricingacc}.
+\medskip\end{minipage}
+\small
+\begin{tabular}{lcccccc}
+\hline
+Factor Theme & UPSA & Ridge & LW & PCA & FF5 & CAPM \\
+\hline
+Skewness & 0.68 & 0.6 & -0.04 & 0.56 & -0.01 & -0.13 \\
+Profitability & 0.53 & -0.32 & -0.05 & -0.64 & -1.69 & -8.5 \\
+Low Risk & 0.76 & 0.85 & -1.22 & 0.76 & 0.27 & -12.14 \\
+Value & 0.73 & 0.27 & 0.28 & 0.05 & -0.3 & -14.85 \\
+Investment & 0.67 & 0.09 & -0.18 & -0.29 & -0.82 & -13.12 \\
+Seasonality & 0.58 & 0.44 & -0.14 & 0.36 & -1.13 & -0.81 \\
+Debt Issuance & 0.49 & 0.02 & -0.82 & -0.26 & -1.29 & -2.1 \\
+Size & 0.7 & 0.62 & -1.22 & 0.53 & 0.01 & -0.1 \\
+Accruals & 0.5 & -0.1 & -2.6 & -0.64 & -0.86 & -2.45 \\
+Low Leverage & 0.29 & 0.37 & -2.08 & 0.28 & -1.26 & -1.87 \\
+Profit Growth & 0.6 & 0.3 & 0.68 & 0.01 & -0.54 & -0.69 \\
+Momentum & 0.17 & -0.67 & 0.05 & -1.4 & -10.04 & -19.18 \\
+Quality & -0.4 & -1.45 & -2.61 & -1.89 & -3.27 & -5.0 \\[1.5ex]
+All & 0.66 & 0.39 & -0.1 & 0.22 & -0.39 & -2.35 \\
+\hline
+\end{tabular}
+\end{center}
+\end{table}

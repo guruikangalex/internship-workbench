@@ -1,0 +1,31 @@
+verdict summary: {'FAIL': 18, 'PARTIAL': 7, 'PASS': 90}
+rows: 115 columns: 44
+strict validation issues: 0
+target sha actual: 4e152ce7b95388e8ab277386d08d7c38f356d51da4290dc2220c937d1eff0778
+
+=== FAIL / PARTIAL rows ===
+  P006-F03-FULL-SAMPLE-LW                    FAIL         paper=    1.31 abs_err=0.03588474351
+  P006-F03-AFTER-2000-UPSA                   PARTIAL      paper=         abs_err=0.0008171354485
+  P006-F03-AFTER-2000-LW                     FAIL         paper=         abs_err=0.03786501666
+  P006-F05-FULL-RIDGE-ALPHA                  FAIL         paper=    4.46 abs_err=0.008751659282
+  P006-T01-SKEWNESS-UPSA                     FAIL         paper=    0.69 abs_err=0.005710373768
+  P006-T01-SKEWNESS-LW                       FAIL         paper=   -0.09 abs_err=0.05008541183
+  P006-T01-PROFITABILITY-LW                  FAIL         paper=   -0.01 abs_err=0.0373417866
+  P006-T01-LOW-RISK-UPSA                     FAIL         paper=    0.77 abs_err=0.00547561085
+  P006-T01-LOW-RISK-LW                       FAIL         paper=   -1.37 abs_err=0.1483516221
+  P006-T01-VALUE-LW                          FAIL         paper=    0.27 abs_err=0.01375369366
+  P006-T01-DEBT-ISSUANCE-LW                  FAIL         paper=   -0.83 abs_err=0.005934077762
+  P006-T01-SIZE-LW                           FAIL         paper=    -1.3 abs_err=0.07625040375
+  P006-T01-ACCRUALS-LW                       FAIL         paper=   -2.56 abs_err=0.04239309585
+  P006-T01-LOW-LEVERAGE-UPSA                 FAIL         paper=     0.3 abs_err=0.008967929266
+  P006-T01-LOW-LEVERAGE-LW                   FAIL         paper=   -2.16 abs_err=0.08410565259
+  P006-T01-PROFIT-GROWTH-LW                  FAIL         paper=    0.72 abs_err=0.04256373635
+  P006-T01-MOMENTUM-LW                       FAIL         paper=    0.13 abs_err=0.08139825195
+  P006-T01-QUALITY-LW                        FAIL         paper=   -2.54 abs_err=0.06506273607
+  P006-T01-ALL-UPSA                          FAIL         paper=    0.67 abs_err=0.005487656265
+  P006-PANEL-FIG3                            PARTIAL      paper=         abs_err=0.03786501666
+  P006-PANEL-FIG5                            PARTIAL      paper=         abs_err=0.3521189548
+  P006-PANEL-FIG6A                           PARTIAL      paper=         abs_err=0.0009575661106
+  P006-PANEL-FIG6B                           PARTIAL      paper=         abs_err=1.05079368e-05
+  P006-PANEL-FIG6C                           PARTIAL      paper=         abs_err=0.0321583576
+  P006-PANEL-FIG8                            PARTIAL      paper=         abs_err=0.6402058006

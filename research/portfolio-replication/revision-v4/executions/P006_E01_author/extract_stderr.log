@@ -1,0 +1,1014 @@
+/Users/guruikang/WorkBuddy/2026-11-20-15-03-43/internship-workbench/research/portfolio-replication/revision-v3/executions/P006_E01_author/cold_run/src/pricing.py:60: RuntimeWarning: divide by zero encountered in matmul
+  x = fsr.T @ sdfs[c_].values / len(sdfs)
+/Users/guruikang/WorkBuddy/2026-11-20-15-03-43/internship-workbench/research/portfolio-replication/revision-v3/executions/P006_E01_author/cold_run/src/pricing.py:60: RuntimeWarning: overflow encountered in matmul
+  x = fsr.T @ sdfs[c_].values / len(sdfs)
+/Users/guruikang/WorkBuddy/2026-11-20-15-03-43/internship-workbench/research/portfolio-replication/revision-v3/executions/P006_E01_author/cold_run/src/pricing.py:60: RuntimeWarning: invalid value encountered in matmul
+  x = fsr.T @ sdfs[c_].values / len(sdfs)
+/Users/guruikang/WorkBuddy/2026-11-20-15-03-43/internship-workbench/research/portfolio-replication/revision-v3/executions/P006_E01_author/cold_run/src/pricing.py:60: RuntimeWarning: divide by zero encountered in matmul
+  x = fsr.T @ sdfs[c_].values / len(sdfs)
+/Users/guruikang/WorkBuddy/2026-11-20-15-03-43/internship-workbench/research/portfolio-replication/revision-v3/executions/P006_E01_author/cold_run/src/pricing.py:60: RuntimeWarning: overflow encountered in matmul
+  x = fsr.T @ sdfs[c_].values / len(sdfs)
+/Users/guruikang/WorkBuddy/2026-11-20-15-03-43/internship-workbench/research/portfolio-replication/revision-v3/executions/P006_E01_author/cold_run/src/pricing.py:60: RuntimeWarning: invalid value encountered in matmul
+  x = fsr.T @ sdfs[c_].values / len(sdfs)
+/Users/guruikang/WorkBuddy/2026-11-20-15-03-43/internship-workbench/research/portfolio-replication/revision-v3/executions/P006_E01_author/cold_run/src/pricing.py:60: RuntimeWarning: divide by zero encountered in matmul
+  x = fsr.T @ sdfs[c_].values / len(sdfs)
+/Users/guruikang/WorkBuddy/2026-11-20-15-03-43/internship-workbench/research/portfolio-replication/revision-v3/executions/P006_E01_author/cold_run/src/pricing.py:60: RuntimeWarning: overflow encountered in matmul
+  x = fsr.T @ sdfs[c_].values / len(sdfs)
+/Users/guruikang/WorkBuddy/2026-11-20-15-03-43/internship-workbench/research/portfolio-replication/revision-v3/executions/P006_E01_author/cold_run/src/pricing.py:60: RuntimeWarning: invalid value encountered in matmul
+  x = fsr.T @ sdfs[c_].values / len(sdfs)
+/Users/guruikang/WorkBuddy/2026-11-20-15-03-43/internship-workbench/research/portfolio-replication/revision-v3/executions/P006_E01_author/cold_run/src/pricing.py:60: RuntimeWarning: divide by zero encountered in matmul
+  x = fsr.T @ sdfs[c_].values / len(sdfs)
+/Users/guruikang/WorkBuddy/2026-11-20-15-03-43/internship-workbench/research/portfolio-replication/revision-v3/executions/P006_E01_author/cold_run/src/pricing.py:60: RuntimeWarning: overflow encountered in matmul
+  x = fsr.T @ sdfs[c_].values / len(sdfs)
+/Users/guruikang/WorkBuddy/2026-11-20-15-03-43/internship-workbench/research/portfolio-replication/revision-v3/executions/P006_E01_author/cold_run/src/pricing.py:60: RuntimeWarning: invalid value encountered in matmul
+  x = fsr.T @ sdfs[c_].values / len(sdfs)
+/Users/guruikang/WorkBuddy/2026-11-20-15-03-43/internship-workbench/research/portfolio-replication/revision-v3/executions/P006_E01_author/cold_run/src/pricing.py:60: RuntimeWarning: divide by zero encountered in matmul
+  x = fsr.T @ sdfs[c_].values / len(sdfs)
+/Users/guruikang/WorkBuddy/2026-11-20-15-03-43/internship-workbench/research/portfolio-replication/revision-v3/executions/P006_E01_author/cold_run/src/pricing.py:60: RuntimeWarning: overflow encountered in matmul
+  x = fsr.T @ sdfs[c_].values / len(sdfs)
+/Users/guruikang/WorkBuddy/2026-11-20-15-03-43/internship-workbench/research/portfolio-replication/revision-v3/executions/P006_E01_author/cold_run/src/pricing.py:60: RuntimeWarning: invalid value encountered in matmul
+  x = fsr.T @ sdfs[c_].values / len(sdfs)
+/Users/guruikang/WorkBuddy/2026-11-20-15-03-43/internship-workbench/research/portfolio-replication/revision-v3/executions/P006_E01_author/cold_run/src/pricing.py:60: RuntimeWarning: divide by zero encountered in matmul
+  x = fsr.T @ sdfs[c_].values / len(sdfs)
+/Users/guruikang/WorkBuddy/2026-11-20-15-03-43/internship-workbench/research/portfolio-replication/revision-v3/executions/P006_E01_author/cold_run/src/pricing.py:60: RuntimeWarning: overflow encountered in matmul
+  x = fsr.T @ sdfs[c_].values / len(sdfs)
+/Users/guruikang/WorkBuddy/2026-11-20-15-03-43/internship-workbench/research/portfolio-replication/revision-v3/executions/P006_E01_author/cold_run/src/pricing.py:60: RuntimeWarning: invalid value encountered in matmul
+  x = fsr.T @ sdfs[c_].values / len(sdfs)
+/Users/guruikang/WorkBuddy/2026-11-20-15-03-43/internship-workbench/research/portfolio-replication/revision-v3/executions/P006_E01_author/cold_run/src/pricing.py:60: RuntimeWarning: divide by zero encountered in matmul
+  x = fsr.T @ sdfs[c_].values / len(sdfs)
+/Users/guruikang/WorkBuddy/2026-11-20-15-03-43/internship-workbench/research/portfolio-replication/revision-v3/executions/P006_E01_author/cold_run/src/pricing.py:60: RuntimeWarning: overflow encountered in matmul
+  x = fsr.T @ sdfs[c_].values / len(sdfs)
+/Users/guruikang/WorkBuddy/2026-11-20-15-03-43/internship-workbench/research/portfolio-replication/revision-v3/executions/P006_E01_author/cold_run/src/pricing.py:60: RuntimeWarning: invalid value encountered in matmul
+  x = fsr.T @ sdfs[c_].values / len(sdfs)
+/Users/guruikang/WorkBuddy/2026-11-20-15-03-43/internship-workbench/research/portfolio-replication/revision-v3/executions/P006_E01_author/cold_run/src/pricing.py:60: RuntimeWarning: divide by zero encountered in matmul
+  x = fsr.T @ sdfs[c_].values / len(sdfs)
+/Users/guruikang/WorkBuddy/2026-11-20-15-03-43/internship-workbench/research/portfolio-replication/revision-v3/executions/P006_E01_author/cold_run/src/pricing.py:60: RuntimeWarning: overflow encountered in matmul
+  x = fsr.T @ sdfs[c_].values / len(sdfs)
+/Users/guruikang/WorkBuddy/2026-11-20-15-03-43/internship-workbench/research/portfolio-replication/revision-v3/executions/P006_E01_author/cold_run/src/pricing.py:60: RuntimeWarning: invalid value encountered in matmul
+  x = fsr.T @ sdfs[c_].values / len(sdfs)
+/Users/guruikang/WorkBuddy/2026-11-20-15-03-43/internship-workbench/research/portfolio-replication/revision-v3/executions/P006_E01_author/cold_run/src/pricing.py:60: RuntimeWarning: divide by zero encountered in matmul
+  x = fsr.T @ sdfs[c_].values / len(sdfs)
+/Users/guruikang/WorkBuddy/2026-11-20-15-03-43/internship-workbench/research/portfolio-replication/revision-v3/executions/P006_E01_author/cold_run/src/pricing.py:60: RuntimeWarning: overflow encountered in matmul
+  x = fsr.T @ sdfs[c_].values / len(sdfs)
+/Users/guruikang/WorkBuddy/2026-11-20-15-03-43/internship-workbench/research/portfolio-replication/revision-v3/executions/P006_E01_author/cold_run/src/pricing.py:60: RuntimeWarning: invalid value encountered in matmul
+  x = fsr.T @ sdfs[c_].values / len(sdfs)
+/Users/guruikang/WorkBuddy/2026-11-20-15-03-43/internship-workbench/research/portfolio-replication/revision-v3/executions/P006_E01_author/cold_run/src/pricing.py:60: RuntimeWarning: divide by zero encountered in matmul
+  x = fsr.T @ sdfs[c_].values / len(sdfs)
+/Users/guruikang/WorkBuddy/2026-11-20-15-03-43/internship-workbench/research/portfolio-replication/revision-v3/executions/P006_E01_author/cold_run/src/pricing.py:60: RuntimeWarning: overflow encountered in matmul
+  x = fsr.T @ sdfs[c_].values / len(sdfs)
+/Users/guruikang/WorkBuddy/2026-11-20-15-03-43/internship-workbench/research/portfolio-replication/revision-v3/executions/P006_E01_author/cold_run/src/pricing.py:60: RuntimeWarning: invalid value encountered in matmul
+  x = fsr.T @ sdfs[c_].values / len(sdfs)
+/Users/guruikang/WorkBuddy/2026-11-20-15-03-43/internship-workbench/research/portfolio-replication/revision-v3/executions/P006_E01_author/cold_run/src/pricing.py:60: RuntimeWarning: divide by zero encountered in matmul
+  x = fsr.T @ sdfs[c_].values / len(sdfs)
+/Users/guruikang/WorkBuddy/2026-11-20-15-03-43/internship-workbench/research/portfolio-replication/revision-v3/executions/P006_E01_author/cold_run/src/pricing.py:60: RuntimeWarning: overflow encountered in matmul
+  x = fsr.T @ sdfs[c_].values / len(sdfs)
+/Users/guruikang/WorkBuddy/2026-11-20-15-03-43/internship-workbench/research/portfolio-replication/revision-v3/executions/P006_E01_author/cold_run/src/pricing.py:60: RuntimeWarning: invalid value encountered in matmul
+  x = fsr.T @ sdfs[c_].values / len(sdfs)
+/Users/guruikang/WorkBuddy/2026-11-20-15-03-43/internship-workbench/research/portfolio-replication/revision-v3/executions/P006_E01_author/cold_run/src/pricing.py:60: RuntimeWarning: divide by zero encountered in matmul
+  x = fsr.T @ sdfs[c_].values / len(sdfs)
+/Users/guruikang/WorkBuddy/2026-11-20-15-03-43/internship-workbench/research/portfolio-replication/revision-v3/executions/P006_E01_author/cold_run/src/pricing.py:60: RuntimeWarning: overflow encountered in matmul
+  x = fsr.T @ sdfs[c_].values / len(sdfs)
+/Users/guruikang/WorkBuddy/2026-11-20-15-03-43/internship-workbench/research/portfolio-replication/revision-v3/executions/P006_E01_author/cold_run/src/pricing.py:60: RuntimeWarning: invalid value encountered in matmul
+  x = fsr.T @ sdfs[c_].values / len(sdfs)
+/Users/guruikang/WorkBuddy/2026-11-20-15-03-43/internship-workbench/research/portfolio-replication/revision-v3/executions/P006_E01_author/cold_run/src/pricing.py:60: RuntimeWarning: divide by zero encountered in matmul
+  x = fsr.T @ sdfs[c_].values / len(sdfs)
+/Users/guruikang/WorkBuddy/2026-11-20-15-03-43/internship-workbench/research/portfolio-replication/revision-v3/executions/P006_E01_author/cold_run/src/pricing.py:60: RuntimeWarning: overflow encountered in matmul
+  x = fsr.T @ sdfs[c_].values / len(sdfs)
+/Users/guruikang/WorkBuddy/2026-11-20-15-03-43/internship-workbench/research/portfolio-replication/revision-v3/executions/P006_E01_author/cold_run/src/pricing.py:60: RuntimeWarning: invalid value encountered in matmul
+  x = fsr.T @ sdfs[c_].values / len(sdfs)
+/Users/guruikang/WorkBuddy/2026-11-20-15-03-43/internship-workbench/research/portfolio-replication/revision-v3/executions/P006_E01_author/cold_run/src/pricing.py:60: RuntimeWarning: divide by zero encountered in matmul
+  x = fsr.T @ sdfs[c_].values / len(sdfs)
+/Users/guruikang/WorkBuddy/2026-11-20-15-03-43/internship-workbench/research/portfolio-replication/revision-v3/executions/P006_E01_author/cold_run/src/pricing.py:60: RuntimeWarning: overflow encountered in matmul
+  x = fsr.T @ sdfs[c_].values / len(sdfs)
+/Users/guruikang/WorkBuddy/2026-11-20-15-03-43/internship-workbench/research/portfolio-replication/revision-v3/executions/P006_E01_author/cold_run/src/pricing.py:60: RuntimeWarning: invalid value encountered in matmul
+  x = fsr.T @ sdfs[c_].values / len(sdfs)
+/Users/guruikang/WorkBuddy/2026-11-20-15-03-43/internship-workbench/research/portfolio-replication/revision-v3/executions/P006_E01_author/cold_run/src/pricing.py:60: RuntimeWarning: divide by zero encountered in matmul
+  x = fsr.T @ sdfs[c_].values / len(sdfs)
+/Users/guruikang/WorkBuddy/2026-11-20-15-03-43/internship-workbench/research/portfolio-replication/revision-v3/executions/P006_E01_author/cold_run/src/pricing.py:60: RuntimeWarning: overflow encountered in matmul
+  x = fsr.T @ sdfs[c_].values / len(sdfs)
+/Users/guruikang/WorkBuddy/2026-11-20-15-03-43/internship-workbench/research/portfolio-replication/revision-v3/executions/P006_E01_author/cold_run/src/pricing.py:60: RuntimeWarning: invalid value encountered in matmul
+  x = fsr.T @ sdfs[c_].values / len(sdfs)
+/Users/guruikang/WorkBuddy/2026-11-20-15-03-43/internship-workbench/research/portfolio-replication/revision-v3/executions/P006_E01_author/cold_run/src/pricing.py:60: RuntimeWarning: divide by zero encountered in matmul
+  x = fsr.T @ sdfs[c_].values / len(sdfs)
+/Users/guruikang/WorkBuddy/2026-11-20-15-03-43/internship-workbench/research/portfolio-replication/revision-v3/executions/P006_E01_author/cold_run/src/pricing.py:60: RuntimeWarning: overflow encountered in matmul
+  x = fsr.T @ sdfs[c_].values / len(sdfs)
+/Users/guruikang/WorkBuddy/2026-11-20-15-03-43/internship-workbench/research/portfolio-replication/revision-v3/executions/P006_E01_author/cold_run/src/pricing.py:60: RuntimeWarning: invalid value encountered in matmul
+  x = fsr.T @ sdfs[c_].values / len(sdfs)
+/Users/guruikang/WorkBuddy/2026-11-20-15-03-43/internship-workbench/research/portfolio-replication/revision-v3/executions/P006_E01_author/cold_run/src/pricing.py:60: RuntimeWarning: divide by zero encountered in matmul
+  x = fsr.T @ sdfs[c_].values / len(sdfs)
+/Users/guruikang/WorkBuddy/2026-11-20-15-03-43/internship-workbench/research/portfolio-replication/revision-v3/executions/P006_E01_author/cold_run/src/pricing.py:60: RuntimeWarning: overflow encountered in matmul
+  x = fsr.T @ sdfs[c_].values / len(sdfs)
+/Users/guruikang/WorkBuddy/2026-11-20-15-03-43/internship-workbench/research/portfolio-replication/revision-v3/executions/P006_E01_author/cold_run/src/pricing.py:60: RuntimeWarning: invalid value encountered in matmul
+  x = fsr.T @ sdfs[c_].values / len(sdfs)
+/Users/guruikang/WorkBuddy/2026-11-20-15-03-43/internship-workbench/research/portfolio-replication/revision-v3/executions/P006_E01_author/cold_run/src/pricing.py:60: RuntimeWarning: divide by zero encountered in matmul
+  x = fsr.T @ sdfs[c_].values / len(sdfs)
+/Users/guruikang/WorkBuddy/2026-11-20-15-03-43/internship-workbench/research/portfolio-replication/revision-v3/executions/P006_E01_author/cold_run/src/pricing.py:60: RuntimeWarning: overflow encountered in matmul
+  x = fsr.T @ sdfs[c_].values / len(sdfs)
+/Users/guruikang/WorkBuddy/2026-11-20-15-03-43/internship-workbench/research/portfolio-replication/revision-v3/executions/P006_E01_author/cold_run/src/pricing.py:60: RuntimeWarning: invalid value encountered in matmul
+  x = fsr.T @ sdfs[c_].values / len(sdfs)
+/Users/guruikang/WorkBuddy/2026-11-20-15-03-43/internship-workbench/research/portfolio-replication/revision-v3/executions/P006_E01_author/cold_run/src/pricing.py:60: RuntimeWarning: divide by zero encountered in matmul
+  x = fsr.T @ sdfs[c_].values / len(sdfs)
+/Users/guruikang/WorkBuddy/2026-11-20-15-03-43/internship-workbench/research/portfolio-replication/revision-v3/executions/P006_E01_author/cold_run/src/pricing.py:60: RuntimeWarning: overflow encountered in matmul
+  x = fsr.T @ sdfs[c_].values / len(sdfs)
+/Users/guruikang/WorkBuddy/2026-11-20-15-03-43/internship-workbench/research/portfolio-replication/revision-v3/executions/P006_E01_author/cold_run/src/pricing.py:60: RuntimeWarning: invalid value encountered in matmul
+  x = fsr.T @ sdfs[c_].values / len(sdfs)
+/Users/guruikang/WorkBuddy/2026-11-20-15-03-43/internship-workbench/research/portfolio-replication/revision-v3/executions/P006_E01_author/cold_run/src/pricing.py:60: RuntimeWarning: divide by zero encountered in matmul
+  x = fsr.T @ sdfs[c_].values / len(sdfs)
+/Users/guruikang/WorkBuddy/2026-11-20-15-03-43/internship-workbench/research/portfolio-replication/revision-v3/executions/P006_E01_author/cold_run/src/pricing.py:60: RuntimeWarning: overflow encountered in matmul
+  x = fsr.T @ sdfs[c_].values / len(sdfs)
+/Users/guruikang/WorkBuddy/2026-11-20-15-03-43/internship-workbench/research/portfolio-replication/revision-v3/executions/P006_E01_author/cold_run/src/pricing.py:60: RuntimeWarning: invalid value encountered in matmul
+  x = fsr.T @ sdfs[c_].values / len(sdfs)
+/Users/guruikang/WorkBuddy/2026-11-20-15-03-43/internship-workbench/research/portfolio-replication/revision-v3/executions/P006_E01_author/cold_run/src/pricing.py:60: RuntimeWarning: divide by zero encountered in matmul
+  x = fsr.T @ sdfs[c_].values / len(sdfs)
+/Users/guruikang/WorkBuddy/2026-11-20-15-03-43/internship-workbench/research/portfolio-replication/revision-v3/executions/P006_E01_author/cold_run/src/pricing.py:60: RuntimeWarning: overflow encountered in matmul
+  x = fsr.T @ sdfs[c_].values / len(sdfs)
+/Users/guruikang/WorkBuddy/2026-11-20-15-03-43/internship-workbench/research/portfolio-replication/revision-v3/executions/P006_E01_author/cold_run/src/pricing.py:60: RuntimeWarning: invalid value encountered in matmul
+  x = fsr.T @ sdfs[c_].values / len(sdfs)
+/Users/guruikang/WorkBuddy/2026-11-20-15-03-43/internship-workbench/research/portfolio-replication/revision-v3/executions/P006_E01_author/cold_run/src/pricing.py:60: RuntimeWarning: divide by zero encountered in matmul
+  x = fsr.T @ sdfs[c_].values / len(sdfs)
+/Users/guruikang/WorkBuddy/2026-11-20-15-03-43/internship-workbench/research/portfolio-replication/revision-v3/executions/P006_E01_author/cold_run/src/pricing.py:60: RuntimeWarning: overflow encountered in matmul
+  x = fsr.T @ sdfs[c_].values / len(sdfs)
+/Users/guruikang/WorkBuddy/2026-11-20-15-03-43/internship-workbench/research/portfolio-replication/revision-v3/executions/P006_E01_author/cold_run/src/pricing.py:60: RuntimeWarning: invalid value encountered in matmul
+  x = fsr.T @ sdfs[c_].values / len(sdfs)
+/Users/guruikang/WorkBuddy/2026-11-20-15-03-43/internship-workbench/research/portfolio-replication/revision-v3/executions/P006_E01_author/cold_run/src/pricing.py:60: RuntimeWarning: divide by zero encountered in matmul
+  x = fsr.T @ sdfs[c_].values / len(sdfs)
+/Users/guruikang/WorkBuddy/2026-11-20-15-03-43/internship-workbench/research/portfolio-replication/revision-v3/executions/P006_E01_author/cold_run/src/pricing.py:60: RuntimeWarning: overflow encountered in matmul
+  x = fsr.T @ sdfs[c_].values / len(sdfs)
+/Users/guruikang/WorkBuddy/2026-11-20-15-03-43/internship-workbench/research/portfolio-replication/revision-v3/executions/P006_E01_author/cold_run/src/pricing.py:60: RuntimeWarning: invalid value encountered in matmul
+  x = fsr.T @ sdfs[c_].values / len(sdfs)
+/Users/guruikang/WorkBuddy/2026-11-20-15-03-43/internship-workbench/research/portfolio-replication/revision-v3/executions/P006_E01_author/cold_run/src/pricing.py:60: RuntimeWarning: divide by zero encountered in matmul
+  x = fsr.T @ sdfs[c_].values / len(sdfs)
+/Users/guruikang/WorkBuddy/2026-11-20-15-03-43/internship-workbench/research/portfolio-replication/revision-v3/executions/P006_E01_author/cold_run/src/pricing.py:60: RuntimeWarning: overflow encountered in matmul
+  x = fsr.T @ sdfs[c_].values / len(sdfs)
+/Users/guruikang/WorkBuddy/2026-11-20-15-03-43/internship-workbench/research/portfolio-replication/revision-v3/executions/P006_E01_author/cold_run/src/pricing.py:60: RuntimeWarning: invalid value encountered in matmul
+  x = fsr.T @ sdfs[c_].values / len(sdfs)
+/Users/guruikang/WorkBuddy/2026-11-20-15-03-43/internship-workbench/research/portfolio-replication/revision-v3/executions/P006_E01_author/cold_run/src/pricing.py:60: RuntimeWarning: divide by zero encountered in matmul
+  x = fsr.T @ sdfs[c_].values / len(sdfs)
+/Users/guruikang/WorkBuddy/2026-11-20-15-03-43/internship-workbench/research/portfolio-replication/revision-v3/executions/P006_E01_author/cold_run/src/pricing.py:60: RuntimeWarning: overflow encountered in matmul
+  x = fsr.T @ sdfs[c_].values / len(sdfs)
+/Users/guruikang/WorkBuddy/2026-11-20-15-03-43/internship-workbench/research/portfolio-replication/revision-v3/executions/P006_E01_author/cold_run/src/pricing.py:60: RuntimeWarning: invalid value encountered in matmul
+  x = fsr.T @ sdfs[c_].values / len(sdfs)
+/Users/guruikang/WorkBuddy/2026-11-20-15-03-43/internship-workbench/research/portfolio-replication/revision-v3/executions/P006_E01_author/cold_run/src/pricing.py:60: RuntimeWarning: divide by zero encountered in matmul
+  x = fsr.T @ sdfs[c_].values / len(sdfs)
+/Users/guruikang/WorkBuddy/2026-11-20-15-03-43/internship-workbench/research/portfolio-replication/revision-v3/executions/P006_E01_author/cold_run/src/pricing.py:60: RuntimeWarning: overflow encountered in matmul
+  x = fsr.T @ sdfs[c_].values / len(sdfs)
+/Users/guruikang/WorkBuddy/2026-11-20-15-03-43/internship-workbench/research/portfolio-replication/revision-v3/executions/P006_E01_author/cold_run/src/pricing.py:60: RuntimeWarning: invalid value encountered in matmul
+  x = fsr.T @ sdfs[c_].values / len(sdfs)
+/Users/guruikang/WorkBuddy/2026-11-20-15-03-43/internship-workbench/research/portfolio-replication/revision-v3/executions/P006_E01_author/cold_run/src/pricing.py:60: RuntimeWarning: divide by zero encountered in matmul
+  x = fsr.T @ sdfs[c_].values / len(sdfs)
+/Users/guruikang/WorkBuddy/2026-11-20-15-03-43/internship-workbench/research/portfolio-replication/revision-v3/executions/P006_E01_author/cold_run/src/pricing.py:60: RuntimeWarning: overflow encountered in matmul
+  x = fsr.T @ sdfs[c_].values / len(sdfs)
+/Users/guruikang/WorkBuddy/2026-11-20-15-03-43/internship-workbench/research/portfolio-replication/revision-v3/executions/P006_E01_author/cold_run/src/pricing.py:60: RuntimeWarning: invalid value encountered in matmul
+  x = fsr.T @ sdfs[c_].values / len(sdfs)
+/Users/guruikang/WorkBuddy/2026-11-20-15-03-43/internship-workbench/research/portfolio-replication/revision-v3/executions/P006_E01_author/cold_run/src/pricing.py:60: RuntimeWarning: divide by zero encountered in matmul
+  x = fsr.T @ sdfs[c_].values / len(sdfs)
+/Users/guruikang/WorkBuddy/2026-11-20-15-03-43/internship-workbench/research/portfolio-replication/revision-v3/executions/P006_E01_author/cold_run/src/pricing.py:60: RuntimeWarning: overflow encountered in matmul
+  x = fsr.T @ sdfs[c_].values / len(sdfs)
+/Users/guruikang/WorkBuddy/2026-11-20-15-03-43/internship-workbench/research/portfolio-replication/revision-v3/executions/P006_E01_author/cold_run/src/pricing.py:60: RuntimeWarning: invalid value encountered in matmul
+  x = fsr.T @ sdfs[c_].values / len(sdfs)
+/Users/guruikang/WorkBuddy/2026-11-20-15-03-43/internship-workbench/research/portfolio-replication/revision-v3/executions/P006_E01_author/cold_run/src/pricing.py:60: RuntimeWarning: divide by zero encountered in matmul
+  x = fsr.T @ sdfs[c_].values / len(sdfs)
+/Users/guruikang/WorkBuddy/2026-11-20-15-03-43/internship-workbench/research/portfolio-replication/revision-v3/executions/P006_E01_author/cold_run/src/pricing.py:60: RuntimeWarning: overflow encountered in matmul
+  x = fsr.T @ sdfs[c_].values / len(sdfs)
+/Users/guruikang/WorkBuddy/2026-11-20-15-03-43/internship-workbench/research/portfolio-replication/revision-v3/executions/P006_E01_author/cold_run/src/pricing.py:60: RuntimeWarning: invalid value encountered in matmul
+  x = fsr.T @ sdfs[c_].values / len(sdfs)
+/Users/guruikang/WorkBuddy/2026-11-20-15-03-43/internship-workbench/research/portfolio-replication/revision-v3/executions/P006_E01_author/cold_run/src/pricing.py:60: RuntimeWarning: divide by zero encountered in matmul
+  x = fsr.T @ sdfs[c_].values / len(sdfs)
+/Users/guruikang/WorkBuddy/2026-11-20-15-03-43/internship-workbench/research/portfolio-replication/revision-v3/executions/P006_E01_author/cold_run/src/pricing.py:60: RuntimeWarning: overflow encountered in matmul
+  x = fsr.T @ sdfs[c_].values / len(sdfs)
+/Users/guruikang/WorkBuddy/2026-11-20-15-03-43/internship-workbench/research/portfolio-replication/revision-v3/executions/P006_E01_author/cold_run/src/pricing.py:60: RuntimeWarning: invalid value encountered in matmul
+  x = fsr.T @ sdfs[c_].values / len(sdfs)
+/Users/guruikang/WorkBuddy/2026-11-20-15-03-43/internship-workbench/research/portfolio-replication/revision-v3/executions/P006_E01_author/cold_run/src/pricing.py:60: RuntimeWarning: divide by zero encountered in matmul
+  x = fsr.T @ sdfs[c_].values / len(sdfs)
+/Users/guruikang/WorkBuddy/2026-11-20-15-03-43/internship-workbench/research/portfolio-replication/revision-v3/executions/P006_E01_author/cold_run/src/pricing.py:60: RuntimeWarning: overflow encountered in matmul
+  x = fsr.T @ sdfs[c_].values / len(sdfs)
+/Users/guruikang/WorkBuddy/2026-11-20-15-03-43/internship-workbench/research/portfolio-replication/revision-v3/executions/P006_E01_author/cold_run/src/pricing.py:60: RuntimeWarning: invalid value encountered in matmul
+  x = fsr.T @ sdfs[c_].values / len(sdfs)
+/Users/guruikang/WorkBuddy/2026-11-20-15-03-43/internship-workbench/research/portfolio-replication/revision-v3/executions/P006_E01_author/cold_run/src/pricing.py:60: RuntimeWarning: divide by zero encountered in matmul
+  x = fsr.T @ sdfs[c_].values / len(sdfs)
+/Users/guruikang/WorkBuddy/2026-11-20-15-03-43/internship-workbench/research/portfolio-replication/revision-v3/executions/P006_E01_author/cold_run/src/pricing.py:60: RuntimeWarning: overflow encountered in matmul
+  x = fsr.T @ sdfs[c_].values / len(sdfs)
+/Users/guruikang/WorkBuddy/2026-11-20-15-03-43/internship-workbench/research/portfolio-replication/revision-v3/executions/P006_E01_author/cold_run/src/pricing.py:60: RuntimeWarning: invalid value encountered in matmul
+  x = fsr.T @ sdfs[c_].values / len(sdfs)
+/Users/guruikang/WorkBuddy/2026-11-20-15-03-43/internship-workbench/research/portfolio-replication/revision-v3/executions/P006_E01_author/cold_run/src/pricing.py:60: RuntimeWarning: divide by zero encountered in matmul
+  x = fsr.T @ sdfs[c_].values / len(sdfs)
+/Users/guruikang/WorkBuddy/2026-11-20-15-03-43/internship-workbench/research/portfolio-replication/revision-v3/executions/P006_E01_author/cold_run/src/pricing.py:60: RuntimeWarning: overflow encountered in matmul
+  x = fsr.T @ sdfs[c_].values / len(sdfs)
+/Users/guruikang/WorkBuddy/2026-11-20-15-03-43/internship-workbench/research/portfolio-replication/revision-v3/executions/P006_E01_author/cold_run/src/pricing.py:60: RuntimeWarning: invalid value encountered in matmul
+  x = fsr.T @ sdfs[c_].values / len(sdfs)
+/Users/guruikang/WorkBuddy/2026-11-20-15-03-43/internship-workbench/research/portfolio-replication/revision-v3/executions/P006_E01_author/cold_run/src/pricing.py:60: RuntimeWarning: divide by zero encountered in matmul
+  x = fsr.T @ sdfs[c_].values / len(sdfs)
+/Users/guruikang/WorkBuddy/2026-11-20-15-03-43/internship-workbench/research/portfolio-replication/revision-v3/executions/P006_E01_author/cold_run/src/pricing.py:60: RuntimeWarning: overflow encountered in matmul
+  x = fsr.T @ sdfs[c_].values / len(sdfs)
+/Users/guruikang/WorkBuddy/2026-11-20-15-03-43/internship-workbench/research/portfolio-replication/revision-v3/executions/P006_E01_author/cold_run/src/pricing.py:60: RuntimeWarning: invalid value encountered in matmul
+  x = fsr.T @ sdfs[c_].values / len(sdfs)
+/Users/guruikang/WorkBuddy/2026-11-20-15-03-43/internship-workbench/research/portfolio-replication/revision-v3/executions/P006_E01_author/cold_run/src/pricing.py:60: RuntimeWarning: divide by zero encountered in matmul
+  x = fsr.T @ sdfs[c_].values / len(sdfs)
+/Users/guruikang/WorkBuddy/2026-11-20-15-03-43/internship-workbench/research/portfolio-replication/revision-v3/executions/P006_E01_author/cold_run/src/pricing.py:60: RuntimeWarning: overflow encountered in matmul
+  x = fsr.T @ sdfs[c_].values / len(sdfs)
+/Users/guruikang/WorkBuddy/2026-11-20-15-03-43/internship-workbench/research/portfolio-replication/revision-v3/executions/P006_E01_author/cold_run/src/pricing.py:60: RuntimeWarning: invalid value encountered in matmul
+  x = fsr.T @ sdfs[c_].values / len(sdfs)
+/Users/guruikang/WorkBuddy/2026-11-20-15-03-43/internship-workbench/research/portfolio-replication/revision-v3/executions/P006_E01_author/cold_run/src/pricing.py:60: RuntimeWarning: divide by zero encountered in matmul
+  x = fsr.T @ sdfs[c_].values / len(sdfs)
+/Users/guruikang/WorkBuddy/2026-11-20-15-03-43/internship-workbench/research/portfolio-replication/revision-v3/executions/P006_E01_author/cold_run/src/pricing.py:60: RuntimeWarning: overflow encountered in matmul
+  x = fsr.T @ sdfs[c_].values / len(sdfs)
+/Users/guruikang/WorkBuddy/2026-11-20-15-03-43/internship-workbench/research/portfolio-replication/revision-v3/executions/P006_E01_author/cold_run/src/pricing.py:60: RuntimeWarning: invalid value encountered in matmul
+  x = fsr.T @ sdfs[c_].values / len(sdfs)
+/Users/guruikang/WorkBuddy/2026-11-20-15-03-43/internship-workbench/research/portfolio-replication/revision-v3/executions/P006_E01_author/cold_run/src/pricing.py:60: RuntimeWarning: divide by zero encountered in matmul
+  x = fsr.T @ sdfs[c_].values / len(sdfs)
+/Users/guruikang/WorkBuddy/2026-11-20-15-03-43/internship-workbench/research/portfolio-replication/revision-v3/executions/P006_E01_author/cold_run/src/pricing.py:60: RuntimeWarning: overflow encountered in matmul
+  x = fsr.T @ sdfs[c_].values / len(sdfs)
+/Users/guruikang/WorkBuddy/2026-11-20-15-03-43/internship-workbench/research/portfolio-replication/revision-v3/executions/P006_E01_author/cold_run/src/pricing.py:60: RuntimeWarning: invalid value encountered in matmul
+  x = fsr.T @ sdfs[c_].values / len(sdfs)
+/Users/guruikang/WorkBuddy/2026-11-20-15-03-43/internship-workbench/research/portfolio-replication/revision-v3/executions/P006_E01_author/cold_run/src/pricing.py:60: RuntimeWarning: divide by zero encountered in matmul
+  x = fsr.T @ sdfs[c_].values / len(sdfs)
+/Users/guruikang/WorkBuddy/2026-11-20-15-03-43/internship-workbench/research/portfolio-replication/revision-v3/executions/P006_E01_author/cold_run/src/pricing.py:60: RuntimeWarning: overflow encountered in matmul
+  x = fsr.T @ sdfs[c_].values / len(sdfs)
+/Users/guruikang/WorkBuddy/2026-11-20-15-03-43/internship-workbench/research/portfolio-replication/revision-v3/executions/P006_E01_author/cold_run/src/pricing.py:60: RuntimeWarning: invalid value encountered in matmul
+  x = fsr.T @ sdfs[c_].values / len(sdfs)
+/Users/guruikang/WorkBuddy/2026-11-20-15-03-43/internship-workbench/research/portfolio-replication/revision-v3/executions/P006_E01_author/cold_run/src/pricing.py:60: RuntimeWarning: divide by zero encountered in matmul
+  x = fsr.T @ sdfs[c_].values / len(sdfs)
+/Users/guruikang/WorkBuddy/2026-11-20-15-03-43/internship-workbench/research/portfolio-replication/revision-v3/executions/P006_E01_author/cold_run/src/pricing.py:60: RuntimeWarning: overflow encountered in matmul
+  x = fsr.T @ sdfs[c_].values / len(sdfs)
+/Users/guruikang/WorkBuddy/2026-11-20-15-03-43/internship-workbench/research/portfolio-replication/revision-v3/executions/P006_E01_author/cold_run/src/pricing.py:60: RuntimeWarning: invalid value encountered in matmul
+  x = fsr.T @ sdfs[c_].values / len(sdfs)
+/Users/guruikang/WorkBuddy/2026-11-20-15-03-43/internship-workbench/research/portfolio-replication/revision-v3/executions/P006_E01_author/cold_run/src/pricing.py:60: RuntimeWarning: divide by zero encountered in matmul
+  x = fsr.T @ sdfs[c_].values / len(sdfs)
+/Users/guruikang/WorkBuddy/2026-11-20-15-03-43/internship-workbench/research/portfolio-replication/revision-v3/executions/P006_E01_author/cold_run/src/pricing.py:60: RuntimeWarning: overflow encountered in matmul
+  x = fsr.T @ sdfs[c_].values / len(sdfs)
+/Users/guruikang/WorkBuddy/2026-11-20-15-03-43/internship-workbench/research/portfolio-replication/revision-v3/executions/P006_E01_author/cold_run/src/pricing.py:60: RuntimeWarning: invalid value encountered in matmul
+  x = fsr.T @ sdfs[c_].values / len(sdfs)
+/Users/guruikang/WorkBuddy/2026-11-20-15-03-43/internship-workbench/research/portfolio-replication/revision-v3/executions/P006_E01_author/cold_run/src/pricing.py:60: RuntimeWarning: divide by zero encountered in matmul
+  x = fsr.T @ sdfs[c_].values / len(sdfs)
+/Users/guruikang/WorkBuddy/2026-11-20-15-03-43/internship-workbench/research/portfolio-replication/revision-v3/executions/P006_E01_author/cold_run/src/pricing.py:60: RuntimeWarning: overflow encountered in matmul
+  x = fsr.T @ sdfs[c_].values / len(sdfs)
+/Users/guruikang/WorkBuddy/2026-11-20-15-03-43/internship-workbench/research/portfolio-replication/revision-v3/executions/P006_E01_author/cold_run/src/pricing.py:60: RuntimeWarning: invalid value encountered in matmul
+  x = fsr.T @ sdfs[c_].values / len(sdfs)
+/Users/guruikang/WorkBuddy/2026-11-20-15-03-43/internship-workbench/research/portfolio-replication/revision-v3/executions/P006_E01_author/cold_run/src/pricing.py:60: RuntimeWarning: divide by zero encountered in matmul
+  x = fsr.T @ sdfs[c_].values / len(sdfs)
+/Users/guruikang/WorkBuddy/2026-11-20-15-03-43/internship-workbench/research/portfolio-replication/revision-v3/executions/P006_E01_author/cold_run/src/pricing.py:60: RuntimeWarning: overflow encountered in matmul
+  x = fsr.T @ sdfs[c_].values / len(sdfs)
+/Users/guruikang/WorkBuddy/2026-11-20-15-03-43/internship-workbench/research/portfolio-replication/revision-v3/executions/P006_E01_author/cold_run/src/pricing.py:60: RuntimeWarning: invalid value encountered in matmul
+  x = fsr.T @ sdfs[c_].values / len(sdfs)
+/Users/guruikang/WorkBuddy/2026-11-20-15-03-43/internship-workbench/research/portfolio-replication/revision-v3/executions/P006_E01_author/cold_run/src/pricing.py:60: RuntimeWarning: divide by zero encountered in matmul
+  x = fsr.T @ sdfs[c_].values / len(sdfs)
+/Users/guruikang/WorkBuddy/2026-11-20-15-03-43/internship-workbench/research/portfolio-replication/revision-v3/executions/P006_E01_author/cold_run/src/pricing.py:60: RuntimeWarning: overflow encountered in matmul
+  x = fsr.T @ sdfs[c_].values / len(sdfs)
+/Users/guruikang/WorkBuddy/2026-11-20-15-03-43/internship-workbench/research/portfolio-replication/revision-v3/executions/P006_E01_author/cold_run/src/pricing.py:60: RuntimeWarning: invalid value encountered in matmul
+  x = fsr.T @ sdfs[c_].values / len(sdfs)
+/Users/guruikang/WorkBuddy/2026-11-20-15-03-43/internship-workbench/research/portfolio-replication/revision-v3/executions/P006_E01_author/cold_run/src/pricing.py:60: RuntimeWarning: divide by zero encountered in matmul
+  x = fsr.T @ sdfs[c_].values / len(sdfs)
+/Users/guruikang/WorkBuddy/2026-11-20-15-03-43/internship-workbench/research/portfolio-replication/revision-v3/executions/P006_E01_author/cold_run/src/pricing.py:60: RuntimeWarning: overflow encountered in matmul
+  x = fsr.T @ sdfs[c_].values / len(sdfs)
+/Users/guruikang/WorkBuddy/2026-11-20-15-03-43/internship-workbench/research/portfolio-replication/revision-v3/executions/P006_E01_author/cold_run/src/pricing.py:60: RuntimeWarning: invalid value encountered in matmul
+  x = fsr.T @ sdfs[c_].values / len(sdfs)
+/Users/guruikang/WorkBuddy/2026-11-20-15-03-43/internship-workbench/research/portfolio-replication/revision-v3/executions/P006_E01_author/cold_run/src/pricing.py:60: RuntimeWarning: divide by zero encountered in matmul
+  x = fsr.T @ sdfs[c_].values / len(sdfs)
+/Users/guruikang/WorkBuddy/2026-11-20-15-03-43/internship-workbench/research/portfolio-replication/revision-v3/executions/P006_E01_author/cold_run/src/pricing.py:60: RuntimeWarning: overflow encountered in matmul
+  x = fsr.T @ sdfs[c_].values / len(sdfs)
+/Users/guruikang/WorkBuddy/2026-11-20-15-03-43/internship-workbench/research/portfolio-replication/revision-v3/executions/P006_E01_author/cold_run/src/pricing.py:60: RuntimeWarning: invalid value encountered in matmul
+  x = fsr.T @ sdfs[c_].values / len(sdfs)
+/Users/guruikang/WorkBuddy/2026-11-20-15-03-43/internship-workbench/research/portfolio-replication/revision-v3/executions/P006_E01_author/cold_run/src/pricing.py:60: RuntimeWarning: divide by zero encountered in matmul
+  x = fsr.T @ sdfs[c_].values / len(sdfs)
+/Users/guruikang/WorkBuddy/2026-11-20-15-03-43/internship-workbench/research/portfolio-replication/revision-v3/executions/P006_E01_author/cold_run/src/pricing.py:60: RuntimeWarning: overflow encountered in matmul
+  x = fsr.T @ sdfs[c_].values / len(sdfs)
+/Users/guruikang/WorkBuddy/2026-11-20-15-03-43/internship-workbench/research/portfolio-replication/revision-v3/executions/P006_E01_author/cold_run/src/pricing.py:60: RuntimeWarning: invalid value encountered in matmul
+  x = fsr.T @ sdfs[c_].values / len(sdfs)
+/Users/guruikang/WorkBuddy/2026-11-20-15-03-43/internship-workbench/research/portfolio-replication/revision-v3/executions/P006_E01_author/cold_run/src/pricing.py:60: RuntimeWarning: divide by zero encountered in matmul
+  x = fsr.T @ sdfs[c_].values / len(sdfs)
+/Users/guruikang/WorkBuddy/2026-11-20-15-03-43/internship-workbench/research/portfolio-replication/revision-v3/executions/P006_E01_author/cold_run/src/pricing.py:60: RuntimeWarning: overflow encountered in matmul
+  x = fsr.T @ sdfs[c_].values / len(sdfs)
+/Users/guruikang/WorkBuddy/2026-11-20-15-03-43/internship-workbench/research/portfolio-replication/revision-v3/executions/P006_E01_author/cold_run/src/pricing.py:60: RuntimeWarning: invalid value encountered in matmul
+  x = fsr.T @ sdfs[c_].values / len(sdfs)
+/Users/guruikang/WorkBuddy/2026-11-20-15-03-43/internship-workbench/research/portfolio-replication/revision-v3/executions/P006_E01_author/cold_run/src/pricing.py:60: RuntimeWarning: divide by zero encountered in matmul
+  x = fsr.T @ sdfs[c_].values / len(sdfs)
+/Users/guruikang/WorkBuddy/2026-11-20-15-03-43/internship-workbench/research/portfolio-replication/revision-v3/executions/P006_E01_author/cold_run/src/pricing.py:60: RuntimeWarning: overflow encountered in matmul
+  x = fsr.T @ sdfs[c_].values / len(sdfs)
+/Users/guruikang/WorkBuddy/2026-11-20-15-03-43/internship-workbench/research/portfolio-replication/revision-v3/executions/P006_E01_author/cold_run/src/pricing.py:60: RuntimeWarning: invalid value encountered in matmul
+  x = fsr.T @ sdfs[c_].values / len(sdfs)
+/Users/guruikang/WorkBuddy/2026-11-20-15-03-43/internship-workbench/research/portfolio-replication/revision-v3/executions/P006_E01_author/cold_run/src/pricing.py:60: RuntimeWarning: divide by zero encountered in matmul
+  x = fsr.T @ sdfs[c_].values / len(sdfs)
+/Users/guruikang/WorkBuddy/2026-11-20-15-03-43/internship-workbench/research/portfolio-replication/revision-v3/executions/P006_E01_author/cold_run/src/pricing.py:60: RuntimeWarning: overflow encountered in matmul
+  x = fsr.T @ sdfs[c_].values / len(sdfs)
+/Users/guruikang/WorkBuddy/2026-11-20-15-03-43/internship-workbench/research/portfolio-replication/revision-v3/executions/P006_E01_author/cold_run/src/pricing.py:60: RuntimeWarning: invalid value encountered in matmul
+  x = fsr.T @ sdfs[c_].values / len(sdfs)
+/Users/guruikang/WorkBuddy/2026-11-20-15-03-43/internship-workbench/research/portfolio-replication/revision-v3/executions/P006_E01_author/cold_run/src/pricing.py:60: RuntimeWarning: divide by zero encountered in matmul
+  x = fsr.T @ sdfs[c_].values / len(sdfs)
+/Users/guruikang/WorkBuddy/2026-11-20-15-03-43/internship-workbench/research/portfolio-replication/revision-v3/executions/P006_E01_author/cold_run/src/pricing.py:60: RuntimeWarning: overflow encountered in matmul
+  x = fsr.T @ sdfs[c_].values / len(sdfs)
+/Users/guruikang/WorkBuddy/2026-11-20-15-03-43/internship-workbench/research/portfolio-replication/revision-v3/executions/P006_E01_author/cold_run/src/pricing.py:60: RuntimeWarning: invalid value encountered in matmul
+  x = fsr.T @ sdfs[c_].values / len(sdfs)
+/Users/guruikang/WorkBuddy/2026-11-20-15-03-43/internship-workbench/research/portfolio-replication/revision-v3/executions/P006_E01_author/cold_run/src/pricing.py:60: RuntimeWarning: divide by zero encountered in matmul
+  x = fsr.T @ sdfs[c_].values / len(sdfs)
+/Users/guruikang/WorkBuddy/2026-11-20-15-03-43/internship-workbench/research/portfolio-replication/revision-v3/executions/P006_E01_author/cold_run/src/pricing.py:60: RuntimeWarning: overflow encountered in matmul
+  x = fsr.T @ sdfs[c_].values / len(sdfs)
+/Users/guruikang/WorkBuddy/2026-11-20-15-03-43/internship-workbench/research/portfolio-replication/revision-v3/executions/P006_E01_author/cold_run/src/pricing.py:60: RuntimeWarning: invalid value encountered in matmul
+  x = fsr.T @ sdfs[c_].values / len(sdfs)
+/Users/guruikang/WorkBuddy/2026-11-20-15-03-43/internship-workbench/research/portfolio-replication/revision-v3/executions/P006_E01_author/cold_run/src/pricing.py:60: RuntimeWarning: divide by zero encountered in matmul
+  x = fsr.T @ sdfs[c_].values / len(sdfs)
+/Users/guruikang/WorkBuddy/2026-11-20-15-03-43/internship-workbench/research/portfolio-replication/revision-v3/executions/P006_E01_author/cold_run/src/pricing.py:60: RuntimeWarning: overflow encountered in matmul
+  x = fsr.T @ sdfs[c_].values / len(sdfs)
+/Users/guruikang/WorkBuddy/2026-11-20-15-03-43/internship-workbench/research/portfolio-replication/revision-v3/executions/P006_E01_author/cold_run/src/pricing.py:60: RuntimeWarning: invalid value encountered in matmul
+  x = fsr.T @ sdfs[c_].values / len(sdfs)
+/Users/guruikang/WorkBuddy/2026-11-20-15-03-43/internship-workbench/research/portfolio-replication/revision-v3/executions/P006_E01_author/cold_run/src/pricing.py:60: RuntimeWarning: divide by zero encountered in matmul
+  x = fsr.T @ sdfs[c_].values / len(sdfs)
+/Users/guruikang/WorkBuddy/2026-11-20-15-03-43/internship-workbench/research/portfolio-replication/revision-v3/executions/P006_E01_author/cold_run/src/pricing.py:60: RuntimeWarning: overflow encountered in matmul
+  x = fsr.T @ sdfs[c_].values / len(sdfs)
+/Users/guruikang/WorkBuddy/2026-11-20-15-03-43/internship-workbench/research/portfolio-replication/revision-v3/executions/P006_E01_author/cold_run/src/pricing.py:60: RuntimeWarning: invalid value encountered in matmul
+  x = fsr.T @ sdfs[c_].values / len(sdfs)
+/Users/guruikang/WorkBuddy/2026-11-20-15-03-43/internship-workbench/research/portfolio-replication/revision-v3/executions/P006_E01_author/cold_run/src/pricing.py:60: RuntimeWarning: divide by zero encountered in matmul
+  x = fsr.T @ sdfs[c_].values / len(sdfs)
+/Users/guruikang/WorkBuddy/2026-11-20-15-03-43/internship-workbench/research/portfolio-replication/revision-v3/executions/P006_E01_author/cold_run/src/pricing.py:60: RuntimeWarning: overflow encountered in matmul
+  x = fsr.T @ sdfs[c_].values / len(sdfs)
+/Users/guruikang/WorkBuddy/2026-11-20-15-03-43/internship-workbench/research/portfolio-replication/revision-v3/executions/P006_E01_author/cold_run/src/pricing.py:60: RuntimeWarning: invalid value encountered in matmul
+  x = fsr.T @ sdfs[c_].values / len(sdfs)
+/Users/guruikang/WorkBuddy/2026-11-20-15-03-43/CO-REP-20261120-02/execution/env_py396/lib/python3.9/site-packages/numpy/_core/fromnumeric.py:3800: FutureWarning: The behavior of DataFrame.std with axis=None is deprecated, in a future version this will reduce over both axes and return a scalar. To retain the old behavior, pass axis=0 (or do not pass axis)
+  return std(axis=axis, dtype=dtype, out=out, ddof=ddof, **kwargs)
+/Users/guruikang/WorkBuddy/2026-11-20-15-03-43/CO-REP-20261120-02/execution/env_py396/lib/python3.9/site-packages/numpy/_core/fromnumeric.py:3800: FutureWarning: The behavior of DataFrame.std with axis=None is deprecated, in a future version this will reduce over both axes and return a scalar. To retain the old behavior, pass axis=0 (or do not pass axis)
+  return std(axis=axis, dtype=dtype, out=out, ddof=ddof, **kwargs)
+/Users/guruikang/WorkBuddy/2026-11-20-15-03-43/CO-REP-20261120-02/execution/env_py396/lib/python3.9/site-packages/numpy/_core/fromnumeric.py:3800: FutureWarning: The behavior of DataFrame.std with axis=None is deprecated, in a future version this will reduce over both axes and return a scalar. To retain the old behavior, pass axis=0 (or do not pass axis)
+  return std(axis=axis, dtype=dtype, out=out, ddof=ddof, **kwargs)
+/Users/guruikang/WorkBuddy/2026-11-20-15-03-43/CO-REP-20261120-02/execution/env_py396/lib/python3.9/site-packages/numpy/_core/fromnumeric.py:3800: FutureWarning: The behavior of DataFrame.std with axis=None is deprecated, in a future version this will reduce over both axes and return a scalar. To retain the old behavior, pass axis=0 (or do not pass axis)
+  return std(axis=axis, dtype=dtype, out=out, ddof=ddof, **kwargs)
+/Users/guruikang/WorkBuddy/2026-11-20-15-03-43/CO-REP-20261120-02/execution/env_py396/lib/python3.9/site-packages/numpy/_core/fromnumeric.py:3800: FutureWarning: The behavior of DataFrame.std with axis=None is deprecated, in a future version this will reduce over both axes and return a scalar. To retain the old behavior, pass axis=0 (or do not pass axis)
+  return std(axis=axis, dtype=dtype, out=out, ddof=ddof, **kwargs)
+/Users/guruikang/WorkBuddy/2026-11-20-15-03-43/CO-REP-20261120-02/execution/env_py396/lib/python3.9/site-packages/numpy/_core/fromnumeric.py:3800: FutureWarning: The behavior of DataFrame.std with axis=None is deprecated, in a future version this will reduce over both axes and return a scalar. To retain the old behavior, pass axis=0 (or do not pass axis)
+  return std(axis=axis, dtype=dtype, out=out, ddof=ddof, **kwargs)
+/Users/guruikang/WorkBuddy/2026-11-20-15-03-43/CO-REP-20261120-02/execution/env_py396/lib/python3.9/site-packages/numpy/_core/fromnumeric.py:3800: FutureWarning: The behavior of DataFrame.std with axis=None is deprecated, in a future version this will reduce over both axes and return a scalar. To retain the old behavior, pass axis=0 (or do not pass axis)
+  return std(axis=axis, dtype=dtype, out=out, ddof=ddof, **kwargs)
+/Users/guruikang/WorkBuddy/2026-11-20-15-03-43/internship-workbench/research/portfolio-replication/revision-v3/executions/P006_E01_author/cold_run/src/pricing.py:60: RuntimeWarning: divide by zero encountered in matmul
+  x = fsr.T @ sdfs[c_].values / len(sdfs)
+/Users/guruikang/WorkBuddy/2026-11-20-15-03-43/internship-workbench/research/portfolio-replication/revision-v3/executions/P006_E01_author/cold_run/src/pricing.py:60: RuntimeWarning: overflow encountered in matmul
+  x = fsr.T @ sdfs[c_].values / len(sdfs)
+/Users/guruikang/WorkBuddy/2026-11-20-15-03-43/internship-workbench/research/portfolio-replication/revision-v3/executions/P006_E01_author/cold_run/src/pricing.py:60: RuntimeWarning: invalid value encountered in matmul
+  x = fsr.T @ sdfs[c_].values / len(sdfs)
+/Users/guruikang/WorkBuddy/2026-11-20-15-03-43/internship-workbench/research/portfolio-replication/revision-v3/executions/P006_E01_author/cold_run/src/pricing.py:60: RuntimeWarning: divide by zero encountered in matmul
+  x = fsr.T @ sdfs[c_].values / len(sdfs)
+/Users/guruikang/WorkBuddy/2026-11-20-15-03-43/internship-workbench/research/portfolio-replication/revision-v3/executions/P006_E01_author/cold_run/src/pricing.py:60: RuntimeWarning: overflow encountered in matmul
+  x = fsr.T @ sdfs[c_].values / len(sdfs)
+/Users/guruikang/WorkBuddy/2026-11-20-15-03-43/internship-workbench/research/portfolio-replication/revision-v3/executions/P006_E01_author/cold_run/src/pricing.py:60: RuntimeWarning: invalid value encountered in matmul
+  x = fsr.T @ sdfs[c_].values / len(sdfs)
+/Users/guruikang/WorkBuddy/2026-11-20-15-03-43/internship-workbench/research/portfolio-replication/revision-v3/executions/P006_E01_author/cold_run/src/pricing.py:60: RuntimeWarning: divide by zero encountered in matmul
+  x = fsr.T @ sdfs[c_].values / len(sdfs)
+/Users/guruikang/WorkBuddy/2026-11-20-15-03-43/internship-workbench/research/portfolio-replication/revision-v3/executions/P006_E01_author/cold_run/src/pricing.py:60: RuntimeWarning: overflow encountered in matmul
+  x = fsr.T @ sdfs[c_].values / len(sdfs)
+/Users/guruikang/WorkBuddy/2026-11-20-15-03-43/internship-workbench/research/portfolio-replication/revision-v3/executions/P006_E01_author/cold_run/src/pricing.py:60: RuntimeWarning: invalid value encountered in matmul
+  x = fsr.T @ sdfs[c_].values / len(sdfs)
+/Users/guruikang/WorkBuddy/2026-11-20-15-03-43/internship-workbench/research/portfolio-replication/revision-v3/executions/P006_E01_author/cold_run/src/pricing.py:60: RuntimeWarning: divide by zero encountered in matmul
+  x = fsr.T @ sdfs[c_].values / len(sdfs)
+/Users/guruikang/WorkBuddy/2026-11-20-15-03-43/internship-workbench/research/portfolio-replication/revision-v3/executions/P006_E01_author/cold_run/src/pricing.py:60: RuntimeWarning: overflow encountered in matmul
+  x = fsr.T @ sdfs[c_].values / len(sdfs)
+/Users/guruikang/WorkBuddy/2026-11-20-15-03-43/internship-workbench/research/portfolio-replication/revision-v3/executions/P006_E01_author/cold_run/src/pricing.py:60: RuntimeWarning: invalid value encountered in matmul
+  x = fsr.T @ sdfs[c_].values / len(sdfs)
+/Users/guruikang/WorkBuddy/2026-11-20-15-03-43/internship-workbench/research/portfolio-replication/revision-v3/executions/P006_E01_author/cold_run/src/pricing.py:60: RuntimeWarning: divide by zero encountered in matmul
+  x = fsr.T @ sdfs[c_].values / len(sdfs)
+/Users/guruikang/WorkBuddy/2026-11-20-15-03-43/internship-workbench/research/portfolio-replication/revision-v3/executions/P006_E01_author/cold_run/src/pricing.py:60: RuntimeWarning: overflow encountered in matmul
+  x = fsr.T @ sdfs[c_].values / len(sdfs)
+/Users/guruikang/WorkBuddy/2026-11-20-15-03-43/internship-workbench/research/portfolio-replication/revision-v3/executions/P006_E01_author/cold_run/src/pricing.py:60: RuntimeWarning: invalid value encountered in matmul
+  x = fsr.T @ sdfs[c_].values / len(sdfs)
+/Users/guruikang/WorkBuddy/2026-11-20-15-03-43/internship-workbench/research/portfolio-replication/revision-v3/executions/P006_E01_author/cold_run/src/pricing.py:60: RuntimeWarning: divide by zero encountered in matmul
+  x = fsr.T @ sdfs[c_].values / len(sdfs)
+/Users/guruikang/WorkBuddy/2026-11-20-15-03-43/internship-workbench/research/portfolio-replication/revision-v3/executions/P006_E01_author/cold_run/src/pricing.py:60: RuntimeWarning: overflow encountered in matmul
+  x = fsr.T @ sdfs[c_].values / len(sdfs)
+/Users/guruikang/WorkBuddy/2026-11-20-15-03-43/internship-workbench/research/portfolio-replication/revision-v3/executions/P006_E01_author/cold_run/src/pricing.py:60: RuntimeWarning: invalid value encountered in matmul
+  x = fsr.T @ sdfs[c_].values / len(sdfs)
+/Users/guruikang/WorkBuddy/2026-11-20-15-03-43/internship-workbench/research/portfolio-replication/revision-v3/executions/P006_E01_author/cold_run/src/pricing.py:60: RuntimeWarning: divide by zero encountered in matmul
+  x = fsr.T @ sdfs[c_].values / len(sdfs)
+/Users/guruikang/WorkBuddy/2026-11-20-15-03-43/internship-workbench/research/portfolio-replication/revision-v3/executions/P006_E01_author/cold_run/src/pricing.py:60: RuntimeWarning: overflow encountered in matmul
+  x = fsr.T @ sdfs[c_].values / len(sdfs)
+/Users/guruikang/WorkBuddy/2026-11-20-15-03-43/internship-workbench/research/portfolio-replication/revision-v3/executions/P006_E01_author/cold_run/src/pricing.py:60: RuntimeWarning: invalid value encountered in matmul
+  x = fsr.T @ sdfs[c_].values / len(sdfs)
+/Users/guruikang/WorkBuddy/2026-11-20-15-03-43/internship-workbench/research/portfolio-replication/revision-v3/executions/P006_E01_author/cold_run/src/pricing.py:60: RuntimeWarning: divide by zero encountered in matmul
+  x = fsr.T @ sdfs[c_].values / len(sdfs)
+/Users/guruikang/WorkBuddy/2026-11-20-15-03-43/internship-workbench/research/portfolio-replication/revision-v3/executions/P006_E01_author/cold_run/src/pricing.py:60: RuntimeWarning: overflow encountered in matmul
+  x = fsr.T @ sdfs[c_].values / len(sdfs)
+/Users/guruikang/WorkBuddy/2026-11-20-15-03-43/internship-workbench/research/portfolio-replication/revision-v3/executions/P006_E01_author/cold_run/src/pricing.py:60: RuntimeWarning: invalid value encountered in matmul
+  x = fsr.T @ sdfs[c_].values / len(sdfs)
+/Users/guruikang/WorkBuddy/2026-11-20-15-03-43/internship-workbench/research/portfolio-replication/revision-v3/executions/P006_E01_author/cold_run/src/pricing.py:60: RuntimeWarning: divide by zero encountered in matmul
+  x = fsr.T @ sdfs[c_].values / len(sdfs)
+/Users/guruikang/WorkBuddy/2026-11-20-15-03-43/internship-workbench/research/portfolio-replication/revision-v3/executions/P006_E01_author/cold_run/src/pricing.py:60: RuntimeWarning: overflow encountered in matmul
+  x = fsr.T @ sdfs[c_].values / len(sdfs)
+/Users/guruikang/WorkBuddy/2026-11-20-15-03-43/internship-workbench/research/portfolio-replication/revision-v3/executions/P006_E01_author/cold_run/src/pricing.py:60: RuntimeWarning: invalid value encountered in matmul
+  x = fsr.T @ sdfs[c_].values / len(sdfs)
+/Users/guruikang/WorkBuddy/2026-11-20-15-03-43/internship-workbench/research/portfolio-replication/revision-v3/executions/P006_E01_author/cold_run/src/pricing.py:60: RuntimeWarning: divide by zero encountered in matmul
+  x = fsr.T @ sdfs[c_].values / len(sdfs)
+/Users/guruikang/WorkBuddy/2026-11-20-15-03-43/internship-workbench/research/portfolio-replication/revision-v3/executions/P006_E01_author/cold_run/src/pricing.py:60: RuntimeWarning: overflow encountered in matmul
+  x = fsr.T @ sdfs[c_].values / len(sdfs)
+/Users/guruikang/WorkBuddy/2026-11-20-15-03-43/internship-workbench/research/portfolio-replication/revision-v3/executions/P006_E01_author/cold_run/src/pricing.py:60: RuntimeWarning: invalid value encountered in matmul
+  x = fsr.T @ sdfs[c_].values / len(sdfs)
+/Users/guruikang/WorkBuddy/2026-11-20-15-03-43/internship-workbench/research/portfolio-replication/revision-v3/executions/P006_E01_author/cold_run/src/pricing.py:60: RuntimeWarning: divide by zero encountered in matmul
+  x = fsr.T @ sdfs[c_].values / len(sdfs)
+/Users/guruikang/WorkBuddy/2026-11-20-15-03-43/internship-workbench/research/portfolio-replication/revision-v3/executions/P006_E01_author/cold_run/src/pricing.py:60: RuntimeWarning: overflow encountered in matmul
+  x = fsr.T @ sdfs[c_].values / len(sdfs)
+/Users/guruikang/WorkBuddy/2026-11-20-15-03-43/internship-workbench/research/portfolio-replication/revision-v3/executions/P006_E01_author/cold_run/src/pricing.py:60: RuntimeWarning: invalid value encountered in matmul
+  x = fsr.T @ sdfs[c_].values / len(sdfs)
+/Users/guruikang/WorkBuddy/2026-11-20-15-03-43/internship-workbench/research/portfolio-replication/revision-v3/executions/P006_E01_author/cold_run/src/pricing.py:60: RuntimeWarning: divide by zero encountered in matmul
+  x = fsr.T @ sdfs[c_].values / len(sdfs)
+/Users/guruikang/WorkBuddy/2026-11-20-15-03-43/internship-workbench/research/portfolio-replication/revision-v3/executions/P006_E01_author/cold_run/src/pricing.py:60: RuntimeWarning: overflow encountered in matmul
+  x = fsr.T @ sdfs[c_].values / len(sdfs)
+/Users/guruikang/WorkBuddy/2026-11-20-15-03-43/internship-workbench/research/portfolio-replication/revision-v3/executions/P006_E01_author/cold_run/src/pricing.py:60: RuntimeWarning: invalid value encountered in matmul
+  x = fsr.T @ sdfs[c_].values / len(sdfs)
+/Users/guruikang/WorkBuddy/2026-11-20-15-03-43/internship-workbench/research/portfolio-replication/revision-v3/executions/P006_E01_author/cold_run/src/pricing.py:60: RuntimeWarning: divide by zero encountered in matmul
+  x = fsr.T @ sdfs[c_].values / len(sdfs)
+/Users/guruikang/WorkBuddy/2026-11-20-15-03-43/internship-workbench/research/portfolio-replication/revision-v3/executions/P006_E01_author/cold_run/src/pricing.py:60: RuntimeWarning: overflow encountered in matmul
+  x = fsr.T @ sdfs[c_].values / len(sdfs)
+/Users/guruikang/WorkBuddy/2026-11-20-15-03-43/internship-workbench/research/portfolio-replication/revision-v3/executions/P006_E01_author/cold_run/src/pricing.py:60: RuntimeWarning: invalid value encountered in matmul
+  x = fsr.T @ sdfs[c_].values / len(sdfs)
+/Users/guruikang/WorkBuddy/2026-11-20-15-03-43/internship-workbench/research/portfolio-replication/revision-v3/executions/P006_E01_author/cold_run/src/pricing.py:60: RuntimeWarning: divide by zero encountered in matmul
+  x = fsr.T @ sdfs[c_].values / len(sdfs)
+/Users/guruikang/WorkBuddy/2026-11-20-15-03-43/internship-workbench/research/portfolio-replication/revision-v3/executions/P006_E01_author/cold_run/src/pricing.py:60: RuntimeWarning: overflow encountered in matmul
+  x = fsr.T @ sdfs[c_].values / len(sdfs)
+/Users/guruikang/WorkBuddy/2026-11-20-15-03-43/internship-workbench/research/portfolio-replication/revision-v3/executions/P006_E01_author/cold_run/src/pricing.py:60: RuntimeWarning: invalid value encountered in matmul
+  x = fsr.T @ sdfs[c_].values / len(sdfs)
+/Users/guruikang/WorkBuddy/2026-11-20-15-03-43/internship-workbench/research/portfolio-replication/revision-v3/executions/P006_E01_author/cold_run/src/pricing.py:60: RuntimeWarning: divide by zero encountered in matmul
+  x = fsr.T @ sdfs[c_].values / len(sdfs)
+/Users/guruikang/WorkBuddy/2026-11-20-15-03-43/internship-workbench/research/portfolio-replication/revision-v3/executions/P006_E01_author/cold_run/src/pricing.py:60: RuntimeWarning: overflow encountered in matmul
+  x = fsr.T @ sdfs[c_].values / len(sdfs)
+/Users/guruikang/WorkBuddy/2026-11-20-15-03-43/internship-workbench/research/portfolio-replication/revision-v3/executions/P006_E01_author/cold_run/src/pricing.py:60: RuntimeWarning: invalid value encountered in matmul
+  x = fsr.T @ sdfs[c_].values / len(sdfs)
+/Users/guruikang/WorkBuddy/2026-11-20-15-03-43/internship-workbench/research/portfolio-replication/revision-v3/executions/P006_E01_author/cold_run/src/pricing.py:60: RuntimeWarning: divide by zero encountered in matmul
+  x = fsr.T @ sdfs[c_].values / len(sdfs)
+/Users/guruikang/WorkBuddy/2026-11-20-15-03-43/internship-workbench/research/portfolio-replication/revision-v3/executions/P006_E01_author/cold_run/src/pricing.py:60: RuntimeWarning: overflow encountered in matmul
+  x = fsr.T @ sdfs[c_].values / len(sdfs)
+/Users/guruikang/WorkBuddy/2026-11-20-15-03-43/internship-workbench/research/portfolio-replication/revision-v3/executions/P006_E01_author/cold_run/src/pricing.py:60: RuntimeWarning: invalid value encountered in matmul
+  x = fsr.T @ sdfs[c_].values / len(sdfs)
+/Users/guruikang/WorkBuddy/2026-11-20-15-03-43/internship-workbench/research/portfolio-replication/revision-v3/executions/P006_E01_author/cold_run/src/pricing.py:60: RuntimeWarning: divide by zero encountered in matmul
+  x = fsr.T @ sdfs[c_].values / len(sdfs)
+/Users/guruikang/WorkBuddy/2026-11-20-15-03-43/internship-workbench/research/portfolio-replication/revision-v3/executions/P006_E01_author/cold_run/src/pricing.py:60: RuntimeWarning: overflow encountered in matmul
+  x = fsr.T @ sdfs[c_].values / len(sdfs)
+/Users/guruikang/WorkBuddy/2026-11-20-15-03-43/internship-workbench/research/portfolio-replication/revision-v3/executions/P006_E01_author/cold_run/src/pricing.py:60: RuntimeWarning: invalid value encountered in matmul
+  x = fsr.T @ sdfs[c_].values / len(sdfs)
+/Users/guruikang/WorkBuddy/2026-11-20-15-03-43/internship-workbench/research/portfolio-replication/revision-v3/executions/P006_E01_author/cold_run/src/pricing.py:60: RuntimeWarning: divide by zero encountered in matmul
+  x = fsr.T @ sdfs[c_].values / len(sdfs)
+/Users/guruikang/WorkBuddy/2026-11-20-15-03-43/internship-workbench/research/portfolio-replication/revision-v3/executions/P006_E01_author/cold_run/src/pricing.py:60: RuntimeWarning: overflow encountered in matmul
+  x = fsr.T @ sdfs[c_].values / len(sdfs)
+/Users/guruikang/WorkBuddy/2026-11-20-15-03-43/internship-workbench/research/portfolio-replication/revision-v3/executions/P006_E01_author/cold_run/src/pricing.py:60: RuntimeWarning: invalid value encountered in matmul
+  x = fsr.T @ sdfs[c_].values / len(sdfs)
+/Users/guruikang/WorkBuddy/2026-11-20-15-03-43/internship-workbench/research/portfolio-replication/revision-v3/executions/P006_E01_author/cold_run/src/pricing.py:60: RuntimeWarning: divide by zero encountered in matmul
+  x = fsr.T @ sdfs[c_].values / len(sdfs)
+/Users/guruikang/WorkBuddy/2026-11-20-15-03-43/internship-workbench/research/portfolio-replication/revision-v3/executions/P006_E01_author/cold_run/src/pricing.py:60: RuntimeWarning: overflow encountered in matmul
+  x = fsr.T @ sdfs[c_].values / len(sdfs)
+/Users/guruikang/WorkBuddy/2026-11-20-15-03-43/internship-workbench/research/portfolio-replication/revision-v3/executions/P006_E01_author/cold_run/src/pricing.py:60: RuntimeWarning: invalid value encountered in matmul
+  x = fsr.T @ sdfs[c_].values / len(sdfs)
+/Users/guruikang/WorkBuddy/2026-11-20-15-03-43/internship-workbench/research/portfolio-replication/revision-v3/executions/P006_E01_author/cold_run/src/pricing.py:60: RuntimeWarning: divide by zero encountered in matmul
+  x = fsr.T @ sdfs[c_].values / len(sdfs)
+/Users/guruikang/WorkBuddy/2026-11-20-15-03-43/internship-workbench/research/portfolio-replication/revision-v3/executions/P006_E01_author/cold_run/src/pricing.py:60: RuntimeWarning: overflow encountered in matmul
+  x = fsr.T @ sdfs[c_].values / len(sdfs)
+/Users/guruikang/WorkBuddy/2026-11-20-15-03-43/internship-workbench/research/portfolio-replication/revision-v3/executions/P006_E01_author/cold_run/src/pricing.py:60: RuntimeWarning: invalid value encountered in matmul
+  x = fsr.T @ sdfs[c_].values / len(sdfs)
+/Users/guruikang/WorkBuddy/2026-11-20-15-03-43/internship-workbench/research/portfolio-replication/revision-v3/executions/P006_E01_author/cold_run/src/pricing.py:60: RuntimeWarning: divide by zero encountered in matmul
+  x = fsr.T @ sdfs[c_].values / len(sdfs)
+/Users/guruikang/WorkBuddy/2026-11-20-15-03-43/internship-workbench/research/portfolio-replication/revision-v3/executions/P006_E01_author/cold_run/src/pricing.py:60: RuntimeWarning: overflow encountered in matmul
+  x = fsr.T @ sdfs[c_].values / len(sdfs)
+/Users/guruikang/WorkBuddy/2026-11-20-15-03-43/internship-workbench/research/portfolio-replication/revision-v3/executions/P006_E01_author/cold_run/src/pricing.py:60: RuntimeWarning: invalid value encountered in matmul
+  x = fsr.T @ sdfs[c_].values / len(sdfs)
+/Users/guruikang/WorkBuddy/2026-11-20-15-03-43/internship-workbench/research/portfolio-replication/revision-v3/executions/P006_E01_author/cold_run/src/pricing.py:60: RuntimeWarning: divide by zero encountered in matmul
+  x = fsr.T @ sdfs[c_].values / len(sdfs)
+/Users/guruikang/WorkBuddy/2026-11-20-15-03-43/internship-workbench/research/portfolio-replication/revision-v3/executions/P006_E01_author/cold_run/src/pricing.py:60: RuntimeWarning: overflow encountered in matmul
+  x = fsr.T @ sdfs[c_].values / len(sdfs)
+/Users/guruikang/WorkBuddy/2026-11-20-15-03-43/internship-workbench/research/portfolio-replication/revision-v3/executions/P006_E01_author/cold_run/src/pricing.py:60: RuntimeWarning: invalid value encountered in matmul
+  x = fsr.T @ sdfs[c_].values / len(sdfs)
+/Users/guruikang/WorkBuddy/2026-11-20-15-03-43/internship-workbench/research/portfolio-replication/revision-v3/executions/P006_E01_author/cold_run/src/pricing.py:60: RuntimeWarning: divide by zero encountered in matmul
+  x = fsr.T @ sdfs[c_].values / len(sdfs)
+/Users/guruikang/WorkBuddy/2026-11-20-15-03-43/internship-workbench/research/portfolio-replication/revision-v3/executions/P006_E01_author/cold_run/src/pricing.py:60: RuntimeWarning: overflow encountered in matmul
+  x = fsr.T @ sdfs[c_].values / len(sdfs)
+/Users/guruikang/WorkBuddy/2026-11-20-15-03-43/internship-workbench/research/portfolio-replication/revision-v3/executions/P006_E01_author/cold_run/src/pricing.py:60: RuntimeWarning: invalid value encountered in matmul
+  x = fsr.T @ sdfs[c_].values / len(sdfs)
+/Users/guruikang/WorkBuddy/2026-11-20-15-03-43/internship-workbench/research/portfolio-replication/revision-v3/executions/P006_E01_author/cold_run/src/pricing.py:60: RuntimeWarning: divide by zero encountered in matmul
+  x = fsr.T @ sdfs[c_].values / len(sdfs)
+/Users/guruikang/WorkBuddy/2026-11-20-15-03-43/internship-workbench/research/portfolio-replication/revision-v3/executions/P006_E01_author/cold_run/src/pricing.py:60: RuntimeWarning: overflow encountered in matmul
+  x = fsr.T @ sdfs[c_].values / len(sdfs)
+/Users/guruikang/WorkBuddy/2026-11-20-15-03-43/internship-workbench/research/portfolio-replication/revision-v3/executions/P006_E01_author/cold_run/src/pricing.py:60: RuntimeWarning: invalid value encountered in matmul
+  x = fsr.T @ sdfs[c_].values / len(sdfs)
+/Users/guruikang/WorkBuddy/2026-11-20-15-03-43/internship-workbench/research/portfolio-replication/revision-v3/executions/P006_E01_author/cold_run/src/pricing.py:60: RuntimeWarning: divide by zero encountered in matmul
+  x = fsr.T @ sdfs[c_].values / len(sdfs)
+/Users/guruikang/WorkBuddy/2026-11-20-15-03-43/internship-workbench/research/portfolio-replication/revision-v3/executions/P006_E01_author/cold_run/src/pricing.py:60: RuntimeWarning: overflow encountered in matmul
+  x = fsr.T @ sdfs[c_].values / len(sdfs)
+/Users/guruikang/WorkBuddy/2026-11-20-15-03-43/internship-workbench/research/portfolio-replication/revision-v3/executions/P006_E01_author/cold_run/src/pricing.py:60: RuntimeWarning: invalid value encountered in matmul
+  x = fsr.T @ sdfs[c_].values / len(sdfs)
+/Users/guruikang/WorkBuddy/2026-11-20-15-03-43/internship-workbench/research/portfolio-replication/revision-v3/executions/P006_E01_author/cold_run/src/pricing.py:60: RuntimeWarning: divide by zero encountered in matmul
+  x = fsr.T @ sdfs[c_].values / len(sdfs)
+/Users/guruikang/WorkBuddy/2026-11-20-15-03-43/internship-workbench/research/portfolio-replication/revision-v3/executions/P006_E01_author/cold_run/src/pricing.py:60: RuntimeWarning: overflow encountered in matmul
+  x = fsr.T @ sdfs[c_].values / len(sdfs)
+/Users/guruikang/WorkBuddy/2026-11-20-15-03-43/internship-workbench/research/portfolio-replication/revision-v3/executions/P006_E01_author/cold_run/src/pricing.py:60: RuntimeWarning: invalid value encountered in matmul
+  x = fsr.T @ sdfs[c_].values / len(sdfs)
+/Users/guruikang/WorkBuddy/2026-11-20-15-03-43/internship-workbench/research/portfolio-replication/revision-v3/executions/P006_E01_author/cold_run/src/pricing.py:60: RuntimeWarning: divide by zero encountered in matmul
+  x = fsr.T @ sdfs[c_].values / len(sdfs)
+/Users/guruikang/WorkBuddy/2026-11-20-15-03-43/internship-workbench/research/portfolio-replication/revision-v3/executions/P006_E01_author/cold_run/src/pricing.py:60: RuntimeWarning: overflow encountered in matmul
+  x = fsr.T @ sdfs[c_].values / len(sdfs)
+/Users/guruikang/WorkBuddy/2026-11-20-15-03-43/internship-workbench/research/portfolio-replication/revision-v3/executions/P006_E01_author/cold_run/src/pricing.py:60: RuntimeWarning: invalid value encountered in matmul
+  x = fsr.T @ sdfs[c_].values / len(sdfs)
+/Users/guruikang/WorkBuddy/2026-11-20-15-03-43/internship-workbench/research/portfolio-replication/revision-v3/executions/P006_E01_author/cold_run/src/pricing.py:60: RuntimeWarning: divide by zero encountered in matmul
+  x = fsr.T @ sdfs[c_].values / len(sdfs)
+/Users/guruikang/WorkBuddy/2026-11-20-15-03-43/internship-workbench/research/portfolio-replication/revision-v3/executions/P006_E01_author/cold_run/src/pricing.py:60: RuntimeWarning: overflow encountered in matmul
+  x = fsr.T @ sdfs[c_].values / len(sdfs)
+/Users/guruikang/WorkBuddy/2026-11-20-15-03-43/internship-workbench/research/portfolio-replication/revision-v3/executions/P006_E01_author/cold_run/src/pricing.py:60: RuntimeWarning: invalid value encountered in matmul
+  x = fsr.T @ sdfs[c_].values / len(sdfs)
+/Users/guruikang/WorkBuddy/2026-11-20-15-03-43/internship-workbench/research/portfolio-replication/revision-v3/executions/P006_E01_author/cold_run/src/pricing.py:60: RuntimeWarning: divide by zero encountered in matmul
+  x = fsr.T @ sdfs[c_].values / len(sdfs)
+/Users/guruikang/WorkBuddy/2026-11-20-15-03-43/internship-workbench/research/portfolio-replication/revision-v3/executions/P006_E01_author/cold_run/src/pricing.py:60: RuntimeWarning: overflow encountered in matmul
+  x = fsr.T @ sdfs[c_].values / len(sdfs)
+/Users/guruikang/WorkBuddy/2026-11-20-15-03-43/internship-workbench/research/portfolio-replication/revision-v3/executions/P006_E01_author/cold_run/src/pricing.py:60: RuntimeWarning: invalid value encountered in matmul
+  x = fsr.T @ sdfs[c_].values / len(sdfs)
+/Users/guruikang/WorkBuddy/2026-11-20-15-03-43/internship-workbench/research/portfolio-replication/revision-v3/executions/P006_E01_author/cold_run/src/pricing.py:60: RuntimeWarning: divide by zero encountered in matmul
+  x = fsr.T @ sdfs[c_].values / len(sdfs)
+/Users/guruikang/WorkBuddy/2026-11-20-15-03-43/internship-workbench/research/portfolio-replication/revision-v3/executions/P006_E01_author/cold_run/src/pricing.py:60: RuntimeWarning: overflow encountered in matmul
+  x = fsr.T @ sdfs[c_].values / len(sdfs)
+/Users/guruikang/WorkBuddy/2026-11-20-15-03-43/internship-workbench/research/portfolio-replication/revision-v3/executions/P006_E01_author/cold_run/src/pricing.py:60: RuntimeWarning: invalid value encountered in matmul
+  x = fsr.T @ sdfs[c_].values / len(sdfs)
+/Users/guruikang/WorkBuddy/2026-11-20-15-03-43/internship-workbench/research/portfolio-replication/revision-v3/executions/P006_E01_author/cold_run/src/pricing.py:60: RuntimeWarning: divide by zero encountered in matmul
+  x = fsr.T @ sdfs[c_].values / len(sdfs)
+/Users/guruikang/WorkBuddy/2026-11-20-15-03-43/internship-workbench/research/portfolio-replication/revision-v3/executions/P006_E01_author/cold_run/src/pricing.py:60: RuntimeWarning: overflow encountered in matmul
+  x = fsr.T @ sdfs[c_].values / len(sdfs)
+/Users/guruikang/WorkBuddy/2026-11-20-15-03-43/internship-workbench/research/portfolio-replication/revision-v3/executions/P006_E01_author/cold_run/src/pricing.py:60: RuntimeWarning: invalid value encountered in matmul
+  x = fsr.T @ sdfs[c_].values / len(sdfs)
+/Users/guruikang/WorkBuddy/2026-11-20-15-03-43/internship-workbench/research/portfolio-replication/revision-v3/executions/P006_E01_author/cold_run/src/pricing.py:60: RuntimeWarning: divide by zero encountered in matmul
+  x = fsr.T @ sdfs[c_].values / len(sdfs)
+/Users/guruikang/WorkBuddy/2026-11-20-15-03-43/internship-workbench/research/portfolio-replication/revision-v3/executions/P006_E01_author/cold_run/src/pricing.py:60: RuntimeWarning: overflow encountered in matmul
+  x = fsr.T @ sdfs[c_].values / len(sdfs)
+/Users/guruikang/WorkBuddy/2026-11-20-15-03-43/internship-workbench/research/portfolio-replication/revision-v3/executions/P006_E01_author/cold_run/src/pricing.py:60: RuntimeWarning: invalid value encountered in matmul
+  x = fsr.T @ sdfs[c_].values / len(sdfs)
+/Users/guruikang/WorkBuddy/2026-11-20-15-03-43/internship-workbench/research/portfolio-replication/revision-v3/executions/P006_E01_author/cold_run/src/pricing.py:60: RuntimeWarning: divide by zero encountered in matmul
+  x = fsr.T @ sdfs[c_].values / len(sdfs)
+/Users/guruikang/WorkBuddy/2026-11-20-15-03-43/internship-workbench/research/portfolio-replication/revision-v3/executions/P006_E01_author/cold_run/src/pricing.py:60: RuntimeWarning: overflow encountered in matmul
+  x = fsr.T @ sdfs[c_].values / len(sdfs)
+/Users/guruikang/WorkBuddy/2026-11-20-15-03-43/internship-workbench/research/portfolio-replication/revision-v3/executions/P006_E01_author/cold_run/src/pricing.py:60: RuntimeWarning: invalid value encountered in matmul
+  x = fsr.T @ sdfs[c_].values / len(sdfs)
+/Users/guruikang/WorkBuddy/2026-11-20-15-03-43/internship-workbench/research/portfolio-replication/revision-v3/executions/P006_E01_author/cold_run/src/pricing.py:60: RuntimeWarning: divide by zero encountered in matmul
+  x = fsr.T @ sdfs[c_].values / len(sdfs)
+/Users/guruikang/WorkBuddy/2026-11-20-15-03-43/internship-workbench/research/portfolio-replication/revision-v3/executions/P006_E01_author/cold_run/src/pricing.py:60: RuntimeWarning: overflow encountered in matmul
+  x = fsr.T @ sdfs[c_].values / len(sdfs)
+/Users/guruikang/WorkBuddy/2026-11-20-15-03-43/internship-workbench/research/portfolio-replication/revision-v3/executions/P006_E01_author/cold_run/src/pricing.py:60: RuntimeWarning: invalid value encountered in matmul
+  x = fsr.T @ sdfs[c_].values / len(sdfs)
+/Users/guruikang/WorkBuddy/2026-11-20-15-03-43/internship-workbench/research/portfolio-replication/revision-v3/executions/P006_E01_author/cold_run/src/pricing.py:60: RuntimeWarning: divide by zero encountered in matmul
+  x = fsr.T @ sdfs[c_].values / len(sdfs)
+/Users/guruikang/WorkBuddy/2026-11-20-15-03-43/internship-workbench/research/portfolio-replication/revision-v3/executions/P006_E01_author/cold_run/src/pricing.py:60: RuntimeWarning: overflow encountered in matmul
+  x = fsr.T @ sdfs[c_].values / len(sdfs)
+/Users/guruikang/WorkBuddy/2026-11-20-15-03-43/internship-workbench/research/portfolio-replication/revision-v3/executions/P006_E01_author/cold_run/src/pricing.py:60: RuntimeWarning: invalid value encountered in matmul
+  x = fsr.T @ sdfs[c_].values / len(sdfs)
+/Users/guruikang/WorkBuddy/2026-11-20-15-03-43/internship-workbench/research/portfolio-replication/revision-v3/executions/P006_E01_author/cold_run/src/pricing.py:60: RuntimeWarning: divide by zero encountered in matmul
+  x = fsr.T @ sdfs[c_].values / len(sdfs)
+/Users/guruikang/WorkBuddy/2026-11-20-15-03-43/internship-workbench/research/portfolio-replication/revision-v3/executions/P006_E01_author/cold_run/src/pricing.py:60: RuntimeWarning: overflow encountered in matmul
+  x = fsr.T @ sdfs[c_].values / len(sdfs)
+/Users/guruikang/WorkBuddy/2026-11-20-15-03-43/internship-workbench/research/portfolio-replication/revision-v3/executions/P006_E01_author/cold_run/src/pricing.py:60: RuntimeWarning: invalid value encountered in matmul
+  x = fsr.T @ sdfs[c_].values / len(sdfs)
+/Users/guruikang/WorkBuddy/2026-11-20-15-03-43/internship-workbench/research/portfolio-replication/revision-v3/executions/P006_E01_author/cold_run/src/pricing.py:60: RuntimeWarning: divide by zero encountered in matmul
+  x = fsr.T @ sdfs[c_].values / len(sdfs)
+/Users/guruikang/WorkBuddy/2026-11-20-15-03-43/internship-workbench/research/portfolio-replication/revision-v3/executions/P006_E01_author/cold_run/src/pricing.py:60: RuntimeWarning: overflow encountered in matmul
+  x = fsr.T @ sdfs[c_].values / len(sdfs)
+/Users/guruikang/WorkBuddy/2026-11-20-15-03-43/internship-workbench/research/portfolio-replication/revision-v3/executions/P006_E01_author/cold_run/src/pricing.py:60: RuntimeWarning: invalid value encountered in matmul
+  x = fsr.T @ sdfs[c_].values / len(sdfs)
+/Users/guruikang/WorkBuddy/2026-11-20-15-03-43/internship-workbench/research/portfolio-replication/revision-v3/executions/P006_E01_author/cold_run/src/pricing.py:60: RuntimeWarning: divide by zero encountered in matmul
+  x = fsr.T @ sdfs[c_].values / len(sdfs)
+/Users/guruikang/WorkBuddy/2026-11-20-15-03-43/internship-workbench/research/portfolio-replication/revision-v3/executions/P006_E01_author/cold_run/src/pricing.py:60: RuntimeWarning: overflow encountered in matmul
+  x = fsr.T @ sdfs[c_].values / len(sdfs)
+/Users/guruikang/WorkBuddy/2026-11-20-15-03-43/internship-workbench/research/portfolio-replication/revision-v3/executions/P006_E01_author/cold_run/src/pricing.py:60: RuntimeWarning: invalid value encountered in matmul
+  x = fsr.T @ sdfs[c_].values / len(sdfs)
+/Users/guruikang/WorkBuddy/2026-11-20-15-03-43/internship-workbench/research/portfolio-replication/revision-v3/executions/P006_E01_author/cold_run/src/pricing.py:60: RuntimeWarning: divide by zero encountered in matmul
+  x = fsr.T @ sdfs[c_].values / len(sdfs)
+/Users/guruikang/WorkBuddy/2026-11-20-15-03-43/internship-workbench/research/portfolio-replication/revision-v3/executions/P006_E01_author/cold_run/src/pricing.py:60: RuntimeWarning: overflow encountered in matmul
+  x = fsr.T @ sdfs[c_].values / len(sdfs)
+/Users/guruikang/WorkBuddy/2026-11-20-15-03-43/internship-workbench/research/portfolio-replication/revision-v3/executions/P006_E01_author/cold_run/src/pricing.py:60: RuntimeWarning: invalid value encountered in matmul
+  x = fsr.T @ sdfs[c_].values / len(sdfs)
+/Users/guruikang/WorkBuddy/2026-11-20-15-03-43/internship-workbench/research/portfolio-replication/revision-v3/executions/P006_E01_author/cold_run/src/pricing.py:60: RuntimeWarning: divide by zero encountered in matmul
+  x = fsr.T @ sdfs[c_].values / len(sdfs)
+/Users/guruikang/WorkBuddy/2026-11-20-15-03-43/internship-workbench/research/portfolio-replication/revision-v3/executions/P006_E01_author/cold_run/src/pricing.py:60: RuntimeWarning: overflow encountered in matmul
+  x = fsr.T @ sdfs[c_].values / len(sdfs)
+/Users/guruikang/WorkBuddy/2026-11-20-15-03-43/internship-workbench/research/portfolio-replication/revision-v3/executions/P006_E01_author/cold_run/src/pricing.py:60: RuntimeWarning: invalid value encountered in matmul
+  x = fsr.T @ sdfs[c_].values / len(sdfs)
+/Users/guruikang/WorkBuddy/2026-11-20-15-03-43/internship-workbench/research/portfolio-replication/revision-v3/executions/P006_E01_author/cold_run/src/pricing.py:60: RuntimeWarning: divide by zero encountered in matmul
+  x = fsr.T @ sdfs[c_].values / len(sdfs)
+/Users/guruikang/WorkBuddy/2026-11-20-15-03-43/internship-workbench/research/portfolio-replication/revision-v3/executions/P006_E01_author/cold_run/src/pricing.py:60: RuntimeWarning: overflow encountered in matmul
+  x = fsr.T @ sdfs[c_].values / len(sdfs)
+/Users/guruikang/WorkBuddy/2026-11-20-15-03-43/internship-workbench/research/portfolio-replication/revision-v3/executions/P006_E01_author/cold_run/src/pricing.py:60: RuntimeWarning: invalid value encountered in matmul
+  x = fsr.T @ sdfs[c_].values / len(sdfs)
+/Users/guruikang/WorkBuddy/2026-11-20-15-03-43/internship-workbench/research/portfolio-replication/revision-v3/executions/P006_E01_author/cold_run/src/pricing.py:60: RuntimeWarning: divide by zero encountered in matmul
+  x = fsr.T @ sdfs[c_].values / len(sdfs)
+/Users/guruikang/WorkBuddy/2026-11-20-15-03-43/internship-workbench/research/portfolio-replication/revision-v3/executions/P006_E01_author/cold_run/src/pricing.py:60: RuntimeWarning: overflow encountered in matmul
+  x = fsr.T @ sdfs[c_].values / len(sdfs)
+/Users/guruikang/WorkBuddy/2026-11-20-15-03-43/internship-workbench/research/portfolio-replication/revision-v3/executions/P006_E01_author/cold_run/src/pricing.py:60: RuntimeWarning: invalid value encountered in matmul
+  x = fsr.T @ sdfs[c_].values / len(sdfs)
+/Users/guruikang/WorkBuddy/2026-11-20-15-03-43/internship-workbench/research/portfolio-replication/revision-v3/executions/P006_E01_author/cold_run/src/pricing.py:60: RuntimeWarning: divide by zero encountered in matmul
+  x = fsr.T @ sdfs[c_].values / len(sdfs)
+/Users/guruikang/WorkBuddy/2026-11-20-15-03-43/internship-workbench/research/portfolio-replication/revision-v3/executions/P006_E01_author/cold_run/src/pricing.py:60: RuntimeWarning: overflow encountered in matmul
+  x = fsr.T @ sdfs[c_].values / len(sdfs)
+/Users/guruikang/WorkBuddy/2026-11-20-15-03-43/internship-workbench/research/portfolio-replication/revision-v3/executions/P006_E01_author/cold_run/src/pricing.py:60: RuntimeWarning: invalid value encountered in matmul
+  x = fsr.T @ sdfs[c_].values / len(sdfs)
+/Users/guruikang/WorkBuddy/2026-11-20-15-03-43/internship-workbench/research/portfolio-replication/revision-v3/executions/P006_E01_author/cold_run/src/pricing.py:60: RuntimeWarning: divide by zero encountered in matmul
+  x = fsr.T @ sdfs[c_].values / len(sdfs)
+/Users/guruikang/WorkBuddy/2026-11-20-15-03-43/internship-workbench/research/portfolio-replication/revision-v3/executions/P006_E01_author/cold_run/src/pricing.py:60: RuntimeWarning: overflow encountered in matmul
+  x = fsr.T @ sdfs[c_].values / len(sdfs)
+/Users/guruikang/WorkBuddy/2026-11-20-15-03-43/internship-workbench/research/portfolio-replication/revision-v3/executions/P006_E01_author/cold_run/src/pricing.py:60: RuntimeWarning: invalid value encountered in matmul
+  x = fsr.T @ sdfs[c_].values / len(sdfs)
+/Users/guruikang/WorkBuddy/2026-11-20-15-03-43/internship-workbench/research/portfolio-replication/revision-v3/executions/P006_E01_author/cold_run/src/pricing.py:60: RuntimeWarning: divide by zero encountered in matmul
+  x = fsr.T @ sdfs[c_].values / len(sdfs)
+/Users/guruikang/WorkBuddy/2026-11-20-15-03-43/internship-workbench/research/portfolio-replication/revision-v3/executions/P006_E01_author/cold_run/src/pricing.py:60: RuntimeWarning: overflow encountered in matmul
+  x = fsr.T @ sdfs[c_].values / len(sdfs)
+/Users/guruikang/WorkBuddy/2026-11-20-15-03-43/internship-workbench/research/portfolio-replication/revision-v3/executions/P006_E01_author/cold_run/src/pricing.py:60: RuntimeWarning: invalid value encountered in matmul
+  x = fsr.T @ sdfs[c_].values / len(sdfs)
+/Users/guruikang/WorkBuddy/2026-11-20-15-03-43/internship-workbench/research/portfolio-replication/revision-v3/executions/P006_E01_author/cold_run/src/pricing.py:60: RuntimeWarning: divide by zero encountered in matmul
+  x = fsr.T @ sdfs[c_].values / len(sdfs)
+/Users/guruikang/WorkBuddy/2026-11-20-15-03-43/internship-workbench/research/portfolio-replication/revision-v3/executions/P006_E01_author/cold_run/src/pricing.py:60: RuntimeWarning: overflow encountered in matmul
+  x = fsr.T @ sdfs[c_].values / len(sdfs)
+/Users/guruikang/WorkBuddy/2026-11-20-15-03-43/internship-workbench/research/portfolio-replication/revision-v3/executions/P006_E01_author/cold_run/src/pricing.py:60: RuntimeWarning: invalid value encountered in matmul
+  x = fsr.T @ sdfs[c_].values / len(sdfs)
+/Users/guruikang/WorkBuddy/2026-11-20-15-03-43/internship-workbench/research/portfolio-replication/revision-v3/executions/P006_E01_author/cold_run/src/pricing.py:60: RuntimeWarning: divide by zero encountered in matmul
+  x = fsr.T @ sdfs[c_].values / len(sdfs)
+/Users/guruikang/WorkBuddy/2026-11-20-15-03-43/internship-workbench/research/portfolio-replication/revision-v3/executions/P006_E01_author/cold_run/src/pricing.py:60: RuntimeWarning: overflow encountered in matmul
+  x = fsr.T @ sdfs[c_].values / len(sdfs)
+/Users/guruikang/WorkBuddy/2026-11-20-15-03-43/internship-workbench/research/portfolio-replication/revision-v3/executions/P006_E01_author/cold_run/src/pricing.py:60: RuntimeWarning: invalid value encountered in matmul
+  x = fsr.T @ sdfs[c_].values / len(sdfs)
+/Users/guruikang/WorkBuddy/2026-11-20-15-03-43/internship-workbench/research/portfolio-replication/revision-v3/executions/P006_E01_author/cold_run/src/pricing.py:60: RuntimeWarning: divide by zero encountered in matmul
+  x = fsr.T @ sdfs[c_].values / len(sdfs)
+/Users/guruikang/WorkBuddy/2026-11-20-15-03-43/internship-workbench/research/portfolio-replication/revision-v3/executions/P006_E01_author/cold_run/src/pricing.py:60: RuntimeWarning: overflow encountered in matmul
+  x = fsr.T @ sdfs[c_].values / len(sdfs)
+/Users/guruikang/WorkBuddy/2026-11-20-15-03-43/internship-workbench/research/portfolio-replication/revision-v3/executions/P006_E01_author/cold_run/src/pricing.py:60: RuntimeWarning: invalid value encountered in matmul
+  x = fsr.T @ sdfs[c_].values / len(sdfs)
+/Users/guruikang/WorkBuddy/2026-11-20-15-03-43/internship-workbench/research/portfolio-replication/revision-v3/executions/P006_E01_author/cold_run/src/pricing.py:60: RuntimeWarning: divide by zero encountered in matmul
+  x = fsr.T @ sdfs[c_].values / len(sdfs)
+/Users/guruikang/WorkBuddy/2026-11-20-15-03-43/internship-workbench/research/portfolio-replication/revision-v3/executions/P006_E01_author/cold_run/src/pricing.py:60: RuntimeWarning: overflow encountered in matmul
+  x = fsr.T @ sdfs[c_].values / len(sdfs)
+/Users/guruikang/WorkBuddy/2026-11-20-15-03-43/internship-workbench/research/portfolio-replication/revision-v3/executions/P006_E01_author/cold_run/src/pricing.py:60: RuntimeWarning: invalid value encountered in matmul
+  x = fsr.T @ sdfs[c_].values / len(sdfs)
+/Users/guruikang/WorkBuddy/2026-11-20-15-03-43/internship-workbench/research/portfolio-replication/revision-v3/executions/P006_E01_author/cold_run/src/pricing.py:60: RuntimeWarning: divide by zero encountered in matmul
+  x = fsr.T @ sdfs[c_].values / len(sdfs)
+/Users/guruikang/WorkBuddy/2026-11-20-15-03-43/internship-workbench/research/portfolio-replication/revision-v3/executions/P006_E01_author/cold_run/src/pricing.py:60: RuntimeWarning: overflow encountered in matmul
+  x = fsr.T @ sdfs[c_].values / len(sdfs)
+/Users/guruikang/WorkBuddy/2026-11-20-15-03-43/internship-workbench/research/portfolio-replication/revision-v3/executions/P006_E01_author/cold_run/src/pricing.py:60: RuntimeWarning: invalid value encountered in matmul
+  x = fsr.T @ sdfs[c_].values / len(sdfs)
+/Users/guruikang/WorkBuddy/2026-11-20-15-03-43/internship-workbench/research/portfolio-replication/revision-v3/executions/P006_E01_author/cold_run/src/pricing.py:60: RuntimeWarning: divide by zero encountered in matmul
+  x = fsr.T @ sdfs[c_].values / len(sdfs)
+/Users/guruikang/WorkBuddy/2026-11-20-15-03-43/internship-workbench/research/portfolio-replication/revision-v3/executions/P006_E01_author/cold_run/src/pricing.py:60: RuntimeWarning: overflow encountered in matmul
+  x = fsr.T @ sdfs[c_].values / len(sdfs)
+/Users/guruikang/WorkBuddy/2026-11-20-15-03-43/internship-workbench/research/portfolio-replication/revision-v3/executions/P006_E01_author/cold_run/src/pricing.py:60: RuntimeWarning: invalid value encountered in matmul
+  x = fsr.T @ sdfs[c_].values / len(sdfs)
+/Users/guruikang/WorkBuddy/2026-11-20-15-03-43/internship-workbench/research/portfolio-replication/revision-v3/executions/P006_E01_author/cold_run/src/pricing.py:60: RuntimeWarning: divide by zero encountered in matmul
+  x = fsr.T @ sdfs[c_].values / len(sdfs)
+/Users/guruikang/WorkBuddy/2026-11-20-15-03-43/internship-workbench/research/portfolio-replication/revision-v3/executions/P006_E01_author/cold_run/src/pricing.py:60: RuntimeWarning: overflow encountered in matmul
+  x = fsr.T @ sdfs[c_].values / len(sdfs)
+/Users/guruikang/WorkBuddy/2026-11-20-15-03-43/internship-workbench/research/portfolio-replication/revision-v3/executions/P006_E01_author/cold_run/src/pricing.py:60: RuntimeWarning: invalid value encountered in matmul
+  x = fsr.T @ sdfs[c_].values / len(sdfs)
+/Users/guruikang/WorkBuddy/2026-11-20-15-03-43/internship-workbench/research/portfolio-replication/revision-v3/executions/P006_E01_author/cold_run/src/pricing.py:60: RuntimeWarning: divide by zero encountered in matmul
+  x = fsr.T @ sdfs[c_].values / len(sdfs)
+/Users/guruikang/WorkBuddy/2026-11-20-15-03-43/internship-workbench/research/portfolio-replication/revision-v3/executions/P006_E01_author/cold_run/src/pricing.py:60: RuntimeWarning: overflow encountered in matmul
+  x = fsr.T @ sdfs[c_].values / len(sdfs)
+/Users/guruikang/WorkBuddy/2026-11-20-15-03-43/internship-workbench/research/portfolio-replication/revision-v3/executions/P006_E01_author/cold_run/src/pricing.py:60: RuntimeWarning: invalid value encountered in matmul
+  x = fsr.T @ sdfs[c_].values / len(sdfs)
+/Users/guruikang/WorkBuddy/2026-11-20-15-03-43/internship-workbench/research/portfolio-replication/revision-v3/executions/P006_E01_author/cold_run/src/pricing.py:60: RuntimeWarning: divide by zero encountered in matmul
+  x = fsr.T @ sdfs[c_].values / len(sdfs)
+/Users/guruikang/WorkBuddy/2026-11-20-15-03-43/internship-workbench/research/portfolio-replication/revision-v3/executions/P006_E01_author/cold_run/src/pricing.py:60: RuntimeWarning: overflow encountered in matmul
+  x = fsr.T @ sdfs[c_].values / len(sdfs)
+/Users/guruikang/WorkBuddy/2026-11-20-15-03-43/internship-workbench/research/portfolio-replication/revision-v3/executions/P006_E01_author/cold_run/src/pricing.py:60: RuntimeWarning: invalid value encountered in matmul
+  x = fsr.T @ sdfs[c_].values / len(sdfs)
+/Users/guruikang/WorkBuddy/2026-11-20-15-03-43/CO-REP-20261120-02/execution/env_py396/lib/python3.9/site-packages/numpy/_core/fromnumeric.py:3800: FutureWarning: The behavior of DataFrame.std with axis=None is deprecated, in a future version this will reduce over both axes and return a scalar. To retain the old behavior, pass axis=0 (or do not pass axis)
+  return std(axis=axis, dtype=dtype, out=out, ddof=ddof, **kwargs)
+/Users/guruikang/WorkBuddy/2026-11-20-15-03-43/CO-REP-20261120-02/execution/env_py396/lib/python3.9/site-packages/numpy/_core/fromnumeric.py:3800: FutureWarning: The behavior of DataFrame.std with axis=None is deprecated, in a future version this will reduce over both axes and return a scalar. To retain the old behavior, pass axis=0 (or do not pass axis)
+  return std(axis=axis, dtype=dtype, out=out, ddof=ddof, **kwargs)
+/Users/guruikang/WorkBuddy/2026-11-20-15-03-43/CO-REP-20261120-02/execution/env_py396/lib/python3.9/site-packages/numpy/_core/fromnumeric.py:3800: FutureWarning: The behavior of DataFrame.std with axis=None is deprecated, in a future version this will reduce over both axes and return a scalar. To retain the old behavior, pass axis=0 (or do not pass axis)
+  return std(axis=axis, dtype=dtype, out=out, ddof=ddof, **kwargs)
+/Users/guruikang/WorkBuddy/2026-11-20-15-03-43/CO-REP-20261120-02/execution/env_py396/lib/python3.9/site-packages/numpy/_core/fromnumeric.py:3800: FutureWarning: The behavior of DataFrame.std with axis=None is deprecated, in a future version this will reduce over both axes and return a scalar. To retain the old behavior, pass axis=0 (or do not pass axis)
+  return std(axis=axis, dtype=dtype, out=out, ddof=ddof, **kwargs)
+/Users/guruikang/WorkBuddy/2026-11-20-15-03-43/CO-REP-20261120-02/execution/env_py396/lib/python3.9/site-packages/numpy/_core/fromnumeric.py:3800: FutureWarning: The behavior of DataFrame.std with axis=None is deprecated, in a future version this will reduce over both axes and return a scalar. To retain the old behavior, pass axis=0 (or do not pass axis)
+  return std(axis=axis, dtype=dtype, out=out, ddof=ddof, **kwargs)
+/Users/guruikang/WorkBuddy/2026-11-20-15-03-43/CO-REP-20261120-02/execution/env_py396/lib/python3.9/site-packages/numpy/_core/fromnumeric.py:3800: FutureWarning: The behavior of DataFrame.std with axis=None is deprecated, in a future version this will reduce over both axes and return a scalar. To retain the old behavior, pass axis=0 (or do not pass axis)
+  return std(axis=axis, dtype=dtype, out=out, ddof=ddof, **kwargs)
+/Users/guruikang/WorkBuddy/2026-11-20-15-03-43/CO-REP-20261120-02/execution/env_py396/lib/python3.9/site-packages/numpy/_core/fromnumeric.py:3800: FutureWarning: The behavior of DataFrame.std with axis=None is deprecated, in a future version this will reduce over both axes and return a scalar. To retain the old behavior, pass axis=0 (or do not pass axis)
+  return std(axis=axis, dtype=dtype, out=out, ddof=ddof, **kwargs)
+/Users/guruikang/WorkBuddy/2026-11-20-15-03-43/internship-workbench/research/portfolio-replication/revision-v3/executions/P006_E01_author/cold_run/src/pricing.py:60: RuntimeWarning: divide by zero encountered in matmul
+  x = fsr.T @ sdfs[c_].values / len(sdfs)
+/Users/guruikang/WorkBuddy/2026-11-20-15-03-43/internship-workbench/research/portfolio-replication/revision-v3/executions/P006_E01_author/cold_run/src/pricing.py:60: RuntimeWarning: overflow encountered in matmul
+  x = fsr.T @ sdfs[c_].values / len(sdfs)
+/Users/guruikang/WorkBuddy/2026-11-20-15-03-43/internship-workbench/research/portfolio-replication/revision-v3/executions/P006_E01_author/cold_run/src/pricing.py:60: RuntimeWarning: invalid value encountered in matmul
+  x = fsr.T @ sdfs[c_].values / len(sdfs)
+/Users/guruikang/WorkBuddy/2026-11-20-15-03-43/internship-workbench/research/portfolio-replication/revision-v3/executions/P006_E01_author/cold_run/src/pricing.py:60: RuntimeWarning: divide by zero encountered in matmul
+  x = fsr.T @ sdfs[c_].values / len(sdfs)
+/Users/guruikang/WorkBuddy/2026-11-20-15-03-43/internship-workbench/research/portfolio-replication/revision-v3/executions/P006_E01_author/cold_run/src/pricing.py:60: RuntimeWarning: overflow encountered in matmul
+  x = fsr.T @ sdfs[c_].values / len(sdfs)
+/Users/guruikang/WorkBuddy/2026-11-20-15-03-43/internship-workbench/research/portfolio-replication/revision-v3/executions/P006_E01_author/cold_run/src/pricing.py:60: RuntimeWarning: invalid value encountered in matmul
+  x = fsr.T @ sdfs[c_].values / len(sdfs)
+/Users/guruikang/WorkBuddy/2026-11-20-15-03-43/internship-workbench/research/portfolio-replication/revision-v3/executions/P006_E01_author/cold_run/src/pricing.py:60: RuntimeWarning: divide by zero encountered in matmul
+  x = fsr.T @ sdfs[c_].values / len(sdfs)
+/Users/guruikang/WorkBuddy/2026-11-20-15-03-43/internship-workbench/research/portfolio-replication/revision-v3/executions/P006_E01_author/cold_run/src/pricing.py:60: RuntimeWarning: overflow encountered in matmul
+  x = fsr.T @ sdfs[c_].values / len(sdfs)
+/Users/guruikang/WorkBuddy/2026-11-20-15-03-43/internship-workbench/research/portfolio-replication/revision-v3/executions/P006_E01_author/cold_run/src/pricing.py:60: RuntimeWarning: invalid value encountered in matmul
+  x = fsr.T @ sdfs[c_].values / len(sdfs)
+/Users/guruikang/WorkBuddy/2026-11-20-15-03-43/internship-workbench/research/portfolio-replication/revision-v3/executions/P006_E01_author/cold_run/src/pricing.py:60: RuntimeWarning: divide by zero encountered in matmul
+  x = fsr.T @ sdfs[c_].values / len(sdfs)
+/Users/guruikang/WorkBuddy/2026-11-20-15-03-43/internship-workbench/research/portfolio-replication/revision-v3/executions/P006_E01_author/cold_run/src/pricing.py:60: RuntimeWarning: overflow encountered in matmul
+  x = fsr.T @ sdfs[c_].values / len(sdfs)
+/Users/guruikang/WorkBuddy/2026-11-20-15-03-43/internship-workbench/research/portfolio-replication/revision-v3/executions/P006_E01_author/cold_run/src/pricing.py:60: RuntimeWarning: invalid value encountered in matmul
+  x = fsr.T @ sdfs[c_].values / len(sdfs)
+/Users/guruikang/WorkBuddy/2026-11-20-15-03-43/internship-workbench/research/portfolio-replication/revision-v3/executions/P006_E01_author/cold_run/src/pricing.py:60: RuntimeWarning: divide by zero encountered in matmul
+  x = fsr.T @ sdfs[c_].values / len(sdfs)
+/Users/guruikang/WorkBuddy/2026-11-20-15-03-43/internship-workbench/research/portfolio-replication/revision-v3/executions/P006_E01_author/cold_run/src/pricing.py:60: RuntimeWarning: overflow encountered in matmul
+  x = fsr.T @ sdfs[c_].values / len(sdfs)
+/Users/guruikang/WorkBuddy/2026-11-20-15-03-43/internship-workbench/research/portfolio-replication/revision-v3/executions/P006_E01_author/cold_run/src/pricing.py:60: RuntimeWarning: invalid value encountered in matmul
+  x = fsr.T @ sdfs[c_].values / len(sdfs)
+/Users/guruikang/WorkBuddy/2026-11-20-15-03-43/internship-workbench/research/portfolio-replication/revision-v3/executions/P006_E01_author/cold_run/src/pricing.py:60: RuntimeWarning: divide by zero encountered in matmul
+  x = fsr.T @ sdfs[c_].values / len(sdfs)
+/Users/guruikang/WorkBuddy/2026-11-20-15-03-43/internship-workbench/research/portfolio-replication/revision-v3/executions/P006_E01_author/cold_run/src/pricing.py:60: RuntimeWarning: overflow encountered in matmul
+  x = fsr.T @ sdfs[c_].values / len(sdfs)
+/Users/guruikang/WorkBuddy/2026-11-20-15-03-43/internship-workbench/research/portfolio-replication/revision-v3/executions/P006_E01_author/cold_run/src/pricing.py:60: RuntimeWarning: invalid value encountered in matmul
+  x = fsr.T @ sdfs[c_].values / len(sdfs)
+/Users/guruikang/WorkBuddy/2026-11-20-15-03-43/internship-workbench/research/portfolio-replication/revision-v3/executions/P006_E01_author/cold_run/src/pricing.py:60: RuntimeWarning: divide by zero encountered in matmul
+  x = fsr.T @ sdfs[c_].values / len(sdfs)
+/Users/guruikang/WorkBuddy/2026-11-20-15-03-43/internship-workbench/research/portfolio-replication/revision-v3/executions/P006_E01_author/cold_run/src/pricing.py:60: RuntimeWarning: overflow encountered in matmul
+  x = fsr.T @ sdfs[c_].values / len(sdfs)
+/Users/guruikang/WorkBuddy/2026-11-20-15-03-43/internship-workbench/research/portfolio-replication/revision-v3/executions/P006_E01_author/cold_run/src/pricing.py:60: RuntimeWarning: invalid value encountered in matmul
+  x = fsr.T @ sdfs[c_].values / len(sdfs)
+/Users/guruikang/WorkBuddy/2026-11-20-15-03-43/internship-workbench/research/portfolio-replication/revision-v3/executions/P006_E01_author/cold_run/src/pricing.py:60: RuntimeWarning: divide by zero encountered in matmul
+  x = fsr.T @ sdfs[c_].values / len(sdfs)
+/Users/guruikang/WorkBuddy/2026-11-20-15-03-43/internship-workbench/research/portfolio-replication/revision-v3/executions/P006_E01_author/cold_run/src/pricing.py:60: RuntimeWarning: overflow encountered in matmul
+  x = fsr.T @ sdfs[c_].values / len(sdfs)
+/Users/guruikang/WorkBuddy/2026-11-20-15-03-43/internship-workbench/research/portfolio-replication/revision-v3/executions/P006_E01_author/cold_run/src/pricing.py:60: RuntimeWarning: invalid value encountered in matmul
+  x = fsr.T @ sdfs[c_].values / len(sdfs)
+/Users/guruikang/WorkBuddy/2026-11-20-15-03-43/internship-workbench/research/portfolio-replication/revision-v3/executions/P006_E01_author/cold_run/src/pricing.py:60: RuntimeWarning: divide by zero encountered in matmul
+  x = fsr.T @ sdfs[c_].values / len(sdfs)
+/Users/guruikang/WorkBuddy/2026-11-20-15-03-43/internship-workbench/research/portfolio-replication/revision-v3/executions/P006_E01_author/cold_run/src/pricing.py:60: RuntimeWarning: overflow encountered in matmul
+  x = fsr.T @ sdfs[c_].values / len(sdfs)
+/Users/guruikang/WorkBuddy/2026-11-20-15-03-43/internship-workbench/research/portfolio-replication/revision-v3/executions/P006_E01_author/cold_run/src/pricing.py:60: RuntimeWarning: invalid value encountered in matmul
+  x = fsr.T @ sdfs[c_].values / len(sdfs)
+/Users/guruikang/WorkBuddy/2026-11-20-15-03-43/internship-workbench/research/portfolio-replication/revision-v3/executions/P006_E01_author/cold_run/src/pricing.py:60: RuntimeWarning: divide by zero encountered in matmul
+  x = fsr.T @ sdfs[c_].values / len(sdfs)
+/Users/guruikang/WorkBuddy/2026-11-20-15-03-43/internship-workbench/research/portfolio-replication/revision-v3/executions/P006_E01_author/cold_run/src/pricing.py:60: RuntimeWarning: overflow encountered in matmul
+  x = fsr.T @ sdfs[c_].values / len(sdfs)
+/Users/guruikang/WorkBuddy/2026-11-20-15-03-43/internship-workbench/research/portfolio-replication/revision-v3/executions/P006_E01_author/cold_run/src/pricing.py:60: RuntimeWarning: invalid value encountered in matmul
+  x = fsr.T @ sdfs[c_].values / len(sdfs)
+/Users/guruikang/WorkBuddy/2026-11-20-15-03-43/internship-workbench/research/portfolio-replication/revision-v3/executions/P006_E01_author/cold_run/src/pricing.py:60: RuntimeWarning: divide by zero encountered in matmul
+  x = fsr.T @ sdfs[c_].values / len(sdfs)
+/Users/guruikang/WorkBuddy/2026-11-20-15-03-43/internship-workbench/research/portfolio-replication/revision-v3/executions/P006_E01_author/cold_run/src/pricing.py:60: RuntimeWarning: overflow encountered in matmul
+  x = fsr.T @ sdfs[c_].values / len(sdfs)
+/Users/guruikang/WorkBuddy/2026-11-20-15-03-43/internship-workbench/research/portfolio-replication/revision-v3/executions/P006_E01_author/cold_run/src/pricing.py:60: RuntimeWarning: invalid value encountered in matmul
+  x = fsr.T @ sdfs[c_].values / len(sdfs)
+/Users/guruikang/WorkBuddy/2026-11-20-15-03-43/internship-workbench/research/portfolio-replication/revision-v3/executions/P006_E01_author/cold_run/src/pricing.py:60: RuntimeWarning: divide by zero encountered in matmul
+  x = fsr.T @ sdfs[c_].values / len(sdfs)
+/Users/guruikang/WorkBuddy/2026-11-20-15-03-43/internship-workbench/research/portfolio-replication/revision-v3/executions/P006_E01_author/cold_run/src/pricing.py:60: RuntimeWarning: overflow encountered in matmul
+  x = fsr.T @ sdfs[c_].values / len(sdfs)
+/Users/guruikang/WorkBuddy/2026-11-20-15-03-43/internship-workbench/research/portfolio-replication/revision-v3/executions/P006_E01_author/cold_run/src/pricing.py:60: RuntimeWarning: invalid value encountered in matmul
+  x = fsr.T @ sdfs[c_].values / len(sdfs)
+/Users/guruikang/WorkBuddy/2026-11-20-15-03-43/internship-workbench/research/portfolio-replication/revision-v3/executions/P006_E01_author/cold_run/src/pricing.py:60: RuntimeWarning: divide by zero encountered in matmul
+  x = fsr.T @ sdfs[c_].values / len(sdfs)
+/Users/guruikang/WorkBuddy/2026-11-20-15-03-43/internship-workbench/research/portfolio-replication/revision-v3/executions/P006_E01_author/cold_run/src/pricing.py:60: RuntimeWarning: overflow encountered in matmul
+  x = fsr.T @ sdfs[c_].values / len(sdfs)
+/Users/guruikang/WorkBuddy/2026-11-20-15-03-43/internship-workbench/research/portfolio-replication/revision-v3/executions/P006_E01_author/cold_run/src/pricing.py:60: RuntimeWarning: invalid value encountered in matmul
+  x = fsr.T @ sdfs[c_].values / len(sdfs)
+/Users/guruikang/WorkBuddy/2026-11-20-15-03-43/internship-workbench/research/portfolio-replication/revision-v3/executions/P006_E01_author/cold_run/src/pricing.py:60: RuntimeWarning: divide by zero encountered in matmul
+  x = fsr.T @ sdfs[c_].values / len(sdfs)
+/Users/guruikang/WorkBuddy/2026-11-20-15-03-43/internship-workbench/research/portfolio-replication/revision-v3/executions/P006_E01_author/cold_run/src/pricing.py:60: RuntimeWarning: overflow encountered in matmul
+  x = fsr.T @ sdfs[c_].values / len(sdfs)
+/Users/guruikang/WorkBuddy/2026-11-20-15-03-43/internship-workbench/research/portfolio-replication/revision-v3/executions/P006_E01_author/cold_run/src/pricing.py:60: RuntimeWarning: invalid value encountered in matmul
+  x = fsr.T @ sdfs[c_].values / len(sdfs)
+/Users/guruikang/WorkBuddy/2026-11-20-15-03-43/internship-workbench/research/portfolio-replication/revision-v3/executions/P006_E01_author/cold_run/src/pricing.py:60: RuntimeWarning: divide by zero encountered in matmul
+  x = fsr.T @ sdfs[c_].values / len(sdfs)
+/Users/guruikang/WorkBuddy/2026-11-20-15-03-43/internship-workbench/research/portfolio-replication/revision-v3/executions/P006_E01_author/cold_run/src/pricing.py:60: RuntimeWarning: overflow encountered in matmul
+  x = fsr.T @ sdfs[c_].values / len(sdfs)
+/Users/guruikang/WorkBuddy/2026-11-20-15-03-43/internship-workbench/research/portfolio-replication/revision-v3/executions/P006_E01_author/cold_run/src/pricing.py:60: RuntimeWarning: invalid value encountered in matmul
+  x = fsr.T @ sdfs[c_].values / len(sdfs)
+/Users/guruikang/WorkBuddy/2026-11-20-15-03-43/internship-workbench/research/portfolio-replication/revision-v3/executions/P006_E01_author/cold_run/src/pricing.py:60: RuntimeWarning: divide by zero encountered in matmul
+  x = fsr.T @ sdfs[c_].values / len(sdfs)
+/Users/guruikang/WorkBuddy/2026-11-20-15-03-43/internship-workbench/research/portfolio-replication/revision-v3/executions/P006_E01_author/cold_run/src/pricing.py:60: RuntimeWarning: overflow encountered in matmul
+  x = fsr.T @ sdfs[c_].values / len(sdfs)
+/Users/guruikang/WorkBuddy/2026-11-20-15-03-43/internship-workbench/research/portfolio-replication/revision-v3/executions/P006_E01_author/cold_run/src/pricing.py:60: RuntimeWarning: invalid value encountered in matmul
+  x = fsr.T @ sdfs[c_].values / len(sdfs)
+/Users/guruikang/WorkBuddy/2026-11-20-15-03-43/internship-workbench/research/portfolio-replication/revision-v3/executions/P006_E01_author/cold_run/src/pricing.py:60: RuntimeWarning: divide by zero encountered in matmul
+  x = fsr.T @ sdfs[c_].values / len(sdfs)
+/Users/guruikang/WorkBuddy/2026-11-20-15-03-43/internship-workbench/research/portfolio-replication/revision-v3/executions/P006_E01_author/cold_run/src/pricing.py:60: RuntimeWarning: overflow encountered in matmul
+  x = fsr.T @ sdfs[c_].values / len(sdfs)
+/Users/guruikang/WorkBuddy/2026-11-20-15-03-43/internship-workbench/research/portfolio-replication/revision-v3/executions/P006_E01_author/cold_run/src/pricing.py:60: RuntimeWarning: invalid value encountered in matmul
+  x = fsr.T @ sdfs[c_].values / len(sdfs)
+/Users/guruikang/WorkBuddy/2026-11-20-15-03-43/internship-workbench/research/portfolio-replication/revision-v3/executions/P006_E01_author/cold_run/src/pricing.py:60: RuntimeWarning: divide by zero encountered in matmul
+  x = fsr.T @ sdfs[c_].values / len(sdfs)
+/Users/guruikang/WorkBuddy/2026-11-20-15-03-43/internship-workbench/research/portfolio-replication/revision-v3/executions/P006_E01_author/cold_run/src/pricing.py:60: RuntimeWarning: overflow encountered in matmul
+  x = fsr.T @ sdfs[c_].values / len(sdfs)
+/Users/guruikang/WorkBuddy/2026-11-20-15-03-43/internship-workbench/research/portfolio-replication/revision-v3/executions/P006_E01_author/cold_run/src/pricing.py:60: RuntimeWarning: invalid value encountered in matmul
+  x = fsr.T @ sdfs[c_].values / len(sdfs)
+/Users/guruikang/WorkBuddy/2026-11-20-15-03-43/internship-workbench/research/portfolio-replication/revision-v3/executions/P006_E01_author/cold_run/src/pricing.py:60: RuntimeWarning: divide by zero encountered in matmul
+  x = fsr.T @ sdfs[c_].values / len(sdfs)
+/Users/guruikang/WorkBuddy/2026-11-20-15-03-43/internship-workbench/research/portfolio-replication/revision-v3/executions/P006_E01_author/cold_run/src/pricing.py:60: RuntimeWarning: overflow encountered in matmul
+  x = fsr.T @ sdfs[c_].values / len(sdfs)
+/Users/guruikang/WorkBuddy/2026-11-20-15-03-43/internship-workbench/research/portfolio-replication/revision-v3/executions/P006_E01_author/cold_run/src/pricing.py:60: RuntimeWarning: invalid value encountered in matmul
+  x = fsr.T @ sdfs[c_].values / len(sdfs)
+/Users/guruikang/WorkBuddy/2026-11-20-15-03-43/internship-workbench/research/portfolio-replication/revision-v3/executions/P006_E01_author/cold_run/src/pricing.py:60: RuntimeWarning: divide by zero encountered in matmul
+  x = fsr.T @ sdfs[c_].values / len(sdfs)
+/Users/guruikang/WorkBuddy/2026-11-20-15-03-43/internship-workbench/research/portfolio-replication/revision-v3/executions/P006_E01_author/cold_run/src/pricing.py:60: RuntimeWarning: overflow encountered in matmul
+  x = fsr.T @ sdfs[c_].values / len(sdfs)
+/Users/guruikang/WorkBuddy/2026-11-20-15-03-43/internship-workbench/research/portfolio-replication/revision-v3/executions/P006_E01_author/cold_run/src/pricing.py:60: RuntimeWarning: invalid value encountered in matmul
+  x = fsr.T @ sdfs[c_].values / len(sdfs)
+/Users/guruikang/WorkBuddy/2026-11-20-15-03-43/internship-workbench/research/portfolio-replication/revision-v3/executions/P006_E01_author/cold_run/src/pricing.py:60: RuntimeWarning: divide by zero encountered in matmul
+  x = fsr.T @ sdfs[c_].values / len(sdfs)
+/Users/guruikang/WorkBuddy/2026-11-20-15-03-43/internship-workbench/research/portfolio-replication/revision-v3/executions/P006_E01_author/cold_run/src/pricing.py:60: RuntimeWarning: overflow encountered in matmul
+  x = fsr.T @ sdfs[c_].values / len(sdfs)
+/Users/guruikang/WorkBuddy/2026-11-20-15-03-43/internship-workbench/research/portfolio-replication/revision-v3/executions/P006_E01_author/cold_run/src/pricing.py:60: RuntimeWarning: invalid value encountered in matmul
+  x = fsr.T @ sdfs[c_].values / len(sdfs)
+/Users/guruikang/WorkBuddy/2026-11-20-15-03-43/internship-workbench/research/portfolio-replication/revision-v3/executions/P006_E01_author/cold_run/src/pricing.py:60: RuntimeWarning: divide by zero encountered in matmul
+  x = fsr.T @ sdfs[c_].values / len(sdfs)
+/Users/guruikang/WorkBuddy/2026-11-20-15-03-43/internship-workbench/research/portfolio-replication/revision-v3/executions/P006_E01_author/cold_run/src/pricing.py:60: RuntimeWarning: overflow encountered in matmul
+  x = fsr.T @ sdfs[c_].values / len(sdfs)
+/Users/guruikang/WorkBuddy/2026-11-20-15-03-43/internship-workbench/research/portfolio-replication/revision-v3/executions/P006_E01_author/cold_run/src/pricing.py:60: RuntimeWarning: invalid value encountered in matmul
+  x = fsr.T @ sdfs[c_].values / len(sdfs)
+/Users/guruikang/WorkBuddy/2026-11-20-15-03-43/internship-workbench/research/portfolio-replication/revision-v3/executions/P006_E01_author/cold_run/src/pricing.py:60: RuntimeWarning: divide by zero encountered in matmul
+  x = fsr.T @ sdfs[c_].values / len(sdfs)
+/Users/guruikang/WorkBuddy/2026-11-20-15-03-43/internship-workbench/research/portfolio-replication/revision-v3/executions/P006_E01_author/cold_run/src/pricing.py:60: RuntimeWarning: overflow encountered in matmul
+  x = fsr.T @ sdfs[c_].values / len(sdfs)
+/Users/guruikang/WorkBuddy/2026-11-20-15-03-43/internship-workbench/research/portfolio-replication/revision-v3/executions/P006_E01_author/cold_run/src/pricing.py:60: RuntimeWarning: invalid value encountered in matmul
+  x = fsr.T @ sdfs[c_].values / len(sdfs)
+/Users/guruikang/WorkBuddy/2026-11-20-15-03-43/internship-workbench/research/portfolio-replication/revision-v3/executions/P006_E01_author/cold_run/src/pricing.py:60: RuntimeWarning: divide by zero encountered in matmul
+  x = fsr.T @ sdfs[c_].values / len(sdfs)
+/Users/guruikang/WorkBuddy/2026-11-20-15-03-43/internship-workbench/research/portfolio-replication/revision-v3/executions/P006_E01_author/cold_run/src/pricing.py:60: RuntimeWarning: overflow encountered in matmul
+  x = fsr.T @ sdfs[c_].values / len(sdfs)
+/Users/guruikang/WorkBuddy/2026-11-20-15-03-43/internship-workbench/research/portfolio-replication/revision-v3/executions/P006_E01_author/cold_run/src/pricing.py:60: RuntimeWarning: invalid value encountered in matmul
+  x = fsr.T @ sdfs[c_].values / len(sdfs)
+/Users/guruikang/WorkBuddy/2026-11-20-15-03-43/internship-workbench/research/portfolio-replication/revision-v3/executions/P006_E01_author/cold_run/src/pricing.py:60: RuntimeWarning: divide by zero encountered in matmul
+  x = fsr.T @ sdfs[c_].values / len(sdfs)
+/Users/guruikang/WorkBuddy/2026-11-20-15-03-43/internship-workbench/research/portfolio-replication/revision-v3/executions/P006_E01_author/cold_run/src/pricing.py:60: RuntimeWarning: overflow encountered in matmul
+  x = fsr.T @ sdfs[c_].values / len(sdfs)
+/Users/guruikang/WorkBuddy/2026-11-20-15-03-43/internship-workbench/research/portfolio-replication/revision-v3/executions/P006_E01_author/cold_run/src/pricing.py:60: RuntimeWarning: invalid value encountered in matmul
+  x = fsr.T @ sdfs[c_].values / len(sdfs)
+/Users/guruikang/WorkBuddy/2026-11-20-15-03-43/internship-workbench/research/portfolio-replication/revision-v3/executions/P006_E01_author/cold_run/src/pricing.py:60: RuntimeWarning: divide by zero encountered in matmul
+  x = fsr.T @ sdfs[c_].values / len(sdfs)
+/Users/guruikang/WorkBuddy/2026-11-20-15-03-43/internship-workbench/research/portfolio-replication/revision-v3/executions/P006_E01_author/cold_run/src/pricing.py:60: RuntimeWarning: overflow encountered in matmul
+  x = fsr.T @ sdfs[c_].values / len(sdfs)
+/Users/guruikang/WorkBuddy/2026-11-20-15-03-43/internship-workbench/research/portfolio-replication/revision-v3/executions/P006_E01_author/cold_run/src/pricing.py:60: RuntimeWarning: invalid value encountered in matmul
+  x = fsr.T @ sdfs[c_].values / len(sdfs)
+/Users/guruikang/WorkBuddy/2026-11-20-15-03-43/internship-workbench/research/portfolio-replication/revision-v3/executions/P006_E01_author/cold_run/src/pricing.py:60: RuntimeWarning: divide by zero encountered in matmul
+  x = fsr.T @ sdfs[c_].values / len(sdfs)
+/Users/guruikang/WorkBuddy/2026-11-20-15-03-43/internship-workbench/research/portfolio-replication/revision-v3/executions/P006_E01_author/cold_run/src/pricing.py:60: RuntimeWarning: overflow encountered in matmul
+  x = fsr.T @ sdfs[c_].values / len(sdfs)
+/Users/guruikang/WorkBuddy/2026-11-20-15-03-43/internship-workbench/research/portfolio-replication/revision-v3/executions/P006_E01_author/cold_run/src/pricing.py:60: RuntimeWarning: invalid value encountered in matmul
+  x = fsr.T @ sdfs[c_].values / len(sdfs)
+/Users/guruikang/WorkBuddy/2026-11-20-15-03-43/internship-workbench/research/portfolio-replication/revision-v3/executions/P006_E01_author/cold_run/src/pricing.py:60: RuntimeWarning: divide by zero encountered in matmul
+  x = fsr.T @ sdfs[c_].values / len(sdfs)
+/Users/guruikang/WorkBuddy/2026-11-20-15-03-43/internship-workbench/research/portfolio-replication/revision-v3/executions/P006_E01_author/cold_run/src/pricing.py:60: RuntimeWarning: overflow encountered in matmul
+  x = fsr.T @ sdfs[c_].values / len(sdfs)
+/Users/guruikang/WorkBuddy/2026-11-20-15-03-43/internship-workbench/research/portfolio-replication/revision-v3/executions/P006_E01_author/cold_run/src/pricing.py:60: RuntimeWarning: invalid value encountered in matmul
+  x = fsr.T @ sdfs[c_].values / len(sdfs)
+/Users/guruikang/WorkBuddy/2026-11-20-15-03-43/internship-workbench/research/portfolio-replication/revision-v3/executions/P006_E01_author/cold_run/src/pricing.py:60: RuntimeWarning: divide by zero encountered in matmul
+  x = fsr.T @ sdfs[c_].values / len(sdfs)
+/Users/guruikang/WorkBuddy/2026-11-20-15-03-43/internship-workbench/research/portfolio-replication/revision-v3/executions/P006_E01_author/cold_run/src/pricing.py:60: RuntimeWarning: overflow encountered in matmul
+  x = fsr.T @ sdfs[c_].values / len(sdfs)
+/Users/guruikang/WorkBuddy/2026-11-20-15-03-43/internship-workbench/research/portfolio-replication/revision-v3/executions/P006_E01_author/cold_run/src/pricing.py:60: RuntimeWarning: invalid value encountered in matmul
+  x = fsr.T @ sdfs[c_].values / len(sdfs)
+/Users/guruikang/WorkBuddy/2026-11-20-15-03-43/internship-workbench/research/portfolio-replication/revision-v3/executions/P006_E01_author/cold_run/src/pricing.py:60: RuntimeWarning: divide by zero encountered in matmul
+  x = fsr.T @ sdfs[c_].values / len(sdfs)
+/Users/guruikang/WorkBuddy/2026-11-20-15-03-43/internship-workbench/research/portfolio-replication/revision-v3/executions/P006_E01_author/cold_run/src/pricing.py:60: RuntimeWarning: overflow encountered in matmul
+  x = fsr.T @ sdfs[c_].values / len(sdfs)
+/Users/guruikang/WorkBuddy/2026-11-20-15-03-43/internship-workbench/research/portfolio-replication/revision-v3/executions/P006_E01_author/cold_run/src/pricing.py:60: RuntimeWarning: invalid value encountered in matmul
+  x = fsr.T @ sdfs[c_].values / len(sdfs)
+/Users/guruikang/WorkBuddy/2026-11-20-15-03-43/internship-workbench/research/portfolio-replication/revision-v3/executions/P006_E01_author/cold_run/src/pricing.py:60: RuntimeWarning: divide by zero encountered in matmul
+  x = fsr.T @ sdfs[c_].values / len(sdfs)
+/Users/guruikang/WorkBuddy/2026-11-20-15-03-43/internship-workbench/research/portfolio-replication/revision-v3/executions/P006_E01_author/cold_run/src/pricing.py:60: RuntimeWarning: overflow encountered in matmul
+  x = fsr.T @ sdfs[c_].values / len(sdfs)
+/Users/guruikang/WorkBuddy/2026-11-20-15-03-43/internship-workbench/research/portfolio-replication/revision-v3/executions/P006_E01_author/cold_run/src/pricing.py:60: RuntimeWarning: invalid value encountered in matmul
+  x = fsr.T @ sdfs[c_].values / len(sdfs)
+/Users/guruikang/WorkBuddy/2026-11-20-15-03-43/internship-workbench/research/portfolio-replication/revision-v3/executions/P006_E01_author/cold_run/src/pricing.py:60: RuntimeWarning: divide by zero encountered in matmul
+  x = fsr.T @ sdfs[c_].values / len(sdfs)
+/Users/guruikang/WorkBuddy/2026-11-20-15-03-43/internship-workbench/research/portfolio-replication/revision-v3/executions/P006_E01_author/cold_run/src/pricing.py:60: RuntimeWarning: overflow encountered in matmul
+  x = fsr.T @ sdfs[c_].values / len(sdfs)
+/Users/guruikang/WorkBuddy/2026-11-20-15-03-43/internship-workbench/research/portfolio-replication/revision-v3/executions/P006_E01_author/cold_run/src/pricing.py:60: RuntimeWarning: invalid value encountered in matmul
+  x = fsr.T @ sdfs[c_].values / len(sdfs)
+/Users/guruikang/WorkBuddy/2026-11-20-15-03-43/internship-workbench/research/portfolio-replication/revision-v3/executions/P006_E01_author/cold_run/src/pricing.py:60: RuntimeWarning: divide by zero encountered in matmul
+  x = fsr.T @ sdfs[c_].values / len(sdfs)
+/Users/guruikang/WorkBuddy/2026-11-20-15-03-43/internship-workbench/research/portfolio-replication/revision-v3/executions/P006_E01_author/cold_run/src/pricing.py:60: RuntimeWarning: overflow encountered in matmul
+  x = fsr.T @ sdfs[c_].values / len(sdfs)
+/Users/guruikang/WorkBuddy/2026-11-20-15-03-43/internship-workbench/research/portfolio-replication/revision-v3/executions/P006_E01_author/cold_run/src/pricing.py:60: RuntimeWarning: invalid value encountered in matmul
+  x = fsr.T @ sdfs[c_].values / len(sdfs)
+/Users/guruikang/WorkBuddy/2026-11-20-15-03-43/internship-workbench/research/portfolio-replication/revision-v3/executions/P006_E01_author/cold_run/src/pricing.py:60: RuntimeWarning: divide by zero encountered in matmul
+  x = fsr.T @ sdfs[c_].values / len(sdfs)
+/Users/guruikang/WorkBuddy/2026-11-20-15-03-43/internship-workbench/research/portfolio-replication/revision-v3/executions/P006_E01_author/cold_run/src/pricing.py:60: RuntimeWarning: overflow encountered in matmul
+  x = fsr.T @ sdfs[c_].values / len(sdfs)
+/Users/guruikang/WorkBuddy/2026-11-20-15-03-43/internship-workbench/research/portfolio-replication/revision-v3/executions/P006_E01_author/cold_run/src/pricing.py:60: RuntimeWarning: invalid value encountered in matmul
+  x = fsr.T @ sdfs[c_].values / len(sdfs)
+/Users/guruikang/WorkBuddy/2026-11-20-15-03-43/internship-workbench/research/portfolio-replication/revision-v3/executions/P006_E01_author/cold_run/src/pricing.py:60: RuntimeWarning: divide by zero encountered in matmul
+  x = fsr.T @ sdfs[c_].values / len(sdfs)
+/Users/guruikang/WorkBuddy/2026-11-20-15-03-43/internship-workbench/research/portfolio-replication/revision-v3/executions/P006_E01_author/cold_run/src/pricing.py:60: RuntimeWarning: overflow encountered in matmul
+  x = fsr.T @ sdfs[c_].values / len(sdfs)
+/Users/guruikang/WorkBuddy/2026-11-20-15-03-43/internship-workbench/research/portfolio-replication/revision-v3/executions/P006_E01_author/cold_run/src/pricing.py:60: RuntimeWarning: invalid value encountered in matmul
+  x = fsr.T @ sdfs[c_].values / len(sdfs)
+/Users/guruikang/WorkBuddy/2026-11-20-15-03-43/internship-workbench/research/portfolio-replication/revision-v3/executions/P006_E01_author/cold_run/src/pricing.py:60: RuntimeWarning: divide by zero encountered in matmul
+  x = fsr.T @ sdfs[c_].values / len(sdfs)
+/Users/guruikang/WorkBuddy/2026-11-20-15-03-43/internship-workbench/research/portfolio-replication/revision-v3/executions/P006_E01_author/cold_run/src/pricing.py:60: RuntimeWarning: overflow encountered in matmul
+  x = fsr.T @ sdfs[c_].values / len(sdfs)
+/Users/guruikang/WorkBuddy/2026-11-20-15-03-43/internship-workbench/research/portfolio-replication/revision-v3/executions/P006_E01_author/cold_run/src/pricing.py:60: RuntimeWarning: invalid value encountered in matmul
+  x = fsr.T @ sdfs[c_].values / len(sdfs)
+/Users/guruikang/WorkBuddy/2026-11-20-15-03-43/internship-workbench/research/portfolio-replication/revision-v3/executions/P006_E01_author/cold_run/src/pricing.py:60: RuntimeWarning: divide by zero encountered in matmul
+  x = fsr.T @ sdfs[c_].values / len(sdfs)
+/Users/guruikang/WorkBuddy/2026-11-20-15-03-43/internship-workbench/research/portfolio-replication/revision-v3/executions/P006_E01_author/cold_run/src/pricing.py:60: RuntimeWarning: overflow encountered in matmul
+  x = fsr.T @ sdfs[c_].values / len(sdfs)
+/Users/guruikang/WorkBuddy/2026-11-20-15-03-43/internship-workbench/research/portfolio-replication/revision-v3/executions/P006_E01_author/cold_run/src/pricing.py:60: RuntimeWarning: invalid value encountered in matmul
+  x = fsr.T @ sdfs[c_].values / len(sdfs)
+/Users/guruikang/WorkBuddy/2026-11-20-15-03-43/internship-workbench/research/portfolio-replication/revision-v3/executions/P006_E01_author/cold_run/src/pricing.py:60: RuntimeWarning: divide by zero encountered in matmul
+  x = fsr.T @ sdfs[c_].values / len(sdfs)
+/Users/guruikang/WorkBuddy/2026-11-20-15-03-43/internship-workbench/research/portfolio-replication/revision-v3/executions/P006_E01_author/cold_run/src/pricing.py:60: RuntimeWarning: overflow encountered in matmul
+  x = fsr.T @ sdfs[c_].values / len(sdfs)
+/Users/guruikang/WorkBuddy/2026-11-20-15-03-43/internship-workbench/research/portfolio-replication/revision-v3/executions/P006_E01_author/cold_run/src/pricing.py:60: RuntimeWarning: invalid value encountered in matmul
+  x = fsr.T @ sdfs[c_].values / len(sdfs)
+/Users/guruikang/WorkBuddy/2026-11-20-15-03-43/internship-workbench/research/portfolio-replication/revision-v3/executions/P006_E01_author/cold_run/src/pricing.py:60: RuntimeWarning: divide by zero encountered in matmul
+  x = fsr.T @ sdfs[c_].values / len(sdfs)
+/Users/guruikang/WorkBuddy/2026-11-20-15-03-43/internship-workbench/research/portfolio-replication/revision-v3/executions/P006_E01_author/cold_run/src/pricing.py:60: RuntimeWarning: overflow encountered in matmul
+  x = fsr.T @ sdfs[c_].values / len(sdfs)
+/Users/guruikang/WorkBuddy/2026-11-20-15-03-43/internship-workbench/research/portfolio-replication/revision-v3/executions/P006_E01_author/cold_run/src/pricing.py:60: RuntimeWarning: invalid value encountered in matmul
+  x = fsr.T @ sdfs[c_].values / len(sdfs)
+/Users/guruikang/WorkBuddy/2026-11-20-15-03-43/internship-workbench/research/portfolio-replication/revision-v3/executions/P006_E01_author/cold_run/src/pricing.py:60: RuntimeWarning: divide by zero encountered in matmul
+  x = fsr.T @ sdfs[c_].values / len(sdfs)
+/Users/guruikang/WorkBuddy/2026-11-20-15-03-43/internship-workbench/research/portfolio-replication/revision-v3/executions/P006_E01_author/cold_run/src/pricing.py:60: RuntimeWarning: overflow encountered in matmul
+  x = fsr.T @ sdfs[c_].values / len(sdfs)
+/Users/guruikang/WorkBuddy/2026-11-20-15-03-43/internship-workbench/research/portfolio-replication/revision-v3/executions/P006_E01_author/cold_run/src/pricing.py:60: RuntimeWarning: invalid value encountered in matmul
+  x = fsr.T @ sdfs[c_].values / len(sdfs)
+/Users/guruikang/WorkBuddy/2026-11-20-15-03-43/internship-workbench/research/portfolio-replication/revision-v3/executions/P006_E01_author/cold_run/src/pricing.py:60: RuntimeWarning: divide by zero encountered in matmul
+  x = fsr.T @ sdfs[c_].values / len(sdfs)
+/Users/guruikang/WorkBuddy/2026-11-20-15-03-43/internship-workbench/research/portfolio-replication/revision-v3/executions/P006_E01_author/cold_run/src/pricing.py:60: RuntimeWarning: overflow encountered in matmul
+  x = fsr.T @ sdfs[c_].values / len(sdfs)
+/Users/guruikang/WorkBuddy/2026-11-20-15-03-43/internship-workbench/research/portfolio-replication/revision-v3/executions/P006_E01_author/cold_run/src/pricing.py:60: RuntimeWarning: invalid value encountered in matmul
+  x = fsr.T @ sdfs[c_].values / len(sdfs)
+/Users/guruikang/WorkBuddy/2026-11-20-15-03-43/internship-workbench/research/portfolio-replication/revision-v3/executions/P006_E01_author/cold_run/src/pricing.py:60: RuntimeWarning: divide by zero encountered in matmul
+  x = fsr.T @ sdfs[c_].values / len(sdfs)
+/Users/guruikang/WorkBuddy/2026-11-20-15-03-43/internship-workbench/research/portfolio-replication/revision-v3/executions/P006_E01_author/cold_run/src/pricing.py:60: RuntimeWarning: overflow encountered in matmul
+  x = fsr.T @ sdfs[c_].values / len(sdfs)
+/Users/guruikang/WorkBuddy/2026-11-20-15-03-43/internship-workbench/research/portfolio-replication/revision-v3/executions/P006_E01_author/cold_run/src/pricing.py:60: RuntimeWarning: invalid value encountered in matmul
+  x = fsr.T @ sdfs[c_].values / len(sdfs)
+/Users/guruikang/WorkBuddy/2026-11-20-15-03-43/internship-workbench/research/portfolio-replication/revision-v3/executions/P006_E01_author/cold_run/src/pricing.py:60: RuntimeWarning: divide by zero encountered in matmul
+  x = fsr.T @ sdfs[c_].values / len(sdfs)
+/Users/guruikang/WorkBuddy/2026-11-20-15-03-43/internship-workbench/research/portfolio-replication/revision-v3/executions/P006_E01_author/cold_run/src/pricing.py:60: RuntimeWarning: overflow encountered in matmul
+  x = fsr.T @ sdfs[c_].values / len(sdfs)
+/Users/guruikang/WorkBuddy/2026-11-20-15-03-43/internship-workbench/research/portfolio-replication/revision-v3/executions/P006_E01_author/cold_run/src/pricing.py:60: RuntimeWarning: invalid value encountered in matmul
+  x = fsr.T @ sdfs[c_].values / len(sdfs)
+/Users/guruikang/WorkBuddy/2026-11-20-15-03-43/internship-workbench/research/portfolio-replication/revision-v3/executions/P006_E01_author/cold_run/src/pricing.py:60: RuntimeWarning: divide by zero encountered in matmul
+  x = fsr.T @ sdfs[c_].values / len(sdfs)
+/Users/guruikang/WorkBuddy/2026-11-20-15-03-43/internship-workbench/research/portfolio-replication/revision-v3/executions/P006_E01_author/cold_run/src/pricing.py:60: RuntimeWarning: overflow encountered in matmul
+  x = fsr.T @ sdfs[c_].values / len(sdfs)
+/Users/guruikang/WorkBuddy/2026-11-20-15-03-43/internship-workbench/research/portfolio-replication/revision-v3/executions/P006_E01_author/cold_run/src/pricing.py:60: RuntimeWarning: invalid value encountered in matmul
+  x = fsr.T @ sdfs[c_].values / len(sdfs)
+/Users/guruikang/WorkBuddy/2026-11-20-15-03-43/internship-workbench/research/portfolio-replication/revision-v3/executions/P006_E01_author/cold_run/src/pricing.py:60: RuntimeWarning: divide by zero encountered in matmul
+  x = fsr.T @ sdfs[c_].values / len(sdfs)
+/Users/guruikang/WorkBuddy/2026-11-20-15-03-43/internship-workbench/research/portfolio-replication/revision-v3/executions/P006_E01_author/cold_run/src/pricing.py:60: RuntimeWarning: overflow encountered in matmul
+  x = fsr.T @ sdfs[c_].values / len(sdfs)
+/Users/guruikang/WorkBuddy/2026-11-20-15-03-43/internship-workbench/research/portfolio-replication/revision-v3/executions/P006_E01_author/cold_run/src/pricing.py:60: RuntimeWarning: invalid value encountered in matmul
+  x = fsr.T @ sdfs[c_].values / len(sdfs)
+/Users/guruikang/WorkBuddy/2026-11-20-15-03-43/internship-workbench/research/portfolio-replication/revision-v3/executions/P006_E01_author/cold_run/src/pricing.py:60: RuntimeWarning: divide by zero encountered in matmul
+  x = fsr.T @ sdfs[c_].values / len(sdfs)
+/Users/guruikang/WorkBuddy/2026-11-20-15-03-43/internship-workbench/research/portfolio-replication/revision-v3/executions/P006_E01_author/cold_run/src/pricing.py:60: RuntimeWarning: overflow encountered in matmul
+  x = fsr.T @ sdfs[c_].values / len(sdfs)
+/Users/guruikang/WorkBuddy/2026-11-20-15-03-43/internship-workbench/research/portfolio-replication/revision-v3/executions/P006_E01_author/cold_run/src/pricing.py:60: RuntimeWarning: invalid value encountered in matmul
+  x = fsr.T @ sdfs[c_].values / len(sdfs)
+/Users/guruikang/WorkBuddy/2026-11-20-15-03-43/internship-workbench/research/portfolio-replication/revision-v3/executions/P006_E01_author/cold_run/src/pricing.py:60: RuntimeWarning: divide by zero encountered in matmul
+  x = fsr.T @ sdfs[c_].values / len(sdfs)
+/Users/guruikang/WorkBuddy/2026-11-20-15-03-43/internship-workbench/research/portfolio-replication/revision-v3/executions/P006_E01_author/cold_run/src/pricing.py:60: RuntimeWarning: overflow encountered in matmul
+  x = fsr.T @ sdfs[c_].values / len(sdfs)
+/Users/guruikang/WorkBuddy/2026-11-20-15-03-43/internship-workbench/research/portfolio-replication/revision-v3/executions/P006_E01_author/cold_run/src/pricing.py:60: RuntimeWarning: invalid value encountered in matmul
+  x = fsr.T @ sdfs[c_].values / len(sdfs)
+/Users/guruikang/WorkBuddy/2026-11-20-15-03-43/internship-workbench/research/portfolio-replication/revision-v3/executions/P006_E01_author/cold_run/src/pricing.py:60: RuntimeWarning: divide by zero encountered in matmul
+  x = fsr.T @ sdfs[c_].values / len(sdfs)
+/Users/guruikang/WorkBuddy/2026-11-20-15-03-43/internship-workbench/research/portfolio-replication/revision-v3/executions/P006_E01_author/cold_run/src/pricing.py:60: RuntimeWarning: overflow encountered in matmul
+  x = fsr.T @ sdfs[c_].values / len(sdfs)
+/Users/guruikang/WorkBuddy/2026-11-20-15-03-43/internship-workbench/research/portfolio-replication/revision-v3/executions/P006_E01_author/cold_run/src/pricing.py:60: RuntimeWarning: invalid value encountered in matmul
+  x = fsr.T @ sdfs[c_].values / len(sdfs)
+/Users/guruikang/WorkBuddy/2026-11-20-15-03-43/internship-workbench/research/portfolio-replication/revision-v3/executions/P006_E01_author/cold_run/src/pricing.py:60: RuntimeWarning: divide by zero encountered in matmul
+  x = fsr.T @ sdfs[c_].values / len(sdfs)
+/Users/guruikang/WorkBuddy/2026-11-20-15-03-43/internship-workbench/research/portfolio-replication/revision-v3/executions/P006_E01_author/cold_run/src/pricing.py:60: RuntimeWarning: overflow encountered in matmul
+  x = fsr.T @ sdfs[c_].values / len(sdfs)
+/Users/guruikang/WorkBuddy/2026-11-20-15-03-43/internship-workbench/research/portfolio-replication/revision-v3/executions/P006_E01_author/cold_run/src/pricing.py:60: RuntimeWarning: invalid value encountered in matmul
+  x = fsr.T @ sdfs[c_].values / len(sdfs)
+/Users/guruikang/WorkBuddy/2026-11-20-15-03-43/internship-workbench/research/portfolio-replication/revision-v3/executions/P006_E01_author/cold_run/src/pricing.py:60: RuntimeWarning: divide by zero encountered in matmul
+  x = fsr.T @ sdfs[c_].values / len(sdfs)
+/Users/guruikang/WorkBuddy/2026-11-20-15-03-43/internship-workbench/research/portfolio-replication/revision-v3/executions/P006_E01_author/cold_run/src/pricing.py:60: RuntimeWarning: overflow encountered in matmul
+  x = fsr.T @ sdfs[c_].values / len(sdfs)
+/Users/guruikang/WorkBuddy/2026-11-20-15-03-43/internship-workbench/research/portfolio-replication/revision-v3/executions/P006_E01_author/cold_run/src/pricing.py:60: RuntimeWarning: invalid value encountered in matmul
+  x = fsr.T @ sdfs[c_].values / len(sdfs)
+/Users/guruikang/WorkBuddy/2026-11-20-15-03-43/internship-workbench/research/portfolio-replication/revision-v3/executions/P006_E01_author/cold_run/src/pricing.py:60: RuntimeWarning: divide by zero encountered in matmul
+  x = fsr.T @ sdfs[c_].values / len(sdfs)
+/Users/guruikang/WorkBuddy/2026-11-20-15-03-43/internship-workbench/research/portfolio-replication/revision-v3/executions/P006_E01_author/cold_run/src/pricing.py:60: RuntimeWarning: overflow encountered in matmul
+  x = fsr.T @ sdfs[c_].values / len(sdfs)
+/Users/guruikang/WorkBuddy/2026-11-20-15-03-43/internship-workbench/research/portfolio-replication/revision-v3/executions/P006_E01_author/cold_run/src/pricing.py:60: RuntimeWarning: invalid value encountered in matmul
+  x = fsr.T @ sdfs[c_].values / len(sdfs)
+/Users/guruikang/WorkBuddy/2026-11-20-15-03-43/internship-workbench/research/portfolio-replication/revision-v3/executions/P006_E01_author/cold_run/src/pricing.py:60: RuntimeWarning: divide by zero encountered in matmul
+  x = fsr.T @ sdfs[c_].values / len(sdfs)
+/Users/guruikang/WorkBuddy/2026-11-20-15-03-43/internship-workbench/research/portfolio-replication/revision-v3/executions/P006_E01_author/cold_run/src/pricing.py:60: RuntimeWarning: overflow encountered in matmul
+  x = fsr.T @ sdfs[c_].values / len(sdfs)
+/Users/guruikang/WorkBuddy/2026-11-20-15-03-43/internship-workbench/research/portfolio-replication/revision-v3/executions/P006_E01_author/cold_run/src/pricing.py:60: RuntimeWarning: invalid value encountered in matmul
+  x = fsr.T @ sdfs[c_].values / len(sdfs)
+/Users/guruikang/WorkBuddy/2026-11-20-15-03-43/internship-workbench/research/portfolio-replication/revision-v3/executions/P006_E01_author/cold_run/src/pricing.py:60: RuntimeWarning: divide by zero encountered in matmul
+  x = fsr.T @ sdfs[c_].values / len(sdfs)
+/Users/guruikang/WorkBuddy/2026-11-20-15-03-43/internship-workbench/research/portfolio-replication/revision-v3/executions/P006_E01_author/cold_run/src/pricing.py:60: RuntimeWarning: overflow encountered in matmul
+  x = fsr.T @ sdfs[c_].values / len(sdfs)
+/Users/guruikang/WorkBuddy/2026-11-20-15-03-43/internship-workbench/research/portfolio-replication/revision-v3/executions/P006_E01_author/cold_run/src/pricing.py:60: RuntimeWarning: invalid value encountered in matmul
+  x = fsr.T @ sdfs[c_].values / len(sdfs)
+/Users/guruikang/WorkBuddy/2026-11-20-15-03-43/internship-workbench/research/portfolio-replication/revision-v3/executions/P006_E01_author/cold_run/src/pricing.py:60: RuntimeWarning: divide by zero encountered in matmul
+  x = fsr.T @ sdfs[c_].values / len(sdfs)
+/Users/guruikang/WorkBuddy/2026-11-20-15-03-43/internship-workbench/research/portfolio-replication/revision-v3/executions/P006_E01_author/cold_run/src/pricing.py:60: RuntimeWarning: overflow encountered in matmul
+  x = fsr.T @ sdfs[c_].values / len(sdfs)
+/Users/guruikang/WorkBuddy/2026-11-20-15-03-43/internship-workbench/research/portfolio-replication/revision-v3/executions/P006_E01_author/cold_run/src/pricing.py:60: RuntimeWarning: invalid value encountered in matmul
+  x = fsr.T @ sdfs[c_].values / len(sdfs)
+/Users/guruikang/WorkBuddy/2026-11-20-15-03-43/CO-REP-20261120-02/execution/env_py396/lib/python3.9/site-packages/numpy/_core/fromnumeric.py:3800: FutureWarning: The behavior of DataFrame.std with axis=None is deprecated, in a future version this will reduce over both axes and return a scalar. To retain the old behavior, pass axis=0 (or do not pass axis)
+  return std(axis=axis, dtype=dtype, out=out, ddof=ddof, **kwargs)
+/Users/guruikang/WorkBuddy/2026-11-20-15-03-43/CO-REP-20261120-02/execution/env_py396/lib/python3.9/site-packages/numpy/_core/fromnumeric.py:3800: FutureWarning: The behavior of DataFrame.std with axis=None is deprecated, in a future version this will reduce over both axes and return a scalar. To retain the old behavior, pass axis=0 (or do not pass axis)
+  return std(axis=axis, dtype=dtype, out=out, ddof=ddof, **kwargs)
+/Users/guruikang/WorkBuddy/2026-11-20-15-03-43/CO-REP-20261120-02/execution/env_py396/lib/python3.9/site-packages/numpy/_core/fromnumeric.py:3800: FutureWarning: The behavior of DataFrame.std with axis=None is deprecated, in a future version this will reduce over both axes and return a scalar. To retain the old behavior, pass axis=0 (or do not pass axis)
+  return std(axis=axis, dtype=dtype, out=out, ddof=ddof, **kwargs)
+/Users/guruikang/WorkBuddy/2026-11-20-15-03-43/CO-REP-20261120-02/execution/env_py396/lib/python3.9/site-packages/numpy/_core/fromnumeric.py:3800: FutureWarning: The behavior of DataFrame.std with axis=None is deprecated, in a future version this will reduce over both axes and return a scalar. To retain the old behavior, pass axis=0 (or do not pass axis)
+  return std(axis=axis, dtype=dtype, out=out, ddof=ddof, **kwargs)
+/Users/guruikang/WorkBuddy/2026-11-20-15-03-43/CO-REP-20261120-02/execution/env_py396/lib/python3.9/site-packages/numpy/_core/fromnumeric.py:3800: FutureWarning: The behavior of DataFrame.std with axis=None is deprecated, in a future version this will reduce over both axes and return a scalar. To retain the old behavior, pass axis=0 (or do not pass axis)
+  return std(axis=axis, dtype=dtype, out=out, ddof=ddof, **kwargs)
+/Users/guruikang/WorkBuddy/2026-11-20-15-03-43/CO-REP-20261120-02/execution/env_py396/lib/python3.9/site-packages/numpy/_core/fromnumeric.py:3800: FutureWarning: The behavior of DataFrame.std with axis=None is deprecated, in a future version this will reduce over both axes and return a scalar. To retain the old behavior, pass axis=0 (or do not pass axis)
+  return std(axis=axis, dtype=dtype, out=out, ddof=ddof, **kwargs)
+/Users/guruikang/WorkBuddy/2026-11-20-15-03-43/CO-REP-20261120-02/execution/env_py396/lib/python3.9/site-packages/numpy/_core/fromnumeric.py:3800: FutureWarning: The behavior of DataFrame.std with axis=None is deprecated, in a future version this will reduce over both axes and return a scalar. To retain the old behavior, pass axis=0 (or do not pass axis)
+  return std(axis=axis, dtype=dtype, out=out, ddof=ddof, **kwargs)

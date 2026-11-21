@@ -1,0 +1,21 @@
+paper_id,kind,number,panel,label,slot,file
+Fig 1,fig,1,,is_vs_oos,,fig_01_is_vs_oos.jpg
+Fig 2,fig,2,,cor_z,,fig_02_cor_z.jpg
+Fig 3,fig,3,,sharpe_bar,,fig_03_sharpe_bar.jpg
+Fig 4,fig,4,,cumulative_returns_log,,fig_04_cumulative_returns_log.jpg
+Fig 5,fig,5,,alpha_bar,,fig_05_alpha_bar.jpg
+Fig 6a,fig,6,a,pricingacc,UPSA,fig_06a_pricingacc_UPSA.jpg
+Fig 6b,fig,6,b,pricingacc,Ridge,fig_06b_pricingacc_Ridge.jpg
+Fig 6c,fig,6,c,pricingacc,LW,fig_06c_pricingacc_LW.jpg
+Fig 6d,fig,6,d,pricingacc,PCA,fig_06d_pricingacc_PCA.jpg
+Fig 6e,fig,6,e,pricingacc,FF5,fig_06e_pricingacc_FF5.jpg
+Fig 6f,fig,6,f,pricingacc,CAPM,fig_06f_pricingacc_CAPM.jpg
+Fig 7,fig,7,,surface_bestz,,fig_07_surface_bestz.jpg
+Fig 8,fig,8,,turnover_rolling,,fig_08_turnover_rolling.jpg
+Fig 9,fig,9,,cv_prob,,fig_09_cv_prob.jpg
+Fig 10a,fig,10,a,pc_sharpe,Sharpe_by_PC,fig_10a_pc_sharpe_Sharpe_by_PC.jpg
+Fig 10b,fig,10,b,pc_sharpe,corr_oracle,fig_10b_pc_sharpe_corr_oracle.jpg
+Fig 11,fig,11,,shrinkage_mechanism,,fig_11_shrinkage_mechanism.jpg
+Fig 12,fig,12,,theme_panel,,fig_12_theme_panel.jpg
+Fig 13,fig,13,,theme_shapley,,fig_13_theme_shapley.jpg
+Tab 1,tab,1,,r2_theme,,tab_01_r2_theme.tex

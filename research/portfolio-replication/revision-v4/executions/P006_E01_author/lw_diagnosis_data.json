@@ -1,0 +1,728 @@
+{
+  "experiment": "R4/P006-E01 LW family divergence localization",
+  "bundle_sha256": {
+    "cold": "3ebba3824caace88485a0ea7d557f591c0303f930f05a727ad92e73a9e503a91",
+    "manuscript": "e767297e697e9b5abd76b2df3ae67e94efa0beec5576fe06ad2dd7d400eec713",
+    "regen": "a1d6a3c404b24f69f2ecd099b6e23923529559e501371c9e10342f243538c441"
+  },
+  "bundles": {
+    "manuscript": {
+      "opt_port_all_methods": {
+        "shape": [
+          494,
+          6
+        ],
+        "index_equal": true,
+        "columns_equal": true,
+        "max_abs_diff": 2.730294412672814,
+        "mean_abs_diff": 0.004622670250466528,
+        "max_cell": {
+          "date": "2002-07-31 00:00:00",
+          "col": "LW",
+          "cold": 0.6604078929882637,
+          "cache": 3.390702305661078,
+          "abs_diff": 2.730294412672814
+        },
+        "first_nonzero_cell": {
+          "date": "1981-11-30 00:00:00",
+          "col": "UPSA",
+          "cold": 0.22493950830811604,
+          "cache": 0.22503494507040583,
+          "abs_diff": 9.543676228979114e-05
+        },
+        "n_nonzero_cells": 2442
+      },
+      "opt_port_UPSA": {
+        "shape": [
+          494,
+          1
+        ],
+        "index_equal": true,
+        "columns_equal": true,
+        "max_abs_diff": 0.043928812646115034,
+        "mean_abs_diff": 0.0007265759827969566,
+        "max_cell": {
+          "date": "2002-10-31 00:00:00",
+          "col": "UPSA",
+          "cold": 1.5897752702914905,
+          "cache": 1.6337040829376055,
+          "abs_diff": 0.043928812646115034
+        },
+        "first_nonzero_cell": {
+          "date": "1981-11-30 00:00:00",
+          "col": "UPSA",
+          "cold": 0.22493950830811604,
+          "cache": 0.22503494507040583,
+          "abs_diff": 9.543676228979114e-05
+        },
+        "n_nonzero_cells": 494
+      },
+      "opt_port_Ridge": {
+        "shape": [
+          494,
+          1
+        ],
+        "index_equal": true,
+        "columns_equal": true,
+        "max_abs_diff": 0.001234696094189358,
+        "mean_abs_diff": 7.635836527896322e-06,
+        "max_cell": {
+          "date": "2014-03-31 00:00:00",
+          "col": "Ridge",
+          "cold": 1.5413346205469955,
+          "cache": 1.5400999244528062,
+          "abs_diff": 0.001234696094189358
+        },
+        "first_nonzero_cell": {
+          "date": "1981-11-30 00:00:00",
+          "col": "Ridge",
+          "cold": 0.2159526655509464,
+          "cache": 0.21595266555102882,
+          "abs_diff": 8.243405957841787e-14
+        },
+        "n_nonzero_cells": 494
+      },
+      "opt_port_LW": {
+        "shape": [
+          494,
+          1
+        ],
+        "index_equal": true,
+        "columns_equal": true,
+        "max_abs_diff": 2.730294412672814,
+        "mean_abs_diff": 0.027001809682454126,
+        "max_cell": {
+          "date": "2002-07-31 00:00:00",
+          "col": "LW",
+          "cold": 0.6604078929882637,
+          "cache": 3.390702305661078,
+          "abs_diff": 2.730294412672814
+        },
+        "first_nonzero_cell": {
+          "date": "1981-11-30 00:00:00",
+          "col": "LW",
+          "cold": 0.2065375983039403,
+          "cache": 0.20481133066663637,
+          "abs_diff": 0.0017262676373039354
+        },
+        "n_nonzero_cells": 494
+      },
+      "opt_port_PCA": {
+        "shape": [
+          494,
+          1
+        ],
+        "index_equal": true,
+        "columns_equal": true,
+        "max_abs_diff": 4.892375393694692e-11,
+        "mean_abs_diff": 1.0197978946345178e-12,
+        "max_cell": {
+          "date": "2019-01-31 00:00:00",
+          "col": "PCA",
+          "cold": -0.3063872545037589,
+          "cache": -0.30638725445483517,
+          "abs_diff": 4.892375393694692e-11
+        },
+        "first_nonzero_cell": {
+          "date": "1981-11-30 00:00:00",
+          "col": "PCA",
+          "cold": 0.3269094270273606,
+          "cache": 0.3269094270273558,
+          "abs_diff": 4.773959005888173e-15
+        },
+        "n_nonzero_cells": 493
+      },
+      "opt_port_FF5": {
+        "shape": [
+          494,
+          1
+        ],
+        "index_equal": true,
+        "columns_equal": true,
+        "max_abs_diff": 2.886579864025407e-15,
+        "mean_abs_diff": 4.058761311748002e-16,
+        "max_cell": {
+          "date": "1990-09-30 00:00:00",
+          "col": "FF5",
+          "cold": 0.5065146311400502,
+          "cache": 0.5065146311400531,
+          "abs_diff": 2.886579864025407e-15
+        },
+        "first_nonzero_cell": {
+          "date": "1981-11-30 00:00:00",
+          "col": "FF5",
+          "cold": 0.34441091275257435,
+          "cache": 0.34441091275257407,
+          "abs_diff": 2.7755575615628914e-16
+        },
+        "n_nonzero_cells": 467
+      },
+      "opt_port_CAPM": {
+        "shape": [
+          494,
+          1
+        ],
+        "index_equal": true,
+        "columns_equal": true,
+        "max_abs_diff": 0.0,
+        "mean_abs_diff": 0.0,
+        "max_cell": {
+          "date": "1981-11-30 00:00:00",
+          "col": "CAPM",
+          "cold": 0.0336,
+          "cache": 0.0336,
+          "abs_diff": 0.0
+        },
+        "first_nonzero_cell": null,
+        "n_nonzero_cells": 0
+      },
+      "weights_LW": {
+        "shape": [
+          494,
+          153
+        ],
+        "index_equal": true,
+        "columns_equal": true,
+        "max_abs_diff": 2.450576144494762,
+        "mean_abs_diff": 0.009903729436190457,
+        "max_cell": {
+          "date": "2002-07-31 00:00:00",
+          "col": "ivol_capm_252d",
+          "cold": 5.723538274971328,
+          "cache": 8.17411441946609,
+          "abs_diff": 2.450576144494762
+        },
+        "first_nonzero_cell": {
+          "date": "1981-11-30 00:00:00",
+          "col": "age",
+          "cold": 10.646070665914689,
+          "cache": 10.646659206736109,
+          "abs_diff": 0.0005885408214201249
+        },
+        "n_nonzero_cells": 75582
+      },
+      "weights_UPSA": {
+        "shape": [
+          494,
+          153
+        ],
+        "index_equal": true,
+        "columns_equal": true,
+        "max_abs_diff": 1.3319109428115221,
+        "mean_abs_diff": 0.010568033668288825,
+        "max_cell": {
+          "date": "1984-04-30 00:00:00",
+          "col": "at_gr1",
+          "cold": 2.472034485314925,
+          "cache": 1.1401235425034029,
+          "abs_diff": 1.3319109428115221
+        },
+        "first_nonzero_cell": {
+          "date": "1981-11-30 00:00:00",
+          "col": "age",
+          "cold": 5.525514810482623,
+          "cache": 5.5264816096662335,
+          "abs_diff": 0.0009667991836108669
+        },
+        "n_nonzero_cells": 75582
+      },
+      "weights_Ridge": {
+        "shape": [
+          494,
+          153
+        ],
+        "index_equal": true,
+        "columns_equal": true,
+        "max_abs_diff": 0.10240834785932407,
+        "mean_abs_diff": 0.00026247803034018703,
+        "max_cell": {
+          "date": "2019-01-31 00:00:00",
+          "col": "oaccruals_at",
+          "cold": 45.63618030783909,
+          "cache": 45.53377195997977,
+          "abs_diff": 0.10240834785932407
+        },
+        "first_nonzero_cell": {
+          "date": "1981-11-30 00:00:00",
+          "col": "age",
+          "cold": 5.659837351779414,
+          "cache": 5.659837351779466,
+          "abs_diff": 5.1514348342607263e-14
+        },
+        "n_nonzero_cells": 75520
+      },
+      "z_grid_weights": {
+        "shape": [
+          494,
+          10
+        ],
+        "index_equal": true,
+        "columns_equal": true,
+        "max_abs_diff": 0.4810404913683391,
+        "mean_abs_diff": 0.0061910394532205,
+        "max_cell": {
+          "date": "1995-07-31 00:00:00",
+          "col": "1e-10",
+          "cold": 0.4811988972910748,
+          "cache": 0.00015840592273570417,
+          "abs_diff": 0.4810404913683391
+        },
+        "first_nonzero_cell": {
+          "date": "1981-11-30 00:00:00",
+          "col": "1e-10",
+          "cold": 0.060512825559572596,
+          "cache": 0.060804747277159295,
+          "abs_diff": 0.00029192171758669894
+        },
+        "n_nonzero_cells": 4940
+      },
+      "eigcurve_UPSA": {
+        "shape": [
+          494,
+          1000
+        ],
+        "index_equal": true,
+        "columns_equal": true,
+        "max_abs_diff": 0.0005090904802415863,
+        "mean_abs_diff": 1.3158016129512136e-06,
+        "max_cell": {
+          "date": "2006-01-31 00:00:00",
+          "col": "0.1",
+          "cold": 0.08807735519585516,
+          "cache": 0.08858644567609675,
+          "abs_diff": 0.0005090904802415863
+        },
+        "first_nonzero_cell": {
+          "date": "1981-11-30 00:00:00",
+          "col": "1e-07",
+          "cold": 1.4263188406412166e-06,
+          "cache": 1.4199462036710465e-06,
+          "abs_diff": 6.372636970170048e-09
+        },
+        "n_nonzero_cells": 494000
+      },
+      "eigcurve_Ridge": {
+        "shape": [
+          494,
+          1000
+        ],
+        "index_equal": true,
+        "columns_equal": true,
+        "max_abs_diff": 1.8534575353668092e-07,
+        "mean_abs_diff": 1.352232493386239e-10,
+        "max_cell": {
+          "date": "1995-07-31 00:00:00",
+          "col": "0.1",
+          "cold": 0.09999997940598476,
+          "cache": 0.09999979406023123,
+          "abs_diff": 1.8534575353668092e-07
+        },
+        "first_nonzero_cell": {
+          "date": "1981-11-30 00:00:00",
+          "col": "1e-07",
+          "cold": 8.901031574934661e-05,
+          "cache": 8.90103157493466e-05,
+          "abs_diff": 1.3552527156068805e-20
+        },
+        "n_nonzero_cells": 254179
+      }
+    },
+    "regen": {
+      "opt_port_all_methods": {
+        "shape": [
+          494,
+          6
+        ],
+        "index_equal": true,
+        "columns_equal": true,
+        "max_abs_diff": 0.6144736065202903,
+        "mean_abs_diff": 0.000861736143363051,
+        "max_cell": {
+          "date": "2002-03-31 00:00:00",
+          "col": "LW",
+          "cold": -2.7128520061395904,
+          "cache": -2.0983783996193,
+          "abs_diff": 0.6144736065202903
+        },
+        "first_nonzero_cell": {
+          "date": "1981-11-30 00:00:00",
+          "col": "UPSA",
+          "cold": 0.22493950830811604,
+          "cache": 0.22403208004437392,
+          "abs_diff": 0.0009074282637421272
+        },
+        "n_nonzero_cells": 2111
+      },
+      "opt_port_UPSA": {
+        "shape": [
+          494,
+          1
+        ],
+        "index_equal": true,
+        "columns_equal": true,
+        "max_abs_diff": 0.03607283045584775,
+        "mean_abs_diff": 0.0005854300446997652,
+        "max_cell": {
+          "date": "2002-02-28 00:00:00",
+          "col": "UPSA",
+          "cold": 0.6423835505427985,
+          "cache": 0.6784563809986462,
+          "abs_diff": 0.03607283045584775
+        },
+        "first_nonzero_cell": {
+          "date": "1981-11-30 00:00:00",
+          "col": "UPSA",
+          "cold": 0.22493950830811604,
+          "cache": 0.22403208004437392,
+          "abs_diff": 0.0009074282637421272
+        },
+        "n_nonzero_cells": 494
+      },
+      "opt_port_Ridge": {
+        "shape": [
+          494,
+          1
+        ],
+        "index_equal": true,
+        "columns_equal": true,
+        "max_abs_diff": 0.0014143110698232597,
+        "mean_abs_diff": 7.489193996768245e-06,
+        "max_cell": {
+          "date": "2014-01-31 00:00:00",
+          "col": "Ridge",
+          "cold": 0.07210762143208216,
+          "cache": 0.07352193250190542,
+          "abs_diff": 0.0014143110698232597
+        },
+        "first_nonzero_cell": {
+          "date": "1981-11-30 00:00:00",
+          "col": "Ridge",
+          "cold": 0.2159526655509464,
+          "cache": 0.2159526655509882,
+          "abs_diff": 4.1799896877137144e-14
+        },
+        "n_nonzero_cells": 492
+      },
+      "opt_port_LW": {
+        "shape": [
+          494,
+          1
+        ],
+        "index_equal": true,
+        "columns_equal": true,
+        "max_abs_diff": 0.6144736065202903,
+        "mean_abs_diff": 0.004577497620990284,
+        "max_cell": {
+          "date": "2002-03-31 00:00:00",
+          "col": "LW",
+          "cold": -2.7128520061395904,
+          "cache": -2.0983783996193,
+          "abs_diff": 0.6144736065202903
+        },
+        "first_nonzero_cell": {
+          "date": "1981-11-30 00:00:00",
+          "col": "LW",
+          "cold": 0.2065375983039403,
+          "cache": 0.20638188007924488,
+          "abs_diff": 0.00015571822469542806
+        },
+        "n_nonzero_cells": 494
+      },
+      "opt_port_PCA": {
+        "shape": [
+          494,
+          1
+        ],
+        "index_equal": true,
+        "columns_equal": true,
+        "max_abs_diff": 2.0132118194737814e-11,
+        "mean_abs_diff": 4.914542541479167e-13,
+        "max_cell": {
+          "date": "1982-12-31 00:00:00",
+          "col": "PCA",
+          "cold": 0.4669530383325309,
+          "cache": 0.46695303831239876,
+          "abs_diff": 2.0132118194737814e-11
+        },
+        "first_nonzero_cell": {
+          "date": "1981-11-30 00:00:00",
+          "col": "PCA",
+          "cold": 0.3269094270273606,
+          "cache": 0.32690942702736053,
+          "abs_diff": 5.551115123125783e-17
+        },
+        "n_nonzero_cells": 491
+      },
+      "opt_port_FF5": {
+        "shape": [
+          494,
+          1
+        ],
+        "index_equal": true,
+        "columns_equal": true,
+        "max_abs_diff": 4.440892098500626e-16,
+        "mean_abs_diff": 3.3781457163758874e-17,
+        "max_cell": {
+          "date": "1984-04-30 00:00:00",
+          "col": "FF5",
+          "cold": 1.022841880872933,
+          "cache": 1.0228418808729334,
+          "abs_diff": 4.440892098500626e-16
+        },
+        "first_nonzero_cell": {
+          "date": "1981-12-31 00:00:00",
+          "col": "FF5",
+          "cold": 0.4356595576447066,
+          "cache": 0.43565955764470665,
+          "abs_diff": 5.551115123125783e-17
+        },
+        "n_nonzero_cells": 140
+      },
+      "opt_port_CAPM": {
+        "shape": [
+          494,
+          1
+        ],
+        "index_equal": true,
+        "columns_equal": true,
+        "max_abs_diff": 0.0,
+        "mean_abs_diff": 0.0,
+        "max_cell": {
+          "date": "1981-11-30 00:00:00",
+          "col": "CAPM",
+          "cold": 0.0336,
+          "cache": 0.0336,
+          "abs_diff": 0.0
+        },
+        "first_nonzero_cell": null,
+        "n_nonzero_cells": 0
+      },
+      "weights_LW": {
+        "shape": [
+          494,
+          153
+        ],
+        "index_equal": true,
+        "columns_equal": true,
+        "max_abs_diff": 0.5992861682214894,
+        "mean_abs_diff": 0.0016038121089927868,
+        "max_cell": {
+          "date": "2002-03-31 00:00:00",
+          "col": "ivol_capm_252d",
+          "cold": 8.084711253833639,
+          "cache": 7.48542508561215,
+          "abs_diff": 0.5992861682214894
+        },
+        "first_nonzero_cell": {
+          "date": "1981-11-30 00:00:00",
+          "col": "age",
+          "cold": 10.646070665914689,
+          "cache": 10.646135918341125,
+          "abs_diff": 6.525242643640183e-05
+        },
+        "n_nonzero_cells": 75582
+      },
+      "weights_UPSA": {
+        "shape": [
+          494,
+          153
+        ],
+        "index_equal": true,
+        "columns_equal": true,
+        "max_abs_diff": 1.3815265212810486,
+        "mean_abs_diff": 0.008047572052685551,
+        "max_cell": {
+          "date": "2002-02-28 00:00:00",
+          "col": "ocf_at",
+          "cold": 6.18896237665456,
+          "cache": 7.570488897935609,
+          "abs_diff": 1.3815265212810486
+        },
+        "first_nonzero_cell": {
+          "date": "1981-11-30 00:00:00",
+          "col": "age",
+          "cold": 5.525514810482623,
+          "cache": 5.521069447400933,
+          "abs_diff": 0.004445363081689635
+        },
+        "n_nonzero_cells": 75582
+      },
+      "weights_Ridge": {
+        "shape": [
+          494,
+          153
+        ],
+        "index_equal": true,
+        "columns_equal": true,
+        "max_abs_diff": 0.09699677267718698,
+        "mean_abs_diff": 0.00014047540026282797,
+        "max_cell": {
+          "date": "2014-01-31 00:00:00",
+          "col": "aliq_mat",
+          "cold": 57.14419654166432,
+          "cache": 57.24119331434151,
+          "abs_diff": 0.09699677267718698
+        },
+        "first_nonzero_cell": {
+          "date": "1981-11-30 00:00:00",
+          "col": "age",
+          "cold": 5.659837351779414,
+          "cache": 5.6598373517792915,
+          "abs_diff": 1.2256862191861728e-13
+        },
+        "n_nonzero_cells": 75496
+      },
+      "z_grid_weights": {
+        "shape": [
+          494,
+          10
+        ],
+        "index_equal": true,
+        "columns_equal": true,
+        "max_abs_diff": 0.43640863016747633,
+        "mean_abs_diff": 0.003877686874085513,
+        "max_cell": {
+          "date": "1983-02-28 00:00:00",
+          "col": "1e-10",
+          "cold": 3.4117961510515927e-07,
+          "cache": 0.43640897134709145,
+          "abs_diff": 0.43640863016747633
+        },
+        "first_nonzero_cell": {
+          "date": "1981-11-30 00:00:00",
+          "col": "1e-10",
+          "cold": 0.060512825559572596,
+          "cache": 0.05807060354302898,
+          "abs_diff": 0.0024422220165436145
+        },
+        "n_nonzero_cells": 4940
+      },
+      "eigcurve_UPSA": {
+        "shape": [
+          494,
+          1000
+        ],
+        "index_equal": true,
+        "columns_equal": true,
+        "max_abs_diff": 0.0006588225706385814,
+        "mean_abs_diff": 9.943580949306023e-07,
+        "max_cell": {
+          "date": "2005-04-30 00:00:00",
+          "col": "0.1",
+          "cold": 0.09071083564089308,
+          "cache": 0.09136965821153166,
+          "abs_diff": 0.0006588225706385814
+        },
+        "first_nonzero_cell": {
+          "date": "1981-11-30 00:00:00",
+          "col": "1e-07",
+          "cold": 1.4263188406412166e-06,
+          "cache": 1.4789255627816705e-06,
+          "abs_diff": 5.2606722140453905e-08
+        },
+        "n_nonzero_cells": 494000
+      },
+      "eigcurve_Ridge": {
+        "shape": [
+          494,
+          1000
+        ],
+        "index_equal": true,
+        "columns_equal": true,
+        "max_abs_diff": 1.8862335872393832e-07,
+        "mean_abs_diff": 7.611188701012277e-11,
+        "max_cell": {
+          "date": "1995-06-30 00:00:00",
+          "col": "0.1",
+          "cold": 0.09999979041844614,
+          "cache": 0.09999997904180487,
+          "abs_diff": 1.8862335872393832e-07
+        },
+        "first_nonzero_cell": {
+          "date": "1982-01-31 00:00:00",
+          "col": "1e-07",
+          "cold": 8.902355311049899e-05,
+          "cache": 8.9023553110499e-05,
+          "abs_diff": 1.3552527156068805e-20
+        },
+        "n_nonzero_cells": 188366
+      }
+    }
+  },
+  "lw_amplification_window0": {
+    "T": 120,
+    "P": 153,
+    "n_eigs": 120,
+    "eig_min": 2.796930339905136e-07,
+    "eig_max": 0.03948133407025827,
+    "z_grid": [
+      1e-10,
+      1e-09,
+      1e-08,
+      1e-07,
+      1e-06,
+      1e-05,
+      0.0001,
+      0.001,
+      0.01,
+      0.1
+    ],
+    "base_lw_weight_norm": 57.395500574067455,
+    "base_oos_return": 0.2065375983039403,
+    "perturbation_results": [
+      {
+        "rel_eig_perturbation": 1e-14,
+        "lw_weight_max_abs_diff": 3.6764736370820117e-06,
+        "oos_return_diff": -3.6061101088025e-06
+      },
+      {
+        "rel_eig_perturbation": 1e-12,
+        "lw_weight_max_abs_diff": 0.0016684243340265859,
+        "oos_return_diff": -0.0016258509831776815
+      },
+      {
+        "rel_eig_perturbation": 1e-10,
+        "lw_weight_max_abs_diff": 0.0009297836889583522,
+        "oos_return_diff": -0.0009111201342837529
+      },
+      {
+        "rel_eig_perturbation": 1e-08,
+        "lw_weight_max_abs_diff": 0.0012401671285657834,
+        "oos_return_diff": -0.0012223467876290607
+      },
+      {
+        "rel_eig_perturbation": 1e-06,
+        "lw_weight_max_abs_diff": 0.0011677629369537534,
+        "oos_return_diff": -0.0011376866395412292
+      }
+    ]
+  },
+  "window0_raw_eigs": {
+    "first_10": [
+      2.796930339905136e-07,
+      4.1011203971221584e-07,
+      4.805766593524201e-07,
+      6.264812375311204e-07,
+      6.32652671160724e-07,
+      7.151688373310506e-07,
+      8.070481349779481e-07,
+      8.829819568850561e-07,
+      9.500008368286966e-07,
+      1.1382853403600302e-06
+    ],
+    "last_10": [
+      0.0010636112547423523,
+      0.0013665692699578944,
+      0.0015546814983683904,
+      0.0016616947524808973,
+      0.0023594595947010696,
+      0.002817700215214358,
+      0.005655665147809697,
+      0.010491034756026207,
+      0.020412316420580726,
+      0.03948133407025827
+    ],
+    "condition_number_maxmin": 141159.51873008526,
+    "n_negative": 0
+  }
+}

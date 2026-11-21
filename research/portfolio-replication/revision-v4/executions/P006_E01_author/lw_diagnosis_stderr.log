@@ -1,0 +1,66 @@
+/Users/guruikang/WorkBuddy/2026-11-20-15-03-43/internship-workbench/research/portfolio-replication/revision-v4/executions/P006_E01_author/cold_run/src/upsa.py:137: RuntimeWarning: divide by zero encountered in matmul
+  covariance = features @ features.T / T
+/Users/guruikang/WorkBuddy/2026-11-20-15-03-43/internship-workbench/research/portfolio-replication/revision-v4/executions/P006_E01_author/cold_run/src/upsa.py:137: RuntimeWarning: overflow encountered in matmul
+  covariance = features @ features.T / T
+/Users/guruikang/WorkBuddy/2026-11-20-15-03-43/internship-workbench/research/portfolio-replication/revision-v4/executions/P006_E01_author/cold_run/src/upsa.py:137: RuntimeWarning: invalid value encountered in matmul
+  covariance = features @ features.T / T
+/Users/guruikang/WorkBuddy/2026-11-20-15-03-43/internship-workbench/research/portfolio-replication/revision-v4/executions/P006_E01_author/cold_run/src/upsa.py:142: RuntimeWarning: divide by zero encountered in matmul
+  eigvec = features.T @ eigvec * (eigval ** (-1 / 2)).reshape(1, -1) / np.sqrt(T)
+/Users/guruikang/WorkBuddy/2026-11-20-15-03-43/internship-workbench/research/portfolio-replication/revision-v4/executions/P006_E01_author/cold_run/src/upsa.py:142: RuntimeWarning: overflow encountered in matmul
+  eigvec = features.T @ eigvec * (eigval ** (-1 / 2)).reshape(1, -1) / np.sqrt(T)
+/Users/guruikang/WorkBuddy/2026-11-20-15-03-43/internship-workbench/research/portfolio-replication/revision-v4/executions/P006_E01_author/cold_run/src/upsa.py:142: RuntimeWarning: invalid value encountered in matmul
+  eigvec = features.T @ eigvec * (eigval ** (-1 / 2)).reshape(1, -1) / np.sqrt(T)
+/Users/guruikang/WorkBuddy/2026-11-20-15-03-43/internship-workbench/research/portfolio-replication/revision-v4/executions/P006_E01_author/cold_run/src/upsa.py:98: RuntimeWarning: divide by zero encountered in matmul
+  projected_returns = eigenvectors.T @ returns.T          # U'R'
+/Users/guruikang/WorkBuddy/2026-11-20-15-03-43/internship-workbench/research/portfolio-replication/revision-v4/executions/P006_E01_author/cold_run/src/upsa.py:98: RuntimeWarning: overflow encountered in matmul
+  projected_returns = eigenvectors.T @ returns.T          # U'R'
+/Users/guruikang/WorkBuddy/2026-11-20-15-03-43/internship-workbench/research/portfolio-replication/revision-v4/executions/P006_E01_author/cold_run/src/upsa.py:98: RuntimeWarning: invalid value encountered in matmul
+  projected_returns = eigenvectors.T @ returns.T          # U'R'
+/Users/guruikang/WorkBuddy/2026-11-20-15-03-43/internship-workbench/research/portfolio-replication/revision-v4/executions/P006_E01_author/cold_run/src/upsa.py:100: RuntimeWarning: divide by zero encountered in matmul
+  projected_mean_vec = eigenvectors.T @ normalized_mean   # U'mu
+/Users/guruikang/WorkBuddy/2026-11-20-15-03-43/internship-workbench/research/portfolio-replication/revision-v4/executions/P006_E01_author/cold_run/src/upsa.py:100: RuntimeWarning: overflow encountered in matmul
+  projected_mean_vec = eigenvectors.T @ normalized_mean   # U'mu
+/Users/guruikang/WorkBuddy/2026-11-20-15-03-43/internship-workbench/research/portfolio-replication/revision-v4/executions/P006_E01_author/cold_run/src/upsa.py:100: RuntimeWarning: invalid value encountered in matmul
+  projected_mean_vec = eigenvectors.T @ normalized_mean   # U'mu
+/Users/guruikang/WorkBuddy/2026-11-20-15-03-43/internship-workbench/research/portfolio-replication/revision-v4/executions/P006_E01_author/cold_run/src/upsa.py:106: RuntimeWarning: divide by zero encountered in matmul
+  w_adj = (returns @ returns.T - projected_returns.T @ projected_returns) / T
+/Users/guruikang/WorkBuddy/2026-11-20-15-03-43/internship-workbench/research/portfolio-replication/revision-v4/executions/P006_E01_author/cold_run/src/upsa.py:106: RuntimeWarning: overflow encountered in matmul
+  w_adj = (returns @ returns.T - projected_returns.T @ projected_returns) / T
+/Users/guruikang/WorkBuddy/2026-11-20-15-03-43/internship-workbench/research/portfolio-replication/revision-v4/executions/P006_E01_author/cold_run/src/upsa.py:106: RuntimeWarning: invalid value encountered in matmul
+  w_adj = (returns @ returns.T - projected_returns.T @ projected_returns) / T
+/Users/guruikang/WorkBuddy/2026-11-20-15-03-43/internship-workbench/research/portfolio-replication/revision-v4/executions/P006_E01_author/cold_run/src/upsa.py:107: RuntimeWarning: divide by zero encountered in matmul
+  l_adj = normalized_mean - eigenvectors @ projected_mean_vec
+/Users/guruikang/WorkBuddy/2026-11-20-15-03-43/internship-workbench/research/portfolio-replication/revision-v4/executions/P006_E01_author/cold_run/src/upsa.py:107: RuntimeWarning: overflow encountered in matmul
+  l_adj = normalized_mean - eigenvectors @ projected_mean_vec
+/Users/guruikang/WorkBuddy/2026-11-20-15-03-43/internship-workbench/research/portfolio-replication/revision-v4/executions/P006_E01_author/cold_run/src/upsa.py:107: RuntimeWarning: invalid value encountered in matmul
+  l_adj = normalized_mean - eigenvectors @ projected_mean_vec
+/Users/guruikang/WorkBuddy/2026-11-20-15-03-43/internship-workbench/research/portfolio-replication/revision-v4/executions/P006_E01_author/cold_run/src/upsa.py:110: RuntimeWarning: divide by zero encountered in matmul
+  projected_returns.T @ ((1 / (eigenvalues.reshape(-1, 1) + z)) * projected_returns) / T
+/Users/guruikang/WorkBuddy/2026-11-20-15-03-43/internship-workbench/research/portfolio-replication/revision-v4/executions/P006_E01_author/cold_run/src/upsa.py:110: RuntimeWarning: overflow encountered in matmul
+  projected_returns.T @ ((1 / (eigenvalues.reshape(-1, 1) + z)) * projected_returns) / T
+/Users/guruikang/WorkBuddy/2026-11-20-15-03-43/internship-workbench/research/portfolio-replication/revision-v4/executions/P006_E01_author/cold_run/src/upsa.py:110: RuntimeWarning: invalid value encountered in matmul
+  projected_returns.T @ ((1 / (eigenvalues.reshape(-1, 1) + z)) * projected_returns) / T
+/Users/guruikang/WorkBuddy/2026-11-20-15-03-43/internship-workbench/research/portfolio-replication/revision-v4/executions/P006_E01_author/cold_run/src/upsa.py:115: RuntimeWarning: divide by zero encountered in matmul
+  (eigenvectors * (1 / (eigenvalues.reshape(1, -1) + z))) @ projected_mean_vec
+/Users/guruikang/WorkBuddy/2026-11-20-15-03-43/internship-workbench/research/portfolio-replication/revision-v4/executions/P006_E01_author/cold_run/src/upsa.py:115: RuntimeWarning: overflow encountered in matmul
+  (eigenvectors * (1 / (eigenvalues.reshape(1, -1) + z))) @ projected_mean_vec
+/Users/guruikang/WorkBuddy/2026-11-20-15-03-43/internship-workbench/research/portfolio-replication/revision-v4/executions/P006_E01_author/cold_run/src/upsa.py:115: RuntimeWarning: invalid value encountered in matmul
+  (eigenvectors * (1 / (eigenvalues.reshape(1, -1) + z))) @ projected_mean_vec
+/Users/guruikang/WorkBuddy/2026-11-20-15-03-43/internship-workbench/research/portfolio-replication/revision-v4/executions/P006_E01_author/cold_run/src/shrinkage.py:25: RuntimeWarning: divide by zero encountered in matmul
+  projected_mean_vec = eigvec.T @ normalized_mean
+/Users/guruikang/WorkBuddy/2026-11-20-15-03-43/internship-workbench/research/portfolio-replication/revision-v4/executions/P006_E01_author/cold_run/src/shrinkage.py:25: RuntimeWarning: overflow encountered in matmul
+  projected_mean_vec = eigvec.T @ normalized_mean
+/Users/guruikang/WorkBuddy/2026-11-20-15-03-43/internship-workbench/research/portfolio-replication/revision-v4/executions/P006_E01_author/cold_run/src/shrinkage.py:25: RuntimeWarning: invalid value encountered in matmul
+  projected_mean_vec = eigvec.T @ normalized_mean
+/Users/guruikang/WorkBuddy/2026-11-20-15-03-43/internship-workbench/research/portfolio-replication/revision-v4/executions/P006_E01_author/cold_run/src/shrinkage.py:27: RuntimeWarning: divide by zero encountered in matmul
+  lw_weights = np.squeeze((eigvec * (1 / lw_eigenvalues.reshape(1, -1))) @ projected_mean_vec)
+/Users/guruikang/WorkBuddy/2026-11-20-15-03-43/internship-workbench/research/portfolio-replication/revision-v4/executions/P006_E01_author/cold_run/src/shrinkage.py:27: RuntimeWarning: overflow encountered in matmul
+  lw_weights = np.squeeze((eigvec * (1 / lw_eigenvalues.reshape(1, -1))) @ projected_mean_vec)
+/Users/guruikang/WorkBuddy/2026-11-20-15-03-43/internship-workbench/research/portfolio-replication/revision-v4/executions/P006_E01_author/cold_run/src/shrinkage.py:27: RuntimeWarning: invalid value encountered in matmul
+  lw_weights = np.squeeze((eigvec * (1 / lw_eigenvalues.reshape(1, -1))) @ projected_mean_vec)
+/Users/guruikang/WorkBuddy/2026-11-20-15-03-43/internship-workbench/research/portfolio-replication/revision-v4/executions/P006_E01_author/cold_run/src/shrinkage.py:32: RuntimeWarning: divide by zero encountered in matmul
+  lw_weights = lw_weights + (normalized_mean - eigvec @ projected_mean_vec) / effective_shrink
+/Users/guruikang/WorkBuddy/2026-11-20-15-03-43/internship-workbench/research/portfolio-replication/revision-v4/executions/P006_E01_author/cold_run/src/shrinkage.py:32: RuntimeWarning: overflow encountered in matmul
+  lw_weights = lw_weights + (normalized_mean - eigvec @ projected_mean_vec) / effective_shrink
+/Users/guruikang/WorkBuddy/2026-11-20-15-03-43/internship-workbench/research/portfolio-replication/revision-v4/executions/P006_E01_author/cold_run/src/shrinkage.py:32: RuntimeWarning: invalid value encountered in matmul
+  lw_weights = lw_weights + (normalized_mean - eigvec @ projected_mean_vec) / effective_shrink

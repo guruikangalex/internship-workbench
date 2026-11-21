@@ -1,0 +1,49 @@
+[main] computing rolling-window engine (bryan_monthly_vw_cap, rw=120)...
+[main] cached -> /Users/guruikang/WorkBuddy/2026-11-20-15-03-43/internship-workbench/research/portfolio-replication/revision-v3/executions/P006_E01_author/cold_run/outputs/computed/main_bundle.p
+[main] computing in/OOS complexity sweep...
+main figures written to /Users/guruikang/WorkBuddy/2026-11-20-15-03-43/internship-workbench/research/portfolio-replication/revision-v3/executions/P006_E01_author/cold_run/outputs/figures
+[finalize] 20 outputs in /Users/guruikang/WorkBuddy/2026-11-20-15-03-43/internship-workbench/research/portfolio-replication/revision-v3/executions/P006_E01_author/cold_run/outputs/figures (paper order)
+[finalize] manifest -> /Users/guruikang/WorkBuddy/2026-11-20-15-03-43/internship-workbench/research/portfolio-replication/revision-v3/executions/P006_E01_author/cold_run/manifest.csv
+[finalize] WARNING: 41 expected outputs missing:
+  sim_econstat_eigs.jpg
+  sim_econstat_scatter.jpg
+  sim_upsaridge_eigs.jpg
+  sim_upsaridge_scatter.jpg
+  tv_scatter_sr.jpg
+  tv_scatter_turnover.jpg
+  grid_size_fixed.jpg
+  grid_size_eig.jpg
+  grid_turnover_fixed.jpg
+  grid_turnover_eig.jpg
+  lasso_comparison_bar.jpg
+  non_zero_pcs_ts.jpg
+  turnover_lasso_vs_vanilla_upsa.jpg
+  turnover_lasso_vs_vanilla_ridge.jpg
+  sr_pc_plot.jpg
+  corr_sparse_oracle_sr_max.jpg
+  sharpe_other_benchmarks.jpg
+  sharpe_full_sample_mega.jpg
+  sharpe_full_sample_large.jpg
+  sharpe_full_sample_small.jpg
+  alpha_full_sample_mega.jpg
+  alpha_full_sample_large.jpg
+  alpha_full_sample_small.jpg
+  sharpe_full_sample_rw60.jpg
+  sharpe_full_sample_rw240.jpg
+  sharpe_full_sample_rw360.jpg
+  alpha_full_sample_rw60.jpg
+  alpha_full_sample_rw240.jpg
+  alpha_full_sample_rw360.jpg
+  beta_ins_sec_UPSA_scatter_plot.jpg
+  beta_ins_sec_Ridge_scatter_plot.jpg
+  beta_ins_sec_LW_scatter_plot.jpg
+  beta_ins_sec_PCA_scatter_plot.jpg
+  beta_ins_sec_FF5_scatter_plot.jpg
+  beta_ins_sec_CAPM_scatter_plot.jpg
+  recession_panels.jpg
+  grid_robustness.jpg
+  tv_heatmap.jpg
+  tv_turnover.jpg
+  tv_dist_by_regime.jpg
+  r_2_theme_beta_insample_sec.tex
+done.

@@ -1,0 +1,4 @@
+v3-style min-len would compute max over positions=2 and return 0.0 (silently drops c)
+R4 strict_maxabs -> max_diff= 0.0 n_pairs= 2
+R4 issues= ["MISSING in cold_run (1): ['c']"]
+list-length mismatch -> issues= ["EXTRA in author cache (1): ['UPSA.rolling_values[3]']"]

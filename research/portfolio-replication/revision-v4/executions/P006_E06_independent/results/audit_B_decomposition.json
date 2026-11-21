@@ -1,0 +1,353 @@
+{
+  "run_id": "P006-E06-R4-AUDIT-001",
+  "T": 120,
+  "P": 153,
+  "z_grid": [
+    1e-10,
+    1e-09,
+    1e-08,
+    1e-07,
+    1e-06,
+    1e-05,
+    0.0001,
+    0.001,
+    0.01,
+    0.1
+  ],
+  "environment": {
+    "run_id": "P006-E06-R4-AUDIT-001",
+    "python": "3.9.6",
+    "numpy": "2.0.2",
+    "scipy": "1.13.1",
+    "cvxopt": "1.3.3",
+    "pandas": "2.3.3",
+    "package_sha256": {
+      "upsa.py": "56a3a00b767bce1be65db80ecf61797c8fc5bffa1e73deecc864a01e33792355",
+      "portfolios.py": "daf2da924a2aa7223fef57d0d943d4242f1d22afaa2043351df0101cbee50a8d",
+      "factors_main.csv": "7b1f96c86d80baa5e4458f1883e3f4b930dcf6367c914e0138a2182c499f8356"
+    }
+  },
+  "ladder": [
+    {
+      "step": 1,
+      "convention_change": "data: independent CSV load vs author input",
+      "delta_vs_previous": {
+        "maxabs": 0.0,
+        "meanabs": 0.0,
+        "fro": 0.0,
+        "relative_fro": 0.0,
+        "corr": 1.0
+      },
+      "delta_vs_author_A": {
+        "maxabs": 0.0,
+        "meanabs": 0.0,
+        "fro": 0.0,
+        "relative_fro": 0.0,
+        "corr": 1.0
+      },
+      "note": "X identical (maxabs=0)",
+      "data_maxabs": 0.0
+    },
+    {
+      "step": 2,
+      "convention_change": "ridge grid: E06 Z vs author z_list",
+      "delta_vs_previous": {
+        "maxabs": 0.0,
+        "meanabs": 0.0,
+        "fro": 0.0,
+        "relative_fro": 0.0,
+        "corr": 1.0
+      },
+      "delta_vs_author_A": {
+        "maxabs": 0.0,
+        "meanabs": 0.0,
+        "fro": 0.0,
+        "relative_fro": 0.0,
+        "corr": 1.0
+      },
+      "note": "z grid identical by construction",
+      "z_grid_identical": true
+    },
+    {
+      "step": 3,
+      "convention_change": "LOO: author smoother(w_adj/z) -> stable eigh(K) expr, c=T",
+      "delta_vs_previous": {
+        "maxabs": 0.12328104720344868,
+        "meanabs": 0.028331719163906834,
+        "fro": 0.45523602251671913,
+        "relative_fro": 0.012871715009753733,
+        "corr": 0.9999324877170398
+      },
+      "delta_vs_author_A": {
+        "maxabs": 0.12328104720344868,
+        "meanabs": 0.028331719163906834,
+        "fro": 0.45523602251671913,
+        "relative_fro": 0.012871715009753733,
+        "corr": 0.9999324877170398
+      },
+      "note": "changes u,Q and hence QP W; author eff_port & trace scale held fixed",
+      "W_authorLOO_vs_stableLOO_fro": 0.011891286379831216
+    },
+    {
+      "step": 4,
+      "convention_change": "QP: objective/constraints identical (cvxopt in both)",
+      "delta_vs_previous": {
+        "maxabs": 0.0,
+        "meanabs": 0.0,
+        "fro": 0.0,
+        "relative_fro": 0.0,
+        "corr": 0.9999999999999999
+      },
+      "delta_vs_author_A": {
+        "maxabs": 0.12328104720344868,
+        "meanabs": 0.028331719163906834,
+        "fro": 0.45523602251671913,
+        "relative_fro": 0.012871715009753733,
+        "corr": 0.9999324877170398
+      },
+      "note": "QP objective & nonneg constraints identical; SLSQP crosscheck on same inputs",
+      "W_cvx_vs_slsqp_fro": 4.946997035187975e-06,
+      "slsqp_success": true
+    },
+    {
+      "step": 5,
+      "convention_change": "linear solve: author eff_port -> stable X'(K+TzI)^-1 1",
+      "delta_vs_previous": {
+        "maxabs": 1.9210369883726486e-07,
+        "meanabs": 5.356688615359566e-08,
+        "fro": 8.50125203954955e-07,
+        "relative_fro": 2.4190288816828007e-08,
+        "corr": 0.9999999999999993
+      },
+      "delta_vs_author_A": {
+        "maxabs": 0.1232809792876024,
+        "meanabs": 0.028331712873942393,
+        "fro": 0.4552360055321141,
+        "relative_fro": 0.012871714529517141,
+        "corr": 0.999932487730159
+      },
+      "note": "eff_port linear algebra only; W/scale held fixed",
+      "eff_port_ind_vs_author_maxabs": 2.894277903564557e-06
+    },
+    {
+      "step": 6,
+      "convention_change": "trace scale: eig(K)/T -> eig(K) with z unscaled (E06 bug)",
+      "delta_vs_previous": {
+        "maxabs": 1.605007136437,
+        "meanabs": 0.3681322086468498,
+        "fro": 5.9551152198936546,
+        "relative_fro": 0.16945263653822995,
+        "corr": 1.0
+      },
+      "delta_vs_author_A": {
+        "maxabs": 1.6299522638713144,
+        "meanabs": 0.3842027374404922,
+        "fro": 6.189582652154602,
+        "relative_fro": 0.17500931382231227,
+        "corr": 0.9999324877301589
+      },
+      "note": "scale 1.138186 -> 0.945317 (ratio 0.830547)",
+      "scale_consistent": 1.138186043439704,
+      "scale_E06_buggy": 0.9453174175078298,
+      "scale_ratio": 0.83054736346177
+    },
+    {
+      "step": 7,
+      "convention_change": "final weights: fully E06 B0 first window (stable LOO W, buggy scale)",
+      "delta_vs_previous": {
+        "maxabs": 0.0,
+        "meanabs": 0.0,
+        "fro": 0.0,
+        "relative_fro": 0.0,
+        "corr": 1.0
+      },
+      "delta_vs_author_A": {
+        "maxabs": 1.6299522638713144,
+        "meanabs": 0.3842027374404922,
+        "fro": 6.189582652154602,
+        "relative_fro": 0.17500931382231227,
+        "corr": 0.9999324877301589
+      },
+      "note": "end of A->B0 ladder on first window; residual should be ~0"
+    },
+    {
+      "step": 8,
+      "convention_change": "period return: month 1981-11 return",
+      "delta_vs_previous": {
+        "maxabs": 0.038865876073636174,
+        "meanabs": 0.038865876073636174,
+        "fro": 0.038865876073636174,
+        "relative_fro": 0.17278368022570206,
+        "corr": null
+      },
+      "delta_vs_author_A": {
+        "maxabs": 0.038865876073636174,
+        "meanabs": 0.038865876073636174,
+        "fro": 0.038865876073636174,
+        "relative_fro": 0.17278368022570206,
+        "corr": null
+      },
+      "note": "A 0.224940 vs B0 0.186074 vs B1 0.185907",
+      "return_A": 0.22493950830811604,
+      "return_B0": 0.18607363223447987,
+      "return_B1": 0.1859069568300671,
+      "return_A_vs_B0_abs": 0.038865876073636174
+    },
+    {
+      "step": 9,
+      "convention_change": "overall metrics: full-run Sharpe A/B0/B1 (494 months)",
+      "delta_vs_previous": {
+        "maxabs": 0.007605292525240559,
+        "meanabs": 0.007605292525240559,
+        "fro": 0.007605292525240559,
+        "relative_fro": 0.0039553753212896005,
+        "corr": null
+      },
+      "delta_vs_author_A": {
+        "maxabs": 0.007605292525240559,
+        "meanabs": 0.007605292525240559,
+        "fro": 0.007605292525240559,
+        "relative_fro": 0.0039553753212896005,
+        "corr": null
+      },
+      "note": "Sharpe A=1.922774 B0=1.915169 B1=1.915609",
+      "sharpe": {
+        "A": 1.9227739234518326,
+        "B0": 1.915168630926592,
+        "B1": 1.915609118415525
+      }
+    }
+  ],
+  "low_z_hypothesis": {
+    "hypothesis": "low z amplifies roundoff w_adj by 1/z, causing A vs B0 LOO/weight differences",
+    "w_adj_fro": 9.240527103855268e-17,
+    "w_adj_absmax": 1.2027416100105863e-17,
+    "norm_XXt_over_T_fro": 0.046286888661426606,
+    "w_adj_relative_to_XXt_over_T": 1.9963595244966e-15,
+    "verdict_rule": "SUPPORTED if w_adj/z grows with 1/z AND loo_effect_of_wadj tracks it AND removing w_adj collapses author-vs-stable gap to ~solver precision",
+    "per_z": [
+      {
+        "z": 1e-10,
+        "w_adj_over_z_fro": 9.240527103855268e-07,
+        "loo_effect_of_wadj_maxabs": 0.21887426387505782,
+        "author_full_vs_stable_maxabs": 0.2188739837204099,
+        "author_noadj_vs_stable_maxabs": 2.801546479247463e-07,
+        "residual_after_removing_wadj_maxabs": 2.801546479247463e-07
+      },
+      {
+        "z": 1e-09,
+        "w_adj_over_z_fro": 9.240527103855268e-08,
+        "loo_effect_of_wadj_maxabs": 0.002297757876015716,
+        "author_full_vs_stable_maxabs": 0.002297729886859834,
+        "author_noadj_vs_stable_maxabs": 2.798915588186901e-08,
+        "residual_after_removing_wadj_maxabs": 2.798915588186901e-08
+      },
+      {
+        "z": 1e-08,
+        "w_adj_over_z_fro": 9.240527103855268e-09,
+        "loo_effect_of_wadj_maxabs": 2.3133041625822415e-05,
+        "author_full_vs_stable_maxabs": 2.3130312096775185e-05,
+        "author_noadj_vs_stable_maxabs": 2.729529047229562e-09,
+        "residual_after_removing_wadj_maxabs": 2.729529047229562e-09
+      },
+      {
+        "z": 1e-07,
+        "w_adj_over_z_fro": 9.240527103855269e-10,
+        "loo_effect_of_wadj_maxabs": 2.4452163538413174e-07,
+        "author_full_vs_stable_maxabs": 2.443026527743086e-07,
+        "author_noadj_vs_stable_maxabs": 2.2603741101079322e-10,
+        "residual_after_removing_wadj_maxabs": 2.2603741101079322e-10
+      },
+      {
+        "z": 1e-06,
+        "w_adj_over_z_fro": 9.240527103855269e-11,
+        "loo_effect_of_wadj_maxabs": 3.332575548853356e-09,
+        "author_full_vs_stable_maxabs": 3.3214040406903678e-09,
+        "author_noadj_vs_stable_maxabs": 1.7875256830279795e-11,
+        "residual_after_removing_wadj_maxabs": 1.7875256830279795e-11
+      },
+      {
+        "z": 1e-05,
+        "w_adj_over_z_fro": 9.240527103855268e-12,
+        "loo_effect_of_wadj_maxabs": 6.479994318908666e-11,
+        "author_full_vs_stable_maxabs": 6.202571789515332e-11,
+        "author_noadj_vs_stable_maxabs": 2.774225293933341e-12,
+        "residual_after_removing_wadj_maxabs": 2.774225293933341e-12
+      },
+      {
+        "z": 0.0001,
+        "w_adj_over_z_fro": 9.240527103855269e-13,
+        "loo_effect_of_wadj_maxabs": 1.6846524175662125e-12,
+        "author_full_vs_stable_maxabs": 1.4761525335416081e-12,
+        "author_noadj_vs_stable_maxabs": 2.084998840246044e-13,
+        "residual_after_removing_wadj_maxabs": 2.084998840246044e-13
+      },
+      {
+        "z": 0.001,
+        "w_adj_over_z_fro": 9.240527103855269e-14,
+        "loo_effect_of_wadj_maxabs": 3.7636560534792807e-14,
+        "author_full_vs_stable_maxabs": 4.3520742565306136e-14,
+        "author_noadj_vs_stable_maxabs": 2.3647750424515834e-14,
+        "residual_after_removing_wadj_maxabs": 2.3647750424515834e-14
+      },
+      {
+        "z": 0.01,
+        "w_adj_over_z_fro": 9.240527103855267e-15,
+        "loo_effect_of_wadj_maxabs": 2.598615767013257e-15,
+        "author_full_vs_stable_maxabs": 4.093947403305265e-15,
+        "author_noadj_vs_stable_maxabs": 4.649058915617843e-15,
+        "residual_after_removing_wadj_maxabs": 4.649058915617843e-15
+      },
+      {
+        "z": 0.1,
+        "w_adj_over_z_fro": 9.240527103855268e-16,
+        "loo_effect_of_wadj_maxabs": 2.5673907444456745e-16,
+        "author_full_vs_stable_maxabs": 3.3965885659625883e-15,
+        "author_noadj_vs_stable_maxabs": 3.415670524198333e-15,
+        "residual_after_removing_wadj_maxabs": 3.415670524198333e-15
+      }
+    ],
+    "QP_W_authorLOO_vs_stableLOO_fro": 0.011891286379831216,
+    "verdict": "SUPPORTED",
+    "verdict_numbers": {
+      "max_gap_z_ge_1e-6": 3.3214040406903678e-09,
+      "max_gap_z_le_1e-8": 0.2188739837204099,
+      "max_residual_after_removing_wadj_z_le_1e-8": 2.801546479247463e-07
+    }
+  },
+  "AB01_summary": {
+    "A_vs_B0_fullrun": {
+      "maxabs": 0.5851721817467317,
+      "meanabs": 0.07121433501791044,
+      "fro": 2.2913929781484605,
+      "relative_fro": 0.1507062397413447,
+      "corr": 0.9983994983066014
+    },
+    "B0_vs_B1_fullrun": {
+      "maxabs": 0.008737840096661786,
+      "meanabs": 0.0011134402961426675,
+      "fro": 0.037799770499937,
+      "relative_fro": 0.0024898994314143377,
+      "corr": 0.9999974771624107
+    },
+    "A_vs_B1_fullrun": {
+      "maxabs": 0.5845235148114314,
+      "meanabs": 0.07204506141610428,
+      "fro": 2.312112353479685,
+      "relative_fro": 0.15230058696532905,
+      "corr": 0.9984076277742234
+    },
+    "A_vs_B0_dominant_causes": [
+      "trace-scale bug (~17% first-window scale)",
+      "low-z w_adj/z roundoff in author LOO",
+      "solver-level eff_port difference (~2.9e-6 maxabs)"
+    ],
+    "B0_vs_B1_cause": [
+      "LOO divisor T vs T-1 only (identical stable implementation)"
+    ],
+    "A_vs_B1_cause": [
+      "A-vs-B0 implementation + B0-vs-B1 divisor; not additive in heavy tails"
+    ]
+  },
+  "note": "Ladder is first-window (T=120). Each step flips exactly one convention and carries all earlier flips forward; 'delta_vs_previous' isolates that step."
+}

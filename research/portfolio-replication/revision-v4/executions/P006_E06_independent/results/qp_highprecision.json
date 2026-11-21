@@ -1,0 +1,170 @@
+{
+  "run_id": "P006-E06-R4-AUDIT-001",
+  "n_oos": 494,
+  "threshold": 1e-07,
+  "environment": {
+    "run_id": "P006-E06-R4-AUDIT-001",
+    "python": "3.9.6",
+    "numpy": "2.0.2",
+    "scipy": "1.13.1",
+    "cvxopt": "1.3.3",
+    "pandas": "2.3.3",
+    "package_sha256": {
+      "upsa.py": "56a3a00b767bce1be65db80ecf61797c8fc5bffa1e73deecc864a01e33792355",
+      "portfolios.py": "daf2da924a2aa7223fef57d0d943d4242f1d22afaa2043351df0101cbee50a8d",
+      "factors_main.csv": "7b1f96c86d80baa5e4458f1883e3f4b930dcf6367c914e0138a2182c499f8356"
+    }
+  },
+  "original_frozen": {
+    "B0": {
+      "n": 494,
+      "max": 2.1052484888394266e-07,
+      "mean": 1.8861942006354003e-08,
+      "median": 5.411616696195261e-09,
+      "n_gt_1e-7": 14,
+      "n_gt_1e-8": 183,
+      "p95": 7.508570131563112e-08
+    },
+    "B1": {
+      "n": 494,
+      "max": 1.554855368388267e-07,
+      "mean": 1.6569312424838865e-08,
+      "median": 5.109792565665489e-09,
+      "n_gt_1e-7": 15,
+      "n_gt_1e-8": 176,
+      "p95": 7.432773198325854e-08
+    },
+    "B0_status_counts": {
+      "optimal": 494
+    },
+    "B1_status_counts": {
+      "optimal": 494
+    },
+    "residual_definition": "max(max(0,-W), max(0,u-QW), max|W*(QW-u)|) with implied multiplier lambda = QW-u >= 0; multiplier-free KKT. cvxopt status='optimal' only certifies its internal abstol/reltol/feastol (defaults 1e-7), NOT this KKT measure.",
+    "note": "Original configuration results preserved; no threshold relaxation."
+  },
+  "highprecision": {
+    "cvxopt_default": {
+      "B0": {
+        "n": 494,
+        "max": 2.1052484888394266e-07,
+        "mean": 1.8861942006354003e-08,
+        "median": 5.411616696195261e-09,
+        "n_gt_1e-7": 14,
+        "n_gt_1e-8": 183,
+        "p95": 7.508570131563112e-08
+      },
+      "B1": {
+        "n": 494,
+        "max": 1.554855368388267e-07,
+        "mean": 1.6569312424838865e-08,
+        "median": 5.109792565665489e-09,
+        "n_gt_1e-7": 15,
+        "n_gt_1e-8": 176,
+        "p95": 7.432773198325854e-08
+      },
+      "status_counts": {
+        "B0": {
+          "optimal": 494
+        },
+        "B1": {
+          "optimal": 494
+        }
+      },
+      "W_fro_vs_cvxopt_default_B0_max": 0.0,
+      "W_fro_vs_cvxopt_default_B1_max": 0.0
+    },
+    "cvxopt_highprec": {
+      "B0": {
+        "n": 494,
+        "max": 8.106114573733058e-13,
+        "mean": 7.750743241396545e-14,
+        "median": 4.2136915183274253e-14,
+        "n_gt_1e-7": 0,
+        "n_gt_1e-8": 0,
+        "p95": 2.7143556985933217e-13
+      },
+      "B1": {
+        "n": 494,
+        "max": 9.201515192611337e-13,
+        "mean": 7.945975509358378e-14,
+        "median": 3.9276266565348023e-14,
+        "n_gt_1e-7": 0,
+        "n_gt_1e-8": 0,
+        "p95": 2.7232544353931114e-13
+      },
+      "status_counts": {
+        "B0": {
+          "optimal": 494
+        },
+        "B1": {
+          "optimal": 494
+        }
+      },
+      "W_fro_vs_cvxopt_default_B0_max": 0.022315162786504437,
+      "W_fro_vs_cvxopt_default_B1_max": 0.022548647810705546
+    },
+    "cvxopt_highprec_scaled": {
+      "B0": {
+        "n": 494,
+        "max": 2.9645965536232213e-12,
+        "mean": 1.1839200235416699e-13,
+        "median": 4.445933573127887e-14,
+        "n_gt_1e-7": 0,
+        "n_gt_1e-8": 0,
+        "p95": 3.997433694163001e-13
+      },
+      "B1": {
+        "n": 494,
+        "max": 2.8869323733830677e-12,
+        "mean": 1.1940360758719286e-13,
+        "median": 4.7088002780739094e-14,
+        "n_gt_1e-7": 0,
+        "n_gt_1e-8": 0,
+        "p95": 5.041379791297796e-13
+      },
+      "status_counts": {
+        "B0": {
+          "optimal": 494
+        },
+        "B1": {
+          "optimal": 494
+        }
+      },
+      "W_fro_vs_cvxopt_default_B0_max": 0.02231516958178919,
+      "W_fro_vs_cvxopt_default_B1_max": 0.02254865457920851
+    },
+    "scipy_slsqp": {
+      "B0": {
+        "n": 494,
+        "max": 1.7571270416461005e-07,
+        "mean": 1.3551336091222143e-08,
+        "median": 5.787871341026652e-09,
+        "n_gt_1e-7": 8,
+        "n_gt_1e-8": 188,
+        "p95": 5.233504686286136e-08
+      },
+      "B1": {
+        "n": 494,
+        "max": 2.137991147455054e-07,
+        "mean": 1.4230964862235032e-08,
+        "median": 6.449748443092447e-09,
+        "n_gt_1e-7": 5,
+        "n_gt_1e-8": 192,
+        "p95": 5.9158225318434163e-08
+      },
+      "status_counts": {
+        "B0": {
+          "success": 494
+        },
+        "B1": {
+          "success": 494
+        }
+      },
+      "W_fro_vs_cvxopt_default_B0_max": 0.02231518356012859,
+      "W_fro_vs_cvxopt_default_B1_max": 0.022548745055089692
+    }
+  },
+  "verdict": "KKT residual > 1e-7 with cvxopt status='optimal' is CONFIRMED for the original configuration (B0 14/494, B1 15/494 windows). Tightening cvxopt tolerances to 1e-12 reduces max KKT to B0=8.11e-13, B1=9.2e-13; this is a solver-tolerance limitation, not QP infeasibility. Original results retained; threshold NOT relaxed.",
+  "elapsed_sec": 1.8683059215545654
+}

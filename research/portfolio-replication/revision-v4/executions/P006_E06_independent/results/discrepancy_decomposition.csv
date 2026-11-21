@@ -1,0 +1,10 @@
+run_id,step,convention_change,delta_vs_previous_maxabs,delta_vs_previous_meanabs,delta_vs_previous_corr,delta_vs_A_maxabs,delta_vs_A_meanabs,delta_vs_A_corr,note
+P006-E06-R4-AUDIT-001,1,data: independent CSV load vs author input,0.0,0.0,1.0,0.0,0.0,1.0,X identical (maxabs=0)
+P006-E06-R4-AUDIT-001,2,ridge grid: E06 Z vs author z_list,0.0,0.0,1.0,0.0,0.0,1.0,z grid identical by construction
+P006-E06-R4-AUDIT-001,3,"LOO: author smoother(w_adj/z) -> stable eigh(K) expr, c=T",0.12328104720344868,0.028331719163906834,0.9999324877170398,0.12328104720344868,0.028331719163906834,0.9999324877170398,"changes u,Q and hence QP W; author eff_port & trace scale held fixed"
+P006-E06-R4-AUDIT-001,4,QP: objective/constraints identical (cvxopt in both),0.0,0.0,0.9999999999999999,0.12328104720344868,0.028331719163906834,0.9999324877170398,QP objective & nonneg constraints identical; SLSQP crosscheck on same inputs
+P006-E06-R4-AUDIT-001,5,linear solve: author eff_port -> stable X'(K+TzI)^-1 1,1.9210369883726486e-07,5.356688615359566e-08,0.9999999999999993,0.1232809792876024,0.028331712873942393,0.999932487730159,eff_port linear algebra only; W/scale held fixed
+P006-E06-R4-AUDIT-001,6,trace scale: eig(K)/T -> eig(K) with z unscaled (E06 bug),1.605007136437,0.3681322086468498,1.0,1.6299522638713144,0.3842027374404922,0.9999324877301589,scale 1.138186 -> 0.945317 (ratio 0.830547)
+P006-E06-R4-AUDIT-001,7,"final weights: fully E06 B0 first window (stable LOO W, buggy scale)",0.0,0.0,1.0,1.6299522638713144,0.3842027374404922,0.9999324877301589,end of A->B0 ladder on first window; residual should be ~0
+P006-E06-R4-AUDIT-001,8,period return: month 1981-11 return,0.038865876073636174,0.038865876073636174,,0.038865876073636174,0.038865876073636174,,A 0.224940 vs B0 0.186074 vs B1 0.185907
+P006-E06-R4-AUDIT-001,9,overall metrics: full-run Sharpe A/B0/B1 (494 months),0.007605292525240559,0.007605292525240559,,0.007605292525240559,0.007605292525240559,,Sharpe A=1.922774 B0=1.915169 B1=1.915609

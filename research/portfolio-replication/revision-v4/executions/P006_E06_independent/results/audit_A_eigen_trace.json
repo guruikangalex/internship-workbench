@@ -1,0 +1,252 @@
+{
+  "issue": "P006-E06 R4 TASK A eigenvalue scaling & trace normalisation audit",
+  "run_id": "P006-E06-R4-AUDIT-001",
+  "T": 120,
+  "P": 153,
+  "z_grid": [
+    1e-10,
+    1e-09,
+    1e-08,
+    1e-07,
+    1e-06,
+    1e-05,
+    0.0001,
+    0.001,
+    0.01,
+    0.1
+  ],
+  "environment": {
+    "run_id": "P006-E06-R4-AUDIT-001",
+    "python": "3.9.6",
+    "numpy": "2.0.2",
+    "scipy": "1.13.1",
+    "cvxopt": "1.3.3",
+    "pandas": "2.3.3",
+    "package_sha256": {
+      "upsa.py": "56a3a00b767bce1be65db80ecf61797c8fc5bffa1e73deecc864a01e33792355",
+      "portfolios.py": "daf2da924a2aa7223fef57d0d943d4242f1d22afaa2043351df0101cbee50a8d",
+      "factors_main.csv": "7b1f96c86d80baa5e4458f1883e3f4b930dcf6367c914e0138a2182c499f8356"
+    }
+  },
+  "conclusion_lam_is": "XX' eigenvalues (T-dim, NOT divided by T) in independent_upsa.eig_K; author uses eig(XX'/T). lamK = T * eig_author verified numerically.",
+  "scale": {
+    "lamK_XXt": {
+      "min": 3.356316407889211e-05,
+      "max": 4.737760088430989,
+      "trace": 11.558025619305349
+    },
+    "eig_XXt_div_T": {
+      "min": 2.796930339905136e-07,
+      "max": 0.03948133407025827,
+      "trace": 0.09631688016087792
+    },
+    "z_grid": {
+      "min": 1e-10,
+      "max": 0.1,
+      "n": 10
+    },
+    "lamK_over_Teig_maxabs_dev_from_1": 9.08162434143378e-13,
+    "lamK_over_Teig_direct_maxabs_dev_from_1": 9.08162434143378e-13,
+    "n_z_below_lamK_min": 6,
+    "n_z_below_eig_min": 4,
+    "z_median_over_lamK_min": 0.1638701281879128,
+    "z_median_over_eig_min": 19.664415382567395
+  },
+  "eff_port": {
+    "eff_port_ind_Tz_vs_author_z": {
+      "maxabs": 2.894277903564557e-06,
+      "meanabs": 8.963854809809252e-08,
+      "fro": 1.2872539574666023e-05,
+      "relative_fro": 2.330814268965971e-08,
+      "corr": 0.9999999999999994
+    },
+    "author_l_adj_norm": 1.2810063499741202e-15,
+    "author_l_adj_over_z_norm_by_z": [
+      {
+        "z": 1e-10,
+        "norm": 1.28100634997412e-05
+      },
+      {
+        "z": 1e-09,
+        "norm": 1.28100634997412e-06
+      },
+      {
+        "z": 1e-08,
+        "norm": 1.28100634997412e-07
+      },
+      {
+        "z": 1e-07,
+        "norm": 1.2810063499741202e-08
+      },
+      {
+        "z": 1e-06,
+        "norm": 1.2810063499741202e-09
+      },
+      {
+        "z": 1e-05,
+        "norm": 1.28100634997412e-10
+      },
+      {
+        "z": 0.0001,
+        "norm": 1.28100634997412e-11
+      },
+      {
+        "z": 0.001,
+        "norm": 1.2810063499741202e-12
+      },
+      {
+        "z": 0.01,
+        "norm": 1.28100634997412e-13
+      },
+      {
+        "z": 0.1,
+        "norm": 1.28100634997412e-14
+      }
+    ],
+    "identity_note": "X'(K+TzI)^-1 1 = (X'X/T + zI)^-1 X'1 = author V diag(1/(eig+z))U'mu when K/T eigenvalues are used; l_adj/z is pure roundoff when P>T with full T-dim eigenbasis.",
+    "per_z": [
+      {
+        "z": 1e-10,
+        "maxabs": 2.894277903564557e-06,
+        "meanabs": 8.070518896194366e-07,
+        "fro": 1.2808199451277895e-05,
+        "relative_fro": 4.811401380776402e-08,
+        "corr": 0.9999999999999987
+      },
+      {
+        "z": 1e-09,
+        "maxabs": 2.8894261383527464e-07,
+        "meanabs": 8.060034751936081e-08,
+        "fro": 1.2791481019396127e-06,
+        "relative_fro": 4.8091569395812365e-09,
+        "corr": 1.0
+      },
+      {
+        "z": 1e-08,
+        "maxabs": 2.842445567807772e-08,
+        "meanabs": 7.958388317270852e-09,
+        "fro": 1.262979792130726e-07,
+        "relative_fro": 4.78786816367681e-10,
+        "corr": 1.0
+      },
+      {
+        "z": 1e-07,
+        "maxabs": 2.4874768911331557e-09,
+        "meanabs": 7.207192102561524e-10,
+        "fro": 1.1412750084415769e-08,
+        "relative_fro": 4.6577212484401234e-11,
+        "corr": 1.0
+      },
+      {
+        "z": 1e-06,
+        "maxabs": 1.5493206717565045e-10,
+        "meanabs": 5.121114879289902e-11,
+        "fro": 7.864800302159705e-10,
+        "relative_fro": 4.781814909487082e-12,
+        "corr": 1.0
+      },
+      {
+        "z": 1e-05,
+        "maxabs": 1.0243805803611394e-11,
+        "meanabs": 2.783690217331757e-12,
+        "fro": 4.425190894524665e-11,
+        "relative_fro": 5.885906342738806e-13,
+        "corr": 0.9999999999999999
+      },
+      {
+        "z": 0.0001,
+        "maxabs": 6.696865284538944e-13,
+        "meanabs": 1.3686437604158474e-13,
+        "fro": 2.224388996193031e-12,
+        "relative_fro": 7.337722767797517e-14,
+        "corr": 1.0
+      },
+      {
+        "z": 0.001,
+        "maxabs": 2.020605904817785e-14,
+        "meanabs": 4.371333088532537e-15,
+        "fro": 6.937034241476229e-14,
+        "relative_fro": 5.801893104153223e-15,
+        "corr": 1.0
+      },
+      {
+        "z": 0.01,
+        "maxabs": 7.216449660063518e-16,
+        "meanabs": 2.1466919563664627e-16,
+        "fro": 3.3395561455362934e-15,
+        "relative_fro": 1.112768187529535e-15,
+        "corr": 1.0
+      },
+      {
+        "z": 0.1,
+        "maxabs": 9.71445146547012e-17,
+        "meanabs": 2.5212129440731138e-17,
+        "fro": 4.0028671618384893e-16,
+        "relative_fro": 9.691955516790605e-16,
+        "corr": 0.9999999999999999
+      }
+    ]
+  },
+  "trace_scaling": {
+    "scale_E06_current_lamK": 0.9453174175078298,
+    "scale_consistent_lamK_over_T": 1.1381860434397044,
+    "scale_consistent_eig_auth_same_W": 1.138186043439704,
+    "scale_author_own_W": 1.138888275988054,
+    "scale_ridge_E06_current": 1.0010382396090174,
+    "scale_ridge_consistent": 1.124588753082081,
+    "ratio_current_over_consistent": 0.8305473634617697,
+    "trace_norm_formula_E06": "scale = sum(1/inv_eigs)/sum(eigenvalues), inv_eigs = W @ 1/(eig+z)",
+    "trace_norm_formula_author": "get_upsa_weights: scale = sum(1/inv_eigs)/sum(eigenvalues), eig = eig(XX'/T)",
+    "trace_norm_formula_paper": "scale = sum(1/inv_eigs)/sum(eigen_lambda) (trace normalisation to unit total weight)"
+  },
+  "weights": {
+    "pi_E06_current_lamK_vs_author": {
+      "maxabs": 1.6299522638713144,
+      "meanabs": 0.3842027374404922,
+      "fro": 6.189582652154602,
+      "relative_fro": 0.17500931382231227,
+      "corr": 0.9999324877301589
+    },
+    "pi_E06_consistent_scale_vs_author": {
+      "maxabs": 0.12328097928759973,
+      "meanabs": 0.028331712873941935,
+      "fro": 0.45523600553210736,
+      "relative_fro": 0.01287171452951695,
+      "corr": 0.9999324877301589
+    },
+    "pi_E06_current_vs_consistent": {
+      "maxabs": 1.6050071364370053,
+      "meanabs": 0.36813220864685064,
+      "fro": 5.955115219893669,
+      "relative_fro": 0.16945263653823028,
+      "corr": 1.0
+    },
+    "pi_author_recomputed_vs_getter": {
+      "maxabs": 0.0,
+      "meanabs": 0.0,
+      "fro": 0.0,
+      "relative_fro": 0.0,
+      "corr": 1.0
+    },
+    "pi_effport_ind_vs_author_same_W": {
+      "maxabs": 1.9946717799701474e-07,
+      "meanabs": 5.5620150842349106e-08,
+      "fro": 8.827112580357724e-07,
+      "relative_fro": 2.4958498860709926e-08,
+      "corr": 0.9999999999999997
+    },
+    "W_B0_vs_W_author_fro": 0.011891286379831216,
+    "best_z_B0": 6,
+    "best_z_author": 6,
+    "qp_status_B0": "optimal",
+    "qp_status_author_form": "optimal",
+    "sum_pi_E06_current": 99.65077463367183,
+    "sum_pi_consistent": 119.98204920947747,
+    "sum_pi_author": 120.21237164532779
+  },
+  "impact": {
+    "first_window_scale_ratio_current_over_consistent": 0.8305473634617697,
+    "first_window_return_ratio_if_only_scale_changed": 0.8305473634617697,
+    "note": "If lam(XX') is used in asset_weights while z is NOT scaled by T, the effective shrinkage z_eff = z/T -> far smaller than intended; scale changes by the reported ratio. A corrected full rerun with new run_id is produced in taskA_rerun below."
+  }
+}

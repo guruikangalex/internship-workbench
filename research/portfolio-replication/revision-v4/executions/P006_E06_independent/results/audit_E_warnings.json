@@ -1,0 +1,550 @@
+{
+  "run_id": "P006-E06-R4-AUDIT-001",
+  "environment": {
+    "run_id": "P006-E06-R4-AUDIT-001",
+    "python": "3.9.6",
+    "numpy": "2.0.2",
+    "scipy": "1.13.1",
+    "cvxopt": "1.3.3",
+    "pandas": "2.3.3",
+    "package_sha256": {
+      "upsa.py": "56a3a00b767bce1be65db80ecf61797c8fc5bffa1e73deecc864a01e33792355",
+      "portfolios.py": "daf2da924a2aa7223fef57d0d943d4242f1d22afaa2043351df0101cbee50a8d",
+      "factors_main.csv": "7b1f96c86d80baa5e4458f1883e3f4b930dcf6367c914e0138a2182c499f8356"
+    }
+  },
+  "input_data_finite": {
+    "factors_main_finite": true,
+    "n_nan": 0,
+    "n_inf": 0,
+    "shape": [
+      614,
+      153
+    ]
+  },
+  "warning_sites_reproduced": {
+    "K_eq_XXt": {
+      "warnings": [
+        {
+          "category": "RuntimeWarning",
+          "message": "divide by zero encountered in matmul",
+          "lineno": 48,
+          "filename": "taskE_warnings.py"
+        },
+        {
+          "category": "RuntimeWarning",
+          "message": "overflow encountered in matmul",
+          "lineno": 48,
+          "filename": "taskE_warnings.py"
+        },
+        {
+          "category": "RuntimeWarning",
+          "message": "invalid value encountered in matmul",
+          "lineno": 48,
+          "filename": "taskE_warnings.py"
+        }
+      ],
+      "n_warnings": 3,
+      "all_outputs_finite": true,
+      "error": null
+    },
+    "prepare_full_basis": {
+      "warnings": [
+        {
+          "category": "RuntimeWarning",
+          "message": "divide by zero encountered in matmul",
+          "lineno": 67,
+          "filename": "independent_upsa.py"
+        },
+        {
+          "category": "RuntimeWarning",
+          "message": "overflow encountered in matmul",
+          "lineno": 67,
+          "filename": "independent_upsa.py"
+        },
+        {
+          "category": "RuntimeWarning",
+          "message": "invalid value encountered in matmul",
+          "lineno": 67,
+          "filename": "independent_upsa.py"
+        },
+        {
+          "category": "RuntimeWarning",
+          "message": "divide by zero encountered in matmul",
+          "lineno": 79,
+          "filename": "independent_upsa.py"
+        },
+        {
+          "category": "RuntimeWarning",
+          "message": "overflow encountered in matmul",
+          "lineno": 79,
+          "filename": "independent_upsa.py"
+        },
+        {
+          "category": "RuntimeWarning",
+          "message": "invalid value encountered in matmul",
+          "lineno": 79,
+          "filename": "independent_upsa.py"
+        },
+        {
+          "category": "RuntimeWarning",
+          "message": "divide by zero encountered in matmul",
+          "lineno": 81,
+          "filename": "independent_upsa.py"
+        },
+        {
+          "category": "RuntimeWarning",
+          "message": "overflow encountered in matmul",
+          "lineno": 81,
+          "filename": "independent_upsa.py"
+        },
+        {
+          "category": "RuntimeWarning",
+          "message": "invalid value encountered in matmul",
+          "lineno": 81,
+          "filename": "independent_upsa.py"
+        },
+        {
+          "category": "RuntimeWarning",
+          "message": "divide by zero encountered in matmul",
+          "lineno": 82,
+          "filename": "independent_upsa.py"
+        },
+        {
+          "category": "RuntimeWarning",
+          "message": "overflow encountered in matmul",
+          "lineno": 82,
+          "filename": "independent_upsa.py"
+        },
+        {
+          "category": "RuntimeWarning",
+          "message": "invalid value encountered in matmul",
+          "lineno": 82,
+          "filename": "independent_upsa.py"
+        }
+      ],
+      "n_warnings": 12,
+      "all_outputs_finite": true,
+      "error": null
+    },
+    "stable_loo": {
+      "warnings": [
+        {
+          "category": "RuntimeWarning",
+          "message": "divide by zero encountered in matmul",
+          "lineno": 67,
+          "filename": "independent_upsa.py"
+        },
+        {
+          "category": "RuntimeWarning",
+          "message": "overflow encountered in matmul",
+          "lineno": 67,
+          "filename": "independent_upsa.py"
+        },
+        {
+          "category": "RuntimeWarning",
+          "message": "invalid value encountered in matmul",
+          "lineno": 67,
+          "filename": "independent_upsa.py"
+        },
+        {
+          "category": "RuntimeWarning",
+          "message": "divide by zero encountered in matmul",
+          "lineno": 79,
+          "filename": "independent_upsa.py"
+        },
+        {
+          "category": "RuntimeWarning",
+          "message": "overflow encountered in matmul",
+          "lineno": 79,
+          "filename": "independent_upsa.py"
+        },
+        {
+          "category": "RuntimeWarning",
+          "message": "invalid value encountered in matmul",
+          "lineno": 79,
+          "filename": "independent_upsa.py"
+        },
+        {
+          "category": "RuntimeWarning",
+          "message": "divide by zero encountered in matmul",
+          "lineno": 81,
+          "filename": "independent_upsa.py"
+        },
+        {
+          "category": "RuntimeWarning",
+          "message": "overflow encountered in matmul",
+          "lineno": 81,
+          "filename": "independent_upsa.py"
+        },
+        {
+          "category": "RuntimeWarning",
+          "message": "invalid value encountered in matmul",
+          "lineno": 81,
+          "filename": "independent_upsa.py"
+        },
+        {
+          "category": "RuntimeWarning",
+          "message": "divide by zero encountered in matmul",
+          "lineno": 82,
+          "filename": "independent_upsa.py"
+        },
+        {
+          "category": "RuntimeWarning",
+          "message": "overflow encountered in matmul",
+          "lineno": 82,
+          "filename": "independent_upsa.py"
+        },
+        {
+          "category": "RuntimeWarning",
+          "message": "invalid value encountered in matmul",
+          "lineno": 82,
+          "filename": "independent_upsa.py"
+        },
+        {
+          "category": "RuntimeWarning",
+          "message": "divide by zero encountered in matmul",
+          "lineno": 92,
+          "filename": "independent_upsa.py"
+        },
+        {
+          "category": "RuntimeWarning",
+          "message": "overflow encountered in matmul",
+          "lineno": 92,
+          "filename": "independent_upsa.py"
+        },
+        {
+          "category": "RuntimeWarning",
+          "message": "invalid value encountered in matmul",
+          "lineno": 92,
+          "filename": "independent_upsa.py"
+        },
+        {
+          "category": "RuntimeWarning",
+          "message": "divide by zero encountered in matmul",
+          "lineno": 93,
+          "filename": "independent_upsa.py"
+        },
+        {
+          "category": "RuntimeWarning",
+          "message": "overflow encountered in matmul",
+          "lineno": 93,
+          "filename": "independent_upsa.py"
+        },
+        {
+          "category": "RuntimeWarning",
+          "message": "invalid value encountered in matmul",
+          "lineno": 93,
+          "filename": "independent_upsa.py"
+        }
+      ],
+      "n_warnings": 18,
+      "all_outputs_finite": true,
+      "error": null
+    },
+    "QP_inputs_uQ": {
+      "warnings": [
+        {
+          "category": "RuntimeWarning",
+          "message": "divide by zero encountered in matmul",
+          "lineno": 67,
+          "filename": "independent_upsa.py"
+        },
+        {
+          "category": "RuntimeWarning",
+          "message": "overflow encountered in matmul",
+          "lineno": 67,
+          "filename": "independent_upsa.py"
+        },
+        {
+          "category": "RuntimeWarning",
+          "message": "invalid value encountered in matmul",
+          "lineno": 67,
+          "filename": "independent_upsa.py"
+        },
+        {
+          "category": "RuntimeWarning",
+          "message": "divide by zero encountered in matmul",
+          "lineno": 79,
+          "filename": "independent_upsa.py"
+        },
+        {
+          "category": "RuntimeWarning",
+          "message": "overflow encountered in matmul",
+          "lineno": 79,
+          "filename": "independent_upsa.py"
+        },
+        {
+          "category": "RuntimeWarning",
+          "message": "invalid value encountered in matmul",
+          "lineno": 79,
+          "filename": "independent_upsa.py"
+        },
+        {
+          "category": "RuntimeWarning",
+          "message": "divide by zero encountered in matmul",
+          "lineno": 81,
+          "filename": "independent_upsa.py"
+        },
+        {
+          "category": "RuntimeWarning",
+          "message": "overflow encountered in matmul",
+          "lineno": 81,
+          "filename": "independent_upsa.py"
+        },
+        {
+          "category": "RuntimeWarning",
+          "message": "invalid value encountered in matmul",
+          "lineno": 81,
+          "filename": "independent_upsa.py"
+        },
+        {
+          "category": "RuntimeWarning",
+          "message": "divide by zero encountered in matmul",
+          "lineno": 82,
+          "filename": "independent_upsa.py"
+        },
+        {
+          "category": "RuntimeWarning",
+          "message": "overflow encountered in matmul",
+          "lineno": 82,
+          "filename": "independent_upsa.py"
+        },
+        {
+          "category": "RuntimeWarning",
+          "message": "invalid value encountered in matmul",
+          "lineno": 82,
+          "filename": "independent_upsa.py"
+        },
+        {
+          "category": "RuntimeWarning",
+          "message": "divide by zero encountered in matmul",
+          "lineno": 92,
+          "filename": "independent_upsa.py"
+        },
+        {
+          "category": "RuntimeWarning",
+          "message": "overflow encountered in matmul",
+          "lineno": 92,
+          "filename": "independent_upsa.py"
+        },
+        {
+          "category": "RuntimeWarning",
+          "message": "invalid value encountered in matmul",
+          "lineno": 92,
+          "filename": "independent_upsa.py"
+        },
+        {
+          "category": "RuntimeWarning",
+          "message": "divide by zero encountered in matmul",
+          "lineno": 93,
+          "filename": "independent_upsa.py"
+        },
+        {
+          "category": "RuntimeWarning",
+          "message": "overflow encountered in matmul",
+          "lineno": 93,
+          "filename": "independent_upsa.py"
+        },
+        {
+          "category": "RuntimeWarning",
+          "message": "invalid value encountered in matmul",
+          "lineno": 93,
+          "filename": "independent_upsa.py"
+        },
+        {
+          "category": "RuntimeWarning",
+          "message": "divide by zero encountered in matmul",
+          "lineno": 60,
+          "filename": "taskE_warnings.py"
+        },
+        {
+          "category": "RuntimeWarning",
+          "message": "overflow encountered in matmul",
+          "lineno": 60,
+          "filename": "taskE_warnings.py"
+        },
+        {
+          "category": "RuntimeWarning",
+          "message": "invalid value encountered in matmul",
+          "lineno": 60,
+          "filename": "taskE_warnings.py"
+        }
+      ],
+      "n_warnings": 21,
+      "all_outputs_finite": true,
+      "error": null
+    }
+  },
+  "full_scan": {
+    "n_windows_scanned": 494,
+    "n_numpy_warnings_emitted": 14820,
+    "windows_with_any_nonfinite_intermediate": [],
+    "windows_with_FloatingPointError": [],
+    "errstate_divide_over_invalid_raise": "FloatingPointError('divide by zero encountered in matmul')",
+    "conclusion": "The divide/overflow/invalid matmul RuntimeWarnings are emitted at EVERY matmul site but all intermediate arrays and all final outputs are finite; no actual FloatingPointError occurs. This points to a BLAS/numpy warning-emission quirk in this environment, NOT corrupted numbers. Scope: all 494 windows, every matmul site; no specific row/column/month is selectively affected."
+  },
+  "run_log_warning_counts": {
+    "run_full.log": {
+      "n_runtime_warnings": 30,
+      "by_site": {
+        "independent_upsa.py:67:divide": 1,
+        "independent_upsa.py:67:overflow": 1,
+        "independent_upsa.py:67:invalid": 1,
+        "independent_upsa.py:79:divide": 1,
+        "independent_upsa.py:79:overflow": 1,
+        "independent_upsa.py:79:invalid": 1,
+        "independent_upsa.py:81:divide": 1,
+        "independent_upsa.py:81:overflow": 1,
+        "independent_upsa.py:81:invalid": 1,
+        "independent_upsa.py:82:divide": 1,
+        "independent_upsa.py:82:overflow": 1,
+        "independent_upsa.py:82:invalid": 1,
+        "independent_upsa.py:92:divide": 1,
+        "independent_upsa.py:92:overflow": 1,
+        "independent_upsa.py:92:invalid": 1,
+        "independent_upsa.py:93:divide": 1,
+        "independent_upsa.py:93:overflow": 1,
+        "independent_upsa.py:93:invalid": 1,
+        "independent_upsa.py:326:divide": 1,
+        "independent_upsa.py:326:overflow": 1,
+        "independent_upsa.py:326:invalid": 1,
+        "independent_upsa.py:327:divide": 1,
+        "independent_upsa.py:327:overflow": 1,
+        "independent_upsa.py:327:invalid": 1,
+        "independent_upsa.py:170:divide": 1,
+        "independent_upsa.py:170:overflow": 1,
+        "independent_upsa.py:170:invalid": 1,
+        "independent_upsa.py:172:divide": 1,
+        "independent_upsa.py:172:overflow": 1,
+        "independent_upsa.py:172:invalid": 1
+      }
+    },
+    "run_first_window.log": {
+      "n_runtime_warnings": 69,
+      "by_site": {
+        "independent_upsa.py:67:divide": 1,
+        "independent_upsa.py:67:overflow": 1,
+        "independent_upsa.py:67:invalid": 1,
+        "independent_upsa.py:79:divide": 1,
+        "independent_upsa.py:79:overflow": 1,
+        "independent_upsa.py:79:invalid": 1,
+        "independent_upsa.py:81:divide": 1,
+        "independent_upsa.py:81:overflow": 1,
+        "independent_upsa.py:81:invalid": 1,
+        "independent_upsa.py:82:divide": 1,
+        "independent_upsa.py:82:overflow": 1,
+        "independent_upsa.py:82:invalid": 1,
+        "independent_upsa.py:92:divide": 1,
+        "independent_upsa.py:92:overflow": 1,
+        "independent_upsa.py:92:invalid": 1,
+        "independent_upsa.py:93:divide": 1,
+        "independent_upsa.py:93:overflow": 1,
+        "independent_upsa.py:93:invalid": 1,
+        "independent_upsa.py:107:divide": 1,
+        "independent_upsa.py:107:overflow": 1,
+        "independent_upsa.py:107:invalid": 1,
+        "independent_upsa.py:224:divide": 1,
+        "independent_upsa.py:224:overflow": 1,
+        "independent_upsa.py:224:invalid": 1,
+        "independent_upsa.py:225:divide": 1,
+        "independent_upsa.py:225:overflow": 1,
+        "independent_upsa.py:225:invalid": 1,
+        "independent_upsa.py:170:divide": 1,
+        "independent_upsa.py:170:overflow": 1,
+        "independent_upsa.py:170:invalid": 1,
+        "independent_upsa.py:172:divide": 1,
+        "independent_upsa.py:172:overflow": 1,
+        "independent_upsa.py:172:invalid": 1,
+        "upsa.py:137:divide": 1,
+        "upsa.py:137:overflow": 1,
+        "upsa.py:137:invalid": 1,
+        "upsa.py:142:divide": 1,
+        "upsa.py:142:overflow": 1,
+        "upsa.py:142:invalid": 1,
+        "upsa.py:98:divide": 1,
+        "upsa.py:98:overflow": 1,
+        "upsa.py:98:invalid": 1,
+        "upsa.py:100:divide": 1,
+        "upsa.py:100:overflow": 1,
+        "upsa.py:100:invalid": 1,
+        "upsa.py:106:divide": 1,
+        "upsa.py:106:overflow": 1,
+        "upsa.py:106:invalid": 1,
+        "upsa.py:107:divide": 1,
+        "upsa.py:107:overflow": 1,
+        "upsa.py:107:invalid": 1,
+        "upsa.py:110:divide": 1,
+        "upsa.py:110:overflow": 1,
+        "upsa.py:110:invalid": 1,
+        "upsa.py:115:divide": 1,
+        "upsa.py:115:overflow": 1,
+        "upsa.py:115:invalid": 1,
+        "upsa.py:49:divide": 1,
+        "upsa.py:49:overflow": 1,
+        "upsa.py:49:invalid": 1,
+        "upsa.py:52:divide": 1,
+        "upsa.py:52:overflow": 1,
+        "upsa.py:52:invalid": 1,
+        "independent_upsa.py:252:divide": 1,
+        "independent_upsa.py:252:overflow": 1,
+        "independent_upsa.py:252:invalid": 1,
+        "independent_upsa.py:276:divide": 1,
+        "independent_upsa.py:276:overflow": 1,
+        "independent_upsa.py:276:invalid": 1
+      }
+    },
+    "run_metrics.log": {
+      "n_runtime_warnings": 3,
+      "by_site": {
+        "independent_upsa.py:418:divide": 1,
+        "independent_upsa.py:418:overflow": 1,
+        "independent_upsa.py:418:invalid": 1
+      }
+    },
+    "run_compare.log": {
+      "n_runtime_warnings": 0,
+      "by_site": {}
+    }
+  },
+  "control_random_array": {
+    "(120, 153)": {
+      "n_warnings": 3,
+      "warning_messages": [
+        "divide by zero encountered in matmul",
+        "overflow encountered in matmul",
+        "invalid value encountered in matmul"
+      ],
+      "output_finite": true
+    },
+    "(4, 4)": {
+      "n_warnings": 0,
+      "warning_messages": [],
+      "output_finite": true
+    },
+    "errstate_raise_on_random": null
+  },
+  "dependency_environment": {
+    "requirements_txt": [
+      "numpy==2.0.2",
+      "scipy==1.13.1",
+      "pandas==2.3.3",
+      "cvxopt==1.3.3",
+      "statsmodels==0.14.6",
+      "python==3.9.6"
+    ],
+    "problem_in_requirements": "requirements.txt pins 'python==3.9.6' which is NOT a pip package; `pip install -r requirements.txt` will attempt to fetch a non-existent 'python' distribution. Direct pip deps should be numpy/scipy/pandas/cvxopt/statsmodels only; Python version belongs in environment metadata.",
+    "pip_version": "pip 26.0.1 from /Users/guruikang/WorkBuddy/2026-11-20-15-03-43/CO-REP-20261120-02/execution/env_py396/lib/python3.9/site-packages/pip (python 3.9)",
+    "python_version": "3.9.6",
+    "python_executable": "/Users/guruikang/WorkBuddy/2026-11-20-15-03-43/CO-REP-20261120-02/execution/env_py396/bin/python",
+    "installed_direct_versions": {
+      "numpy": "2.0.2",
+      "scipy": "1.13.1",
+      "pandas": "2.3.3",
+      "cvxopt": "1.3.3",
+      "statsmodels": "0.14.6"
+    },
+    "environment_json_has_pip_version": false,
+    "recommendation": "Remove 'python==3.9.6' from requirements.txt (keep in environment.json); add pip version to environment.json. Transitive deps not pinned (acceptable for a frozen env captured by full pip freeze)."
+  }
+}

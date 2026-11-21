@@ -1,0 +1,17 @@
+# P008-E03 independent workbook recompute (run_id R3-P008-003)
+cd /Users/guruikang/WorkBuddy/2026-11-20-15-03-43/internship-workbench/research/portfolio-replication/revision-v3/executions/P008_E03
+
+# 1) Fresh independent download from AQR URL (HTTP 200, 215209 bytes, hash verified):
+curl -sSL --max-time 90 -o downloaded_from_aqr.xlsx 'https://www.aqr.com/-/media/AQR/Documents/Insights/Data-Sets/ESG_efficient_frontier_portfolios_vF.xlsx?sc_lang=en' -w 'HTTP=%{http_code} SIZE=%{size_download}\n' 2> download_stderr.txt
+shasum -a 256 downloaded_from_aqr.xlsx
+# => 153423fd6356e41423271ddcdfe0280508e69e73273e023171aaf83e6cf8b676
+
+# 2) Recompute Table 4 Panel A/G and Panel B/G average excess returns:
+python3 source.py > run_stdout.log 2> run_stderr.log
+echo $?
+
+# 3) Hash manifest:
+shasum -a 256 config.json source.py environment.json downloaded_from_aqr.xlsx results.json target_comparison.csv run_stdout.log run_stderr.log download_stderr.txt > sha256sums.txt
+
+# Method (tolerance +/-0.005 pp, supplier U=G5-G1, mean*12*100, no RF, no filtering)
+# was frozen in config.json at 2026-11-21T07:35:00Z before outputs were inspected.

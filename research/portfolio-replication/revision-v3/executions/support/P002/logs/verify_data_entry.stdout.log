@@ -1,0 +1,71 @@
+{
+  "batch": "CO-REP-20261120-02",
+  "paper": "P002",
+  "task": "public-entry data availability preflight for D01 usa.csv / D02 usa_dsf.csv / D03 world_ret_monthly.csv",
+  "rule": "No fabricated or substituted panel is written. Status enums: FOUND / NOT_FOUND / ACCESSED / ACCESSED_CODE_ONLY / SAMPLE_ACCESSED.",
+  "exact_files": {
+    "usa.csv": {
+      "status": "NOT_FOUND",
+      "hits": []
+    },
+    "usa_dsf.csv": {
+      "status": "NOT_FOUND",
+      "hits": []
+    },
+    "world_ret_monthly.csv": {
+      "status": "NOT_FOUND",
+      "hits": []
+    }
+  },
+  "public_endpoints": {
+    "ken_french_ff3_monthly": {
+      "source": "Kenneth French Data Library",
+      "url": "https://mba.tuck.dartmouth.edu/pages/faculty/ken.french/ftp/F-F_Research_Data_Factors_CSV.zip",
+      "http_status_observed": 200,
+      "zip_bytes": 13078,
+      "zip_sha256": "b03d39e4bb253dda0f14893db3b78e64b40b8d6549a0fc0fd4111dae84c98618",
+      "status": "ACCESSED",
+      "member": "F-F_Research_Data_Factors.csv",
+      "member_sha256": "a3894d74d553cab812eabbe706bdbf443c97eb20b24b05e3e5f3ce47e46b90bb",
+      "member_rows": 1312,
+      "header_row_index": 4,
+      "header": [
+        "",
+        "Mkt-RF",
+        "SMB",
+        "HML",
+        "RF"
+      ],
+      "monthly_n": 1203,
+      "first_month": "192607",
+      "last_month": "202609",
+      "vintage_note": "This file was created using the 202609 CRSP database.",
+      "fits": "D07 ff3_m.csv (RF only) as APPROXIMATE_VALIDATION proxy; NOT a substitute for D01-D03 stock panel"
+    },
+    "replication_crisis_github": {
+      "source": "bkelly-lab/ReplicationCrisis (GitHub, public code repo)",
+      "url": "https://github.com/bkelly-lab/ReplicationCrisis",
+      "commit": "67174c7f170bf8b952b3c86876f187fd9970b5ba",
+      "status": "ACCESSED_CODE_ONLY",
+      "exact_stock_panels_present": {
+        "usa.csv": [],
+        "usa_dsf.csv": [],
+        "world_ret_monthly.csv": []
+      },
+      "note": "README: repo no longer maintained; stock returns & firm characteristics are on WRDS Global Factor Data (entitlement required); only long-short factor returns are on public Dropbox. No usa.csv/usa_dsf.csv/world_ret_monthly.csv in repo."
+    },
+    "jkp_website": {
+      "source": "JKP factor website",
+      "url": "https://www.jkpfactor.com/data/",
+      "status": "NOT_FOUND",
+      "observation": "curl -L --max-time 60 -> curl (35) OpenSSL SSL_connect: SSL_ERROR_SYSCALL; HTTP 000, 0 bytes. WebFetch also failed. No public URL exposed for a US 115-characteristic stock-level panel, daily stock returns, or world monthly returns. Published JKP data requires WRDS Global Factor Data entitlement."
+    }
+  },
+  "author_readme_provenance": {
+    "usa.csv": "WRDS (Jensen Kelly Pedersen 2023 replication data); filter excntry=='USA' -> ENTITLEMENT_REQUIRED",
+    "usa_dsf.csv": "generate via ReplicationCrisis code from WRDS, or email author -> ENTITLEMENT_REQUIRED",
+    "world_ret_monthly.csv": "generate via ReplicationCrisis code from WRDS, or email author -> ENTITLEMENT_REQUIRED",
+    "source": "README.md of author repo commit 13d836b5187cbfa69730dd256d8eb767e65ca21f, section 'Data'"
+  },
+  "verdict": "D01-D03 NOT_FOUND via public endpoints; WRDS/author entitlement required. Ken French FF3 monthly accessed only as APPROXIMATE_VALIDATION proxy for D07 (RF), not a stock-level panel."
+}

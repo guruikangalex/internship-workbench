@@ -1,0 +1,8 @@
+DGP: {'function': 'e2edro.DataLoad.synthetic_exp', 'seed': 123, 'X_train_shape': [840, 5], 'Y_train_shape': [840, 10], 'first_window_x_shape': [101, 5], 'first_window_y_shape': [100, 10], 'first_window_y_perf_shape': [14, 10], 'note': 'perf_period=13 but SlidingWindow uses index+n_obs : index+n_obs+perf_period+1 => 14 forward realizations (author snapshot; not silently changed)', 'n_windows_total': 727}
+nom_linear status PASS grads_finite True z_sum 1.0000000001020057 loss 0.024631233639372523
+dr_linear status PASS grads_finite True z_sum 1.0000000009618861 loss -0.25706529880017365
+nom_2layer status PASS grads_finite True z_sum 1.0000000000657385 loss -0.22933571949187562
+dr_2layer status PASS grads_finite True z_sum 1.0000000000346299 loss -0.20167533963172912
+nom_3layer status PASS grads_finite True z_sum 1.0000000003363034 loss -0.26040109032545755
+dr_3layer status PASS grads_finite True z_sum 1.0000000009475853 loss -0.22979522834105431
+OVERALL PASS

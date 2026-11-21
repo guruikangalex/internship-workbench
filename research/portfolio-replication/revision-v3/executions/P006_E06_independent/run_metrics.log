@@ -1,0 +1,93 @@
+/Users/guruikang/WorkBuddy/2026-11-20-15-03-43/internship-workbench/research/portfolio-replication/revision-v3/executions/P006_E06_independent/independent_upsa.py:418: RuntimeWarning: divide by zero encountered in matmul
+  ff5_ret = ff5 @ bw
+/Users/guruikang/WorkBuddy/2026-11-20-15-03-43/internship-workbench/research/portfolio-replication/revision-v3/executions/P006_E06_independent/independent_upsa.py:418: RuntimeWarning: overflow encountered in matmul
+  ff5_ret = ff5 @ bw
+/Users/guruikang/WorkBuddy/2026-11-20-15-03-43/internship-workbench/research/portfolio-replication/revision-v3/executions/P006_E06_independent/independent_upsa.py:418: RuntimeWarning: invalid value encountered in matmul
+  ff5_ret = ff5 @ bw
+[metrics] {
+  "n_oos": 494,
+  "period": [
+    "1981-11-30",
+    "2022-12-31"
+  ],
+  "strategy": {
+    "B0": {
+      "sharpe": 1.915168630926592,
+      "mean_monthly": 0.3309839215166794,
+      "std_monthly": 0.5986741421071784,
+      "alpha_vs_ridge_pp": 5.330735302200754,
+      "alpha_vs_ridge_hac5_t": 4.119616597006273,
+      "alpha_vs_CAPM_pp": 19.691057908654212,
+      "alpha_vs_FF5_pp": 17.840106810059275,
+      "turnover_pct": 12.740481915644205,
+      "pricing_R2": {
+        "All": 0.6663589452160201,
+        "Skewness": 0.6622884834987832,
+        "Profitability": 0.5578210623186226,
+        "Low Risk": 0.7335514773640287,
+        "Value": 0.7347861347448752,
+        "Investment": 0.6670326845276999,
+        "Seasonality": 0.579610193718517,
+        "Debt Issuance": 0.4878679024207764,
+        "Size": 0.71114818775817,
+        "Accruals": 0.47127141726248756,
+        "Low Leverage": 0.2864289368307267,
+        "Profit Growth": 0.603945061602498,
+        "Momentum": 0.15719931284544397,
+        "Quality": -0.3456888992352112
+      }
+    },
+    "B1": {
+      "sharpe": 1.9156091184155255,
+      "mean_monthly": 0.33053876567937374,
+      "std_monthly": 0.5977314792710157,
+      "alpha_vs_ridge_pp": 5.340836320703262,
+      "alpha_vs_ridge_hac5_t": 4.122129521117965,
+      "alpha_vs_CAPM_pp": 19.695418003370275,
+      "alpha_vs_FF5_pp": 17.84317365429662,
+      "turnover_pct": 12.757831069540176,
+      "pricing_R2": {
+        "All": 0.6670221523157854,
+        "Skewness": 0.6621616849746546,
+        "Profitability": 0.5584972055379015,
+        "Low Risk": 0.7335524275963772,
+        "Value": 0.735051200438518,
+        "Investment": 0.6676952184094594,
+        "Seasonality": 0.579792329747991,
+        "Debt Issuance": 0.48925619380884,
+        "Size": 0.7113370090677011,
+        "Accruals": 0.4729588872316234,
+        "Low Leverage": 0.2877621726503201,
+        "Profit Growth": 0.6056278011742496,
+        "Momentum": 0.16393767923911717,
+        "Quality": -0.34329967516591653
+      }
+    }
+  },
+  "benchmark": {
+    "CAPM_sharpe": 0.5390698636644766,
+    "FF5_sharpe": 1.2248757844162328,
+    "Ridge_B0_sharpe": 1.5126126173635634,
+    "Ridge_B1_sharpe": 1.5120939446115673
+  },
+  "definitions": {
+    "sharpe": "sqrt(12)*mean/std (monthly)",
+    "alpha": "UPSA vs single rival strategy, both scaled to 10% annual vol, OLS const+HAC(5), const*12*100 pp",
+    "pricing_R2": "src/pricing.py SDF scaling; theme pooled std, All per-column std",
+    "turnover": "src/metrics.py time-series turnover in percent, first month 0"
+  },
+  "B0_vs_B1": {
+    "mean_monthly_diff": 0.0004451558373056287,
+    "std_monthly_diff": 0.00164139873970798,
+    "maxabs_monthly_diff": 0.008737840096661564,
+    "corr": 0.9999974771624106,
+    "sharpe_B0": 1.915168630926592,
+    "sharpe_B1": 1.9156091184155255,
+    "sharpe_diff": -0.0004404874889334387,
+    "alpha_vs_ridge_pp_B0": 5.330735302200754,
+    "alpha_vs_ridge_pp_B1": 5.340836320703262,
+    "turnover_B0": 12.740481915644205,
+    "turnover_B1": 12.757831069540176
+  }
+}
+[metrics] WROTE results/metrics.json

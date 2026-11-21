@@ -1,0 +1,55 @@
+{
+  "config_version": "R3-P008-E03-config-v1",
+  "run_id": "R3-P008-003",
+  "paper_id": "P008",
+  "experiment_id": "P008-E03",
+  "canonical_version_id": "JFE2021_VOR",
+  "reviewed_source_commit": "104aecfcad4c308e1044a3d15483fe2320619597",
+  "execution_commit": null,
+  "approval_record_id": "REVIEW-104AECF-20261121",
+  "execution_authorized": true,
+  "reproduction_type": "INDEPENDENT_FAITHFUL",
+  "experiment_purpose": "AUTHOR_WORKBOOK_INPUT_LAYER_TABLE4_TWO_MEANS",
+  "performed_by": "general-purpose-3",
+  "tolerance_frozen_at_utc": "2026-11-21T07:35:00Z",
+  "tolerance_frozen_before_result_inspection": true,
+  "tolerance_source": "revision-v2/work/P008/protocol.md R10/R11: compare to published Table 4 cell within +/-0.005 percentage points; annualization/scope frozen before viewing outputs",
+  "tolerances": {
+    "average_excess_return_absolute_pp": 0.005
+  },
+  "approved_result_ids": ["P008-R10", "P008-R11"],
+  "input": {
+    "url": "https://www.aqr.com/-/media/AQR/Documents/Insights/Data-Sets/ESG_efficient_frontier_portfolios_vF.xlsx?sc_lang=en",
+    "expected_sha256": "153423fd6356e41423271ddcdfe0280508e69e73273e023171aaf83e6cf8b676",
+    "expected_size_bytes": 215209,
+    "local_download_path": "downloaded_from_aqr.xlsx",
+    "download_http_code": 200,
+    "download_utc": "2026-11-21T07:35:00Z",
+    "note": "Fresh independent download from the AQR URL during this run; hash matches reviewer evidence file byte-for-byte."
+  },
+  "frozen_method": {
+    "panel_A_input": "Equal-weighted excess returns worksheet, supplier U column labelled G5-G1",
+    "panel_B_input": "Value-weighted excess returns worksheet, supplier U column labelled G5-G1",
+    "date_range": "674 monthly end-of-month dates, 1963-02-28 .. 2019-03-31",
+    "return_unit": "decimal monthly total-return spread; arithmetic mean * 12 * 100; no RF subtraction; no month filtering",
+    "column_choice": "supplier U (G5-G1) used as primary input, not recomputed T-P",
+    "no_secondary_regression": true,
+    "note": "Frozen before outputs were inspected; not retrofitted after seeing the Table 4 comparison."
+  },
+  "published_targets": {
+    "P008-R10": {"cell": "Table 4 Panel A / G / Average excess return", "paper_value_pct": 7.84},
+    "P008-R11": {"cell": "Table 4 Panel B / G / Average excess return", "paper_value_pct": 3.01}
+  },
+  "reviewer_reference": {
+    "reference_kind": "REVIEWER_CALCULATION",
+    "performed_by": "reviewer",
+    "P008-R10_pct": 7.836146824925816,
+    "P008-R11_pct": 3.014250756676558,
+    "note": "Registered as reviewer evidence; this run ALSO performs a fresh independent download and recomputation."
+  },
+  "out_of_scope": [
+    "P008-R12/R13 six-factor alpha and t-stats (P008-E04, NOT_RUN)",
+    "Empirical frontier reconstruction (P008-E02)",
+    "Author code (none located)"
+  ]
+}

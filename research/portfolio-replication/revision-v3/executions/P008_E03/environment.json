@@ -1,0 +1,18 @@
+{
+  "run_id": "R3-P008-003",
+  "captured_utc": "2026-11-21T07:35:00Z",
+  "python_version": "3.13.12",
+  "python_executable": "/Users/guruikang/.workbuddy/binaries/python/versions/3.13.12/bin/python3",
+  "platform": "darwin (macOS, ARM64)",
+  "dependencies": {
+    "stdlib": ["csv", "hashlib", "json", "os", "statistics", "sys", "zipfile", "datetime", "xml.etree.ElementTree"]
+  },
+  "not_available": ["pandas", "openpyxl", "scipy"],
+  "xlsx_parsing": "direct OOXML parsing via zipfile + xml.etree (no third-party spreadsheet library)",
+  "network_used": true,
+  "network_command": "curl -sSL --max-time 90 -o downloaded_from_aqr.xlsx '<AQR URL>' -w 'HTTP=%{http_code} SIZE=%{size_download}'",
+  "http_code": 200,
+  "downloaded_bytes": 215209,
+  "downloaded_sha256": "153423fd6356e41423271ddcdfe0280508e69e73273e023171aaf83e6cf8b676",
+  "notes": "Fresh independent download from the AQR URL; hash matches the reviewer evidence file byte-for-byte. No author code. No regression layer (R12/R13 out of scope)."
+}

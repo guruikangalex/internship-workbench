@@ -1,0 +1,99 @@
+/Users/guruikang/WorkBuddy/2026-11-20-15-03-43/internship-workbench/research/portfolio-replication/revision-v3/executions/P006_E06_independent/independent_upsa.py:67: RuntimeWarning: divide by zero encountered in matmul
+  K = X @ X.T
+/Users/guruikang/WorkBuddy/2026-11-20-15-03-43/internship-workbench/research/portfolio-replication/revision-v3/executions/P006_E06_independent/independent_upsa.py:67: RuntimeWarning: overflow encountered in matmul
+  K = X @ X.T
+/Users/guruikang/WorkBuddy/2026-11-20-15-03-43/internship-workbench/research/portfolio-replication/revision-v3/executions/P006_E06_independent/independent_upsa.py:67: RuntimeWarning: invalid value encountered in matmul
+  K = X @ X.T
+/Users/guruikang/WorkBuddy/2026-11-20-15-03-43/internship-workbench/research/portfolio-replication/revision-v3/executions/P006_E06_independent/independent_upsa.py:79: RuntimeWarning: divide by zero encountered in matmul
+  Vt1 = V.T @ np.ones(T)
+/Users/guruikang/WorkBuddy/2026-11-20-15-03-43/internship-workbench/research/portfolio-replication/revision-v3/executions/P006_E06_independent/independent_upsa.py:79: RuntimeWarning: overflow encountered in matmul
+  Vt1 = V.T @ np.ones(T)
+/Users/guruikang/WorkBuddy/2026-11-20-15-03-43/internship-workbench/research/portfolio-replication/revision-v3/executions/P006_E06_independent/independent_upsa.py:79: RuntimeWarning: invalid value encountered in matmul
+  Vt1 = V.T @ np.ones(T)
+/Users/guruikang/WorkBuddy/2026-11-20-15-03-43/internship-workbench/research/portfolio-replication/revision-v3/executions/P006_E06_independent/independent_upsa.py:81: RuntimeWarning: divide by zero encountered in matmul
+  g1 = V @ (Vt1[:, None] * invT)                 # T x L = (K+T z I)^-1 1
+/Users/guruikang/WorkBuddy/2026-11-20-15-03-43/internship-workbench/research/portfolio-replication/revision-v3/executions/P006_E06_independent/independent_upsa.py:81: RuntimeWarning: overflow encountered in matmul
+  g1 = V @ (Vt1[:, None] * invT)                 # T x L = (K+T z I)^-1 1
+/Users/guruikang/WorkBuddy/2026-11-20-15-03-43/internship-workbench/research/portfolio-replication/revision-v3/executions/P006_E06_independent/independent_upsa.py:81: RuntimeWarning: invalid value encountered in matmul
+  g1 = V @ (Vt1[:, None] * invT)                 # T x L = (K+T z I)^-1 1
+/Users/guruikang/WorkBuddy/2026-11-20-15-03-43/internship-workbench/research/portfolio-replication/revision-v3/executions/P006_E06_independent/independent_upsa.py:82: RuntimeWarning: divide by zero encountered in matmul
+  eff_port = X.T @ g1                            # P x L
+/Users/guruikang/WorkBuddy/2026-11-20-15-03-43/internship-workbench/research/portfolio-replication/revision-v3/executions/P006_E06_independent/independent_upsa.py:82: RuntimeWarning: overflow encountered in matmul
+  eff_port = X.T @ g1                            # P x L
+/Users/guruikang/WorkBuddy/2026-11-20-15-03-43/internship-workbench/research/portfolio-replication/revision-v3/executions/P006_E06_independent/independent_upsa.py:82: RuntimeWarning: invalid value encountered in matmul
+  eff_port = X.T @ g1                            # P x L
+/Users/guruikang/WorkBuddy/2026-11-20-15-03-43/internship-workbench/research/portfolio-replication/revision-v3/executions/P006_E06_independent/independent_upsa.py:92: RuntimeWarning: divide by zero encountered in matmul
+  g1 = V @ (Vt1[:, None] * inv)                  # T x L
+/Users/guruikang/WorkBuddy/2026-11-20-15-03-43/internship-workbench/research/portfolio-replication/revision-v3/executions/P006_E06_independent/independent_upsa.py:92: RuntimeWarning: overflow encountered in matmul
+  g1 = V @ (Vt1[:, None] * inv)                  # T x L
+/Users/guruikang/WorkBuddy/2026-11-20-15-03-43/internship-workbench/research/portfolio-replication/revision-v3/executions/P006_E06_independent/independent_upsa.py:92: RuntimeWarning: invalid value encountered in matmul
+  g1 = V @ (Vt1[:, None] * inv)                  # T x L
+/Users/guruikang/WorkBuddy/2026-11-20-15-03-43/internship-workbench/research/portfolio-replication/revision-v3/executions/P006_E06_independent/independent_upsa.py:93: RuntimeWarning: divide by zero encountered in matmul
+  dg = (V ** 2) @ inv                            # T x L = diag(G_c)
+/Users/guruikang/WorkBuddy/2026-11-20-15-03-43/internship-workbench/research/portfolio-replication/revision-v3/executions/P006_E06_independent/independent_upsa.py:93: RuntimeWarning: overflow encountered in matmul
+  dg = (V ** 2) @ inv                            # T x L = diag(G_c)
+/Users/guruikang/WorkBuddy/2026-11-20-15-03-43/internship-workbench/research/portfolio-replication/revision-v3/executions/P006_E06_independent/independent_upsa.py:93: RuntimeWarning: invalid value encountered in matmul
+  dg = (V ** 2) @ inv                            # T x L = diag(G_c)
+/Users/guruikang/WorkBuddy/2026-11-20-15-03-43/internship-workbench/research/portfolio-replication/revision-v3/executions/P006_E06_independent/independent_upsa.py:326: RuntimeWarning: divide by zero encountered in matmul
+  u0, Q0 = A0.mean(0), A0.T @ A0 / T_WIN
+/Users/guruikang/WorkBuddy/2026-11-20-15-03-43/internship-workbench/research/portfolio-replication/revision-v3/executions/P006_E06_independent/independent_upsa.py:326: RuntimeWarning: overflow encountered in matmul
+  u0, Q0 = A0.mean(0), A0.T @ A0 / T_WIN
+/Users/guruikang/WorkBuddy/2026-11-20-15-03-43/internship-workbench/research/portfolio-replication/revision-v3/executions/P006_E06_independent/independent_upsa.py:326: RuntimeWarning: invalid value encountered in matmul
+  u0, Q0 = A0.mean(0), A0.T @ A0 / T_WIN
+/Users/guruikang/WorkBuddy/2026-11-20-15-03-43/internship-workbench/research/portfolio-replication/revision-v3/executions/P006_E06_independent/independent_upsa.py:327: RuntimeWarning: divide by zero encountered in matmul
+  u1, Q1 = A1.mean(0), A1.T @ A1 / T_WIN
+/Users/guruikang/WorkBuddy/2026-11-20-15-03-43/internship-workbench/research/portfolio-replication/revision-v3/executions/P006_E06_independent/independent_upsa.py:327: RuntimeWarning: overflow encountered in matmul
+  u1, Q1 = A1.mean(0), A1.T @ A1 / T_WIN
+/Users/guruikang/WorkBuddy/2026-11-20-15-03-43/internship-workbench/research/portfolio-replication/revision-v3/executions/P006_E06_independent/independent_upsa.py:327: RuntimeWarning: invalid value encountered in matmul
+  u1, Q1 = A1.mean(0), A1.T @ A1 / T_WIN
+/Users/guruikang/WorkBuddy/2026-11-20-15-03-43/internship-workbench/research/portfolio-replication/revision-v3/executions/P006_E06_independent/independent_upsa.py:170: RuntimeWarning: divide by zero encountered in matmul
+  inv_eigs = W @ (1.0 / (lam[None, :] + Z[:, None]))   # L x T -> T
+/Users/guruikang/WorkBuddy/2026-11-20-15-03-43/internship-workbench/research/portfolio-replication/revision-v3/executions/P006_E06_independent/independent_upsa.py:170: RuntimeWarning: overflow encountered in matmul
+  inv_eigs = W @ (1.0 / (lam[None, :] + Z[:, None]))   # L x T -> T
+/Users/guruikang/WorkBuddy/2026-11-20-15-03-43/internship-workbench/research/portfolio-replication/revision-v3/executions/P006_E06_independent/independent_upsa.py:170: RuntimeWarning: invalid value encountered in matmul
+  inv_eigs = W @ (1.0 / (lam[None, :] + Z[:, None]))   # L x T -> T
+/Users/guruikang/WorkBuddy/2026-11-20-15-03-43/internship-workbench/research/portfolio-replication/revision-v3/executions/P006_E06_independent/independent_upsa.py:172: RuntimeWarning: divide by zero encountered in matmul
+  pi = eff_port @ W * scale
+/Users/guruikang/WorkBuddy/2026-11-20-15-03-43/internship-workbench/research/portfolio-replication/revision-v3/executions/P006_E06_independent/independent_upsa.py:172: RuntimeWarning: overflow encountered in matmul
+  pi = eff_port @ W * scale
+/Users/guruikang/WorkBuddy/2026-11-20-15-03-43/internship-workbench/research/portfolio-replication/revision-v3/executions/P006_E06_independent/independent_upsa.py:172: RuntimeWarning: invalid value encountered in matmul
+  pi = eff_port @ W * scale
+[full] 1/494 windows done, elapsed 0.0s
+[full] 50/494 windows done, elapsed 0.1s
+[full] 100/494 windows done, elapsed 0.1s
+[full] 150/494 windows done, elapsed 0.2s
+[full] 200/494 windows done, elapsed 0.3s
+[full] 250/494 windows done, elapsed 0.3s
+[full] 300/494 windows done, elapsed 0.4s
+[full] 350/494 windows done, elapsed 0.4s
+[full] 400/494 windows done, elapsed 0.5s
+[full] 450/494 windows done, elapsed 0.6s
+[full] summary: {
+  "n_oos": 494,
+  "first_oos": "1981-11-30",
+  "last_oos": "2022-12-31",
+  "elapsed_sec": 0.6313252449035645,
+  "finite_returns_B0": true,
+  "finite_returns_B1": true,
+  "finite_weights_B0": true,
+  "finite_weights_B1": true,
+  "scale_B0_min_max": [
+    0.8298032189135305,
+    1.8500905706071025
+  ],
+  "scale_B1_min_max": [
+    0.831112127267453,
+    1.8504919437461602
+  ],
+  "qp_status_counts_B0": {
+    "optimal": 494
+  },
+  "qp_status_counts_B1": {
+    "optimal": 494
+  },
+  "qp_kkt_max_B0": 2.1052484888394266e-07,
+  "qp_kkt_max_B1": 1.554855368388267e-07,
+  "cond_K_plus_Tz_max": 1228435.955528498,
+  "cond_K_plus_Tm1z_max": 1228440.976870482
+}
+[full] WROTE results/full_run_summary.json and results/*B0*/*B1*

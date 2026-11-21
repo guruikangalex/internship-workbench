@@ -1,0 +1,97 @@
+{
+  "batch": "CO-REP-20261120-02",
+  "paper_id": "P003",
+  "paper_version": "FAJ 77(2):124-151, DOI 10.1080/0015198X.2020.1854543",
+  "subexperiment": "fixed-w (in-sample shrinkage of w), Equity 1",
+  "config_status": "PREPARED_NOT_RUN",
+  "scope": {
+    "target_tables": ["Table 5 (Equity 1 column)", "Table 6 (Equity 1 column)"],
+    "equity_variant": "Equity 1",
+    "frequency": "MONTHLY",
+    "excluded": ["Equity 2-5 daily variants", "Equity 6-8", "Global futures Tables 2-4", "cost/turnover model P003-E03"]
+  },
+  "data": {
+    "snapshot_status": "APPROXIMATE_VALIDATION",
+    "snapshot_label": "Ken French 49 Industry Portfolios, value-weighted monthly, vintage 202609 CRSP",
+    "local_zip": "data/ind49_current.zip",
+    "zip_sha256": "d1a3b0b9896e1e633ed2aa85e24ca144d7998f8ab2ff344e2379383ebeb7b836",
+    "member_sha256": "633958bf36d25da6d95876bfc468536029db600c32c65b7a3e0f7fba59a04609",
+    "n_industries": 49,
+    "n_months": 1203,
+    "first_month": "192607",
+    "last_month": "202609",
+    "paper_window": "194201-201812",
+    "paper_window_months": 924,
+    "original_vintage": "NOT_RECOVERED",
+    "frozen_fiz_202412_ciz_202609": "NOT_PRESENT_IN_WORKBENCH",
+    "value_weighted_with_dividends_only": true,
+    "sentinel_values": ["-99.99", "-999"],
+    "sentinel_count": 2868
+  },
+  "fixed_w_definition": {
+    "display_w_grid": [0.0, 0.1, 0.25, 0.5, 0.75, 0.9, 0.99, 1.0],
+    "display_w_grid_status": "TABLE5_INSAMPLE_STRESS_RANGE_ONLY",
+    "oos_w_grid": "UNKNOWN",
+    "oos_grid_disclosure": "paper states only a limited grid, monthly re-selection, extended sample; actual grid/tie-rule/min-history not disclosed",
+    "oos_grid_blocks_fixed_w_prep": false,
+    "signal": {
+      "type": "XSMOM",
+      "lookback_months": 12,
+      "transform": "cumulative excess return over 12 available months, cross-sectionally demeaned, positive-side sum=1 and negative-side abs-sum=1",
+      "sign_convention": "Eq(25) printed plus on negative side is a typographical error; Eq(24) demeaned vector sums to 0 so negative side abs-sum=1",
+      "compounding_variant": "UNRESOLVED (monthly excess chain vs sum-minus-compounded-RF) must be frozen before results"
+    },
+    "risk_model": {
+      "equity1_risk_window_months": 60,
+      "cov_estimator": "sample covariance of 60 monthly industry excess returns, demeaned by sample mean",
+      "denominator": "K-1 (footnote 17), time t-1..t-60",
+      "V": "diag(Sigma_raw)",
+      "sigma_tilde": "0.95*Sigma_raw + 0.05*V",
+      "sigma_w": "(1-w)*Sigma_tilde + w*V",
+      "optimization": "gamma*Sigma_w*x = s  (max s'x - gamma/2 x'Sigma_w x)",
+      "gamma": 1,
+      "budget_or_box_constraints": false,
+      "pseudoinverse_fallback": "FORBIDDEN_SILENTLY (rank deficiency must be recorded)"
+    },
+    "cumulative_return": {
+      "formula": "x_t' r_{t+1,excess} (monthly, gross)",
+      "annualization": "sqrt(12)",
+      "sharpe": "gross Sharpe = mean/std*sqrt(12), no execution costs",
+      "outputs": ["monthly weights", "target return", "all candidate w training SR", "sample start", "pre-shrink and unshrunk covariance condition numbers"]
+    }
+  },
+  "industry_eligibility": {
+    "rule": "EX_ANTE_ONLY",
+    "conditions": [
+      "complete 12-month signal history",
+      "complete 60-month risk window",
+      "no realized-return lookahead"
+    ],
+    "late_entering_industries": ["Soda", "Hlth", "FabPr", "Guns", "Gold", "Softw", "Paper", "PerSv", "Rubbr"],
+    "late_entry_handling": "excluded until sentinel-free; per-period investable pool changes recorded",
+    "no_post_hoc_filter": true,
+    "one_over_N_and_indmom_use_same_universe": "UNKNOWN"
+  },
+  "missing_handling": {
+    "sentinels_as_missing_not_zero": true,
+    "no_zero_substitution": true,
+    "no_post_hoc_performance_filter": true
+  },
+  "sample": {
+    "input_earliest": "1927-01",
+    "target_table5_window": "1942-01 to 2018-12",
+    "minimum_initial_history_years": 15,
+    "earliest_evaluable_month": "LATER_THAN_RAW_START_due_to_60m_risk_window",
+    "all_decisions_at_monthly_decision_points": true
+  },
+  "states": {
+    "fixed_w_config": "PREPARED",
+    "industry_eligibility": "PREPARED_EX_ANTE",
+    "inputs": "APPROXIMATE_VALIDATION",
+    "oos_w_grid": "UNKNOWN_NOT_BLOCKING",
+    "backtest": "NOT_RUN",
+    "results": "NOT_ASSESSED",
+    "author_code": "NOT_FOUND",
+    "approval": "PENDING"
+  }
+}

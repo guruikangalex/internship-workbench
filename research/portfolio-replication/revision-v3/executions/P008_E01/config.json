@@ -1,0 +1,56 @@
+{
+  "config_version": "R3-P008-E01-config-v1",
+  "run_id": "R3-P008-001",
+  "paper_id": "P008",
+  "experiment_id": "P008-E01",
+  "canonical_version_id": "JFE2021_VOR",
+  "reviewed_source_commit": "104aecfcad4c308e1044a3d15483fe2320619597",
+  "execution_commit": null,
+  "approval_record_id": "REVIEW-104AECF-20261121",
+  "execution_authorized": true,
+  "reproduction_type": "INDEPENDENT_FAITHFUL",
+  "experiment_purpose": "THEORY_ONLY_PROPOSITIONS_AND_GEOMETRY",
+  "performed_by": "general-purpose-3",
+  "tolerance_frozen_at_utc": "2026-11-21T07:29:34Z",
+  "tolerance_frozen_before_result_inspection": true,
+  "tolerance_source": "revision-v2/work/P008/protocol.md: P008-E01 predeclared KKT relative residual <= 1e-10 for normal-condition-number examples; frozen before execution",
+  "tolerances": {
+    "kkt_relative_residual_normal_condition": 1e-10,
+    "independent_optimizer_maxabs_contracts": 1e-9,
+    "four_fund_spanning_maxabs": 1e-9,
+    "sr_formula_absolute": 1e-9,
+    "tangency_derivative_absolute": 1e-6,
+    "degenerate_case_reporting_only": true
+  },
+  "approved_result_ids": ["P008-R01"],
+  "paper_scope": {
+    "sections": ["Fig.1 A/B", "section 2 Propositions 1-3", "Eq.(8)-(12)", "Appendix A.1/A.4"],
+    "excluded": [
+      "P008-R02 Fig.2 ESG-CAPM theory (not frontier empirical)",
+      "P008-R03/R08 Fig.3-6 empirical frontiers",
+      "Exact original figure coordinates (researcher schematic, not paper precise plotting input)",
+      "P008-E03 Table 4 author workbook (separate experiment directory)"
+    ]
+  },
+  "numerical_example": {
+    "description": "researcher-declared positive-definite numerical example with normal condition number; used only to check propositions, not to reproduce paper figure coordinates",
+    "n_assets": 5,
+    "generator_seed": 20261121,
+    "gamma": 3.0,
+    "s_bar": "market/equal-weight portfolio ESG level computed from the example",
+    "Sigma_target_condition_number_range": [5, 200],
+    "note": "mu, s, Sigma generated deterministically from the seed; long-biased feasibility x'1>0 is checked"
+  },
+  "degenerate_cases_to_handle_explicitly": [
+    "q = 0 (ESG constraint vacuous; denominator q'Sigma^{-1}q = 0 -> pi undefined; limit pi=0, unconstrained Markowitz)",
+    "projected return direction zero (q'Sigma^{-1}mu = 0 -> pi = 0; constrained optimum equals unconstrained)",
+    "risky asset net position zero (x'1 = 0 -> average ESG ratio x's/x'1 undefined; feasibility flagged)",
+    "ill-conditioned Sigma (condition number ~1e8; reported separately, never used for the normal-condition PASS verdict)"
+  ],
+  "paper_pdf": {
+    "path": "/Users/guruikang/WorkBuddy/2026-11-20-15-03-43/CO-REP-20261120-02/evidence/P008_ScienceDirect_OA_published.pdf",
+    "sha256_observed": "5beedbbc054e915e9d82e8c6a3de2b1cde58ff4ec61dd4ec5d700262c38283c2",
+    "version_note": "ScienceDirect OA published version; exact byte identity to CBS publisher version UNKNOWN (protocol B02 open)",
+    "source_url": "https://research-api.cbs.dk/ws/portalfiles/portal/68795021/Heje_Pedersen_Fitzgibbons_Pomorski_Resposible_Investing_PublishersVersion.pdf"
+  }
+}

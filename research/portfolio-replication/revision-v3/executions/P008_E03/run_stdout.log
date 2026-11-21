@@ -1,0 +1,24 @@
+P008-E03 INDEPENDENT WORKBOOK RECOMPUTE | run_id=R3-P008-003 | 2026-11-21T07:36:16.652773+00:00
+tolerance +/-0.005 percentage points frozen at 2026-11-21T07:35:00Z before result inspection
+downloaded xlsx: size=215209 hash=153423fd6356e41423271ddcdfe0280508e69e73273e023171aaf83e6cf8b676
+hash matches expected True ; size matches True
+source URL: https://www.aqr.com/-/media/AQR/Documents/Insights/Data-Sets/ESG_efficient_frontier_portfolios_vF.xlsx?sc_lang=en
+sheets: ['Value-weighted excess returns', 'Equal-weighted excess returns', 'Disclosures']
+
+[PanelA] Equal-weighted excess returns: n=674 1963-02-28..2019-03-31 contiguous=True unique=True header_U_G5G1=True
+  mean monthly (decimal)=0.00653012235410485 -> annualized 7.836146824925816%
+  max |U - (T-P)| row-level = 1.2500000001747225e-07
+
+[PanelB] Value-weighted excess returns: n=674 1963-02-28..2019-03-31 contiguous=True unique=True header_U_G5G1=True
+  mean monthly (decimal)=0.0025118756305638 -> annualized 3.014250756676558%
+  max |U - (T-P)| row-level = 8.333333335192039e-08
+
+[COMPARISON]
+  R10 paper 7.84% vs recompute 7.836146824925816% diff -0.003853 pp (tol 0.005)
+  R11 paper 3.01% vs recompute 3.014250756676558% diff 0.004251 pp (tol 0.005)
+  reviewer R10 7.836146824925816% diff 0.000e+00 ; reviewer R11 3.014250756676558% diff 0.000e+00
+
+[CHECKS] download_hash_matches=True, download_size_matches=True, panelA_674_months_1963_02_to_2019_03=True, panelB_674_months_1963_02_to_2019_03=True, panelA_contiguous_unique=True, panelB_contiguous_unique=True, header_U_is_G5G1=True, R10_within_tolerance=True, R11_within_tolerance=True, R10_matches_reviewer=True, R11_matches_reviewer=True
+
+WROTE results.json, target_comparison.csv, run_internal.log
+ALL CHECKS PASS = True

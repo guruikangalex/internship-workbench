@@ -1,0 +1,259 @@
+{
+  "batch": "CO-REP-20261120-02",
+  "paper": "P004",
+  "preflight": "minimal_synthetic_gradient",
+  "author_commit": "b5e299ad7748468bc39e3e711eceee809143c648",
+  "environment": {
+    "python": "3.13.12",
+    "torch": "2.15.0",
+    "numpy": "2.5.5"
+  },
+  "config": {
+    "n_x": 5,
+    "n_y": 10,
+    "n_obs": 100,
+    "n_tot": 1200,
+    "split": [
+      0.7,
+      0.3
+    ],
+    "perf_period": 13,
+    "pred_loss_factor": 0.5,
+    "lr": 0.005,
+    "opt_layer_dr": "hellinger",
+    "prisk": "p_var"
+  },
+  "rule": "author code unmodified; first training window only; one fwd/bwd/Adam step; no author result cache read",
+  "models": {
+    "nom_linear": {
+      "opt_layer": "nominal",
+      "pred_model": "linear",
+      "set_seed": 2000,
+      "init": {
+        "gamma": 0.024194
+      },
+      "grad_norms": {
+        "gamma": 0.1960940516006932,
+        "pred_layer.weight": 0.6837309798448807,
+        "pred_layer.bias": 1.8957618686888413
+      },
+      "all_grads_finite": true,
+      "loss": 0.024631233639372523,
+      "update_l2": {
+        "gamma": 0.004999999745020325,
+        "pred_layer.weight": 0.035351782538147344,
+        "pred_layer.bias": 0.01581133673464189
+      },
+      "any_update_nonzero": true,
+      "z_sum": 1.0000000001020057,
+      "z_min": 2.2883279902017604e-10,
+      "z_max_abs_err_vs_1": 1.0200573719032491e-10,
+      "status": "PASS"
+    },
+    "dr_linear": {
+      "opt_layer": "hellinger",
+      "pred_model": "linear",
+      "set_seed": 2000,
+      "init": {
+        "gamma": 0.024194,
+        "delta": 0.099247
+      },
+      "grad_norms": {
+        "gamma": 0.09566009970779629,
+        "delta": 0.0548087709438466,
+        "pred_layer.weight": 0.36885173979238445,
+        "pred_layer.bias": 0.3308808842349348
+      },
+      "all_grads_finite": true,
+      "loss": -0.25706529880017365,
+      "update_l2": {
+        "gamma": 0.004999999477316091,
+        "delta": 0.0049999990877374195,
+        "pred_layer.weight": 0.03534014380936197,
+        "pred_layer.bias": 0.015811165605199115
+      },
+      "any_update_nonzero": true,
+      "z_sum": 1.0000000009618861,
+      "z_min": 9.756094411201906e-10,
+      "z_max_abs_err_vs_1": 9.618861263049894e-10,
+      "status": "PASS"
+    },
+    "nom_2layer": {
+      "opt_layer": "nominal",
+      "pred_model": "2layer",
+      "set_seed": 3000,
+      "init": {
+        "gamma": 0.081052
+      },
+      "grad_norms": {
+        "gamma": 6.982963757603449e-15,
+        "pred_layer.0.weight": 4.1434117182540225e-05,
+        "pred_layer.0.bias": 0.00018808321738441117,
+        "pred_layer.2.weight": 0.0014678730182935832,
+        "pred_layer.2.bias": 0.0027465497719698037,
+        "pred_layer.4.weight": 0.006025674015802477,
+        "pred_layer.4.bias": 0.007376878307156647
+      },
+      "all_grads_finite": true,
+      "loss": -0.22933571949187562,
+      "update_l2": {
+        "gamma": 3.491479438899603e-09,
+        "pred_layer.0.weight": 0.01573902627442683,
+        "pred_layer.0.bias": 0.007069995729020725,
+        "pred_layer.2.weight": 0.01581091815964952,
+        "pred_layer.2.bias": 0.01118022207892124,
+        "pred_layer.4.weight": 0.03535407457565973,
+        "pred_layer.4.bias": 0.015811302591997627
+      },
+      "any_update_nonzero": true,
+      "z_sum": 1.0000000000657385,
+      "z_min": 3.507794186486302e-12,
+      "z_max_abs_err_vs_1": 6.573852573410477e-11,
+      "status": "PASS"
+    },
+    "dr_2layer": {
+      "opt_layer": "hellinger",
+      "pred_model": "2layer",
+      "set_seed": 3000,
+      "init": {
+        "gamma": 0.081052,
+        "delta": 0.358408
+      },
+      "grad_norms": {
+        "gamma": 6.7630193708711345e-15,
+        "delta": 4.258226188290206e-12,
+        "pred_layer.0.weight": 0.00036097446507270736,
+        "pred_layer.0.bias": 0.001638582969815178,
+        "pred_layer.2.weight": 0.0017127751115174508,
+        "pred_layer.2.bias": 0.003223051661042484,
+        "pred_layer.4.weight": 0.004874790314071026,
+        "pred_layer.4.bias": 0.006982607367209178
+      },
+      "all_grads_finite": true,
+      "loss": -0.20167533963172912,
+      "update_l2": {
+        "gamma": 3.381507393540595e-09,
+        "delta": 2.1282068555228406e-06,
+        "pred_layer.0.weight": 0.015805816136089484,
+        "pred_layer.0.bias": 0.007070989942980049,
+        "pred_layer.2.weight": 0.015810663949382752,
+        "pred_layer.2.bias": 0.011180157424091338,
+        "pred_layer.4.weight": 0.03531062674436614,
+        "pred_layer.4.bias": 0.0158088774838623
+      },
+      "any_update_nonzero": true,
+      "z_sum": 1.0000000000346299,
+      "z_min": 9.341664199872187e-12,
+      "z_max_abs_err_vs_1": 3.462985453950296e-11,
+      "status": "PASS"
+    },
+    "nom_3layer": {
+      "opt_layer": "nominal",
+      "pred_model": "3layer",
+      "set_seed": 4000,
+      "init": {
+        "gamma": 0.072181
+      },
+      "grad_norms": {
+        "gamma": 1.9776903435763694e-12,
+        "pred_layer.0.weight": 5.068081860928781e-05,
+        "pred_layer.0.bias": 0.0002300570639452926,
+        "pred_layer.2.weight": 0.00018709731533687437,
+        "pred_layer.2.bias": 0.0005565209270706351,
+        "pred_layer.4.weight": 0.0006315850315825039,
+        "pred_layer.4.bias": 0.001673295050459687,
+        "pred_layer.6.weight": 0.0016328722574373749,
+        "pred_layer.6.bias": 0.004749402543487701
+      },
+      "all_grads_finite": true,
+      "loss": -0.26040109032545755,
+      "update_l2": {
+        "gamma": 9.886496474958983e-07,
+        "pred_layer.0.weight": 0.01929948017428575,
+        "pred_layer.0.bias": 0.008659291904053176,
+        "pred_layer.2.weight": 0.014894701248223658,
+        "pred_layer.2.bias": 0.008659855944821986,
+        "pred_layer.4.weight": 0.01936272720846573,
+        "pred_layer.4.bias": 0.011180084631839069,
+        "pred_layer.6.weight": 0.03534872127690882,
+        "pred_layer.6.bias": 0.015810993056381825
+      },
+      "any_update_nonzero": true,
+      "z_sum": 1.0000000003363034,
+      "z_min": 2.484100289930014e-10,
+      "z_max_abs_err_vs_1": 3.363034295489342e-10,
+      "status": "PASS"
+    },
+    "dr_3layer": {
+      "opt_layer": "hellinger",
+      "pred_model": "3layer",
+      "set_seed": 4000,
+      "init": {
+        "gamma": 0.072181,
+        "delta": 0.163173
+      },
+      "grad_norms": {
+        "gamma": 4.2751186281781177e-13,
+        "delta": 2.085063269940055e-11,
+        "pred_layer.0.weight": 0.00011628468484795413,
+        "pred_layer.0.bias": 0.0005278547985310115,
+        "pred_layer.2.weight": 0.00043569909488676365,
+        "pred_layer.2.bias": 0.0011239901888157678,
+        "pred_layer.4.weight": 0.0011095680311989714,
+        "pred_layer.4.bias": 0.0030135641398198187,
+        "pred_layer.6.weight": 0.0030081029914447908,
+        "pred_layer.6.bias": 0.006725187650495025
+      },
+      "all_grads_finite": true,
+      "loss": -0.22979522834105431,
+      "update_l2": {
+        "gamma": 2.137467934731907e-07,
+        "delta": 1.040362413515239e-05,
+        "pred_layer.0.weight": 0.02228874914486139,
+        "pred_layer.0.bias": 0.009998941665415961,
+        "pred_layer.2.weight": 0.022090076416623704,
+        "pred_layer.2.bias": 0.011179955523980023,
+        "pred_layer.4.weight": 0.024994513353254935,
+        "pred_layer.4.bias": 0.011180251782161938,
+        "pred_layer.6.weight": 0.03535334697579092,
+        "pred_layer.6.bias": 0.015811255562575618
+      },
+      "any_update_nonzero": true,
+      "z_sum": 1.0000000009475853,
+      "z_min": 3.5668128052086407e-10,
+      "z_max_abs_err_vs_1": 9.475853435247927e-10,
+      "status": "PASS"
+    }
+  },
+  "status": "PASS",
+  "dgp": {
+    "function": "e2edro.DataLoad.synthetic_exp",
+    "seed": 123,
+    "X_train_shape": [
+      840,
+      5
+    ],
+    "Y_train_shape": [
+      840,
+      10
+    ],
+    "first_window_x_shape": [
+      101,
+      5
+    ],
+    "first_window_y_shape": [
+      100,
+      10
+    ],
+    "first_window_y_perf_shape": [
+      14,
+      10
+    ],
+    "note": "perf_period=13 but SlidingWindow uses index+n_obs : index+n_obs+perf_period+1 => 14 forward realizations (author snapshot; not silently changed)",
+    "n_windows_total": 727
+  },
+  "target_results": {
+    "Table11_Fig7": "NOT_RUN",
+    "economic_conclusion": "NOT_ASSESSED"
+  }
+}

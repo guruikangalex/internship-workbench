@@ -1,6 +1,7 @@
-﻿experiment_id,execution_status,log,scope
+experiment_id,execution_status,log,scope
 P001-E01,TARGETS_GENERATED,work/P001/stdout.log,限获准理论；结果 pass
 P006-PREFLIGHT-01,PREFLIGHT_PASSED,work/P006/execution/preflight_one_window.log,作者原真实输入单个冷窗口
 P006-PREFLIGHT-02,PREFLIGHT_PASSED,work/P006/execution/inspect_author_bundles.log,仅历史作者缓存比较
-P006-PREFLIGHT-03,PREFLIGHT_PASSED,work/P006/execution/audit_loo_divisor.log,有限归一与数值诊断，冲突未关闭
+P006-PREFLIGHT-03,PREFLIGHT_PASSED,work/P006/execution/audit_loo_divisor.log,有限归一与数值诊断；后续由配对审计闭合
 P004-PREFLIGHT-01,PREFLIGHT_PASSED,work/P004/preflight.stdout.log,6 组 loss/梯度和一次真实训练更新
+P006-LOO-PAIRED-01,TARGETS_GENERATED,work/P006/execution/audit_loo_divisor.log,REV2-P006-09 配对分母审计；作者实现自检 L2=0；审计层结果不回填 E01

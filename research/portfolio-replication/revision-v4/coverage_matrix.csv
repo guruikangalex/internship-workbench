@@ -1,0 +1,25 @@
+﻿institution,journal_group,journal,search_status,candidate_ids,query_or_source_ids,limitations
+AQR Capital Management,J1_NAMED,JF/JFE/RFS,PRIOR_EVIDENCE_RETAINED,P001/P002/P006/P007/P008/P009/P014/P017,search/history/A_search.md; search/history/v1_1_master.csv,历史按题名、机构与引文检索；本任务未逐卷穷尽
+AQR Capital Management,J1_NAMED,Management Science,NO_QUALIFIED_HIT_IN_RECORDED_SCOPE,,A:Q13,原命中为方法论文，未核得 AQR 关系
+AQR Capital Management,J2_FINANCE,JFQA/Review of Finance,NO_QUALIFIED_HIT_IN_RECORDED_SCOPE,,A:Q14; A:Q15,历史合并记录；未逐卷穷尽
+AQR Capital Management,J3_PRACTICE,Financial Analysts Journal/The Journal of Portfolio Management,PRIOR_EVIDENCE_RETAINED,P003/P012/P013,search/history/v1_1_master.csv,实务池单列
+Citadel,J1_NAMED,JF/JFE/RFS/MS,PRIOR_EVIDENCE_RETAINED,P010/P005; B-04/05/06,search/history/B_search.md,P005 为理论背景；顾问或披露不自动算员工；原 MS 无合格命中
+Millennium Management,J4_METHODS,Quantitative Finance,PRIOR_EVIDENCE_RETAINED,P004,B:2; C:Q7; CE08,Costa 发表时 Millennium，现职不替换
+Point72 Asset Management,W_WORKING,arXiv,SOURCE_VERIFIED,P018,CE14/CE29/CE30; search/supplementary_metadata.json,技术报告，非金融期刊论文
+BlackRock,J4_METHODS,Journal of Optimization Theory and Applications,SOURCE_VERIFIED,P020,CE12/CE28; search/supplementary_metadata.json,发表为 2021；方法期刊
+BlackRock,J4_METHODS,Optimization and Engineering,SOURCE_VERIFIED,P021,CE13/CE27; search/supplementary_metadata.json,2022 在线、2023 卷期；通用算法仓库核验
+Citadel Securities,J2_FINANCE/J3_PRACTICE/J4_METHODS,跨刊初筛,NO_QUALIFIED_HIT_IN_RECORDED_SCOPE,,CE11,Citadel Securities 独立实体；官站业务材料不能作论文署名
+Citadel,W_WORKING,SSRN,NO_NEW_QUALIFIED_HIT_IN_RECORDED_SCOPE,E-NEW-02; E-NEW-06,CE09/CE10,军校假阳性和定价背景
+Acadian/Research Affiliates,J3_PRACTICE,Financial Analysts Journal,PRIOR_EVIDENCE_RETAINED,P011/P019,search/history/v1_1_master.csv,各有已核实同期作者；输入版本证据未齐
+Citadel,J2_FINANCE,JFQA,NO_NEW_QUALIFIED_HIT_IN_RECORDED_SCOPE,,CE01/CE16; XR-05,"Cambridge hit was BJPsych Bulletin, not finance; PARTIAL_COVERAGE"
+Citadel,J2_FINANCE,Review of Finance,NO_NEW_QUALIFIED_HIT_IN_RECORDED_SCOPE,,CE02/CE16; XR-06,OUP returned RFS P005; journal disambiguated; PARTIAL_COVERAGE
+Citadel,J3_PRACTICE,Financial Analysts Journal,NO_NEW_QUALIFIED_HIT_IN_RECORDED_SCOPE,,CE03/CE15/CE20/CE24; XR-07,E-NEW-04 attribution paper screened; no exact Citadel author-affiliation metadata in returned Crossref samples; PARTIAL_COVERAGE
+Citadel,J3_PRACTICE,The Journal of Portfolio Management,NO_NEW_QUALIFIED_HIT_IN_RECORDED_SCOPE,,CE04/CE15/CE19/CE22/CE26; XR-08,Military college and prior Citadel employment distinguished; metadata 429; PARTIAL_COVERAGE
+Citadel,J3_PRACTICE,Journal of Investment Management,NO_NEW_QUALIFIED_HIT_IN_RECORDED_SCOPE,,CE05/CE10/CE15; XR-09,Firm activity and other journals; no verified same-paper affiliation; PARTIAL_COVERAGE
+Citadel,J4_METHODS,Operations Research,NO_NEW_QUALIFIED_HIT_IN_RECORDED_SCOPE,,CE06/CE18; XR-10,"Dantzig used citadel as a common noun; metadata sampled, no matching affiliation; PARTIAL_COVERAGE"
+Citadel,J4_METHODS,Mathematical Finance,NO_NEW_QUALIFIED_HIT_IN_RECORDED_SCOPE,,CE07/CE17/CE25; XR-11,Conference programme and historical author biography; metadata 429; PARTIAL_COVERAGE
+Citadel,J4_METHODS,Quantitative Finance,NO_NEW_QUALIFIED_HIT_IN_RECORDED_SCOPE,,CE08/CE21; XR-12,"P004 indexed by current Citadel job, published Millennium affiliation; no exact sampled Citadel affiliation; PARTIAL_COVERAGE"
+Millennium Management,J1_NAMED,JF,NO_NEW_QUALIFIED_HIT_IN_RECORDED_SCOPE,,ME01/ME07/ME12; XR-01,E-NEW-01 is a sample-case firm listing rather than author affiliation; PARTIAL_COVERAGE
+Millennium Management,J1_NAMED,JFE,NO_NEW_QUALIFIED_HIT_IN_RECORDED_SCOPE,,ME02/ME05/ME09; XR-02,Publisher-constrained and broad search found no verified eligible paper; PARTIAL_COVERAGE
+Millennium Management,J1_NAMED,RFS,NO_NEW_QUALIFIED_HIT_IN_RECORDED_SCOPE,,ME03/ME05/ME10; XR-03,Three metadata hits inspected without matching author affiliation; generic governance terms; PARTIAL_COVERAGE
+Millennium Management,J1_NAMED,Management Science,NO_NEW_QUALIFIED_HIT_IN_RECORDED_SCOPE,,ME04/ME05/ME06/ME08/ME11; XR-04,Indexed journal search and author discovery; metadata query 429; PARTIAL_COVERAGE

@@ -1,0 +1,18 @@
+# P001-E01 execution-chain fix + clean rerun (run_id R4-P001-001)
+# Working directory:
+cd /Users/guruikang/WorkBuddy/2026-11-20-15-03-43/internship-workbench/research/portfolio-replication/revision-v4/executions/P001_E01
+# Runtime: isolated Python 3.9.6 (env_py396), numpy 2.0.2
+PY396=/Users/guruikang/WorkBuddy/2026-11-20-15-03-43/CO-REP-20261120-02/execution/env_py396/bin/python
+
+# source_v3_backup.py = pre-fix script; source.py = R4 fixed script with graded exits.
+# Tolerances frozen at 2026-11-21T07:29:34Z (unchanged from R3 freeze).
+"$PY396" source.py > run_stdout.log 2> run_stderr.log
+EC=$?
+echo "PROCESS_EXIT_CODE=$EC" >> run_stderr.log
+echo $EC
+
+# Exit codes: 0=PASS (all REQUIRED source+math); 1=SOURCE_FAIL (missing input/hash); 2=MATH_FAIL.
+shasum -a 256 config.json source.py source_v3_backup.py environment.json commands.txt results.json target_comparison.csv target_comparison_v3_backup.csv run_stdout.log run_stderr.log summary.md summary_r4.md exit_code_test.md > sha256sums.txt
+
+# Input PDFs read-only from CO-REP-20261120-02/evidence/ (paths in config.json).
+# No network, no market data, no author code.

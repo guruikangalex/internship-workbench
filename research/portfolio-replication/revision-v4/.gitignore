@@ -1,0 +1,65 @@
+# ============================================================================
+# R4 delivery .gitignore — 自编文本一律入库，大型第三方二进制一律外链
+# Policy: self-authored .py/.md/.csv/.json/.log/.txt/.sha256/.r/.sas are committed.
+# Large third-party binary inputs are NOT redistributed byte-for-byte; their
+# source_url + version/vintage + sha256 + bytes are recorded in
+# metadata/external_dependencies.json (fresh clone re-downloads them).
+# ============================================================================
+
+# --- Nested git repos cloned for static audit (commit SHA recorded in results) ---
+executions/support/**/.git/
+
+# --- Large third-party binary payloads: any size, anywhere in the tree --------
+# archives
+*.zip
+*.tar
+*.tar.gz
+*.tgz
+*.gz
+*.7z
+*.rar
+# serialized model / numeric bundles (author cold-compute caches)
+*.p
+*.pkl
+*.pickle
+*.npy
+*.npz
+*.mat
+*.h5
+*.hdf5
+*.joblib
+# spreadsheets (author workbooks / factor-description books)
+*.xlsx
+*.xls
+*.xlsm
+*.ods
+# binaries / compiled artifacts
+*.so
+*.dylib
+*.dll
+*.exe
+*.o
+*.a
+# PDF originals are external evidence (hash+URL in evidence_index.csv), not repo payloads
+*.pdf
+
+# --- Specific large third-party data files (kept as explicit named rules) ----
+executions/support/P007/data/25_Portfolios_5x5_Daily.csv
+executions/support/P010/data/*.zip
+executions/support/P006_E01_author/**/*.p
+executions/support/P002/data/ReplicationCrisis_repo/data/
+
+# --- Python / OS caches ------------------------------------------------------
+__pycache__/
+*.pyc
+*.pyo
+.DS_Store
+Thumbs.db
+
+# NOTE: review_package_manifest.sha256 is intentionally committed but does NOT
+# list itself (see manifest generator). Self-authored result CSVs (factors_*.csv,
+# weights_*.csv) ARE committed despite >1MB — they are reproducible outputs, not
+# third-party downloads.
+
+# --- Author-generated binary cache state files (no extension, pickled/zip state) ---
+executions/support/P004/results/grad_cache*

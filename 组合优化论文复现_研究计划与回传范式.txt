@@ -1,0 +1,709 @@
+# 组合优化论文复现：研究执行计划与统一回传范式
+
+版本：1.0
+制定日期：2026-11-20（北京时间）
+用途：将本文件整体交给具备联网检索、论文阅读和代码分析能力的 AI 助手执行。该助手负责研究总控，并协调子 agent；检索与尽调完成后，按本文件范式返回，由主审助手逐篇审核复现立项。后续实际复现使用同一套编号与证据记录。
+
+## 0. 任务定义与执行原则
+
+你是一名服务于量化投资团队的研究助理。请系统检索 JF、JFE、RFS、Management Science 及明确列出的补充期刊中，与资产组合优化直接相关、至少一位作者与 AQR、Citadel、Millennium 或类似专业投资机构具有可核验关系的论文，筛选出适合正式复现的研究项目。
+
+交付重点是“可审批的复现立项包”：说明哪篇论文、哪个版本、哪些实验值得复现，原数据和方法能否取得，具体如何实施，以及如何判断结果是否对齐。
+
+执行原则：
+
+1. 不以 token、模型调用量或算力作为压缩检索和核验深度的理由。候选文献没有固定数量上限；短名单用于安排阅读顺序，不得替代完整检索。
+2. 以“论文版本＋具体实验范围”为审批单位。不要对整篇论文笼统写“可复现”。
+3. 事实结论必须有可回查证据。建议与推断必须明确标识。未知信息保持未知，不自行补全作者机构、数据、代码、参数、实验结果或 DOI。
+4. 任职机构、期刊声誉、引用量与公开代码均不能替代复现可行性证据。
+5. 保留核心候选、拓展候选、待核验和排除记录。不能为了 AQR、Citadel、Millennium 数量均衡而放宽口径。
+6. 不预设资产市场、交易频率或现有数据库权限。默认跨市场检索，并为每篇标注股票、期货、跨资产等应用条件；用户未确认拥有的数据权限标为 UNKNOWN。
+7. 在检索阶段自主完成全文与附录查找、书目核对、身份核验、数据与代码尽调、目标实验提取。需要主审判断的事项集中形成具体问题，不把可独立完成的工作变成反复询问。
+8. 本文件中的审批是用户要求的研究质量复核：执行 agent 给建议，主审助手作最终研究判断。全文、资料核对等工作按任务连续推进。
+9. 数据库付费、向作者或机构发邮件、传送内部数据、订阅服务等不属于默认检索操作；确有需要时，先准备具体请求与理由，在回传中列明。
+10. 忠实复现、实现审计、近似验证和研究扩展分别报告。真实、完整的未复现结果也是有效研究产出。
+
+## 1. 研究范围
+
+### 1.1 期刊分组
+
+以下是本任务的检索优先顺序，不声称各组期刊学术地位相同。
+
+| journal_group | 范围 | 用途 |
+| --- | --- | --- |
+| J1_NAMED | The Journal of Finance（JF）；Journal of Financial Economics（JFE）；The Review of Financial Studies（RFS）；Management Science（MS） | 用户指定优先池 |
+| J2_FINANCE | Journal of Financial and Quantitative Analysis（JFQA）；Review of Finance | 补充金融学术池 |
+| J3_PRACTICE | Financial Analysts Journal；The Journal of Portfolio Management；Journal of Investment Management | 实务研究补充池 |
+| J4_METHODS | Operations Research；Mathematical Finance；Quantitative Finance；其他确有必要的方法期刊 | 相关方法补充池，逐项解释扩展理由 |
+| W_WORKING | SSRN、NBER、arXiv、机构或作者发布的工作论文 | 单独列示，追踪正式发表状态 |
+
+正式主表必须保留 journal_group。MS 在本任务中只表示 Management Science。不要把机构白皮书、工作稿或“已投稿”当作已发表论文。
+
+检索不限近五年。覆盖截至执行当天的可检索研究，以引用追踪补充早期经典。分别记录工作稿日期、首次在线日期、卷期年份；搜索引擎抓取时间和网站迁移日期不作为论文发表年。
+
+### 1.2 机构范围与署名口径
+
+第一优先：AQR Capital Management、Citadel（包含经核实的历史名称 Citadel Investment Group、Citadel LLC）、Millennium Management。
+
+拓展机构可包括 D. E. Shaw、Two Sigma、Man AHL、Winton、Point72/Cubist、Acadian、Research Affiliates、BlackRock 的相关系统化研究团队。逐一核实，不因名称相近或招聘业务就视为同一机构。Citadel Securities 单列，不与 Citadel 对冲基金主体合并。
+
+每位关联作者使用以下 institution_relation：
+
+- STAFF_AT_PUBLICATION：正式发表时任职或具有明确的同期双重署名。
+- STAFF_AT_RESEARCH：有证据表明在研究或相应工作稿阶段任职，但正式发表时已变化。
+- FORMAL_ADVISOR_OR_COLLABORATOR：正式顾问或研究合作关系；与员工关系分开。
+- PAST_OR_LATER_EMPLOYEE：仅此前或此后任职，与论文相关阶段的联系未成立。
+- SPONSOR_OR_ACKNOWLEDGEMENT_ONLY：仅资助、致谢、提供数据、参加讨论或被机构转载。
+- UNVERIFIED：证据不足。
+
+员工主池优先纳入前两类，但必须显示任职时段及研究开展地点；顾问和合作关系另列供主审判断。其余类别不作为“该机构作者论文”的确定证据。
+
+机构核验以所选论文版本的作者栏、脚注、披露声明及可定位时间的官方履历为主。当前主页和 SSRN 动态作者档案不能倒推十年前的任职。
+
+特别消歧：
+- The Citadel / citadel.edu 可能指美国军校。
+- Millennium 可能指千禧年或数学难题。
+- 审稿人、致谢对象、引用文献作者不是本论文作者。
+- 机构网站收录与机构真实使用该策略是不同事实。
+- 论文写作期与发表期任职不同，应同时记录，不能用一个笼统“机构关联”覆盖。
+
+### 1.3 主题边界
+
+使用 topic_class：
+
+- DIRECT_OPTIMIZATION：直接决定组合权重、风险预算、配置或多期交易路径。
+- INPUT_WITH_PORTFOLIO_VALIDATION：研究预期收益、协方差、风险或交易成本等输入，并具有实质性的组合决策方法贡献及组合实验。
+- BACKGROUND_ONLY：主要是因子发现、资产定价解释、一般收益预测或普通排序组合，缺少组合优化贡献。
+- OUT_OF_SCOPE：不满足主题。
+
+重点方向：
+- 均值—方差、稳健／分布鲁棒优化、贝叶斯／收缩、估计误差与正则化；
+- 多信号／多策略组合、因子配置、风险预算；
+- 信号衰减、动态持仓、换手惩罚、交易成本和市场冲击；
+- 杠杆、融资、卖空、暴露、流动性和容量约束；
+- 预测与决策联合训练、以投资目标驱动的机器学习。
+
+纯执行研究只有在与组合持仓或多资产决策实质联动时进入主池。只包含“portfolio”或有多空收益图不自动满足主题要求。
+
+## 2. 复现类型与实验层
+
+### 2.1 reproduction_type
+
+| 枚举 | 定义 | 能否称正式复现 |
+| --- | --- | --- |
+| AUTHOR_CODE_RERUN | 锁定作者代码版本，按对应数据、方法和实验设定复跑 | 可以，须核验代码与论文一致 |
+| INDEPENDENT_FAITHFUL | 根据论文与附录独立实现，保持目标实验的关键数据、样本、算法和口径 | 可以；无公开代码本身不是障碍 |
+| APPROXIMATE_VALIDATION | 替换关键数据、样本、未披露参数或成本模型后验证方法 | 单列近似验证，不宣称复现原文数值 |
+| RESEARCH_EXTENSION | 改市场、改模型、加约束或提出新方法 | 单列扩展研究 |
+
+作者提供的派生数据可能足以复现指定表格，但不代表从原始数据开始的整条流程已复现。应分别记录“原始数据重建覆盖范围”和“派生数据后的实验覆盖范围”。
+
+微小数值差异、非关键工程实现差异及数据供应商更新不一概自动降级：先列差异，判断是否影响所声称的目标、指标和结论，由主审决定批准范围。不能用放宽误差容差掩盖实质性数据或方法替换。
+
+### 2.2 experiment_layer
+
+- PAPER_REPLICATION：按选定原文设定复现。
+- IMPLEMENTATION_AUDIT：独立检查信息时点、成本、风险匹配和实现问题。
+- APPROXIMATE_VALIDATION：批准的替代条件验证。
+- RESEARCH_EXTENSION：新增问题或方法。
+
+experiment_layer 表示实验目的，reproduction_type 表示相对原论文的实现关系。PAPER_REPLICATION 仅搭配 AUTHOR_CODE_RERUN 或 INDEPENDENT_FAITHFUL。IMPLEMENTATION_AUDIT 若只检查原设定下的会计与求解一致性，可保留对应忠实实现类型；若改变成本、时间顺序、风险匹配或其他经济设定，另建实验，reproduction_type 记为 APPROXIMATE_VALIDATION 或 RESEARCH_EXTENSION，同时保留审计目的标签，不回填为原文复现结果。
+
+如原文采用事后风险缩放、未计成本或存在其他值得质疑的设定，先准确记录并复现该设定；再在审计层评价改动的影响。不要悄悄“修正”原文后把新结果当成原样复现。
+
+## 3. 多 agent 组织
+
+总控 agent 统一定义、管理 paper_id、去重和合并结果，不能把各子 agent 的结论原封不动拼接。
+
+建议分工：
+
+A. 指定顶刊与 AQR：覆盖 J1/J2，沿机构研究页、作者论文目录和期刊记录检索。
+B. Citadel 与 Millennium：重点身份时间核验、主体消歧、作者履历与引文追踪。
+C. 拓展机构与实务／方法期刊：覆盖 J3/J4，提出纳入理由，防止以补充池替代指定顶刊。
+D. 复现尽调：取得全文、附录、数据说明与代码，对合格候选逐篇填模板。
+E. 独立复核：抽查身份、版本、数据和核心目标结果，挑战过于乐观的可复现判断。
+
+可以按可用并行数量合并角色或排队执行；检索、数据和代码尽调可以并行。每篇建议进入正式复现的论文，应有独立 agent 至少复核关键资格与核心阻塞项。
+
+每个子 agent 收到相同的范围定义、枚举和回传模板。不同 agent 发现同一论文时按 DOI 合并；无 DOI 时用标题＋作者＋年份暂定去重，不丢弃版本差异。
+
+## 4. 检索与尽调流程
+
+### 阶段一：建立检索覆盖矩阵
+
+建立 institution × journal_group × topic 的覆盖记录，至少明确三家指定机构在四本指定期刊的检索情况。
+
+三条检索路径同时推进：
+1. 机构研究页 → 作者目录／履历 → 论文。
+2. 期刊及出版社 → 机构全名、历史名、作者名、主题词。
+3. 合格种子论文 → 参考文献、后续引用与共同作者。
+
+关键词分组：
+- portfolio optimization / portfolio construction / portfolio choice / portfolio selection / asset allocation；
+- transaction costs / turnover / optimal trading / alpha decay / market impact；
+- shrinkage / covariance estimation / estimation error / regularization / robust optimization；
+- signal combination / alpha combination / factor allocation / risk budgeting；
+- end-to-end / decision-focused learning / implementable efficient frontier。
+
+查询示例：
+- "AQR" ("portfolio optimization" OR "portfolio construction" OR "portfolio choice")
+- "Citadel Investment Group" portfolio
+- "Citadel LLC" ("optimal trading" OR portfolio)
+- "Millennium Management" ("portfolio" OR "optimization")
+- "Management Science" "AQR" portfolio
+- site:academic.oup.com/rfs "Citadel" portfolio
+- "论文完整标题" (code OR replication OR data OR appendix)
+- "作者姓名" (CV OR biography OR publications)
+
+搜索引擎、Google Scholar、SSRN 等用于发现；最终书目与身份以出版社、原文、作者或机构官方资料核验。无法访问全文时保留实际访问状态，不写成已通读。
+
+### 阶段二：锁定书目、身份与主题
+
+每篇获得唯一 paper_id，记录正式版本 DOI、作者、期刊组、发表状态和可访问全文。
+
+保存至少：
+- 期刊与发表状态证据；
+- 作者机构及关系时段证据；
+- 主题相关性证据；
+- 使用版本和其他版本的差异。
+
+正式候选与排除项均保留。排除要有具体原因：主题不符、仅致谢、作者任职时点不符、重复版本、刊物不在设定范围等。
+
+### 阶段三：全文阅读与复现尽调
+
+对合格候选阅读方法、数据、实证、附录、补充材料及代码说明。
+
+逐篇回答：
+1. 论文究竟解决组合构建的哪个问题？
+2. 输入、决策变量、目标函数、约束和输出是什么？
+3. 支撑主要结论的是哪些表、图、面板、公式或数值实验？
+4. 每个目标需要哪些原数据、样本、预处理和参数？
+5. 必需数据是否真实可访问，作者代码是否匹配该版本？
+6. 没有作者代码时，是否足以忠实独立实现？
+7. 哪些缺口影响数值对齐，哪些会改变经济问题或复现类型？
+8. 相对于团队已有的简单基线，复现该方法能学到什么？
+
+数据访问必须区分：发现了数据说明、发现了下载链接、实际取得样本、取得完整所需数据。代码同样区分：找到仓库、取得指定版本、环境可启动、预运行成功、目标结果已生成。
+
+可以进行必要的非破坏性预运行，检查数据读取、依赖与关键公式；未运行必须写 NOT_RUN。检索立项阶段不填写不存在的完整回测结果。
+
+### 阶段四：确定目标与实验协议
+
+先固定论文版本，再建立 target_results 清单；覆盖支撑论文核心结论的主要结果，不只选容易复现的表格。
+
+按目标提取：
+- 原文位置与数值／图形模式；
+- 数据与参数配置；
+- 基准和评价口径；
+- 对照标准与运行前确定的容差；
+- 实现依赖与阻塞项。
+
+先提出原文设定下的复现协议；另外提出实现审计和后续扩展，保持可区分。
+
+### 阶段五：形成复现优先序和回传包
+
+不用一个总分抵消数据或方法硬障碍。分别评价：
+- 实习研究价值；
+- 与组合优化的直接相关性；
+- 原样复现可行性；
+- 方法透明度；
+- 数据可得性；
+- 证据与验证质量；
+- 实施复杂度与实际资源需求。
+
+资源需求仍需描述，以便安排顺序；不能仅因耗时或算力较大就排除。原文数据条件不具备则按证据处理。
+
+输出全部合格候选的分层优先序，再推荐一个“先启动项目”和若干互补备选；数量由实际证据决定。先启动项目应能清楚说明：
+- 为什么值得复现；
+- 哪些目标能忠实完成；
+- 什么资料已真实取得；
+- 首先核对哪个基准或中间结果；
+- 主要风险与解决方案。
+
+### 阶段六：检索停止条件
+
+不以达到某个篇数停止。以下条件同时具备后可提交完整批次：
+- 三家指定机构 × 四本指定期刊已有可追溯覆盖；
+- 主要相关作者与机构论文目录已检查；
+- 核心种子的前后向引文已跟进；
+- 补充期刊与机构的搜索有明确边界和依据；
+- 连续完成两轮不同路径的拓展后，没有新的合格核心文献，或新增线索均已归档处理；
+- 待核验、访问受限、未检出与排除项已经列明。
+
+结论使用“在已记录范围与渠道内未检出”，不要声称绝对不存在。
+
+## 5. 组合优化复现技术要求
+
+### 5.1 数据与时间顺序
+
+记录资产池、样本期、频率、预测期限、调仓频率、训练／验证／测试窗口及滚动规则。
+
+核对历史成分、退市、分红复权、期货合约与展期、财务与宏观数据发布时间、修订版本、缺失值和异常值处理。标准化、缩尾、填补、特征筛选、降维和模型选择的拟合信息范围必须清楚。
+
+记录信号可用时间、交易时点、成交价格与收益计量区间。标签跨期重叠时，记录原文如何处理边界；需要新增隔离期或剔除规则的，放在审计层并说明依据。
+
+### 5.2 持仓与交易会计
+
+写清决策变量是权重、美元头寸、股数还是合约数，收益是简单／对数／超额／总收益。
+
+明确调仓前持仓、调仓后持仓和交易量的关系；核对价格变化引起的权重漂移。记录单边／双边换手口径、交易成本、冲击、融资、融券、现金和杠杆处理。
+
+所有成本与风险参数写单位：小数、百分比、基点，日／月／年频率，资本规模或 AUM。原文没有某项费用时明确记为原文未计；不能自行加入后仍称原样结果。
+
+### 5.3 优化模型与数值实现
+
+记录目标函数、约束、风险与收益估计、正则化、风险厌恶、鲁棒参数、超参数选择、初始化、随机性、停止条件及求解器。
+
+按问题实际需要记录约束残差、目标值、收敛状态、求解失败率、替代处理、容差及非凸问题的多次初始化。不得静默裁剪权重、改变约束或丢弃失败交易日。
+
+无唯一最优解时，不以所有权重逐位相等作为唯一标准，应核对可行性与目标值等合适证据。
+
+### 5.4 基准与增量归因
+
+先忠实复现原文基准。再单独分析收益差异来自：
+- 信号或预测更好；
+- 风险估计更好；
+- 组合优化或调仓更好；
+- 风险、杠杆、资产范围或成本假设不同。
+
+审计比较使用一致信息集、样本、风险与约束，所有变化单列。端到端模型的完整复现不能被“固定同一信号再比较优化器”的消融实验替代；后者可另作机制分析。
+
+### 5.5 目标结果与容差
+
+在查看正式测试结果前规定目标和容差。不能统一使用“夏普误差小于 5%／10%”或“收益曲线看起来相似”。
+
+- 确定性数据与计算：依据数据精度、发表舍入、求解器精度及可核对的中间结果。
+- 随机训练：优先遵循作者种子与重复方案；缺失时预先规定重复实验并报告分布，不挑选最接近论文的一次。
+- 统计结果：同时核对样本、点估计、标准误／区间和估计方法。
+- 经济结论：分别报告数值对齐程度、关键排序、成本后的增量与机制是否一致。
+
+正式测试结果看过之后的调参或修订一律记入变更日志，标明已有信息。不得为了对齐原文数字反复选择最有利配置。
+
+### 5.6 实施顺序
+
+1. 冻结版本、数据规格和目标结果。
+2. 预运行数据管道、会计口径、关键公式和求解器。
+3. 对齐原文基准与中间统计量。
+4. 运行核心方法。
+5. 复现批准范围内的主表、主图及必要稳健性结果。
+6. 按证据定位差异。
+7. 单列实施审计。
+8. 复现结论清楚后，再开展研究扩展。
+
+## 6. 固定返回协议
+
+### 6.1 编号与缺失值
+
+- paper_id：稳定编号，例如 P001，不因排名变化而重排。
+- experiment_id：例如 P001-E01。
+- result_id：例如 P001-T03-PANELB。
+- evidence_id：例如 P001-S01。
+- blocker_id：例如 P001-B01。
+- change_id：例如 P001-C01。
+
+缺失值：
+- UNKNOWN：尚未知，不能推断。
+- NOT_REPORTED：已检查相关原文与附录，未披露。
+- NOT_FOUND：已按记录的渠道检索，未找到。
+- NOT_READ：已知材料存在，但尚未阅读或检查。
+- AMBIGUOUS：来源冲突或存在歧义，尚未解决。
+- NOT_RUN：尚未执行。
+- UNAVAILABLE：已确认当前无法取得。
+- NOT_APPLICABLE：不适用，并写原因。
+
+缺失不是零。每项关键未知应有寻找渠道、影响及下一步。数值结果栏在运行前统一 NOT_RUN。
+
+### 6.2 批次返回首页
+
+batch_id:
+search_cutoff_date:
+agent_names_and_roles:
+scope_and_deviations:
+records_screened:
+eligible_core_count:
+eligible_extended_count:
+awaiting_evidence_count:
+excluded_count:
+deduplication_rule:
+coverage_matrix_path:
+screening_log_path:
+best_first_project:
+backup_projects:
+concentrated_questions_for_reviewer:
+reviewer_decision: PENDING
+
+批次总表每行一篇，字段：
+paper_id | candidate_status | title | authors | publication_year | journal | journal_group | DOI | publication_status | affiliated_author | institution | institution_relation | relation_period | topic_class | proposed_reproduction_type | data_access_summary | code_source_type | execution_status | key_targets | main_blockers | agent_recommendation | priority_reason | evidence_ids
+
+candidate_status 固定为 CORE / EXTENDED / PENDING_EVIDENCE / EXCLUDED。publication_status 固定为 PUBLISHED / ACCEPTED / WORKING_PAPER / UNVERIFIED。代码来源与执行状态采用逐篇模板 F 的同名枚举。数据汇总只有在目标所需的全部数据均满足相应条件时才能写完整可用；存在必需数据缺口时逐项指出，不能由一个公开数据集代表全部需求。
+
+### 6.3 每篇论文回传模板
+
+#### A. 一页决策摘要
+
+paper_id:
+candidate_status:
+title:
+one_sentence_problem:
+why_replication_is_useful:
+main_contribution_in_portfolio_pipeline:
+recommended_target_scope:
+proposed_reproduction_type:
+agent_recommendation:
+strongest_supporting_evidence:
+critical_blockers:
+what_must_be_confirmed_before_full_run:
+reviewer_decision: PENDING
+
+这里不要写泛泛的“具有重要意义”。说明该论文具体改进了什么：权重稳定性、成本后表现、信号组合、动态调仓、约束可行性、容量或其他可验证对象。
+
+#### B. 书目、身份与版本
+
+title:
+all_authors:
+journal:
+journal_group:
+publication_status:
+working_paper_date:
+first_online_date:
+issue_year_volume_pages:
+DOI:
+publisher_url:
+selected_pdf_url_or_path:
+selected_pdf_version_date:
+supplement_url_or_path:
+selected_pdf_checksum_if_obtained:
+affiliated_author:
+institution_entity:
+institution_relation:
+relation_period:
+affiliation_evidence_ids:
+topic_class:
+topic_evidence_ids:
+
+版本对照表：
+项目 | 正式发表版 | 工作稿／附录 | 作者代码实际实现 | 本次拟采用 | 差异影响
+样本期与资产池 | | | | |
+数据清洗与特征 | | | | |
+目标函数与约束 | | | | |
+参数与训练程序 | | | | |
+成本及融资 | | | | |
+基准与指标 | | | | |
+
+#### C. 证据索引
+
+evidence_id | 支持的事实 | 来源类型 | URL或文件路径 | 论文页码／章节／表图／代码位置 | 版本／取得日期 | 实际核查状态 | 简短说明
+
+来源类型固定为：
+PUBLISHER / PAPER / SUPPLEMENT / AUTHOR_OFFICIAL / INSTITUTION_OFFICIAL / DATA_PROVIDER / AUTHOR_CODE / THIRD_PARTY_CODE / SECONDARY_DISCOVERY。
+
+事实证据优先使用原始来源。仅有搜索摘要、第三方概述或访问失败时如实标明。记录足够定位信息，不大段复制受版权保护的全文。
+
+#### D. 原文结果与复现目标
+
+result_id | experiment_id | 原文位置 | 支持的主要结论 | 原文数值或图形模式 | 必需设定 | 预先验收规则 | 原文证据 | 当前状态
+
+必须填到 Table/Figure 编号、面板、指标和样本。若原文没有实证、仅有理论或数值例子，明确相应目标类型，不能虚构策略回测。
+
+#### E. 数据尽调
+
+dataset_id | 数据源／版本 | 必需字段及单位 | 样本与频率 | 信息可用时点 | 原始或派生数据 | 当前访问状态 | 实际访问证据 | 历史版本可得性 | 替代方案 | 对复现类型的影响
+
+补充固定字段：
+asset_universe_definition:
+sample_start_end:
+prediction_horizon:
+rebalance_frequency:
+training_validation_test_windows:
+window_update_rule:
+signal_to_trade_lag:
+price_timestamp_and_type:
+historical_membership_handling:
+delisting_and_corporate_actions:
+futures_roll_and_currency_handling:
+missing_values_and_outliers:
+transformations_and_fit_windows:
+data_manifest_and_checksums:
+remaining_data_gaps:
+
+数据访问状态：
+DOCUMENTED_ONLY / LINK_FOUND / SAMPLE_ACCESSED / FULL_REQUIRED_DATA_ACCESSED / ENTITLEMENT_UNCONFIRMED / UNAVAILABLE。
+
+另记录 data_role：RAW_INPUT / DERIVED_INPUT / PAPER_OUTPUT / BENCHMARK。公开的因子收益或组合收益可能是论文输出，不能自动视为足以重建信号、成分、权重、交易和成本的输入。
+
+未知权限不得写成已有授权。受限制原始数据的回传提供清单与访问说明，文件分享范围按实际授权处理。
+
+#### F. 方法与代码尽调
+
+decision_variable_and_units:
+inputs:
+objective_function:
+constraints:
+outputs:
+risk_and_return_estimation:
+hyperparameters_and_selection_rule:
+training_information_set:
+random_seed_policy:
+initialization_and_stopping_rule:
+portfolio_accounting_equation:
+turnover_formula:
+transaction_cost_and_impact_formula:
+financing_cash_and_short_borrow:
+aum_and_risk_targeting:
+metric_definitions_and_annualization:
+method_evidence_ids:
+unspecified_method_items:
+
+代码清单：
+code_source_type: AUTHOR / THIRD_PARTY / INDEPENDENT_PLANNED / NOT_FOUND
+repository_or_archive_url:
+commit_or_release:
+paper_version_covered:
+license_or_usage_terms:
+required_language_and_dependencies:
+environment_lockfile:
+entry_command:
+private_dependencies:
+execution_status: NOT_RUN / STARTED / PREFLIGHT_PASSED / FAILED / TARGETS_GENERATED
+execution_log_path:
+solver_name_version_and_tolerances:
+failure_and_fallback_policy:
+independent_implementation_plan_if_needed:
+
+第三方实现不得写成官方代码。发现仓库与实际运行成功分别记载。
+
+#### G. 复现协议与基准对齐
+
+experiment_id | experiment_layer | reproduction_type | 目标结果 | 数据配置 | 模型配置 | 基准 | 成本／约束／风险 | 评价指标 | 预先容差与依据 | 输出路径
+
+基准对齐表：
+比较项 | 原文设定 | 本次忠实复现 | 单独审计设定 | 一致性／差异原因
+输入信号与特征 | | | |
+样本与频率 | | | |
+风险模型 | | | |
+杠杆与目标风险 | | | |
+成本 | | | |
+暴露与持仓约束 | | | |
+调参信息范围 | | | |
+交易时点与延迟 | | | |
+
+关键公式与伪代码必须能追溯原文。所有自行假定内容进入下一节。
+
+#### H. 偏离、变更与阻塞
+
+偏离表：
+change_id | experiment_id | 原设定 | 拟实现设定 | 原因与证据 | 是否已见测试结果 | 对结论的影响 | 是否改变复现类型 | 主审处理
+
+阻塞表：
+blocker_id | 类型 | 影响的目标 | 缺什么 | 已查渠道／已做尝试 | 解决动作 | 关闭条件 | 是否影响其他工作 | 需主审决定的问题
+
+阻塞类型：
+DATA_ACCESS / DATA_VERSION / METHOD_DETAIL / CODE / ENVIRONMENT / NUMERICAL / VERSION_CONFLICT / OTHER。
+
+不要用“需进一步研究”代替具体动作；要说明找到哪一份资料或验证哪件事情才能解除阻塞。
+
+#### I. 执行顺序、产物与推荐
+
+implementation_steps:
+first_intermediate_result_to_match:
+full_target_coverage_plan:
+expected_compute_and_data_requirements:
+artifact_manifest:
+agent_recommendation:
+recommendation_evidence_ids:
+open_questions_for_reviewer:
+independent_checker:
+independent_checker_findings:
+plan_version:
+review_package_version:
+review_package_checksum_if_available:
+requested_experiment_ids:
+requested_result_ids:
+reviewer_decision: PENDING
+approval_record_id: PENDING
+approved_version_and_scope: PENDING
+approved_experiment_ids: PENDING
+approved_result_ids: PENDING
+reviewed_by: PENDING
+reviewed_at: PENDING
+conditions_and_followups: PENDING
+
+推荐枚举：
+RECOMMEND_FAITHFUL_REPLICATION
+REQUEST_EVIDENCE
+RECOMMEND_APPROXIMATE_VALIDATION_ONLY
+RECOMMEND_HOLD
+RECOMMEND_EXCLUDE
+
+推荐仅是执行 agent 的建议，不得自己填写主审已批准。主审使用第 7 节的审批枚举。实际复现必须引用审批记录和获批计划版本；获批后新增目标或实质变更另交变更记录，不能自行沿用原批准范围。
+
+### 6.4 实际复现完成后的追加模板
+
+run_id:
+paper_id:
+approval_record_id:
+approved_plan_version:
+executed_paper_version:
+code_commit:
+environment_manifest:
+data_manifest:
+configuration_files:
+random_seeds:
+start_end_time:
+execution_commands:
+logs:
+solver_diagnostics:
+change_log:
+failed_experiments:
+
+结果对照：
+result_id | 原文值 | 复现值 | 绝对差 | 相对差（适用时） | 预定容差 | 数值状态 | 经济结论状态 | 证据／输出路径 | 差异归因
+
+数值状态：
+MATCHED / PARTIALLY_MATCHED / NOT_MATCHED / BLOCKED。
+
+差异归因：
+VERSION / DATA / PREPROCESSING / METHOD_OR_CONSTRAINT / PARAMETER_OR_TRAINING / NUMERICAL_OR_RANDOM / METRIC_OR_COST / UNEXPLAINED。
+
+结论分开填写：
+implementation_fidelity:
+result_consistency:
+practical_transferability:
+scope_not_completed:
+agent_acceptance_recommendation:
+reviewer_acceptance: PENDING
+
+验收建议：
+REPRODUCED_TARGETS / PARTIALLY_REPRODUCED / APPROXIMATE_VALIDATION_COMPLETED / NOT_REPRODUCED_UNDER_RECORDED_CONDITIONS / INCOMPLETE_BLOCKED。
+
+归因必须有证据。不能因为推测某项差异可能来自数据版本，就写成已经解释。
+
+### 6.5 便于跨 agent 合并的机器可读摘要
+
+为每篇论文同时返回 record.json，字段与上述正文保持一致。正文使用本节规定的缺失标记；JSON 中缺失的标量写 null，并在 missing_fields 中说明 reason、checks_performed、next_action。数值列未运行时用 null，另设 result_status: NOT_RUN，不能把字符串写进数值列。空数组只表示确认没有记录，不表示尚未检查。
+
+摘要至少包含：schema_version、paper_id、candidate_status、responsible_agent、as_of（含时区）、title、DOI、journal_group、publication_status、selected_paper_version、institution_relations、topic_class、target_scope、planned_reproduction_types、target_ids、critical_evidence_ids、hard_blocker_ids、unapproved_change_ids、agent_recommendation、reviewer_decision、approval_record_id、plan_version、review_package_version、execution_stage、attachments、missing_fields。
+
+target_scope 使用 ALL_MAIN_CLAIMS / ALL_MAIN_EMPIRICAL_RESULTS / SELECTED_PILOT；选择初步实验时明确尚未覆盖的主要结论。publication_status 使用 PUBLISHED / ACCEPTED / WORKING_PAPER / UNVERIFIED；execution_stage 使用 DUE_DILIGENCE / PREFLIGHT / FULL_REPLICATION / AUDIT / EXTENSION。尽调报告的 reviewer_decision 固定为 PENDING，不预填已批准。执行阶段与实验是否成功分别记录。
+
+附件列表仅填写实际已生成的路径。未生成的材料单列 planned_artifacts，不能伪造下载链接或文件存在状态。
+
+## 7. 主审助手的审批规则
+
+### 7.1 立项关
+
+审批对象必须包含 paper_id、论文版本、experiment_id、目标表图与 reproduction_type。
+
+APPROVE_FAITHFUL_REPLICATION：
+- 资格、版本、目标范围已明确；
+- 必需数据实际可访问，或现有权限与访问可行性有证据；
+- 核心方法和参数可以按原文实现或估计；
+- 成本、基准、样本外口径明确；
+- 关键偏离与未知不会破坏所声称的忠实复现。
+
+REQUEST_EVIDENCE：
+缺口有限且有明确补证路径。列“缺什么、为什么影响结果、去哪补、如何关闭”。其他独立工作继续，不要求整个批次停摆。
+
+APPROVE_APPROXIMATE_VALIDATION_ONLY：
+原文必要条件不可满足，但替代实验有清楚的研究价值。审批中必须列替代条件、能够支持的结论和不能声称的原文复现范围。
+
+HOLD：
+关键数据、版本或方法阻塞使当前实验难以解释。记录恢复条件。
+
+REJECT_SCOPE：
+不符合目标机构／关系、刊物范围或组合优化主题，保留排除证据。
+
+不得用任意总分掩盖硬障碍；没有公开代码不是否决条件，存在 GitHub 也不是通过条件。
+
+### 7.2 结果关
+
+检查实际产物能否从固定输入、配置和版本重建；逐项核对批准目标，判断：
+- 是否忠实执行；
+- 数值和主要结论是否对齐；
+- 不一致是否有证据解释；
+- 是否混入未经批准的替代或扩展；
+- 失败与未完成目标是否完整报告。
+
+复现成功、论文设定严谨、方法适合实盘是三个独立判断。原文未计成本的毛收益结果可以被复现，但实务价值需另行审计。
+
+## 8. 最终交付清单
+
+1. 一页决策摘要：检索范围、最值得启动的项目、备选、关键缺口及具体待审事项。
+2. 完整可筛选文献主表：核心、拓展、待核验与排除状态齐全。
+3. 每篇合格候选的统一尽调卡：包括证据、目标实验、数据、方法、代码、偏离与阻塞。
+4. 检索覆盖矩阵、查询日志、去重与排除记录。
+5. 建议启动项目的完整复现协议和预先验收标准。
+6. 证据与附件清单：论文及附录来源、代码版本、数据说明、实际预运行日志等。
+7. 后续复现结果按 6.4 节追加，不覆盖最初计划与原先未知状态的历史。
+
+文献主表可以使用 xlsx/csv；说明文档用 Markdown 或可编辑文档。若环境不支持生成文件，按本文件固定字段完整返回文本，不声称生成不存在的附件。受限制数据提供获准分享的元数据和访问说明。
+
+## 9. 已核验的检索起点
+
+以下只完成了书目、主题或机构关系层面的初步核验，不是已批准的复现项目。执行时仍须检查全文、补充资料、代码、数据和指定实验。
+
+### S1. Dynamic Trading with Predictable Returns and Transaction Costs
+
+作者：Nicolae Gârleanu；Lasse H. Pedersen。
+发表：The Journal of Finance，2013，68(6):2309–2340。
+DOI：https://doi.org/10.1111/jofi.12080
+机构线索：NBER 页面披露 Pedersen 与 AQR 的关联，需按正式版本继续核验具体关系。
+研究方向：可预测收益、信号衰减、交易成本下的动态组合决策。
+来源：
+https://www.nber.org/papers/w15205
+https://research.cbs.dk/en/publications/dynamic-trading-with-predictable-returns-and-transaction-costs-2/
+https://www.aqr.com/Insights/Research/Journal-Article/Dynamic-Trading-With-Predictable-Returns-and-Transactions-Costs
+
+### S2. Machine Learning and the Implementable Efficient Frontier
+
+作者：Theis Ingerslev Jensen；Bryan Kelly；Semyon Malamud；Lasse Heje Pedersen。
+发表：The Review of Financial Studies，2026，39(10):3035–3078。
+DOI：https://doi.org/10.1093/rfs/hhag022
+机构线索：出版社列 Kelly、Pedersen 的 AQR 署名。
+研究方向：结合交易成本与机器学习的组合决策。
+来源：
+https://academic.oup.com/rfs/article/39/10/3035/8524346
+https://www.aqr.com/Insights/Research/Working-Paper/Machine-Learning-and-the-Implementable-Efficient-Frontier
+注意：机构网站仍可能展示早期工作稿路径；不能据此忽略正式发表版本，也不能混用两版结果。
+
+### S3. Enhanced Portfolio Optimization
+
+作者：Lasse Heje Pedersen；Abhilash Babu；Ari Levine。
+发表：Financial Analysts Journal，2021，77(2):124–151。
+DOI：https://doi.org/10.1080/0015198X.2020.1854543
+机构线索：出版社作者简介明确三位作者的 AQR 任职。
+研究方向：均值—方差优化中的估计噪声与增强优化。
+来源：
+https://www.tandfonline.com/doi/abs/10.1080/0015198X.2020.1854543
+https://research.cbs.dk/en/publications/enhanced-portfolio-optimization/
+https://www.aqr.com/Insights/Research/White-Papers/Enhanced-Portfolio-Optimization
+分类：实务期刊补充池，不冒充 J1 顶刊论文。
+
+### S4. Distributionally robust end-to-end portfolio construction
+
+作者：Giorgio Costa；Garud N. Iyengar。
+发表：Quantitative Finance，2023，23(10):1465–1482。
+DOI：https://doi.org/10.1080/14697688.2023.2236148
+机构线索：出版社列 Costa 署名 Millennium Management。
+研究方向：收益预测与分布鲁棒组合优化联合训练。
+来源：
+https://www.tandfonline.com/doi/full/10.1080/14697688.2023.2236148
+https://cfe.columbia.edu/events/8th-annual-bloomberg-columbia-machine-learning-finance-workshop-2022
+分类：方法期刊补充池。不能用作者后来任职的机构替换本论文署名。
+
+### S5. Efficient Trading Strategies in the Presence of Market Frictions
+
+作者：Elyès Jouini；Hédi Kallal。
+发表：The Review of Financial Studies，2001，14(2):343–369。
+DOI：https://doi.org/10.1093/rfs/14.2.343
+机构线索：原文列 Kallal 署名 Citadel Investment Group，同时说明研究在其 NYU 任职时开展。
+研究方向：市场摩擦下策略效率的理论刻画。
+来源：
+https://www.ceremade.dauphine.fr/~jouini/EfficientRFS.pdf
+https://academic.oup.com/rfs/article-abstract/14/2/343/1600926
+用途：Citadel 检索与主题边界核验的起点。其理论性质需要另行评估，不因署名与期刊符合就自动优先安排实证复现。
+
+## 10. 发给执行助手时可直接使用的启动语
+
+请完整执行附件《组合优化论文复现：研究执行计划与统一回传范式》。先完成系统检索和逐篇复现尽调，按统一字段提交可审批的立项包。不要因 token 或算力缩减核验深度。保持论文版本、机构证据、数据访问、代码状态和实验目标可追溯；所有未执行结果写 NOT_RUN。由各 agent 给出建议，主审决定字段保留 PENDING。优先推荐能够忠实复现、又能产生明确组合优化研究收获的项目，并单列近似验证与扩展研究。
+

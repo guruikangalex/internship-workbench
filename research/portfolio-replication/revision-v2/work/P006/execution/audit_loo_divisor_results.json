@@ -1,0 +1,66 @@
+{
+  "author_consistency": {
+    "pathA_best_z_eq_author": true,
+    "pathA_mixture_vs_author_L2": 0.0
+  },
+  "asset_weights_check": {
+    "pathA_pi_vs_author_get_upsa_weights_L2": 0.0,
+    "note": "pi in R^N (N=153) final asset weights; W in R^L (L=10) mixing coefficients; do not conflate."
+  },
+  "issue_id": "REV2-P006-09",
+  "experiment_layer": "IMPLEMENTATION_AUDIT",
+  "reproduction_type": "AUTHOR_CODE_RERUN (path A) + AUDIT VARIANTS (B,C)",
+  "not_paper_replication": true,
+  "environment": {
+    "python": "3.9.6",
+    "numpy": "2.0.2",
+    "author_code": "Dataverse 10.7910/DVN/OHZFKD file 14008244 (extracted); local path via UPSA_PACKAGE_DIR",
+    "upsa_py_sha256": "56a3a00b767bce1be65db80ecf61797c8fc5bffa1e73deecc864a01e33792355"
+  },
+  "data": {
+    "panel": "factors_main",
+    "rows_total": 614,
+    "train_window": 120,
+    "P": 153,
+    "first_train_start": "1971-11-30",
+    "first_train_end": "1981-10-31",
+    "factors_main_csv_sha256": "7b1f96c86d80baa5e4458f1883e3f4b930dcf6367c914e0138a2182c499f8356"
+  },
+  "definitions": {
+    "A_author": "author w_and_lambda: smoother /T + w_adj/z; LOO=(wbar-w)/(1-w); z unrescaled",
+    "B_paper_aligned": "LOO penalty z->z*(T-1)/T in smoother; full-window basis uses original z",
+    "C_direct_Tminus1": "diagnostic: smoother /(T-1), w_adj/(T-1), z unrescaled"
+  },
+  "z_grid": [1e-10, 1e-09, 1e-08, 1e-07, 1e-06, 1e-05, 0.0001, 0.001, 0.01, 0.1],
+  "per_z": [
+    {"z": 1e-10, "loo_A_vs_B_fro": 0.0038235423681046567, "loo_A_vs_B_maxabs": 0.0035136694702191384, "loo_A_vs_C_fro": 16.596557606317383, "loo_A_vs_C_maxabs": 4.518930544744674},
+    {"z": 1e-09, "loo_A_vs_B_fro": 9.044326116941536e-05, "loo_A_vs_B_maxabs": 2.237671052268686e-05, "loo_A_vs_C_fro": 16.935535554803856, "loo_A_vs_C_maxabs": 4.561049190480405},
+    {"z": 1e-08, "loo_A_vs_B_fro": 0.0009177984121950619, "loo_A_vs_B_maxabs": 0.00028698801334869906, "loo_A_vs_C_fro": 22.112236076283757, "loo_A_vs_C_maxabs": 5.462760377357609},
+    {"z": 1e-07, "loo_A_vs_B_fro": 0.006361682905037659, "loo_A_vs_B_maxabs": 0.0019344099595511866, "loo_A_vs_C_fro": 156.55986123858236, "loo_A_vs_C_maxabs": 144.82004619230557},
+    {"z": 1e-06, "loo_A_vs_B_fro": 0.018588801152550904, "loo_A_vs_B_maxabs": 0.006120041501988194, "loo_A_vs_C_fro": 5.876031910846766, "loo_A_vs_C_maxabs": 4.985068912135459},
+    {"z": 1e-05, "loo_A_vs_B_fro": 0.019082582280504978, "loo_A_vs_B_maxabs": 0.006278400796393413, "loo_A_vs_C_fro": 0.6569412777538076, "loo_A_vs_C_maxabs": 0.41136647796121206},
+    {"z": 0.0001, "loo_A_vs_B_fro": 0.014612238862516228, "loo_A_vs_B_maxabs": 0.006284317913957782, "loo_A_vs_C_fro": 0.1708547359134648, "loo_A_vs_C_maxabs": 0.08621376260489022},
+    {"z": 0.001, "loo_A_vs_B_fro": 0.016874560738066365, "loo_A_vs_B_maxabs": 0.006422453799445338, "loo_A_vs_C_fro": 0.056762652085762554, "loo_A_vs_C_maxabs": 0.020961533241761643},
+    {"z": 0.01, "loo_A_vs_B_fro": 0.010791269267188347, "loo_A_vs_B_maxabs": 0.003239830674162447, "loo_A_vs_C_fro": 0.018076083941557578, "loo_A_vs_C_maxabs": 0.005260561511350126},
+    {"z": 0.1, "loo_A_vs_B_fro": 0.002560193085370701, "loo_A_vs_B_maxabs": 0.000705046354981087, "loo_A_vs_C_fro": 0.002876624665325228, "loo_A_vs_C_maxabs": 0.0008385087277696379}
+  ],
+  "full_target": {
+    "W_mixture_A": [0.060512825559572596, 9.792882866104246e-07, 4.54084962230459e-07, 8.744938357830127e-08, 4.743501182533422e-08, 0.07334385606951341, 0.32004421167227637, 0.6081822522494353, 9.911332980957527e-08, 3.124242800615531e-07],
+    "W_mixture_B": [0.060384327530653474, 9.461667245982733e-07, 4.249659801932725e-07, 8.121687205600142e-08, 4.407193848700992e-08, 0.07367026334069626, 0.3159172575510755, 0.6122735949005179, 9.10973513863012e-08, 2.8439265927783965e-07],
+    "W_mixture_C": [1.24121338363724e-06, 1.1827354712443344e-07, 5.084539893698477e-09, 0.004046787369927209, 7.173723663791332e-07, 0.19978247735763463, 0.16322834632759547, 0.7220188413900169, 4.859076717676148e-08, 1.5909671520699813e-07],
+    "W_mixture_dim": "L=10 (ridge-basis mixing coefficients, NOT asset weights)",
+    "best_z_idx_A": 6,
+    "best_z_idx_B": 6,
+    "best_z_idx_C": 6,
+    "W_mixture_A_vs_B_fro": 0.005821845794937056,
+    "W_mixture_A_vs_C_fro": 0.2391960225964351,
+    "asset_pi_A_vs_B_fro": 0.0689065711540877,
+    "asset_pi_A_vs_C_fro": 12.611281334281692
+  },
+  "verdict": {
+    "path_A_preserved": true,
+    "author_implementation_not_modified": true,
+    "numeric_sensitivity_recorded": true,
+    "claim": "Audit records divisor-convention difference and low-z stability; not paper replication, not backfilled into P006-E01."
+  }
+}

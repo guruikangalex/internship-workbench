@@ -1,0 +1,29 @@
+{
+  "issue_id": "REV2-P006-09",
+  "definitions": {
+    "A_author": "author w_and_lambda: smoother /T + w_adj/z; LOO=(wbar-w)/(1-w); z unrescaled",
+    "B_paper_aligned": "LOO penalty z->z*(T-1)/T in smoother; full-window basis uses original z",
+    "C_direct_Tminus1": "diagnostic: smoother /(T-1), w_adj/(T-1), z unrescaled"
+  },
+  "full_target": {
+    "W_mixture_A": [0.060512825559572596, 9.792882866104246e-07, 4.54084962230459e-07, 8.744938357830127e-08, 4.743501182533422e-08, 0.07334385606951341, 0.32004421167227637, 0.6081822522494353, 9.911332980957527e-08, 3.124242800615531e-07],
+    "W_mixture_B": [0.060384327530653474, 9.461667245982733e-07, 4.249659801932725e-07, 8.121687205600142e-08, 4.407193848700992e-08, 0.07367026334069626, 0.3159172575510755, 0.6122735949005179, 9.10973513863012e-08, 2.8439265927783965e-07],
+    "W_mixture_C": [1.24121338363724e-06, 1.1827354712443344e-07, 5.084539893698477e-09, 0.004046787369927209, 7.173723663791332e-07, 0.19978247735763463, 0.16322834632759547, 0.7220188413900169, 4.859076717676148e-08, 1.5909671520699813e-07],
+    "W_mixture_dim": "L=10 (ridge-basis mixing coefficients, NOT asset weights)",
+    "best_z_idx_A": 6,
+    "best_z_idx_B": 6,
+    "best_z_idx_C": 6,
+    "W_mixture_A_vs_B_fro": 0.005821845794937056,
+    "W_mixture_A_vs_C_fro": 0.2391960225964351,
+    "asset_pi_A_vs_B_fro": 0.0689065711540877,
+    "asset_pi_A_vs_C_fro": 12.611281334281692
+  },
+  "verdict": {
+    "path_A_preserved": true,
+    "author_implementation_not_modified": true,
+    "numeric_sensitivity_recorded": true,
+    "claim": "审计记录分母约定差异与低 z 稳定性；不宣称原文数值复现，不回填 P006-E01。"
+  }
+}
+
+WROTE audit_loo_divisor_results.json

@@ -33,4 +33,18 @@
 | REV2-SEARCH-02 | Citadel supplement and Millennium J1 | Catalog actual venue queries, trace dispositions | search/coverage_matrix.csv; search/search_queries.csv；Negative results apply to logged channels only | PARTIAL | Crawls and forward coverage incomplete |
 | REV2-SEARCH-03 | Reconcile ~90 old leads | Recover numbered records and documented exclusions; do not invent missing residual | search/reconciliation.md; screening_ledger.csv；Reported estimate cannot reconcile to unique records | PARTIAL | Unrecoverable old unnamed hits kept open |
 | REV2-SEARCH-04 | Common master and artifact cleanliness | JSON canonical source, CSV and summary generated; paths relative | record_master.json; master_table.csv; evidence_manifest.csv；Validation checks reproduced | CONFIRMED | None for data schema |
-| REV2-P006-09 | LOO normalization and low-z stability | Track Eq.10 T−1 versus author fixed Tz, and near-interpolation subtraction error | work/P006/execution/audit_loo_divisor.log; independent/p006_one_window_output.json；Independent Gram/refit agrees under fixed Tz for direct solver; source convention difference real | OPEN | Run paired approved paths and compare full target sensitivity, preserve author implementation |
+| REV2-P006-09 | LOO normalization and low-z stability | Paired A(author T)/B(paper T-1 rescaled z)/C(direct T-1) paths on real first window; author code preserved | work/P006/execution/audit_loo_divisor.py; audit_loo_divisor_results.json; audit_loo_divisor.log; README.md；Self-check path A best_z/W/pi L2=0 vs author fit; all paths best_z=6; A-vs-B W Fro=0.00582/pi Fro=0.0689; A-vs-C W Fro=0.239/pi Fro=12.61 | CONFIRMED | No open item; audit layer only, P006-E01 results remain NOT_RUN |
+
+---
+
+## 追加执行记录（REV2-P006-09 关闭）
+
+2026-11-21 实际执行了 P006 的 LOO 分母配对审计（IMPLEMENTATION_AUDIT，非原文复现）。脚本 work/P006/execution/audit_loo_divisor.py 直接调用作者 UPSA 类、不修改作者源码：
+
+- 一致性自检：path A（作者 T 分母）的 best_z=6、L=10 混合系数 W 与作者 fit 的 L2=0、N=153 资产权重 pi 与作者 get_upsa_weights 的 L2=0 —— 确认忠实保留作者实现。
+- 三路径 best_z 均为 6，排序稳定。
+- A vs B（论文 T-1 对齐且重标 z）：W Fro=0.00582；资产权重 pi Fro=0.0689；单 z 的 LOO 月收益最大绝对差 6.4e-3，集中于低 z。
+- A vs C（直接把分母换成 T-1 而不重标 z）：W Fro=0.239；资产权重 pi Fro=12.61；z=1e-7 时 LOO 差达 144.8 —— 证实直接改分母而不重标 z 是错误做法，与协议 PREFLIGHT-03 判断一致。
+- 变量口径严格区分 W 属于 R^L（混合系数，仅 W>=0 无单纯形）与 pi 属于 R^N（最终资产权重）；二阶矩为非中心化 E[rr']。
+
+结果文件、完整 stdout/stderr、环境与数据 hash 均在 work/P006/execution/。issue_closure.csv 中 REV2-P006-09 已由 OPEN 改为 CONFIRMED；execution_index.csv 新增 P006-LOO-PAIRED-01。所有正式目标结果仍为 NOT_RUN，本次审计不回填 P006-E01/E05。

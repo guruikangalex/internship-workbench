@@ -1,0 +1,8 @@
+[audit] WROTE /Users/guruikang/WorkBuddy/2026-11-20-15-03-43/internship-workbench/research/portfolio-replication/revision-v4/executions/P006_E06_independent/results/audit_E_warnings.json
+data finite {'factors_main_finite': True, 'n_nan': 0, 'n_inf': 0, 'shape': [614, 153]}
+K_eq_XXt nwarn 3 finite True
+prepare_full_basis nwarn 12 finite True
+stable_loo nwarn 18 finite True
+QP_inputs_uQ nwarn 21 finite True
+full scan warnings 14820 nonfinite windows 0 fp exceptions 0
+errstate raise FloatingPointError('divide by zero encountered in matmul')

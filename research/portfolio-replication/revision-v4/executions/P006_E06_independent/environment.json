@@ -1,0 +1,30 @@
+{
+  "run_id": "P006-E06-INDEP-20261121-01",
+  "python_executable": "/Users/guruikang/WorkBuddy/2026-11-20-15-03-43/CO-REP-20261120-02/execution/env_py396/bin/python",
+  "python_version": "3.9.6",
+  "platform": "darwin arm64 (Apple Silicon)",
+  "kernel": "Darwin Kernel Version 27.0.0",
+  "packages": {
+    "numpy": "2.0.2",
+    "scipy": "1.13.1",
+    "pandas": "2.3.3",
+    "cvxopt": "1.3.3",
+    "statsmodels": "0.14.6"
+  },
+  "cvxopt_options": {
+    "show_progress": false,
+    "abstol": 1e-7,
+    "reltol": 1e-6,
+    "feastol": 1e-7,
+    "maxiters": 100,
+    "note": "cvxopt library defaults, identical to author package src/upsa.py; E06 is an independent math implementation, not a copy of author QP code."
+  },
+  "env_vars": {
+    "OMP_NUM_THREADS": "1",
+    "OPENBLAS_NUM_THREADS": "1",
+    "MKL_NUM_THREADS": "1",
+    "MPLBACKEND": "Agg"
+  },
+  "independence_statement": "E06 independently implements K=XX', G_c=(K+c z I)^-1, a_t=1-(G_c 1)_t/diag(G_c)_t, the direct delete-row refit cross-check, the QP and trace scaling. Author src/upsa.py is imported ONLY as a first-window reference for the A-vs-B0 comparison and is never used to generate E06 B0/B1 outputs.",
+  "reference_commit": "104aecfcad4c308e1044a3d15483fe2320619597"
+}

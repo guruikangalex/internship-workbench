@@ -1,0 +1,8 @@
+[rerun] 100/494 elapsed 0.1s
+[rerun] 200/494 elapsed 0.3s
+[rerun] 300/494 elapsed 0.4s
+[rerun] 400/494 elapsed 0.5s
+[audit] WROTE /Users/guruikang/WorkBuddy/2026-11-20-15-03-43/internship-workbench/research/portfolio-replication/revision-v4/executions/P006_E06_independent/results/audit_A_corrected_summary.json
+sharpe orig/corr B0 1.915168630926592 1.9234872675647674
+sharpe orig/corr B1 1.915609118415525 1.923800816116795
+B0 return orig vs corrected maxabs 0.5798794240014711

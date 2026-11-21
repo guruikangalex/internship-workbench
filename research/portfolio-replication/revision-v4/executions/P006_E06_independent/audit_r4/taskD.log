@@ -1,0 +1,10 @@
+[D] 150/494 elapsed 0.8s
+[D] 300/494 elapsed 1.2s
+[D] 450/494 elapsed 1.7s
+[audit] WROTE /Users/guruikang/WorkBuddy/2026-11-20-15-03-43/internship-workbench/research/portfolio-replication/revision-v4/executions/P006_E06_independent/results/qp_highprecision.json
+orig B0 max 2.1052484888394266e-07 n>1e-7 14
+orig B1 max 1.554855368388267e-07 n>1e-7 15
+cvxopt_default B0 max 2.1052484888394266e-07 B1 max 1.554855368388267e-07
+cvxopt_highprec B0 max 8.106114573733058e-13 B1 max 9.201515192611337e-13
+cvxopt_highprec_scaled B0 max 2.9645965536232213e-12 B1 max 2.8869323733830677e-12
+scipy_slsqp B0 max 1.7571270416461005e-07 B1 max 2.137991147455054e-07

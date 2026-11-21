@@ -1,0 +1,113 @@
+{
+  "config_id": "P006-E06-INDEPENDENT-FROZEN-v1",
+  "paper_id": "P006",
+  "canonical_version_id": "P006-RFS-20261119",
+  "version_id": "P006-RFS-20261119",
+  "experiment_id": "P006-E06",
+  "reproduction_type": "INDEPENDENT_FAITHFUL",
+  "experiment_purpose": "IMPLEMENTATION_AUDIT",
+  "execution_authorized": true,
+  "reviewed_source_commit": "104aecfcad4c308e1044a3d15483fe2320619597",
+  "run_id": "P006-E06-INDEP-20261121-01",
+
+  "tolerances_frozen_before_results": true,
+  "tolerance_freeze_note": "All acceptance thresholds below were written to this file BEFORE any numerical result was computed or inspected. They are not tuned to outcomes.",
+
+  "inputs": {
+    "package_dir": "/Users/guruikang/WorkBuddy/2026-11-20-15-03-43/CO-REP-20261120-02/evidence/P006_package",
+    "package_sha256_note": "Dataverse 10.7910/DVN/OHZFKD file 14008244 archive sha256 a20c2fbf0de51e9ad54baa6d2dadd7e2b8b374b7cea6a05efd3e918bc12f699b; verified upstream by team-lead",
+    "factors_main_csv": "data/processed_inputs/factors_main.csv",
+    "factors_main_csv_sha256": "7b1f96c86d80baa5e4458f1883e3f4b930dcf6367c914e0138a2182c499f8356",
+    "benchmark_csv": "data/processed_inputs/benchmark.csv",
+    "benchmark_csv_sha256": "25b79cdd30badb4863ff4df2d51fb646076b6bcdaf6701c81ded9cc3196a3840",
+    "author_upsa_py_sha256": "56a3a00b767bce1be65db80ecf61797c8fc5bffa1e73deecc864a01e33792355",
+    "author_portfolios_py_sha256": "daf2da924a2aa7223fef57d0d943d4242f1d22afaa2043351df0101cbee50a8d",
+    "author_metrics_py_sha256": "494e865333ad1106b2f852d298e87cbec724700aa888df408a30c078fd14fd29"
+  },
+
+  "sample": {
+    "panel": "factors_main",
+    "rows_total": 614,
+    "P": 153,
+    "train_window_T": 120,
+    "oos_start": "1981-11-30",
+    "oos_end": "2022-12-31",
+    "n_oos_months": 494,
+    "oos_first_month": "1981-11",
+    "oos_last_month": "2022-12",
+    "benchmark_columns_used": ["mkt", "smb", "hml", "rmw", "cma"],
+    "benchmark_note": "mom dropped per author; FF5 = mkt,smb,hml,rmw,cma; CAPM = mkt. Center covariance via np.cov(rowvar=False) for benchmark weights only."
+  },
+
+  "z_grid": {
+    "definition": "np.logspace(-10, -1, 10)",
+    "values": [1e-10, 1e-9, 1e-8, 1e-7, 1e-6, 1e-5, 1e-4, 1e-3, 1e-2, 1e-1],
+    "n": 10,
+    "frozen": true
+  },
+
+  "conventions": {
+    "W": "W in R^10 nonnegative ridge-basis MIXING coefficients (no sum-to-1 constraint); QP argmax W'u - 0.5 W'QW s.t. W_j >= 0",
+    "pi": "pi in R^153 final asset (factor) weights = eff_port @ W * scale",
+    "second_moment": "UNCONTENTERED S = X'X/T (no demeaning) for the ridge basis; LOO moments remove one row and divide by c (B0 c=T, B1 c=T-1)",
+    "loo_stable_expression": "K = X X'; G_c = (K + c*z*I)^(-1); a_t = 1 - (G_c @ 1)_t / diag(G_c)_t",
+    "c_B0": "T = 120 (author divisor convention, stable implementation)",
+    "c_B1": "T-1 = 119 (paper T-1 leave-one-out convention)",
+    "loo_A_matrix": "A[t,j] = a_t(z_j); u = mean(A,axis=0); Q = A'A/T",
+    "best_z": "argmax_j u_j / sqrt(diag(Q)_j)",
+    "trace_scale": "scale = sum(1/inv_eigs) / sum(eigenvalues), inv_eigs = W @ 1/(eig[:,None] + z[None,:]); eigenvalues are of K/T (T-dim)",
+    "eff_port_full_basis": "eff_port[:,j] = X' (K + T*z_j I)^(-1) 1, i.e. (X'X/T + z_j I)^(-1) X'1 ; full-window ridge basis keeps ORIGINAL T for BOTH B0 and B1 (frozen)",
+    "oos_return": "r_{t} = X[t] @ pi_{t-1}; training window ends t-1, attribution to month t",
+    "turnover": "per src/metrics.py: gross=w.abs().sum(axis=1); 0.5*|w.diff().abs().sum(axis=1)|/gross.shift(); first month = 0; x100",
+    "sharpe": "sqrt(12)*mean(r)/std(r)",
+    "alpha": "per src/plotting.py::_alpha_one: scale y and X each by annual_vol/std(sqrt(12)*series) with annual_vol=0.1, OLS const + regressor with HAC(5), alpha=const*12*100 (percentage points)",
+    "pricing_R2": "per src/pricing.py::r_2_table_gen with SDF scaling; per-theme pooled std, 'All' per-column std; JKP clusters from src/constants.py"
+  },
+
+  "numerics": {
+    "eigendecomposition": "numpy.linalg.eigh on symmetric K = X@X.T (T-dim); clip tiny negative eigenvalues to 0 before forming 1/(eig+c*z)",
+    "qp_solver": "cvxopt.solvers.qp (P=Q, q=-u, G=-I, h=0), abstol=1e-7, reltol=1e-6, feastol=1e-7, maxiters=100 (author library defaults)",
+    "qp_independent_crosscheck": "scipy.optimize.minimize SLSQP on first window only",
+    "kkt_residual": "max(max(0,-W), |min(W, Q@W - u + lambda)|, |lambda*W|) using multiplier lambda from active-set/cvxopt",
+    "direct_refit": "for each left-out row t and divisor d, form X_(-t), S_(-t)=X_(-t)'X_(-t)/d, m_(-t)=X_(-t)'1/d, solve (S_(-t)+zI)p=m_(-t) with numpy.linalg.solve; A_tj = X[t] @ p"
+  },
+
+  "first_window_check": {
+    "T": 120,
+    "P": 153,
+    "left_out_rows": [0, 59, 119],
+    "z_all": true,
+    "compare": [
+      "stable_expr(c=T) vs direct_refit(divisor=T)",
+      "stable_expr(c=T-1) vs direct_refit(divisor=T-1)",
+      "stable_expr(c=T) vs author_A_LOO(first window only)"
+    ],
+    "record": ["maxabs", "fro", "relative_error", "condition_number", "per_z"]
+  },
+
+  "tolerances": {
+    "loo_equivalence_high_z": {
+      "z_min": 1e-7,
+      "abs_tol": 1.0e-6,
+      "rel_tol": 5.0e-4,
+      "unit": "monthly return decimal",
+      "pass_rule": "maxabs <= abs_tol OR relative_error <= rel_tol for all z >= 1e-7"
+    },
+    "loo_equivalence_low_z": {
+      "z_values": [1e-10, 1e-9, 1e-8],
+      "sensitivity_flag_abs": 1.0e-3,
+      "note": "Low-z conditioning is known sensitive (protocol section 2.1). Record errors and condition numbers; flag SENSITIVE_LOW_Z if maxabs > sensitivity_flag_abs. Do NOT use low-z to fail the algebra-equivalence verdict, but DO report it."
+    },
+    "author_A_vs_B0": {"abs_tol": 1.0e-8, "unit": "monthly return decimal and weight units"},
+    "condition_number_flag": 1.0e10,
+    "qp_kkt_residual_tol": 1.0e-7,
+    "qp_status_expected": "optimal",
+    "finite_check": "all 494 OOS returns and all weights must be finite; any NaN/Inf => execution_status FAILED",
+    "trace_scale_check": "scale must be finite and > 0"
+  },
+
+  "deliverables": {
+    "dir": "revision-v3/executions/P006_E06_independent/",
+    "note": "Only this directory is written. Do not modify top-level master files or P006_E01_author/."
+  }
+}

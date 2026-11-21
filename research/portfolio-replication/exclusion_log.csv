@@ -1,0 +1,21 @@
+﻿record_id,paper_or_lead,journal_group,institution_relation,topic_class,exclusion_reason,evidence,reviewer_decision
+X01,"Value and Momentum Everywhere (Asness/Moskowitz/Pedersen, JF2013)",J1,AQR STAFF/顾问,BACKGROUND_ONLY,主题不符：因子发现与资产定价，组合构建为排序等波动加权，无优化方法贡献,A_search.md A-08,PENDING
+X02,"Betting Against Correlation (Asness et al., JFE2020)",J1,AQR UNVERIFIED,BACKGROUND_ONLY,主题不符：构造新因子检验低风险效应，非权重优化；机构未逐字核全文页首,A_search.md A-09,PENDING
+X03,Trading Costs (Frazzini/Israel/Moskowitz),AMBIGUOUS,AQR/顾问,INPUT,正式刊物未在J1/J2确认且数据为AQR专有实盘成交不可得,A_search.md A-11;Q20,PENDING
+X04,A-12系列7篇(RAPS/RAST及非优化主题),RAPS/RAST等,部分AQR,多样,刊物不在J1/J2指定池或主题非组合优化,A_search.md A-12,PENDING
+X05,B-04 Long-term discount rates (JFE2021),J1,Citadel附属/AMBIGUOUS,BACKGROUND_ONLY,主题为预期收益横截面检验，无组合方法；Citadel并列附属且明确未资助,B_search.md B-04,PENDING
+X06,B-05 Asset Managers (JF2021),J1,Citadel顾问/前顾问,BACKGROUND_ONLY,顾问关系不作机构作者确定证据；主题为经理业绩归因,B_search.md B-05,PENDING
+X07,B-06 Misguided Beliefs (JF2021),J1,Citadel顾问,OUT_OF_SCOPE,主题为理财顾问行为；且为顾问关系,B_search.md B-06,PENDING
+X08,Return Seasonalities (JF2016) / Factor momentum (RFS2023),J1,Citadel关系NOT_FOUND,BACKGROUND_ONLY,无可核验Citadel署名；主题为排序/因子动量,B_search.md B-07/B-08,PENDING
+X09,"C-07 Shapley归因(JIM2022, BlackRock AI Labs)",J3,BlackRock,主题排除,Shapley归因非组合优化,C_search.md,PENDING
+X10,"C-09 AORB(JPM2020, State Street)",J3,State Street,机构排除,机构不在范围,C_search.md,PENDING
+X11,C-08 Canonical Portfolios / C-15 SSRN2957805 / C-16机构白皮书,W/J3,Man AHL仅致谢/学术方/机构,多样,仅致谢或学术方无目标机构署名；白皮书非已发表论文,C_search.md,PENDING
+X12,Millennium Prize数学难题论文(arXiv2603.15652),W,无,OUT_OF_SCOPE,Millennium指千禧年数学难题假阳性,B_search.md 消歧D-07,PENDING
+X13,The Citadel(军校)相关作者,J1,主体错误,OUT_OF_SCOPE,The Citadel/citadel.edu为美国军校，非对冲基金,B_search.md 消歧D-01,PENDING
+X14,SciSpace 'Citadel LLC'机构页天体物理/量子论文,二次发现,机构名归一化噪声,OUT_OF_SCOPE,聚合器机构字段混入无关学科,B_search.md 消歧D-11,PENDING
+X15,S5 Efficient Trading Strategies（复现项目角度）,J1,Citadel STAFF,BACKGROUND_ONLY,纯理论刻画无组合算法/回测；建议作理论背景（P005卡RECOMMEND_HOLD，是否EXCLUDED待主审）,D1_duediligence.md;B-02,PENDING
+C-20,Estimating Time-Varying Factor Exposures,见筛选记录,见原记录,见原记录,Verified BlackRock authors; topic lacks substantive optimization/decision target in reviewed indexed evidence,https://www.tandfonline.com/doi/abs/10.2469/faj.v73.n4.6,PENDING
+C-21,Global Equity Country Allocation: An Application of Factor Investing,见筛选记录,见原记录,见原记录,Publisher affiliation is academic only; no verified qualifying employer,https://www.tandfonline.com/doi/abs/10.2469/faj.v73.n4.7,PENDING
+C-22,Portfolio Optimization with Linear and Fixed Transaction Costs,见筛选记录,见原记录,见原记录,Working version names Duke Caltech Stanford and states research completed at Stanford,https://web.stanford.edu/~boyd/papers/pdf/portfolio.pdf,PENDING
+CTRL-X01,Competition in Portfolio Management: Theory and Experiment,J1_NAMED,UNVERIFIED,BACKGROUND_ONLY,期刊首页作者不满足同期目标机构条件,https://doi.org/10.1287/mnsc.2014.1935,PENDING
+P005,Efficient Trading Strategies in the Presence of Market Frictions,J1_NAMED,STAFF_AT_PUBLICATION,BACKGROUND_ONLY,保留理论效率与解析例背景。组合主题准入建议排除，待主审,cards/P005.md,PENDING

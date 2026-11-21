@@ -1,0 +1,88 @@
+lead_id,source_batch,record_kind,title,DOI,source_path,source_locator,original_exclusion_id,canonical_paper_id,canonical_candidate_status,screening_disposition,decision_reason,evidence_url,reviewer_decision
+A-01,01_ORIGINAL,PAPER,Dynamic Trading with Predictable Returns and Transaction Costs,10.1111/jofi.12080,search/history/A_search.md,A-01 / L58,,P001,CORE,RETAINED_IN_MASTER,正式版理论核对;商品期货实验另行审查,,PENDING
+A-02,01_ORIGINAL,PAPER,Machine Learning and the Implementable Efficient Frontier,10.1093/rfs/hhag022,search/history/A_search.md,A-02 / L77,,P002,CORE,RETAINED_IN_MASTER,正式版表图与作者源码路径合并,,PENDING
+A-03,01_ORIGINAL,PAPER,Principal Portfolios,10.1111/jofi.13199,search/history/A_search.md,A-03 / L96,,P007,CORE,RETAINED_IN_MASTER,直接优化;FF25 与 138 因子独立实验,,PENDING
+A-04,01_ORIGINAL,PAPER,Universal Portfolio Shrinkage,10.1093/rfs/hhag084（稿号MS 20240297）,search/history/A_search.md,A-04 / L115,,P006,CORE,RETAINED_IN_MASTER,"核心方法,分开 RFS/NBER/作者归档",,PENDING
+A-05,01_ORIGINAL,PAPER,Responsible Investing: The ESG-Efficient Frontier,10.1016/j.jfineco.2020.11.001,search/history/A_search.md,A-05 / L134,,P008,CORE,RETAINED_IN_MASTER,区分重建信号权重与组合收益复算,,PENDING
+A-06,01_ORIGINAL,PAPER,Is There a Replication Crisis in Finance?,10.1111/jofi.13249,search/history/A_search.md,A-06 / L153,,P009,PENDING_EVIDENCE,RETAINED_IN_MASTER,因子数据工程与复现方法背景,,PENDING
+A-07,01_ORIGINAL,PAPER,Enhanced Portfolio Optimization,10.1080/0015198X.2020.1854543,search/history/A_search.md,A-07 / L172,,P003,CORE,DUPLICATE_RECORD,权益/期货范围分开,,PENDING
+A-08,01_ORIGINAL,PAPER,Value and Momentum Everywhere,10.1111/jofi.12021,search/history/A_search.md,A-08 / L191,X01,,,EXCLUDED,因子定价;缺少组合优化贡献,,PENDING
+A-09,01_ORIGINAL,PAPER,Betting Against Correlation: Testing Theories of the Low-Risk Effect,,search/history/A_search.md,A-09 / L201,X02,,,EXCLUDED,按原卡列为低风险因子/定价背景,,PENDING
+A-10,01_ORIGINAL,PAPER,"Efficiently Inefficient Markets for Assets and Asset Management（与 Gârleanu & Pedersen《Dynamic portfolio choice with frictions》, JET 2016 165:487-516 相关但有区别）",,search/history/A_search.md,A-10 / L209,,,,PENDING_EVIDENCE,均衡框架组合优化贡献需核对；原小标题错写 JFE，实为 JF 2018,,PENDING
+A-11,01_ORIGINAL,PAPER,Trading Costs（工作稿曾名 Trading Costs of Asset Pricing Anomalies）,10.2139/ssrn.3229719,search/history/A_search.md,A-11 / L217,X03,,,PENDING_EVIDENCE,工作稿与可能的发表版本冲突；专有实盘成交另作可行性问题,,PENDING
+A-12.01,01_ORIGINAL,PAPER,Active and Passive Investing: Understanding Samuelson’s Dictum,,search/history/A_search.md,A-12 / L226,X04,,,EXCLUDED,原卡列 Review of Asset Pricing Studies 为范围外；若扩刊另筛,,PENDING
+A-12.02,01_ORIGINAL,PAPER,Embedded Leverage,,search/history/A_search.md,A-12 / L226,X04,,,EXCLUDED,原卡列 Review of Asset Pricing Studies 为范围外；若扩刊另筛,,PENDING
+A-12.03,01_ORIGINAL,PAPER,Quality Minus Junk,,search/history/A_search.md,A-12 / L226,X04,,,EXCLUDED,原卡列 Review of Accounting Studies 为范围外；因子主题,,PENDING
+A-12.04,01_ORIGINAL,PAPER,Game On: Social Networks and Markets,,search/history/A_search.md,A-12 / L226,X04,,,EXCLUDED,JFE；原卡主题排除,,PENDING
+A-12.05,01_ORIGINAL,PAPER,In Search of the True Greenium,,search/history/A_search.md,A-12 / L226,X04,,,EXCLUDED,JFE；原卡主题排除,,PENDING
+A-12.06,01_ORIGINAL,PAPER,Corporate Bond Factors: Replication Failures,,search/history/A_search.md,A-12 / L226,X04,,,EXCLUDED,RFS；原卡主题排除,,PENDING
+A-12.07,01_ORIGINAL,PAPER,Is Capital Structure Irrelevant with ESG Investors?,,search/history/A_search.md,A-12 / L226,X04,,,EXCLUDED,RFS；原卡主题排除,,PENDING
+B-01,01_ORIGINAL,PAPER,Distributionally robust end-to-end portfolio construction,10.1080/14697688.2023.2236148,search/history/B_search.md,B-01 / L83,,P004,CORE,RETAINED_IN_MASTER,Millennium 发表时署名;方法期刊单列,,PENDING
+B-02,01_ORIGINAL,PAPER,Efficient Trading Strategies in the Presence of Market Frictions,10.1093/rfs/14.2.343,search/history/B_search.md,B-02 / L107,X15,P005,EXCLUDED,EXCLUDED_BACKGROUND_RETAINED,理论角色保留为 BACKGROUND_ONLY；本轮实证组合优化池排除,,PENDING
+B-03,01_ORIGINAL,PAPER,Modeling Corporate Bond Returns,10.1111/jofi.13233,search/history/B_search.md,B-03 / L132,,P010,CORE,RETAINED_IN_MASTER,Citadel 发表署名;ICE 与 TRACE 分离,,PENDING
+B-04,01_ORIGINAL,PAPER,Long-term discount rates do not vary across firms,10.1016/j.jfineco.2021.04.031,search/history/B_search.md,B-04 / L158,X05,,,EXCLUDED,预期收益横截面；未见组合决策验证,,PENDING
+B-05,01_ORIGINAL,PAPER,Asset Managers: Institutional Performance and Factor Exposures,10.1111/jofi.13026,search/history/B_search.md,B-05 / L174,X06,,,EXCLUDED,业绩归因;顾问关系非员工,,PENDING
+B-06,01_ORIGINAL,PAPER,The Misguided Beliefs of Financial Advisors,10.1111/jofi.12995,search/history/B_search.md,B-06 / L192,X07,,,EXCLUDED,理财顾问行为且只有顾问关系,,PENDING
+B-07,01_ORIGINAL,PAPER,Return Seasonalities,,search/history/B_search.md,B-07 / L208,X08,,,EXCLUDED,排序季节性与缺少该版本 Citadel 作者关系,,PENDING
+B-08,01_ORIGINAL,PAPER,Factor momentum,,search/history/B_search.md,B-08 / L221,X08,,,EXCLUDED,因子动量与缺少该版本 Citadel 作者关系,,PENDING
+C-01,01_ORIGINAL,PAPER,Enhanced Portfolio Optimization,10.1080/0015198X.2020.1854543,search/history/C_search.md,C-01 / L62,,P003,CORE,RETAINED_IN_MASTER,权益/期货范围分开,,PENDING
+C-02,01_ORIGINAL,PAPER,Machine Learning and the Implementable Efficient Frontier,10.2139/ssrn.4187217,search/history/C_search.md,C-02 / L84,,P002,CORE,DUPLICATE_VERSION,正式版表图与作者源码路径合并,,PENDING
+C-03,01_ORIGINAL,PAPER,Distributionally robust end-to-end portfolio construction,10.1080/14697688.2023.2236148,search/history/C_search.md,C-03 / L105,,P004,CORE,DUPLICATE_RECORD,Millennium 发表时署名;方法期刊单列,,PENDING
+C-04,01_ORIGINAL,PAPER,Tax-Aware Portfolio Construction via Convex Optimization,10.1007/s10957-021-01823-0,search/history/C_search.md,C-04 / L126,,P020,EXTENDED,RETAINED_IN_MASTER,BlackRock AI Labs/Factor-Based Strategies Group;JOTA 方法池,,PENDING
+C-05,01_ORIGINAL,PAPER,Portfolio Construction as Linearly Constrained Separable Optimization,10.1007/s11081-022-09748-x,search/history/C_search.md,C-05 / L147,,P021,EXTENDED,RETAINED_IN_MASTER,BlackRock AI Labs;2022 online、2023 卷期方法池,,PENDING
+C-06,01_ORIGINAL,PAPER,FlashFolio: A GPU-Accelerated Solver for Portfolio Optimization,10.48550/arXiv.2604.22625,search/history/C_search.md,C-06 / L168,,P018,EXTENDED,RETAINED_IN_MASTER,Point72 arXiv 技术报告；只在工作稿池,,PENDING
+C-07,01_ORIGINAL,PAPER,Portfolio Performance Attribution via Shapley Value,,search/history/C_search.md,C-07 / L189,X09,,,EXCLUDED,业绩归因;主题边界,,PENDING
+C-08,01_ORIGINAL,PAPER,Canonical Portfolios: Optimal Asset and Signal Combination,,search/history/C_search.md,C-08 / L210,X11,,,EXCLUDED,Man AHL 仅致谢/研讨会，非作者单位,,PENDING
+C-09,01_ORIGINAL,PAPER,Adaptive Optimal Risk Budgeting,10.3905/jpm.2020.1.148,search/history/C_search.md,C-09 / L231,X10,,,EXCLUDED,State Street 未列入机构口径,,PENDING
+C-10,01_ORIGINAL,PAPER,Sharpening the Arithmetic of Active Management,10.2469/faj.v74.n1.4,search/history/C_search.md,C-10 / L251,,,,EXCLUDED,主动管理算术;未提供组合决策方法,,PENDING
+C-11,01_ORIGINAL,PAPER,"Fact, Fiction, and Factor Investing",,search/history/C_search.md,C-11 / L270,,,,EXCLUDED,实务综述和辩驳;缺组合优化方法,,PENDING
+C-12.01,01_ORIGINAL,PAPER,Evaluating Portfolio Policies: A Duality Approach,10.1287/opre.1060.0279,search/history/C_search.md,C-12 / L289,,,,EXCLUDED,学术署名;作为方法对照,,PENDING
+C-12.02,01_ORIGINAL,PAPER,Portfolio Construction by Mitigating Error Amplification: The Bounded-Noise Portfolio,10.1287/opre.2019.1858,search/history/C_search.md,C-12 / L289,,,,EXCLUDED,学术署名;作为方法对照,,PENDING
+C-12.03,01_ORIGINAL,PAPER,Fairness and Efficiency in Multiportfolio Optimization,10.1287/opre.2014.1310,search/history/C_search.md,C-12 / L289,,,,EXCLUDED,学术署名;作为方法对照,,PENDING
+C-12.04,01_ORIGINAL,PAPER,Robust Portfolio Control with Stochastic Factor Dynamics,10.1287/opre.2013.1180,search/history/C_search.md,C-12 / L289,,,,EXCLUDED,学术署名;作为方法对照,,PENDING
+C-12.05,01_ORIGINAL,PAPER,Maximizing the Out-of-Sample Sharpe Ratio,10.1287/opre.2025.2500,search/history/C_search.md,C-12 / L289,,,,EXCLUDED,学术署名;作为方法对照,,PENDING
+C-13,01_ORIGINAL,PAPER,Enhanced Portfolio Optimization,10.2139/ssrn.3530390,search/history/C_search.md,C-13 / L301,,P003,CORE,DUPLICATE_VERSION,权益/期货范围分开,,PENDING
+C-14,01_ORIGINAL,PAPER,Principal Portfolios,10.3386/w27388,search/history/C_search.md,C-14 / L318,,P007,CORE,DUPLICATE_VERSION,直接优化;FF25 与 138 因子独立实验,,PENDING
+C-15,01_ORIGINAL,PAPER,Optimal Portfolio Choice with Benchmarks,10.2139/ssrn.2957805,search/history/C_search.md,C-15 / L336,X11,,,EXCLUDED,学术方作者;Winton 同名误命中,,PENDING
+C-16.01,01_ORIGINAL,NONPAPER_LEAD,Machine Teaching: What I Learned From My Optimizer,,search/history/C_search.md,C-16 / L350,X11,,,EXCLUDED,D.E. Shaw 机构稿,,PENDING
+C-16.02,01_ORIGINAL,NONPAPER_LEAD,Market-Capitalization Weighted Portfolios: The Global Monkey,,search/history/C_search.md,C-16 / L350,X11,,,EXCLUDED,Winton 机构稿,,PENDING
+C-16.03,01_ORIGINAL,NONPAPER_LEAD,Acadian ESG/portfolio construction insights,,search/history/C_search.md,C-16 / L350,X11,,,EXCLUDED,"原卡只识别机构文章系列,未恢复单篇目录",,PENDING
+C-16.04,01_ORIGINAL,NONPAPER_LEAD,Strategic Risk Management,,search/history/C_search.md,C-16 / L350,X11,,,EXCLUDED,Man Group 相关图书，非期刊论文,,PENDING
+A-Q13.01,01_ORIGINAL,PAPER,Large-Scale Portfolio Optimization,10.1287/mnsc.30.10.1143,search/history/A_search.md,Q13,,,,EXCLUDED,无 AQR 署名,,PENDING
+A-Q13.02,01_ORIGINAL,PAPER,Portfolio Choice with Illiquid Assets,,search/history/A_search.md,Q13,,,,EXCLUDED,无 AQR 署名,,PENDING
+A-Q13.03,01_ORIGINAL,UNRESOLVED_IDENTITY,He & Sun 动态组合选择（题名未留）,,search/history/A_search.md,Q13,,,,PENDING_EVIDENCE,原检索判非 AQR；题名未恢复,,PENDING
+A-Q15.01,01_ORIGINAL,PAPER,Shrinking the term structure,,search/history/A_search.md,Q15,,,,EXCLUDED,原卡记无 AQR；该渠道保留简称,,PENDING
+A-CITE.01,01_ORIGINAL,REFERENCE_ONLY,Dynamic Portfolio Choice with Frictions,,search/history/A_search.md,§d；A-10,,,,REFERENCE_ONLY,明确同作者理论前驱/延伸，单独保留；本轮未立项,,PENDING
+A-CITE.02,01_ORIGINAL,PAPER,Complex Modern Portfolio Theory,10.3386/w35246,search/history/A_search.md,§d 共同作者路径,,P015,PENDING_EVIDENCE,DUPLICATE_RECORD,工作稿轨迹接入 v1.1 P015,,PENDING
+B-D01.01,01_ORIGINAL,ENTITY_OR_TOPIC_NOISE,The Citadel 军校 / D. Sykes Wilford,,search/history/B_search.md,D-01,X13,,,EXCLUDED,军校非金融机构,,PENDING
+B-D07.01,01_ORIGINAL,PAPER,P vs NP Problem in Portfolio Optimization,10.48550/arXiv.2603.15652,search/history/B_search.md,D-07,X12,,,EXCLUDED,Millennium Prize 非机构,,PENDING
+B-D08.01,01_ORIGINAL,NONPAPER_LEAD,INSEAD Millennium Partners pod shop 教学案例,,search/history/B_search.md,D-08,,,,EXCLUDED,教学案例非期刊论文,,PENDING
+B-D08.02,01_ORIGINAL,ENTITY_OR_TOPIC_NOISE,Millennium Management Group 博彩同名机构,,search/history/B_search.md,D-08,,,,EXCLUDED,同名实体非目标机构,,PENDING
+B-D11.01,01_ORIGINAL,ENTITY_OR_TOPIC_NOISE,Goldin & Makarov (2007) 天体物理记录,,search/history/B_search.md,D-11,X14,,,EXCLUDED,聚合器机构字段不可靠且学科无关,,PENDING
+B-D11.02,01_ORIGINAL,ENTITY_OR_TOPIC_NOISE,Atici & Servedio (2007) 量子计算记录,,search/history/B_search.md,D-11,X14,,,EXCLUDED,聚合器机构字段不可靠且学科无关,,PENDING
+B-Q26.01,01_ORIGINAL,PERSON_LEAD,Rothman Millennium 个人履历,,search/history/B_search.md,Q26,,,,EXCLUDED,人物线索非单篇论文,,PENDING
+B-Q26.02,01_ORIGINAL,PERSON_LEAD,Giuseppe Paleologo 书籍与演讲,,search/history/B_search.md,Q26,,,,EXCLUDED,未识别同期四刊论文,,PENDING
+B-Q26.03,01_ORIGINAL,PERSON_LEAD,Naftali Cohen arXiv/作者履历,,search/history/B_search.md,Q26,,,,EXCLUDED,原查询只提供个人/预印本信息，非同一期刊论文筛选,,PENDING
+B-Q26.04,01_ORIGINAL,PERSON_LEAD,Konstantin Kalinchenko Millennium 职业讲座,,search/history/B_search.md,§6 排除表,,,,EXCLUDED,职业讲座非目标期刊论文,,PENDING
+B-CITE.01,01_ORIGINAL,PAPER,Common Factors in Corporate Bond Returns,UNKNOWN,search/history/B_search.md,"§5 B-03；Israel, Palhares & Richardson (2018)",,P016,EXTENDED,DUPLICATE_RECORD,原引文延伸为 v1.1 P016；同 DOI 折叠,,PENDING
+B-CITE.02,01_ORIGINAL,REFERENCE_ONLY,Ben-Tal et al. Management Science 59(2):341–357,,search/history/B_search.md,§5 S4,,,,REFERENCE_ONLY,方法来源，未发现合格机构署名,,PENDING
+C-Q03.01,01_ORIGINAL,PAPER,Betting Against Beta,,search/history/C_search.md,Q3,,,,PENDING_EVIDENCE,原命中可识别；本轮不据结果页断定具体优化目标,,PENDING
+C-Q04.01,01_ORIGINAL,PAPER,An Overview of Optimization Models for Portfolio Management,,search/history/C_search.md,Q4 与 §e,,,,EXCLUDED,综述或外机构;原报告排除,,PENDING
+C-Q04.02,01_ORIGINAL,PAPER,Mean–Variance Optimization for Asset Allocation,10.3905/jpm.2021.1.219,search/history/C_search.md,Q4 与 §e,,,,EXCLUDED,原报告列补充期刊方法背景;未核得合格机构,,PENDING
+C-Q16.01,01_ORIGINAL,UNRESOLVED_IDENTITY,Journal of Investment Strategies 趋势跟踪论文（题名未留）,,search/history/C_search.md,Q16,,,,PENDING_EVIDENCE,原检索指 CFM，题名未恢复,,PENDING
+C-Q10.01,01_ORIGINAL,NONPAPER_LEAD,Two Sigma 组合构造官网,,search/history/C_search.md,Q10、Q13、§e,,,,EXCLUDED,业务页面未证实发表/研究期作者关系,,PENDING
+V11-P011,V1_1_ADDITIONS,PAPER,Optimal Tilts: Combining Persistent Characteristic Portfolios,10.2469/faj.v73.n4.1,search/history/v1_1_master.csv,P011,,P011,EXTENDED,RETAINED_IN_MASTER,v1.1 主表候选；沿用稳定 ID,,PENDING
+V11-P012,V1_1_ADDITIONS,PAPER,Leverage Aversion and Risk Parity,10.2469/faj.v68.n1.1,search/history/v1_1_master.csv,P012,,P012,CORE,RETAINED_IN_MASTER,v1.1 主表候选；沿用稳定 ID,,PENDING
+V11-P013,V1_1_ADDITIONS,PAPER,Balancing on the Life Cycle: Target-Date Funds Need Better Diversification,10.3905/jpm.2016.42.4.012,search/history/v1_1_master.csv,P013,,P013,CORE,RETAINED_IN_MASTER,v1.1 主表候选；沿用稳定 ID,,PENDING
+V11-P014,V1_1_ADDITIONS,PAPER,The Virtue of Complexity in Return Prediction,10.1111/jofi.13298,search/history/v1_1_master.csv,P014,,P014,EXTENDED,RETAINED_IN_MASTER,v1.1 主表候选；沿用稳定 ID,,PENDING
+V11-P017,V1_1_ADDITIONS,PAPER,Hedging Climate Change News,10.1093/rfs/hhz072,search/history/v1_1_master.csv,P017,,P017,CORE,RETAINED_IN_MASTER,v1.1 主表候选；沿用稳定 ID,,PENDING
+V11-P019,V1_1_ADDITIONS,PAPER,A Survey of Alternative Equity Index Strategies,10.2469/faj.v67.n5.5,search/history/v1_1_master.csv,P019,,P019,EXTENDED,RETAINED_IN_MASTER,v1.1 主表候选；沿用稳定 ID,,PENDING
+E-NEW-01,02_NEW_EXECUTION,PAPER,On Enhancing Shareholder Control: A (Dodd–) Frank Assessment of Proxy Access,,search/search_queries.csv,ME01/ME12,,,,EXCLUDED,Millennium 只在 Appendix Table A.I 活跃股东名单；公司治理是主题,https://faculty.mccombs.utexas.edu/Jonathan.Cohn/papers/Cohn%20Gillan%20Hartzell%202016%20JF.pdf,PENDING
+E-NEW-02,02_NEW_EXECUTION,PAPER,A New Empirical Perspective on the Minimum Variance Portfolio,,search/search_queries.csv,CE09,,,,EXCLUDED,SSRN 作者署 The Citadel 军校,https://papers.ssrn.com/sol3/papers.cfm?abstract_id=3336044,PENDING
+E-NEW-03,02_NEW_EXECUTION,PAPER,"Firm-specific Industries, Volatility and Return: A Text-based Network Industrial Classification Approach",,search/search_queries.csv,CE04,,,,EXCLUDED,该命中来自 The Citadel 军校履历；不证明论文同期 Citadel 对冲基金署名,https://www.citadel.edu/accounting-finance/wp-content/uploads/sites/17/HusseinAbdoh.C.V.pdf,PENDING
+E-NEW-04,02_NEW_EXECUTION,PAPER,Looking under the Hood of Active Credit Managers,10.1080/0015198X.2019.1707593,search/search_queries.csv,CE15/CE24,,,,EXCLUDED,FAJ 76(2) 研究信用 beta 和基金业绩归因，未见组合优化方法,https://rpc.cfainstitute.org/research/financial-analysts-journal/2020/0015198x-2019-1707593,PENDING
+E-NEW-05,02_NEW_EXECUTION,PAPER,Building Diversified Portfolios that Outperform Out-of-Sample,,search/search_queries.csv,CE19/CE22/CE26,,,,EXCLUDED,工作稿首页是 Guggenheim/Lawrence Berkeley；早年 Citadel 关系不能前推至该稿研究期,https://ssrn.com/abstract=2708678,PENDING
+E-NEW-06,02_NEW_EXECUTION,PAPER,Cash-Flow Maturity and Risk Premia in CDS Markets,,search/search_queries.csv,CE10,,,,EXCLUDED,封面为 Chicago Booth；主题是风险溢价解释，长短组合为因素构造,https://www.aqr.com/-/media/AQR/Documents/Insights/Working-Papers/AQR-CashFlow-Maturity-and-Risk-Premia-in-CDS-Markets.pdf,PENDING
+E-NEW-07,02_NEW_EXECUTION,NONPAPER_LEAD,Careers in Quantitative Finance: Konstantin Kalinchenko,,search/search_queries.csv,ME05/ME08,,,,EXCLUDED,公开讲座确认 Millennium 在职，未提供目标四刊对应作者论文,https://www.ams.stonybrook.edu/~seminar/,PENDING
+E-NEW-08,02_NEW_EXECUTION,PAPER,Distributionally robust end-to-end portfolio construction,10.1080/14697688.2023.2236148,search/search_queries.csv,CE08,,P004,CORE,DUPLICATE_RECORD,当前职务 Citadel EQR，但 QF 发表时 Millennium,https://gcosta151.github.io/,PENDING
+E-NEW-09,02_NEW_EXECUTION,PAPER,Efficient Trading Strategies in the Presence of Market Frictions,10.1093/rfs/14.2.343,search/search_queries.csv,CE02/CE16/CE21,,P005,EXCLUDED,DUPLICATE_RECORD,正式版 RFS，并非 Review of Finance；理论/背景,https://doi.org/10.1093/rfs/14.2.343,PENDING

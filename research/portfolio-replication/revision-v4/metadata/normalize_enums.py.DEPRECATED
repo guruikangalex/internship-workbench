@@ -1,0 +1,84 @@
+#!/usr/bin/env python3
+# -*- coding: utf-8 -*-
+"""Normalize per-experiment target_comparison.csv enums to reviewer template."""
+import csv, os, glob
+
+BASE = os.path.abspath(os.path.join(os.path.dirname(__file__), ".."))
+
+VERDICT_MAP = {
+    "MATCH": "PASS",
+    "NUMERIC_DIFFERENCE": "FAIL",
+    "WITHIN_TOLERANCE": "PASS",
+    "OUTSIDE_TOLERANCE": "FAIL",
+    "NOT_MATCHED": "FAIL",
+    "PARTIALLY_MATCHED": "PARTIAL",
+    "NOT_REPRODUCED": "FAIL",
+    "NOT_COMPARABLE": "NOT_APPLICABLE",
+    "REPORTED": "NOT_APPLICABLE",
+}
+REFKIND_MAP = {
+    "manuscript_author_cache": "AUTHOR_CACHE",
+    "author_cache": "AUTHOR_CACHE",
+    "paper_published_value_from_P006_E01_target_row": "PUBLISHED_VALUE",
+    "published_value": "PUBLISHED_VALUE",
+    "reviewer_calculation": "REVIEWER_CALCULATION",
+    "theoretical_identity": "THEORETICAL_IDENTITY",
+}
+
+def normalize(path):
+    rows = list(csv.DictReader(open(path, encoding="utf-8-sig")))
+    if not rows:
+        return 0
+    cols = list(rows[0].keys())
+    # reviewer template requires replication_value; add if absent (populate from rerun_value)
+    if "replication_value" not in cols:
+        idx = cols.index("rerun_value") + 1 if "rerun_value" in cols else len(cols)
+        cols.insert(idx, "replication_value")
+        for r in rows:
+            r["replication_value"] = r.get("rerun_value", "")
+    changed = 0
+    for r in rows:
+        # unify replication_value column
+        if "replication_value" in r and "rerun_value" in r:
+            rv = (r.get("replication_value") or "").strip()
+            rerun = (r.get("rerun_value") or "").strip()
+            if rv.lower() in ("", "none", "null", "nan") and rerun.lower() not in ("", "none", "null", "nan"):
+                r["replication_value"] = rerun
+        # reference_kind: keep honest non-enum description but prefix OTHER for machine clarity
+        rk = r.get("reference_kind", "")
+        if rk and rk not in REFKIND_MAP and rk not in ("PUBLISHED_VALUE", "AUTHOR_CACHE",
+                "REVIEWER_CALCULATION", "THEORETICAL_IDENTITY") and not rk.startswith("OTHER:"):
+            r["reference_kind"] = "OTHER:" + rk
+        # verdict fields with qualifiers -> base enum, keep qualifier in difference_explanation
+        for vf in ("theoretical_mechanism_verdict", "economic_verdict", "market_economic_verdict",
+                   "numerical_verdict"):
+            val = r.get(vf, "")
+            if isinstance(val, str) and "(" in val:
+                base = val.split("(")[0].strip()
+                if base in ("PASS", "FAIL", "PARTIAL", "NOT_ASSESSED", "NOT_APPLICABLE"):
+                    note = val[val.index("("):].strip("()")
+                    if "difference_explanation" in r and note and note not in (r.get("difference_explanation") or ""):
+                        r["difference_explanation"] = ((r.get("difference_explanation") or "") +
+                                                      f" [{vf}: {note}]").strip()
+                    r[vf] = base
+                    changed += 1
+        v = r.get("numerical_verdict", "")
+        if v in VERDICT_MAP:
+            r["numerical_verdict"] = VERDICT_MAP[v]; changed += 1
+        rk = r.get("reference_kind", "")
+        if rk in REFKIND_MAP:
+            r["reference_kind"] = REFKIND_MAP[rk]; changed += 1
+    with open(path, "w", encoding="utf-8-sig", newline="") as f:
+        w = csv.DictWriter(f, fieldnames=cols); w.writeheader(); w.writerows(rows)
+    return changed
+
+def main():
+    total = 0
+    for p in glob.glob(os.path.join(BASE, "executions", "*", "target_comparison.csv")):
+        n = normalize(p)
+        total += n
+        print(f"{os.path.relpath(p, BASE)}: {n} normalized")
+    print("total changes:", total)
+
+if __name__ == "__main__":
+    main()

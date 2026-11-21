@@ -1,0 +1,385 @@
+{
+  "schema_version": "1.0",
+  "document": "external_dependencies",
+  "purpose": "R4 P0 修复：把不入库的大型第三方输入/作者缓存以 外链+hash+形状+版本 方式登记，fresh clone 可按 source_url 重新取得并核对 sha256。",
+  "scope": "revision-v4 提交包（自编文本全部入库；下列二进制不逐字节入库）",
+  "generated_by": "Agent A (R4 P0 delivery integrity)",
+  "generated_on": "2026-11-21",
+  "hash_algorithm": "SHA-256",
+  "verification": "每个条目 actual_sha256 由 shasum -a 256 对本地实际文件实算；expected_sha256 取自 R2/R3 已冻结记录。两者一致方可判 PASS。",
+  "entries": [
+    {
+      "id": "P010-OFFICIAL-CODE-ARCHIVE",
+      "paper_id": "P010",
+      "file_name": "official_code_archive.zip",
+      "category": "作者官方代码包（ICE 数据 Section 16/S17）",
+      "source_url": "https://www.dropbox.com/sh/4yu0xsopnnre571/AAAieXICkt2_iaoWEwNBkXfEa?dl=1",
+      "entry_page": "https://sethpruitt.net/research",
+      "source_locator": "research 页 'Modeling Corporate Bond Returns' 节 'Code and Data' 直链",
+      "expected_sha256": "43bf7bcd3869ab3a71e1c5c971d8d54136e4aa736158f2cf20f443080169bb09",
+      "actual_sha256": "43bf7bcd3869ab3a71e1c5c971d8d54136e4aa736158f2cf20f443080169bb09",
+      "bytes": 955004837,
+      "version_or_vintage": "作者研究页当前公开归档（与 R2 input_audit.json 逐字节一致；含 zeroedoutdata.mat 全零占位）",
+      "obtained_date": "2026-11-21",
+      "obtained_command": "curl -L -o data/official_code_archive.zip 'https://www.dropbox.com/sh/4yu0xsopnnre571/AAAieXICkt2_iaoWEwNBkXfEa?dl=1'",
+      "http_status": 200,
+      "content_type": "application/zip",
+      "purpose": "静态审计作者 MATLAB 入口 Table_3/4/8、JF2_pubdata 成本与 ALS 规则；不运行 MATLAB、不产生表格数值",
+      "referenced_by_experiments": [
+        "P010-E01",
+        "P010-E03"
+      ],
+      "referenced_by_files": [
+        "executions/support/P010/code_audit.md",
+        "executions/support/P010/summary.md",
+        "executions/support/P010/results/official_member_hash.json"
+      ],
+      "present_in_revision_v4": false,
+      "local_path": "/tmp/r3_local_backup_20261121/executions/support/P010/data/official_code_archive.zip",
+      "reproducible": true,
+      "reproduce_note": "公开 Dropbox 直链；R3 实测 HTTP 200 且 hash 与 R2 冻结值一致。ICE 授权范围仍未确认（P010-B01），但归档本身可复得。",
+      "sha256_status": "PASS"
+    },
+    {
+      "id": "P010-TRACE-PUBLIC-ARCHIVE",
+      "paper_id": "P010",
+      "file_name": "trace_public_archive.zip",
+      "category": "TRACE 公开债券收益数据归档",
+      "source_url": "https://www.dropbox.com/sh/16uqp1ab73gxqnn/AABm0Da-0ezo9TgR0_g8bEc-a?dl=1",
+      "entry_page": "https://sethpruitt.net/research",
+      "source_locator": "research 页 'Reconciling TRACE bond returns' 节 'Publicly available data' 直链",
+      "expected_sha256": "681725ee28b9773f859116fb523b1550d88db9485e0a993d5ba47576cfca5991",
+      "actual_sha256": "681725ee28b9773f859116fb523b1550d88db9485e0a993d5ba47576cfca5991",
+      "bytes": 491720701,
+      "version_or_vintage": "作者研究页当前公开 TRACE 归档（R2/R3 逐字节一致；面板 206 月 x 8759，2003-08..2020-09，tcost=0.00189）",
+      "obtained_date": "2026-11-21",
+      "obtained_command": "curl -L -o data/trace_public_archive.zip 'https://www.dropbox.com/sh/16uqp1ab73gxqnn/AABm0Da-0ezo9TgR0_g8bEc-a?dl=1'",
+      "http_status": 200,
+      "content_type": "application/zip",
+      "purpose": "注册 TRACE 路线协议与验收量（R06/R07），仅静态阅读与成员 hash 核验；未运行 IPCA/组合/成本计算",
+      "referenced_by_experiments": [
+        "P010-E03"
+      ],
+      "referenced_by_files": [
+        "executions/support/P010/trace_protocol.md",
+        "executions/support/P010/summary.md",
+        "executions/support/P010/results/trace_member_hash.json"
+      ],
+      "present_in_revision_v4": false,
+      "local_path": "/tmp/r3_local_backup_20261121/executions/support/P010/data/trace_public_archive.zip",
+      "reproducible": true,
+      "reproduce_note": "公开 Dropbox 直链，R3 实测 HTTP 200。TRACE 路线仅 APPROXIMATE_VALIDATION，全目标 NOT_RUN。",
+      "sha256_status": "PASS"
+    },
+    {
+      "id": "P006-AUTHOR-SOURCE-ZIP",
+      "paper_id": "P006",
+      "file_name": "P006_upsa_reproduction_RFS_v2.zip",
+      "category": "作者代码与数据 ZIP（RFS hhag084 复现包）",
+      "source_url": "https://academic.oup.com/rfs/advance-article/doi/10.1093/rfs/hhag022/8524346",
+      "source_locator": "RFS 论文补充材料 / 作者复现包（v2）",
+      "expected_sha256": "a20c2fbf0de51e9ad54baa6d2dadd7e2b8b374b7cea6a05efd3e918bc12f699b",
+      "actual_sha256": "a20c2fbf0de51e9ad54baa6d2dadd7e2b8b374b7cea6a05efd3e918bc12f699b",
+      "bytes": 123737306,
+      "version_or_vintage": "P006_upsa_reproduction_RFS_v2（作者 v2 复现包；含 factors_*.csv、run_all.py、portfolios.py）",
+      "obtained_date": "2026-11-20",
+      "obtained_command": "经 R3 作者代码复现流程取得到 evidence/P006_upsa_reproduction_RFS_v2.zip；hash 冻结于 REVIEW-104AECF-20261121 协议",
+      "purpose": "P006-E01 作者代码冷重算（--main --compute），产出 115 目标 PASS/FAIL/PARTIAL 与 main_bundle.p",
+      "referenced_by_experiments": [
+        "P006-E01",
+        "P006-E05"
+      ],
+      "referenced_by_files": [
+        "executions/P006_E01_author/target_comparison.csv",
+        "executions/P006_E01_author/cold_run/README.md",
+        "executions/P006_E01_author/static_check.md"
+      ],
+      "present_in_revision_v4": false,
+      "local_path": "/Users/guruikang/WorkBuddy/2026-11-20-15-03-43/CO-REP-20261120-02/evidence/P006_upsa_reproduction_RFS_v2.zip",
+      "reproducible": true,
+      "reproduce_note": "作者 RFS 补充材料公开可得；hash 与冷重算 input_manifest 中记录的 a20c2fbf... 一致。",
+      "sha256_status": "PASS"
+    },
+    {
+      "id": "P006-MAIN-BUNDLE-P",
+      "paper_id": "P006",
+      "file_name": "main_bundle.p",
+      "category": "作者冷重算序列化输出 bundle（pickle）",
+      "source_url": "本地重算生成（非下载）：由 P006-AUTHOR-SOURCE-ZIP 在 env_py396 下 `python -u run_all.py --main --compute` 产出",
+      "source_locator": "executions/P006_E01_author/cold_run/outputs/computed/main_bundle.p",
+      "expected_sha256": "3ebba3824caace88485a0ea7d557f591c0303f930f05a727ad92e73a9e503a91",
+      "actual_sha256": "3ebba3824caace88485a0ea7d557f591c0303f930f05a727ad92e73a9e503a91",
+      "bytes": 15976897,
+      "version_or_vintage": "R3 冷重算产物（2026-11-21），OOS 494 月 1981-11..2022-12，T=120 / Z=10**[-10..-1]",
+      "obtained_date": "2026-11-21",
+      "obtained_command": "OMP_NUM_THREADS=1 OPENBLAS_NUM_THREADS=1 MKL_NUM_THREADS=1 MPLBACKEND=Agg <env_py396>/bin/python -u run_all.py --main --compute",
+      "purpose": "P006-E01 Figure 3/5/8 等 20 图表与数值提取的序列化来源；从 factors_main.csv 可重算",
+      "referenced_by_experiments": [
+        "P006-E01"
+      ],
+      "referenced_by_files": [
+        "executions/P006_E01_author/outputs/sha256sums.txt",
+        "executions/P006_E01_author/extracted_values.json"
+      ],
+      "present_in_revision_v4": true,
+      "local_path": "executions/P006_E01_author/cold_run/outputs/computed/main_bundle.p",
+      "reproducible": true,
+      "reproduce_note": "15.98MB pickle 缓存，可由作者 ZIP + factors CSV 冷重算再生成；已由 .gitignore (*.p) 排除入库，本地副本 hash 与冻结值一致。",
+      "sha256_status": "PASS"
+    },
+    {
+      "id": "P007-FF25-CSV-ZIP",
+      "paper_id": "P007",
+      "file_name": "25_Portfolios_5x5_Daily_CSV.zip",
+      "category": "Ken French 25 组合日频数据原始归档",
+      "source_url": "https://mba.tuck.dartmouth.edu/pages/faculty/ken.french/ftp/25_Portfolios_5x5_Daily_CSV.zip",
+      "source_locator": "Kenneth French Data Library — F-F Research Data Returns — 25 Portfolios, 5x5, Daily",
+      "expected_sha256": "820936bd308756c3f66afbb211c9a2a929fed5f8fcf6253fc8a1dfbe2f7c7276",
+      "actual_sha256": "820936bd308756c3f66afbb211c9a2a929fed5f8fcf6253fc8a1dfbe2f7c7276",
+      "bytes": 4043238,
+      "version_or_vintage": "Ken French 当前发布版（R3 下载；出版时代 2021 vintage 未恢复 P007-B01）",
+      "obtained_date": "2026-11-21",
+      "obtained_command": "curl -O 'https://mba.tuck.dartmouth.edu/pages/faculty/ken.french/ftp/25_Portfolios_5x5_Daily_CSV.zip'",
+      "http_status": 200,
+      "purpose": "解出 25_Portfolios_5x5_Daily.csv，核验形状/日期并演示 20 交易日非重叠切块",
+      "referenced_by_experiments": [
+        "P007-E01"
+      ],
+      "referenced_by_files": [
+        "executions/support/P007/code/block_ff25.py",
+        "executions/support/P007/summary.md",
+        "executions/support/P007/sha256sums.txt"
+      ],
+      "present_in_revision_v4": false,
+      "local_path": "/tmp/r3_local_backup_20261121/executions/support/P007/data/25_Portfolios_5x5_Daily_CSV.zip",
+      "reproducible": true,
+      "reproduce_note": "稳定公开 URL，可重下；版本差异（vintage）已在 P007-B01 记录。",
+      "sha256_status": "PASS"
+    },
+    {
+      "id": "P007-FF25-CSV",
+      "paper_id": "P007",
+      "file_name": "25_Portfolios_5x5_Daily.csv",
+      "category": "Ken French 25 组合日频数据（解压后 CSV）",
+      "source_url": "https://mba.tuck.dartmouth.edu/pages/faculty/ken.french/ftp/25_Portfolios_5x5_Daily_CSV.zip",
+      "source_locator": "由 P007-FF25-CSV-ZIP 解压得到；论文窗 14,223 交易日",
+      "expected_sha256": "ef7d17f85368e9618ac3fd855e3fca9ea955e0188a48a6d05dec10ccc0622c23",
+      "actual_sha256": "ef7d17f85368e9618ac3fd855e3fca9ea955e0188a48a6d05dec10ccc0622c23",
+      "bytes": 24101059,
+      "version_or_vintage": "Ken French current vintage；R3 解压并核验",
+      "obtained_date": "2026-11-21",
+      "obtained_command": "unzip -o 25_Portfolios_5x5_Daily_CSV.zip -> 25_Portfolios_5x5_Daily.csv",
+      "purpose": "block_ff25.py 的输入；切块不变量比较",
+      "referenced_by_experiments": [
+        "P007-E01"
+      ],
+      "referenced_by_files": [
+        "executions/support/P007/data/25_Portfolios_5x5_Daily.csv",
+        "executions/support/P007/results/block_ff25_results.json"
+      ],
+      "present_in_revision_v4": true,
+      "local_path": "executions/support/P007/data/25_Portfolios_5x5_Daily.csv",
+      "reproducible": true,
+      "reproduce_note": "23MB 第三方 CSV，按 .gitignore 排除入库；fresh clone 从 ZIP 解压即可复得，hash 与 R3 记录一致。",
+      "sha256_status": "PASS"
+    },
+    {
+      "id": "P008-AQR-XLSX",
+      "paper_id": "P008",
+      "file_name": "ESG_efficient_frontier_portfolios_vF.xlsx",
+      "category": "作者（AQR）Table 4 输入工作簿",
+      "source_url": "https://www.aqr.com/-/media/AQR/Documents/Insights/Data-Sets/ESG_efficient_frontier_portfolios_vF.xlsx?sc_lang=en",
+      "source_locator": "AQR Data Sets — ESG efficient frontier portfolios vF",
+      "expected_sha256": "153423fd6356e41423271ddcdfe0280508e69e73273e023171aaf83e6cf8b676",
+      "actual_sha256": "153423fd6356e41423271ddcdfe0280508e69e73273e023171aaf83e6cf8b676",
+      "bytes": 215209,
+      "version_or_vintage": "AQR vF 工作簿（文件内标注 JFE forthcoming era），PanelA/B 各 674 月 1963-02-28..2019-03-31",
+      "obtained_date": "2026-11-21",
+      "obtained_command": "curl -L -o downloaded_from_aqr.xlsx 'https://www.aqr.com/-/media/AQR/Documents/Insights/Data-Sets/ESG_efficient_frontier_portfolios_vF.xlsx?sc_lang=en'",
+      "http_status": 200,
+      "purpose": "P008-E03 Table 4 PanelA/B G 列均值独立重算（supplier U 列算术月均*12*100）",
+      "referenced_by_experiments": [
+        "P008-E03"
+      ],
+      "referenced_by_files": [
+        "executions/P008_E03/target_comparison.csv",
+        "executions/P008_E03/config.json",
+        "executions/P008_E03/results.json"
+      ],
+      "present_in_revision_v4": true,
+      "local_path": "executions/P008_E03/downloaded_from_aqr.xlsx",
+      "reproducible": true,
+      "reproduce_note": "公开 AQR URL，HTTP 200；revision-v4 本地副本 downloaded_from_aqr.xlsx hash 与冻结值一致，*.xlsx 已由 .gitignore 排除入库。",
+      "sha256_status": "PASS"
+    },
+    {
+      "id": "P002-FACTOR-DETAILS-XLSX",
+      "paper_id": "P002",
+      "file_name": "Factor Details.xlsx",
+      "category": "ReplicationCrisis 仓库因子说明工作簿",
+      "source_url": "https://github.com/bkelly-lab/ReplicationCrisis",
+      "source_locator": "git clone --depth 1 https://github.com/bkelly-lab/ReplicationCrisis.git (commit 67174c7f170bf8b952b3c86876f187fd9970b5ba) — Analysis/Factor Details.xlsx",
+      "expected_sha256": "21d313570153b9f6bff3417e9134cf22bf873c94e529ace381770ad194745ce7",
+      "actual_sha256": "21d313570153b9f6bff3417e9134cf22bf873c94e529ace381770ad194745ce7",
+      "bytes": 39959,
+      "version_or_vintage": "ReplicationCrisis repo commit 67174c7f（公开历史快照）",
+      "obtained_date": "2026-11-21",
+      "obtained_command": "git clone --depth 1 https://github.com/bkelly-lab/ReplicationCrisis.git",
+      "purpose": "P002 因子定义/全局因子数据说明，支持静态审计",
+      "referenced_by_experiments": [
+        "P002-E01",
+        "P002-E21"
+      ],
+      "referenced_by_files": [
+        "executions/support/P002/code/",
+        "executions/support/P002/results/"
+      ],
+      "present_in_revision_v4": false,
+      "local_path": "/tmp/r3_local_backup_20261121/executions/support/P002/data/ReplicationCrisis_repo/Analysis/Factor Details.xlsx",
+      "reproducible": true,
+      "reproduce_note": "公开 GitHub 仓库固定 commit 可重得。",
+      "sha256_status": "PASS"
+    },
+    {
+      "id": "P002-COUNTRY-CLASSIFICATION-XLSX",
+      "paper_id": "P002",
+      "file_name": "Country Classification.xlsx",
+      "category": "ReplicationCrisis 仓库国家分类工作簿",
+      "source_url": "https://github.com/bkelly-lab/ReplicationCrisis",
+      "source_locator": "git clone --depth 1 https://github.com/bkelly-lab/ReplicationCrisis.git (commit 67174c7f170bf8b952b3c86876f187fd9970b5ba) — Analysis/Country Classification.xlsx",
+      "expected_sha256": "f0037aee59978dba36a0a3518935cb8b2add6a733d825865e50054756ea9e0b6",
+      "actual_sha256": "f0037aee59978dba36a0a3518935cb8b2add6a733d825865e50054756ea9e0b6",
+      "bytes": 11554,
+      "version_or_vintage": "ReplicationCrisis repo commit 67174c7f（公开历史快照）",
+      "obtained_date": "2026-11-21",
+      "obtained_command": "git clone --depth 1 https://github.com/bkelly-lab/ReplicationCrisis.git",
+      "purpose": "P002 国家分类映射，支持静态审计",
+      "referenced_by_experiments": [
+        "P002-E01",
+        "P002-E21"
+      ],
+      "referenced_by_files": [
+        "executions/support/P002/code/",
+        "executions/support/P002/results/"
+      ],
+      "present_in_revision_v4": false,
+      "local_path": "/tmp/r3_local_backup_20261121/executions/support/P002/data/ReplicationCrisis_repo/Analysis/Country Classification.xlsx",
+      "reproducible": true,
+      "reproduce_note": "公开 GitHub 仓库固定 commit 可重得。",
+      "sha256_status": "PASS"
+    },
+    {
+      "id": "P006-IS-VS-OOS-P",
+      "paper_id": "P006",
+      "file_name": "is_vs_oos.p",
+      "category": "作者冷重算小型序列化中间产物",
+      "source_url": "本地重算生成（非下载）：run_all.py --main --compute 的中间输出",
+      "source_locator": "executions/P006_E01_author/cold_run/outputs/computed/is_vs_oos.p",
+      "expected_sha256": "f7194225a81112feecf67e86965bc222efee1629e579c5f46a7e2fe8462a9c9c",
+      "actual_sha256": "f7194225a81112feecf67e86965bc222efee1629e579c5f46a7e2fe8462a9c9c",
+      "bytes": 1125,
+      "version_or_vintage": "R3 冷重算产物（2026-11-21）",
+      "obtained_date": "2026-11-21",
+      "obtained_command": "由 run_all.py --main --compute 生成",
+      "purpose": "IS vs OOS 对比中间结果，供 extracted_values.json 提取",
+      "referenced_by_experiments": [
+        "P006-E01"
+      ],
+      "referenced_by_files": [
+        "executions/P006_E01_author/extracted_values.json"
+      ],
+      "present_in_revision_v4": true,
+      "local_path": "executions/P006_E01_author/cold_run/outputs/computed/is_vs_oos.p",
+      "reproducible": true,
+      "reproduce_note": "可由作者代码冷重算生成；*.p 由 .gitignore 排除入库。",
+      "sha256_status": "PASS"
+    },
+    {
+      "id": "P006-E06-AUDIT-NPZ",
+      "paper_id": "P006",
+      "file_name": "audit_A_corrected_full_raw.npz",
+      "category": "独立审计三路径原始数组缓存（npz）",
+      "source_url": "本地重算生成（非下载）：compare_paths.py / 审计脚本输出",
+      "source_locator": "executions/P006_E06_independent/results/audit_A_corrected_full_raw.npz",
+      "expected_sha256": "0b219d45e29b27f72c7b5e560fe30cff42586072b17b6e98b95e87f3b039d7aa",
+      "actual_sha256": "0b219d45e29b27f72c7b5e560fe30cff42586072b17b6e98b95e87f3b039d7aa",
+      "bytes": 1274478,
+      "version_or_vintage": "R4 审计新增产物（2026-11-21）",
+      "obtained_date": "2026-11-21",
+      "obtained_command": "由独立审计脚本生成",
+      "purpose": "A 路径校正后全窗原始数组（494 月），供 discrepancy_decomposition.csv 分解",
+      "referenced_by_experiments": [
+        "P006-E06"
+      ],
+      "referenced_by_files": [
+        "executions/P006_E06_independent/audit_r4/taskB_decomposition.py"
+      ],
+      "present_in_revision_v4": true,
+      "local_path": "executions/P006_E06_independent/results/audit_A_corrected_full_raw.npz",
+      "reproducible": true,
+      "reproduce_note": "可由独立审计脚本重算；*.npz 由 .gitignore 排除入库。",
+      "sha256_status": "PASS"
+    },
+    {
+      "file": "executions/support/P004/results/grad_cachenom_initial_state_linear",
+      "kind": "AUTHOR_INITIALIZATION_CACHE",
+      "format": "zip/pickle state (no extension)",
+      "sha256": "6d713ca4f4802ebe0a11ef696e709f506d1b34e31f3f5230b11a7ca6c5b4193f",
+      "bytes": 95853,
+      "included_in_git": false,
+      "note": "Author E2E-DRO cached initial state; not redistributed; gradient preflight used author code directly"
+    },
+    {
+      "file": "executions/support/P004/results/grad_cachedro_initial_state_3layer",
+      "kind": "AUTHOR_INITIALIZATION_CACHE",
+      "format": "zip/pickle state (no extension)",
+      "sha256": "5402f155b01d4899808e8a08a218ea06879286dd3f82b30645f58f19b1608cc1",
+      "bytes": 145685,
+      "included_in_git": false,
+      "note": "Author E2E-DRO cached initial state; not redistributed; gradient preflight used author code directly"
+    },
+    {
+      "file": "executions/support/P004/results/grad_cachedro_initial_state_2layer",
+      "kind": "AUTHOR_INITIALIZATION_CACHE",
+      "format": "zip/pickle state (no extension)",
+      "sha256": "9f0622490d02ed3eea4a8ea20285396fa9789afcff24095e5a894ee66a73d71d",
+      "bytes": 144677,
+      "included_in_git": false,
+      "note": "Author E2E-DRO cached initial state; not redistributed; gradient preflight used author code directly"
+    },
+    {
+      "file": "executions/support/P004/results/grad_cachenom_initial_state_2layer",
+      "kind": "AUTHOR_INITIALIZATION_CACHE",
+      "format": "zip/pickle state (no extension)",
+      "sha256": "3cba0302edfca6d43a1be91703eccc52a411194a0027c7d0386568b7e6834084",
+      "bytes": 97805,
+      "included_in_git": false,
+      "note": "Author E2E-DRO cached initial state; not redistributed; gradient preflight used author code directly"
+    },
+    {
+      "file": "executions/support/P004/results/grad_cachenom_initial_state_3layer",
+      "kind": "AUTHOR_INITIALIZATION_CACHE",
+      "format": "zip/pickle state (no extension)",
+      "sha256": "0db43dbba9832d1478785ce91b840cac1529e451e0398b9da9c906dad9f10a57",
+      "bytes": 98813,
+      "included_in_git": false,
+      "note": "Author E2E-DRO cached initial state; not redistributed; gradient preflight used author code directly"
+    },
+    {
+      "file": "executions/support/P004/results/grad_cachedro_initial_state_linear",
+      "kind": "AUTHOR_INITIALIZATION_CACHE",
+      "format": "zip/pickle state (no extension)",
+      "sha256": "30f9b16d18c395b96de0cf1d0939e44c44fc072ed91d135f2a073b0dd7552cf7",
+      "bytes": 142725,
+      "included_in_git": false,
+      "note": "Author E2E-DRO cached initial state; not redistributed; gradient preflight used author code directly"
+    }
+  ],
+  "summary": {
+    "entry_count": 11,
+    "all_expected_equal_actual": true,
+    "present_in_revision_v4_count": 5,
+    "note": "物理存在于 revision-v4 的二进制（FF25 CSV/两个 .p/一个 .npz/一个 .xlsx）均已由 .gitignore 排除入库；其余在备份/evidence 目录或需重下。所有 actual_sha256 为 shasum -a 256 实算，expected 与 actual 全一致。",
+    "author_init_cache_excluded": 6
+  }
+}

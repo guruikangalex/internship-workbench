@@ -1,0 +1,163 @@
+{
+  "batch": "CO-REP-20261120-02",
+  "paper": "P007",
+  "task": "20-trading-day blocking + buffer-reading demonstration",
+  "data": {
+    "file": "/Users/guruikang/WorkBuddy/2026-11-20-15-03-43/internship-workbench/research/portfolio-replication/revision-v3/executions/support/P007/data/25_Portfolios_5x5_Daily.csv",
+    "sha256": "ef7d17f85368e9618ac3fd855e3fca9ea955e0188a48a6d05dec10ccc0622c23",
+    "bytes": 24101059,
+    "url": "https://mba.tuck.dartmouth.edu/pages/faculty/ken.french/ftp/25_Portfolios_5x5_Daily_CSV.zip",
+    "vintage_note": "first line of CSV carried 202609 CRSP database; downloaded fresh 2026-11-21",
+    "n_assets": 25,
+    "assets": [
+      "SMALL LoBM",
+      "ME1 BM2",
+      "ME1 BM3",
+      "ME1 BM4",
+      "SMALL HiBM",
+      "ME2 BM1",
+      "ME2 BM2",
+      "ME2 BM3",
+      "ME2 BM4",
+      "ME2 BM5",
+      "ME3 BM1",
+      "ME3 BM2",
+      "ME3 BM3",
+      "ME3 BM4",
+      "ME3 BM5",
+      "ME4 BM1",
+      "ME4 BM2",
+      "ME4 BM3",
+      "ME4 BM4",
+      "ME4 BM5",
+      "BIG LoBM",
+      "ME5 BM2",
+      "ME5 BM3",
+      "ME5 BM4",
+      "BIG HiBM"
+    ],
+    "total_daily_rows": 26338,
+    "first_last_daily": [
+      19260701,
+      20260930
+    ]
+  },
+  "paper_window": [
+    19630701,
+    20191231
+  ],
+  "readings": {
+    "A": {
+      "label": "STRICT_21_STEP",
+      "n_blocks": 676,
+      "step_trading_days": 21,
+      "unused_tail_days": 7,
+      "first": {
+        "signal_dates": [
+          19630701,
+          19630729
+        ],
+        "buffer_dates": [
+          19630730
+        ],
+        "target_dates": [
+          19630731,
+          19630827
+        ]
+      },
+      "last": {
+        "signal_dates": [
+          20191023,
+          20191119
+        ],
+        "target_dates": [
+          20191121,
+          20191219
+        ]
+      },
+      "min_blocks_before_first_oos": 121,
+      "max_oos_evaluations": 555
+    },
+    "B": {
+      "label": "ADJACENT_20_STEP",
+      "n_blocks": 710,
+      "step_trading_days": 20,
+      "unused_tail_days": 3,
+      "first": {
+        "signal_dates": [
+          19630701,
+          19630729
+        ],
+        "buffer_dates": [],
+        "target_dates": [
+          19630730,
+          19630826
+        ]
+      },
+      "last": {
+        "signal_dates": [
+          20191030,
+          20191126
+        ],
+        "target_dates": [
+          20191127,
+          20191226
+        ]
+      },
+      "min_blocks_before_first_oos": 121,
+      "max_oos_evaluations": 589
+    }
+  },
+  "invariants": {
+    "k": 130,
+    "n_train_pairs": 120,
+    "note": "Pi_hat differs by reading; compare operator invariants",
+    "PA_shape": [
+      25,
+      25
+    ],
+    "PB_shape": [
+      25,
+      25
+    ],
+    "PA_fro": 0.040211,
+    "PB_fro": 0.033255,
+    "relative_operator_diff_fro": 0.648189,
+    "singular_values_A_top5": [
+      0.038581,
+      0.007779,
+      0.005063,
+      0.003669,
+      0.002495
+    ],
+    "singular_values_B_top5": [
+      0.030298,
+      0.011081,
+      0.005268,
+      0.002868,
+      0.002491
+    ],
+    "sign_flip_operator_reconstruction_max_abs_diff": 0.0,
+    "sym_eigs_top5_abs": [
+      0.02005,
+      0.018617,
+      0.006227,
+      0.003202,
+      0.002853
+    ],
+    "antisym_fro": 0.028235,
+    "rank_PA": 24,
+    "rank_PB": 24,
+    "interpretation": "Differences in singular-vector signs or eigenvector complex phase do NOT by themselves constitute failure; the operator (Pi, symmetric/antisymmetric parts, singular values, outer products) is the phase-free invariant. Final portfolio returns must be checked separately."
+  },
+  "status": "DONE_STRUCTURAL",
+  "paper_window_days": 14223,
+  "paper_first_last": [
+    19630701,
+    20191231
+  ],
+  "target_results": {
+    "Figure1_2_3_TableII": "NOT_RUN",
+    "economic_conclusion": "NOT_ASSESSED"
+  }
+}

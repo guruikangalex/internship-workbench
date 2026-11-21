@@ -1,0 +1,99 @@
+{
+  "schema_version": "1.0",
+  "document": "fault_injection_results",
+  "purpose": "R4 P0 证据：在临时副本上注入5类故障，验证 validate_delivery.py 每项均检测到并返回非零退出码；不修改 revision-v4 实际文件。",
+  "generated_at": "2026-11-21T16:48:03",
+  "validator": "metadata/validate_delivery.py",
+  "python": "/Users/guruikang/WorkBuddy/2026-11-20-15-03-43/CO-REP-20261120-02/execution/env_py396/bin/python (3.9.6)",
+  "method": {
+    "isolation": "每次测试先 copytree 快照 revision-v4 到 tempfile.mkdtemp(prefix='r4fi3_*')，忽略 __pycache__/.git/FF25大CSV；在快照内按同一规则重新生成 review_package_manifest.sha256，确保基线 errors=0 后再注入。",
+    "command_template": "<py396> metadata/validate_delivery.py --root <temp_copy> --quiet",
+    "pass_criterion": "exit_code != 0 且目标检查出现在 failed_checks 中",
+    "cleanup": "所有临时目录在测试后 shutil.rmtree 删除；revision-v4 源文件未被修改"
+  },
+  "baseline": {
+    "manifest_entries": 293,
+    "exit_code": 0,
+    "summary": "SUMMARY: PASS  errors=0 warnings=1"
+  },
+  "tests": [
+    {
+      "test_id": "FI-01",
+      "fault": "删除必需文件 README.md",
+      "target_check": "a_manifest",
+      "exit_code": 1,
+      "failed_checks": [
+        "a_manifest"
+      ],
+      "detected": true,
+      "targeted_error_samples": [
+        "manifest 文件缺失: README.md"
+      ],
+      "summary": "SUMMARY: FAIL  errors=1 warnings=1"
+    },
+    {
+      "test_id": "FI-02",
+      "fault": "master_table.csv 末尾加 1 字节",
+      "target_check": "a_manifest",
+      "exit_code": 1,
+      "failed_checks": [
+        "a_manifest",
+        "b_parse"
+      ],
+      "detected": true,
+      "targeted_error_samples": [
+        "manifest SHA256 不一致: master_table.csv expected=97e94da61a4e19d04df335532bc2d511b0ca845ee8c227de9aed26205d0eab08 actual=552d0e08f5f857c7924738e1b38561f27d22e9e3c1c1c988f341d4e6b992064f"
+      ],
+      "summary": "SUMMARY: FAIL  errors=2 warnings=1"
+    },
+    {
+      "test_id": "FI-03",
+      "fault": "删除目标ID P001-R01",
+      "target_check": "c_ids",
+      "exit_code": 1,
+      "failed_checks": [
+        "a_manifest",
+        "c_ids"
+      ],
+      "detected": true,
+      "targeted_error_samples": [
+        "executions/P001_E01/target_comparison.csv:2 目标(result)ID 未在 target_alignment.csv 注册: P001-E01/P001-R01",
+        "executions/P001_E01/target_comparison.csv:3 目标(result)ID 未在 target_alignment.csv 注册: P001-E01/P001-R01",
+        "executions/P001_E01/target_comparison.csv:4 目标(result)ID 未在 target_alignment.csv 注册: P001-E01/P001-R01"
+      ],
+      "summary": "SUMMARY: FAIL  errors=6 warnings=1"
+    },
+    {
+      "test_id": "FI-04",
+      "fault": "NOT_RUN 错标判定 PASS",
+      "target_check": "f_enums",
+      "exit_code": 1,
+      "failed_checks": [
+        "a_manifest",
+        "f_enums"
+      ],
+      "detected": true,
+      "targeted_error_samples": [
+        "P001-E02 状态为 NOT_RUN 却标记判定 PASS（错标 PASS/FAIL）"
+      ],
+      "summary": "SUMMARY: FAIL  errors=2 warnings=1"
+    },
+    {
+      "test_id": "FI-05",
+      "fault": "未批准实验 P001-E02 标为 authorized",
+      "target_check": "f_enums",
+      "exit_code": 1,
+      "failed_checks": [
+        "a_manifest",
+        "f_enums"
+      ],
+      "detected": true,
+      "targeted_error_samples": [
+        "P001-E02 标为 authorized 但 reviewer 决定为 'REQUEST_EVIDENCE'（未批准实验被标 authorized）"
+      ],
+      "summary": "SUMMARY: FAIL  errors=2 warnings=2"
+    }
+  ],
+  "all_five_detected": true,
+  "conclusion": "5/5 故障均被对应检查捕获：FI-01/FI-02 命中 a_manifest（缺失与1字节改动），FI-03 命中 c_ids（目标ID未注册），FI-04/FI-05 命中 f_enums（NOT_RUN错标PASS、未批准标authorized）。全部返回非零退出码。校验脚本对交付损坏具备实际检测能力，非纸面声明。"
+}

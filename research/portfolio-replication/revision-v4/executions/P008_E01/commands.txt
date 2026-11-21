@@ -1,0 +1,16 @@
+# P008-E01 theory experiment — execution-chain fix + clean rerun (run_id R4-P008-001)
+cd /Users/guruikang/WorkBuddy/2026-11-20-15-03-43/internship-workbench/research/portfolio-replication/revision-v4/executions/P008_E01
+# Runtime: isolated Python 3.9.6 (env_py396), numpy 2.0.2
+PY396=/Users/guruikang/WorkBuddy/2026-11-20-15-03-43/CO-REP-20261120-02/execution/env_py396/bin/python
+
+# KKT relative tolerance 1e-10 frozen at 2026-11-21T07:29:34Z (unchanged from R3).
+# ill-conditioned stress case (cond~1e9) is diagnostic-only/PARTIAL, not a normal-condition gate.
+"$PY396" source.py > run_stdout.log 2> run_stderr.log
+EC=$?
+echo "PROCESS_EXIT_CODE=$EC" >> run_stderr.log
+echo $EC
+
+# Exit codes: 0=PASS; 1=SOURCE_FAIL (PDF missing/hash); 2=MATH_FAIL (normal-condition KKT/identity).
+shasum -a 256 config.json source.py source_v3_backup.py environment.json commands.txt results.json target_comparison.csv target_comparison_v3_backup.csv run_stdout.log run_stderr.log summary.md summary_r4.md exit_code_test.md > sha256sums.txt
+
+# No network, no market data, no author code, no figure-coordinate inputs.

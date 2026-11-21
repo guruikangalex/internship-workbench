@@ -1,0 +1,78 @@
+{
+  "run_id": "P006-E06-INDEP-20261121-01",
+  "source_A": "P006_E01_author/outputs/computed/main_bundle.p (read-only)",
+  "source_B": "P006_E06_independent/results/returns_B*.csv + weights_B*.csv",
+  "n_aligned_months": 494,
+  "first": "1981-11-30",
+  "last": "2022-12-31",
+  "finite_A_returns": true,
+  "finite_B0_returns": true,
+  "finite_B1_returns": true,
+  "sharpe": {
+    "A": 1.9227739234518326,
+    "B0": 1.915168630926592,
+    "B1": 1.915609118415525
+  },
+  "mean_monthly": {
+    "A": 0.3788386604322135,
+    "B0": 0.3309839215166794,
+    "B1": 0.3305387656793737
+  },
+  "turnover_pct": {
+    "A": 12.387920074239759,
+    "B0": 12.740481915644203,
+    "B1": 12.757831069540176
+  },
+  "returns": {
+    "A_vs_B0": {
+      "maxabs": 0.5851721817467317,
+      "meanabs": 0.07121433501791044,
+      "fro": 2.2913929781484605,
+      "relative_fro": 0.1507062397413447,
+      "corr": 0.9983994983066014
+    },
+    "A_vs_B1": {
+      "maxabs": 0.5845235148114314,
+      "meanabs": 0.07204506141610428,
+      "fro": 2.312112353479685,
+      "relative_fro": 0.15230058696532905,
+      "corr": 0.9984076277742234
+    },
+    "B0_vs_B1": {
+      "maxabs": 0.008737840096661786,
+      "meanabs": 0.0011134402961426675,
+      "fro": 0.037799770499937,
+      "relative_fro": 0.0024898994314143377,
+      "corr": 0.9999974771624107
+    }
+  },
+  "weights": {
+    "A_vs_B0": {
+      "maxabs": 6.161918316367913,
+      "meanabs": 0.43800687229471497,
+      "fro": 181.0082244064436,
+      "relative_fro": 0.14346702016224747,
+      "corr": 0.9860760512707277
+    },
+    "A_vs_B1": {
+      "maxabs": 6.112472084588752,
+      "meanabs": 0.4455225233410019,
+      "fro": 183.10448789315475,
+      "relative_fro": 0.14539944439393404,
+      "corr": 0.9860760512707277
+    },
+    "B0_vs_B1": {
+      "maxabs": 0.2898177709089538,
+      "meanabs": 0.00944883578791111,
+      "fro": 4.241211199134219,
+      "relative_fro": 0.0033678571126628297,
+      "corr": 0.984351297596087
+    }
+  },
+  "interpretation": {
+    "A_vs_B0": "A author path (divisor-T smoother, w_adj/z roundoff) vs B0 stable expression (c=T). Differences are numerical-implementation level; both target the same divisor-T math.",
+    "A_vs_B1": "A author path vs paper T-1 leave-one-out. Combines numerical-implementation and divisor-convention differences.",
+    "B0_vs_B1": "Isolates the T vs T-1 leave-one-out normalization difference with identical stable implementation."
+  }
+}
+WROTE results/three_path_comparison.json, results/returns_three_path.csv

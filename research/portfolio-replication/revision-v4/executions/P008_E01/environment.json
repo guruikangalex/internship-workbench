@@ -1,0 +1,18 @@
+{
+  "run_id": "R4-P008-001",
+  "captured_utc": "2026-11-21T08:45:45Z",
+  "python_version": "3.9.6",
+  "python_executable": "/Users/guruikang/WorkBuddy/2026-11-20-15-03-43/CO-REP-20261120-02/execution/env_py396/bin/python",
+  "numpy_version": "2.0.2",
+  "platform": "darwin (macOS, ARM64)",
+  "kernel": "Darwin Kernel Version 27.0.0",
+  "dependencies": {
+    "numpy": "2.0.2 (isolated env_py396)",
+    "stdlib": ["csv", "hashlib", "json", "os", "platform", "sys", "datetime"]
+  },
+  "not_available": ["scipy", "pandas", "openpyxl"],
+  "external_market_data_used": false,
+  "network_used": false,
+  "randomness": "numpy default_rng(20261121) for the researcher-declared positive-definite example only; deterministic and frozen in config.json; a separate seed 101 builds the ill-conditioned (cond~1e9) stress case",
+  "notes": "R4 clean rerun in isolated Python3.9.6 env_py396. Independent implementation of Propositions 1-3 using small dense linear algebra; no author code, no empirical data, no figure-coordinate reconstruction. Tolerances unchanged from R3 freeze; KKT threshold 1e-10 applies only to the normal-condition example, while the cond~1e9 case is diagnostic-only/PARTIAL."
+}

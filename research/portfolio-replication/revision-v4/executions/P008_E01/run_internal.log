@@ -1,0 +1,31 @@
+P008-E01 THEORY EXPERIMENT | run_id=R4-P008-001 | 2026-11-21T08:47:36.245691+00:00
+python=3.9.6 numpy=2.0.2; purpose=THEORY_ONLY_PROPOSITIONS_AND_GEOMETRY
+KKT tolerance relative <= 1e-10 frozen at 2026-11-21T07:29:34Z before result inspection
+paper pdf sha256 = 5beedbbc054e915e9d82e8c6a3de2b1cde58ff4ec61dd4ec5d700262c38283c2 (expected 5beedbbc054e915e9d82e8c6a3de2b1cde58ff4ec61dd4ec5d700262c38283c2; byte identity to CBS version UNKNOWN)
+
+[NUMERICAL EXAMPLE] n=5 gamma=3 cond(Sigma)=5.186 sbar=0.53
+  Sigma condition number in configured normal range? True
+
+[PROP 3] pi(q-form)=0.204049377666 pi(Eq.11-form)=0.204049377666 x'1=0.0967291540643 (feasible >0: True)
+  x=[0.017247367118396247, 0.026843614851901454, 0.02148573298895581, 0.0192819893118619, 0.011870449793231179]
+
+[INDEPENDENT OPTIMIZATION]
+  KKT relative residual = 3.494e-16 (threshold 1e-10)
+  closed-form vs direct KKT maxabs = 1.041e-17
+  closed-form vs null-space projection maxabs = 1.041e-17
+  pi direct KKT = 0.204049377666
+
+[PROP 2 FRONTIER] s*=0.427333041168 SR_max=0.180756165009 SR(s*)=0.180756165009 dSR/ds|*=0.000e+00
+  max over grid of (SR_max - SR(sbar)) >= 0 ? True
+
+[FOUR-FUND SPANNING] x = gamma^-1(Sigma^-1 mu + pi Sigma^-1 s - pi sbar Sigma^-1 1)
+  maxabs reconstruction error = 3.469e-18
+
+[DEGENERATE CASES]
+  (a) q=0: den=0.000e+00 pi_undefined=True limit_pi=0 x'1=0.125555
+  (b) q'Sigma^-1 mu=0: pi=-9.153e-18 |x_con - x_uncon|=0.000e+00
+  (c) zero risky net: x'1=-1.110e-16 average ESG ratio undefined=True
+  (d) ill-conditioned: cond=1.000e+09 KKT rel=2.173e-09 (reported only; not used for PASS)
+
+[CHECKS] paper_pdf_present=True, paper_pdf_hash_observed=True, normal_example_condition_in_range=True, kkt_relative_residual_within_frozen_tolerance=True, closed_form_matches_direct_kkt=True, closed_form_matches_projection=True, tangency_is_frontier_peak=True, frontier_derivative_zero_at_peak=True, no_frontier_point_exceeds_peak=True, four_fund_spanning=True, q_zero_handled=True, projected_return_zero_handled=True, zero_net_position_esg_ratio_undefined=True, ill_conditioned_reported_separately=True
+[GRADED] source_failed=[] math_failed=[] partial_failed=[] -> exit_code=0 (EXECUTED); ill_cond cond=1.000e+09 kkt_rel=2.173e-09 reported separately

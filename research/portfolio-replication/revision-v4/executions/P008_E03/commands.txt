@@ -1,0 +1,22 @@
+# P008-E03 workbook recompute + scope correction — clean rerun (run_id R4-P008-003)
+cd /Users/guruikang/WorkBuddy/2026-11-20-15-03-43/internship-workbench/research/portfolio-replication/revision-v4/executions/P008_E03
+PY396=/Users/guruikang/WorkBuddy/2026-11-20-15-03-43/CO-REP-20261120-02/execution/env_py396/bin/python
+
+# 1) Fresh LIVE download from AQR URL during this R4 run (HTTP 200, 215209 bytes):
+curl -sS -L --max-time 25 -o /tmp/aqr_live.xlsx -w 'HTTP=%{http_code} SIZE=%{size_download}\n' 'https://www.aqr.com/-/media/AQR/Documents/Insights/Data-Sets/ESG_efficient_frontier_portfolios_vF.xlsx?sc_lang=en' > download_stderr.txt 2>&1
+cp /tmp/aqr_live.xlsx downloaded_from_aqr.xlsx
+shasum -a 256 downloaded_from_aqr.xlsx
+# => 153423fd6356e41423271ddcdfe0280508e69e73273e023171aaf83e6cf8b676
+
+# 2) Recompute Table 4 Panel A/G (R10) and Panel B/G (R11) from raw OOXML:
+"$PY396" source.py > run_stdout.log 2> run_stderr.log
+EC=$?
+echo "PROCESS_EXIT_CODE=$EC" >> run_stderr.log
+echo $EC
+
+# Exit codes: 0=PASS; 1=SOURCE_FAIL (workbook missing/hash+size mismatch); 2=MATH_FAIL (R10/R11).
+shasum -a 256 config.json source.py source_v3_backup.py environment.json commands.txt downloaded_from_aqr.xlsx results.json target_comparison.csv target_comparison_v3_backup.csv run_stdout.log run_stderr.log download_stderr.txt summary.md summary_r4.md exit_code_test.md > sha256sums.txt
+
+# Method frozen at 2026-11-21T07:35:00Z (unchanged): U=G5-G1, 674 months 1963-02-28..2019-03-31,
+# decimal returns, arithmetic mean*12*100, no RF subtraction, no month filtering; tolerance +/-0.005 pp.
+# check_alignment: approved_result_ids = P008-R10, P008-R11 ONLY; 4 rows are supporting check_ids (CHK-01..04).

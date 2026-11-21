@@ -1,0 +1,6 @@
+e63dd5697b96b539000b1356ba45276dba74654301a2fdc8996e372457df4e9a  ./code/verify_data_entry.py
+e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855  ./logs/verify_data_entry.stderr.log
+70a7ceed17149d6a588e80a20123361f1f58f825c5af14d6e680c1a9e349aaa9  ./logs/verify_data_entry.stdout.log
+efad48e7168164a847a611c5b4b0f7a86469d864d354546dff297df54e0fa76f  ./results/data_entry_manifest.json
+900efdb56cd35a05c5868d6c3f5e736651ae2fb77380a3333fb89c36c6339e40  ./static_audit.md
+acb3fb2456e752c849ca41649e0d04f207f1996843531e8678b21059b21ec063  ./summary.md

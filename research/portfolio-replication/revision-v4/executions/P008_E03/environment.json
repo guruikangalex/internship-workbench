@@ -1,0 +1,18 @@
+{
+  "run_id": "R4-P008-003",
+  "captured_utc": "2026-11-21T08:45:45Z",
+  "python_version": "3.9.6",
+  "python_executable": "/Users/guruikang/WorkBuddy/2026-11-20-15-03-43/CO-REP-20261120-02/execution/env_py396/bin/python",
+  "platform": "darwin (macOS, ARM64)",
+  "dependencies": {
+    "stdlib": ["csv", "hashlib", "json", "os", "statistics", "sys", "zipfile", "datetime", "xml.etree.ElementTree"]
+  },
+  "not_available": ["pandas", "openpyxl", "scipy"],
+  "xlsx_parsing": "direct OOXML parsing via zipfile + xml.etree (no third-party spreadsheet library)",
+  "network_used": true,
+  "network_command": "curl -sS -L --max-time 25 -o /tmp/aqr_live.xlsx '<AQR URL>' (HTTP 200, 215209 bytes), then placed as downloaded_from_aqr.xlsx",
+  "http_code": 200,
+  "downloaded_bytes": 215209,
+  "downloaded_sha256": "153423fd6356e41423271ddcdfe0280508e69e73273e023171aaf83e6cf8b676",
+  "notes": "R4: live curl download from the AQR URL re-performed during this run; SHA256 verified byte-for-byte against the reviewer evidence file BEFORE recomputation. No author code. No regression layer (R12/R13 out of scope). Method/tolerance unchanged from R3 freeze."
+}

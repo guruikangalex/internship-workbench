@@ -1,0 +1,13 @@
+{
+  "alpha_formula_crosscheck": {
+    "author_src_plotting_py_line_75_81": "y*=0.1/std(sqrt(12)*y); X*=0.1/std(sqrt(12)*X); sm.OLS(y,add_constant(X)).fit(HAC maxlags=5); alpha=params[const]*12*100",
+    "e06_implementation": "identical steps; uses np.asarray(model.params)[0] because statsmodels 0.14.6 returns ndarray not Series",
+    "author_function_runtime_in_env": "FAILS with IndexError on model.params[\"const\"] under statsmodels 0.14.6 (environment incompatibility, not a math difference)",
+    "mathematical_identity_verified": true
+  },
+  "qp_solver_crosscheck": {
+    "cvxopt_vs_scipy_slsqp_first_window_W_fro": 1.721575602832047e-05,
+    "scipy_slsqp_success": true
+  },
+  "purpose": "verifies E06 helper implementations, not strategy equivalence between paths"
+}

@@ -1,0 +1,18 @@
+{
+  "run_id": "R3-P001-001",
+  "captured_utc": "2026-11-21T07:29:34Z",
+  "python_version": "3.13.12",
+  "python_executable": "/Users/guruikang/.workbuddy/binaries/python/versions/3.13.12/bin/python3",
+  "numpy_version": "2.5.5",
+  "platform": "darwin (macOS, ARM64)",
+  "kernel": "Darwin Kernel Version 27.0.0",
+  "dependencies": {
+    "numpy": "2.5.5 (used for small symmetric matrix algebra; stdlib-only implementation also existed in prior CO-REP run)",
+    "stdlib": ["csv", "hashlib", "json", "os", "platform", "sys", "datetime"]
+  },
+  "not_available": ["scipy", "pandas", "openpyxl"],
+  "external_data_used": false,
+  "network_used": false,
+  "randomness": "deterministic analytic/LQ computations; a fixed-seed numpy RNG is used ONLY for an algebraic spot-check of the terminal-accounting identity, not for any reported target value",
+  "notes": "No conda env_py396 (creation failed per CO-REP env_create.log). Clean rerun uses installed python3 + numpy. All target numbers recomputed from config.json inputs."
+}

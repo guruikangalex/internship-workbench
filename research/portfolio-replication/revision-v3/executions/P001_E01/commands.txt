@@ -1,0 +1,18 @@
+# P001-E01 clean rerun — exact commands executed (run_id R3-P001-001)
+# Working directory:
+cd /Users/guruikang/WorkBuddy/2026-11-20-15-03-43/internship-workbench/research/portfolio-replication/revision-v3/executions/P001_E01
+
+# Precondition: config.json written and tolerances frozen at 2026-11-21T07:29:34Z,
+# before any target value was computed in this run.
+
+# Execute (stdout/stderr captured separately):
+python3 source.py > run_stdout.log 2> run_stderr.log
+
+# Exit code recorded in run_stderr.log header via wrapper; verify:
+echo $?
+
+# Produce hash manifest after run:
+shasum -a 256 config.json source.py environment.json results.json target_comparison.csv run_stdout.log run_stderr.log > sha256sums.txt
+
+# Inputs are read-only PDFs from CO-REP-20261120-02/evidence/ (paths in config.json).
+# No network access, no market data, no author code used.

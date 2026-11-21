@@ -1,0 +1,37 @@
+P001-E01 CLEAN RERUN | run_id=R3-P001-001 | 2026-11-21T07:33:19.259135+00:00
+python=3.13.12 executable=/Users/guruikang/.workbuddy/binaries/python/versions/3.13.12/bin/python3 numpy=2.5.5
+purpose=THEORY/FORMULA VERIFICATION ONLY; not figure replication, not market-data study
+tolerance_frozen_at=2026-11-21T07:29:34Z (before result inspection)
+hash paper_pdf                    b9b01f48bd7ff0ce0431615d88b76f8a076b6593cc1d7765bd6ec2eb617473ab
+hash official_corrigendum_pdf     99469db904292d2a909bd40151009891103bd11b95b94c95a8d0b25f3717baa2
+hash package_corrigendum_pdf      99469db904292d2a909bd40151009891103bd11b95b94c95a8d0b25f3717baa2
+hash verification: {'paper_pdf': True, 'official_corrigendum': True, 'package_corrigendum': True, 'official_equals_package': True}
+
+[FOOTNOTE 9 SCALAR/AIM]
+  a=0.7421582911108061  a/lambda=0.3710791455554031  z=0.402525188277633
+  Markowitz0=[2.0, 2.0]
+  aim/Markowitz ratios=[0.8707527285934088, 0.6274601800357006]
+  aim0=[1.7415054571868176, 1.2549203600714012]
+  geometric-sum aim0=[1.7415054571868178, 1.2549203600714012]  maxerr=2.220e-16
+
+[MATRIX EQUATIONS A7/A10/A11/A13/A14/A15/A15*/A25]
+  A_commutable_footnote9                 A7*F=1.570e-16 A7origF=0.000e+00 scalar=0.7421582911108061
+  A2_commuting_nonproportional           A7*F=0.000e+00 A7origF=0.000e+00 scalar=0.7421582911108061
+  B_commutable_commodity                 A7*F=5.615e-23 A7origF=5.147e-23 scalar=2.184747592335443e-08
+  B2_commutable_highTC                   A7*F=4.024e-22 A7origF=3.931e-22 scalar=3.108889764385173e-08
+  C_noncommuting_FORMULA_VERIFICATION    A7*F=5.822e-16 A7origF=6.929e-02 scalar=N/A
+
+[LQ POLICIES: first trades under temporary/persistent split]
+  w=1.0  u0=[0.646236357032956, 0.4656747749553744] |u0|=0.796539029289 (iter=118)
+  w=0.5  u0=[0.7519093562703691, 0.5889933552646912] |u0|=0.955133944844 (iter=149)
+  w=0.0  u0=[1.149406832119923, 1.042629591800562] |u0|=1.551841657974 (iter=168)
+
+[PERSISTENT SHOCK TERMINAL ACCOUNTING]
+  algebraic identity maxabs over 20 random points = 3.553e-15
+  beta^t |W_t| at t=30 = 9.644e-03 (->0)
+  [debug] C A7*rel=3.596e-16 A7orig_rel=4.150e-02 legacyrel=5.921e-02
+
+[CHECKS] A15star_satisfies_A7_commutable=True, A15star_satisfies_A10=True, A15star_satisfies_A11=True, scalar_matches_matrix_commutable=True, A15original_equals_A15star_commuting_nonproportional=True, A15star_satisfies_A7_noncommuting=True, A15original_fails_A7_noncommuting=True, A15star_differs_from_A15original_noncommuting=True, geometric_sum_matches_aim=True, hash_paper_pdf=True, hash_corrigendum_official_matches_package=True, terminal_accounting_identity=True, bellman_residuals_small=True, finite_horizon_first_action_matches=True
+
+WROTE results.json, target_comparison.csv, run_internal.log
+ALL CHECKS PASS = True

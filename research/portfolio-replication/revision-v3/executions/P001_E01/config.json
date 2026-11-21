@@ -1,0 +1,78 @@
+{
+  "config_version": "R3-P001-001-config-v1",
+  "run_id": "R3-P001-001",
+  "paper_id": "P001",
+  "experiment_id": "P001-E01",
+  "canonical_version_id": "JF2013_VOR_A15STAR",
+  "reviewed_source_commit": "104aecfcad4c308e1044a3d15483fe2320619597",
+  "execution_commit": null,
+  "approval_record_id": "REVIEW-104AECF-20261121",
+  "execution_authorized": true,
+  "reproduction_type": "INDEPENDENT_FAITHFUL",
+  "experiment_purpose": "THEORY_AND_FORMULA_VERIFICATION_ONLY",
+  "performed_by": "general-purpose-3",
+  "tolerance_frozen_at_utc": "2026-11-21T07:29:34Z",
+  "tolerance_frozen_before_result_inspection": true,
+  "tolerance_source": "revision-v2/work/P001/protocol.md predeclared checks + reviewer high-precision reference values in revision-v2/work/P001/results.json (frozen as reference, never printed as paper values)",
+  "tolerances": {
+    "identity_absolute_fro": 1e-8,
+    "identity_relative_fro": 1e-12,
+    "min_significant_noncommuting_difference": 1e-6,
+    "hash_match": "exact",
+    "bellman_residual_absolute": 1e-10,
+    "direct_vs_bellman_absolute_contracts": 1e-10
+  },
+  "approved_result_ids": ["P001-R01", "P001-R02", "P001-R03", "P001-R09"],
+  "paper_parameters_footnote9": {
+    "Sigma": "I2",
+    "B": "I2",
+    "gamma": 0.5,
+    "rho": 0.05,
+    "lambda": 2.0,
+    "Lambda": "2*Sigma",
+    "f0": [1.0, 1.0],
+    "phi": [0.1, 0.4],
+    "note": "footnote 9 of published JF2013 version; dimensions: x_t in contracts, r_t excess price change ($/share)"
+  },
+  "additional_published_parameters": {
+    "commodity_case_gamma": 1e-9,
+    "commodity_case_rho": "1-exp(-0.02/260)",
+    "commodity_case_lambda_median": 5e-7,
+    "commodity_case_lambda_conservative": 1e-6,
+    "commodity_case_Sigma_substitute": "I2 (not paper empirical covariance; closed-form check only)"
+  },
+  "researcher_constructed_cases": {
+    "noncommuting": "Sigma = R(30deg) diag(3,1) R(30deg)^T, Lambda = R(75deg) diag(4,1.5) R(75deg)^T, gamma=0.5, rho=0.05; FORMULA_VERIFICATION only, not paper figure/empirical result"
+  },
+  "self_selected_options": {
+    "initial_old_position_x_minus1": [0.0, 0.0],
+    "trajectory_periods": 30,
+    "direct_solve_horizon": 160,
+    "permanent_impact_shares_w": [1.0, 0.5, 0.0],
+    "resilience_R": 0.1,
+    "risk_free_relation": "(1+rf)(1-rho)=1",
+    "note": "These are researcher-selected and are NOT claimed as paper printed initial holdings or plotting periods."
+  },
+  "expected_input_hashes": {
+    "paper_pdf_sha256": "b9b01f48bd7ff0ce0431615d88b76f8a076b6593cc1d7765bd6ec2eb617473ab",
+    "official_corrigendum_sha256": "99469db904292d2a909bd40151009891103bd11b95b94c95a8d0b25f3717baa2",
+    "package_corrigendum_sha256": "99469db904292d2a909bd40151009891103bd11b95b94c95a8d0b25f3717baa2"
+  },
+  "input_paths": {
+    "paper_pdf": "/Users/guruikang/WorkBuddy/2026-11-20-15-03-43/CO-REP-20261120-02/evidence/P001_DynamicTrading.pdf",
+    "official_corrigendum_pdf": "/Users/guruikang/WorkBuddy/2026-11-20-15-03-43/CO-REP-20261120-02/evidence/P001_corrigendum_official.pdf",
+    "package_corrigendum_pdf": "/Users/guruikang/WorkBuddy/2026-11-20-15-03-43/CO-REP-20261120-02/evidence/P001_DynamicTrading_corrigendum.pdf"
+  },
+  "figure_numbering_correction": {
+    "Figure 1": "THEORY: aim in front of target (Panels A-C)",
+    "Figure 2": "THEORY: persistent costs w=1/0.5/0 (Panels A-C)",
+    "Figure 3": "MARKET DATA EMPIRICAL: crude & gold futures positions",
+    "Figure 4": "THEORY/EMPIRICAL SHOCKS: optimal trading response to signal shocks",
+    "Figure 5": "DOES NOT EXIST in published version"
+  },
+  "scope_exclusions": [
+    "No commodity futures empirical replication (P001-E02 remains REQUEST_EVIDENCE)",
+    "No exact original figure coordinate reconstruction",
+    "No market economic evaluation (market_economic_verdict = NOT_ASSESSED)"
+  ]
+}

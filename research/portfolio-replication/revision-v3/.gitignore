@@ -1,0 +1,13 @@
+# Nested git repos cloned for static audit (commit SHA is recorded in code/results)
+executions/support/**/.git/
+
+# Large third-party downloads: source URL + version + hash + shape recorded in manifests.
+# Not redistributed byte-for-byte; receiver can re-download from documented stable entry.
+executions/support/P007/data/*.zip
+executions/support/P007/data/25_Portfolios_5x5_Daily.csv
+executions/support/P002/data/ReplicationCrisis_repo/data/
+
+# Python caches
+__pycache__/
+*.pyc
+.DS_Store

@@ -1,0 +1,54 @@
+{
+  "run_id": "P006-E06-R4-AUDIT-001",
+  "n_oos": 494,
+  "convention": "trace scale uses eigenvalues of K/T (author-consistent); eff_port K+Tz and LOO stable expression unchanged from E06",
+  "sharpe": {
+    "orig_B0": 1.915168630926592,
+    "corr_B0": 1.9234872675647674,
+    "orig_B1": 1.915609118415525,
+    "corr_B1": 1.923800816116795
+  },
+  "B0_orig_vs_corrected": {
+    "maxabs": 0.5798794240014711,
+    "meanabs": 0.07110489374422745,
+    "fro": 2.2872852203678944,
+    "relative_fro": 0.13185800200259018,
+    "corr": 0.9984099937645013
+  },
+  "B1_orig_vs_corrected": {
+    "maxabs": 0.582222887073468,
+    "meanabs": 0.07144947637341942,
+    "fro": 2.298216952139674,
+    "relative_fro": 0.13258536200110205,
+    "corr": 0.9983927360945817
+  },
+  "weights_B0_orig_vs_corrected": {
+    "maxabs": 6.154612081088235,
+    "meanabs": 0.43649612959600254,
+    "fro": 180.57875589710338,
+    "relative_fro": 0.12597167876872056,
+    "corr": 0.9991294008550785
+  },
+  "weights_B1_orig_vs_corrected": {
+    "maxabs": 6.154310474963978,
+    "meanabs": 0.43821179558271206,
+    "fro": 181.2601832471225,
+    "relative_fro": 0.12659248775429424,
+    "corr": 0.9991255722753365
+  },
+  "scale_corrected_B0_min_max": [
+    0.9093738734864651,
+    1.9581208425144039
+  ],
+  "scale_corrected_B1_min_max": [
+    0.9108249465864315,
+    1.9591557807459008
+  ],
+  "finite": {
+    "ret0": true,
+    "ret1": true,
+    "pi0": true,
+    "pi1": true
+  },
+  "elapsed_sec": 0.7632410526275635
+}

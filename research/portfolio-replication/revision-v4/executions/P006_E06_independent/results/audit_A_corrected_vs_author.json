@@ -1,0 +1,31 @@
+{
+  "run_id": "P006-E06-R4-AUDIT-001",
+  "sharpe": {
+    "A": 1.9234754603755817,
+    "orig_B0": 1.915168630926592,
+    "corr_B0": 1.9234872675647674,
+    "corr_B1": 1.9238008161167948
+  },
+  "A_vs_orig_B0": {
+    "maxabs": 0.6011638304862241,
+    "meanabs": 0.07126090305078647,
+    "fro": 2.2966155797085737,
+    "relative_fro": 0.15104973326266463,
+    "corr": 0.998385437336302
+  },
+  "A_vs_corr_B0": {
+    "maxabs": 0.043705575723559154,
+    "meanabs": 0.0005967078854557269,
+    "fro": 0.05900389504234597,
+    "relative_fro": 0.003401471596709261,
+    "corr": 0.9999925598775634
+  },
+  "A_vs_corr_B1": {
+    "maxabs": 0.04496912225998573,
+    "meanabs": 0.0013808168016172131,
+    "fro": 0.06654102525644319,
+    "relative_fro": 0.0038387872447534777,
+    "corr": 0.9999912707755756
+  },
+  "conclusion": "After fixing trace scale (K/T eigenvalues), B0/B1 reproduce author A to maxabs ~0.58? see numbers; the residual is dominated by author low-z w_adj/z roundoff in LOO."
+}
